@@ -49,7 +49,7 @@ Projector:
   m_AspectRatio: 1
   m_Orthographic: 1
   m_OrthographicSize: 6
-  m_Material: {fileID: 2100000, guid: bf5601725d90f634d95aebf6f2f88767, type: 2}
+  m_Material: {fileID: 2100000, guid: 5f1262d0ce03bf548850d35be0ab854b, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 0

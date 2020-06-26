@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 11433916}
   - component: {fileID: 11447128}
   - component: {fileID: 11404020}
-  - component: {fileID: 5342158797067151648}
   m_Layer: 0
   m_Name: LubanCardRange
   m_TagString: Untagged
@@ -50,7 +49,7 @@ Projector:
   m_AspectRatio: 1
   m_Orthographic: 1
   m_OrthographicSize: 10
-  m_Material: {fileID: 2100000, guid: bf5601725d90f634d95aebf6f2f88767, type: 2}
+  m_Material: {fileID: 2100000, guid: 5f1262d0ce03bf548850d35be0ab854b, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
     m_Bits: 1
@@ -96,15 +95,3 @@ MonoBehaviour:
   scale: 1
   width: 0
   DefaultScale: 1
---- !u!114 &5342158797067151648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15d1e3659eec85b42803aa4c6047c07d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

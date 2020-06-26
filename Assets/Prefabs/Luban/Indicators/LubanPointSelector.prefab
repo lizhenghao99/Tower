@@ -214,7 +214,7 @@ MonoBehaviour:
   progress: 0
   scale: 5
   width: 0
-  RangeIndicator: {fileID: 11404020, guid: d5629954035fd434b9bb6f64f89f9084, type: 3}
+  RangeIndicator: {fileID: 11404020, guid: 951756961d7062c40bef1a292f08dee0, type: 3}
   range: 10
   restrictCursorToRange: 1
 --- !u!1 &167826
