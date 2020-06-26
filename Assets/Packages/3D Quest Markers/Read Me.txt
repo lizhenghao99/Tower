@@ -1,0 +1,15 @@
+3D Quest Markers
+
+Cartoon Asset Pack with Quest and Map Markers.
+120 Markers
+No textures needed to use.
+Includes example scene with all the markers.
+
+Support Mail
+FrostForgedAssets@gmail.com
+
+---------------------------------------------------
+
+The 4 FrostForged gradient shaders are made using Shader Forge.
+https://www.assetstore.unity3d.com/en/#!/content/14147
+
