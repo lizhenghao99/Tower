@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.EventSystems;
 using Werewolf.StatusIndicators.Components;
 
 public class PlayerController : MonoBehaviour
@@ -17,9 +18,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject highlight;
 
 
-    private bool isSelected = false;
+    public EventHandler startCasting;
+    public EventHandler finishCasting;
+
+    public bool isSelected = false;
     public bool isWalking { get; private set; } = false;
-    public bool isCasting = false;
+    public bool isCasting { get; private set; } = false;
     private int layerMask;
 
     private void Start()
@@ -40,7 +44,8 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = agent.velocity.x < 0;
         }
         // mouse left
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) 
+            && !EventSystem.current.IsPointerOverGameObject())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -110,8 +115,31 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void setIsCasting(bool flag)
+    {
+        isCasting = flag;
+        if (flag)
+        {
+            OnStartCasting();
+        }
+        else
+        {
+            OnFinishCasting();
+        }
+    }
+
     private void OnDestinationReached(object sender, EventArgs e)
     {
         isWalking = false;
+    }
+
+    private void OnStartCasting()
+    {
+        startCasting?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    private void OnFinishCasting()
+    {
+        finishCasting?.Invoke(gameObject, EventArgs.Empty);
     }
 }

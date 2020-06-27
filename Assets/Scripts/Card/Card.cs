@@ -6,11 +6,12 @@ using UnityEngine;
 public abstract class Card : ScriptableObject
 {
     public enum Owner { Luban, secondChar, thirdChar };
+
     [Header("Basic")]
     public string cardName;
     public string description;
-    public int primaryCost;
-    public int secondaryCost;
+    public int primaryChange;
+    public int secondaryChange;
     public Owner owner;
 
     [Header("Advanced")]

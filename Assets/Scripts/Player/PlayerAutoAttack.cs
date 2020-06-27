@@ -31,6 +31,7 @@ public class PlayerAutoAttack : MonoBehaviour
         splat = GetComponentInChildren<SplatManager>();
         
         splat.SelectRangeIndicator(gameObject.name + "Range");
+        splat.CurrentRangeIndicator.DefaultScale = (attackRange + 1) * 2;
         splat.CurrentRangeIndicator.Scale = (attackRange + 1) * 2;
     }
 

@@ -22,7 +22,8 @@ public class Waypoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("collision!");
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.name == 
+                gameObject.name.Substring(0, gameObject.name.Length - 15))
         {
             OnDestinationReached();
             Destroy(gameObject);
