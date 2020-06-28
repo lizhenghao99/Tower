@@ -82,6 +82,7 @@ public class CardPlayer : Singleton<CardPlayer>
         Invoke("resumeAction", cardPlaying.castTime);
 
         cardPlaying.Play();
+        DeckManager.Instance.DiscardCard(cardPlaying);
         
         splat.CancelSpellIndicator();
         splat.SelectRangeIndicator(cardPlaying.owner + "Range");

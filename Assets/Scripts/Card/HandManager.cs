@@ -34,6 +34,17 @@ public class HandManager : MonoBehaviour
         group = GetComponentInParent<HorizontalLayoutGroup>();
     }
 
+    private void Start()
+    {
+        hand = GetComponentsInChildren<CardClick>().ToList();
+        foreach(CardClick c in hand)
+        {
+            var newCard = DeckManager.Instance.DrawCard(owner);
+            c.SetCard(newCard);
+            c.GetComponent<CardDisplay>().SetCard(newCard);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -55,7 +66,6 @@ public class HandManager : MonoBehaviour
         {
             c.SetInteractable(false);
         }
-        //group.enabled = false;
         Invoke("StartCardAnimation", 0.3f);
     }
 
@@ -66,8 +76,6 @@ public class HandManager : MonoBehaviour
         {
             c.SetInteractable(true);
         }
-        //group.enabled = false;
-        //group.enabled = true;
     }
 
     private void StartCardAnimation()
@@ -89,6 +97,12 @@ public class HandManager : MonoBehaviour
         StartCoroutine(Utils.Timeout(
             () => {
                 var card = Instantiate(cardPrefab, gameObject.transform);
+                card.interactable = false;
+
+                var newCard = DeckManager.Instance.DrawCard(owner);
+                card.SetCard(newCard);
+                card.GetComponent<CardDisplay>().SetCard(newCard);
+
                 var rectTransform = card.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = new Vector2(-cardYPos, 0);
 

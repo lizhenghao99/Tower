@@ -7,10 +7,11 @@ using DG.Tweening;
 using TMPro;
 using System;
 using System.Linq;
+using TowerUtils;
 
 public class CardClick : Selectable
 {
-    [SerializeField] Card card;
+    public Card card { get; private set; }
     private RectTransform rectTransform;
     private HandManager handManager;
 
@@ -32,6 +33,11 @@ public class CardClick : Selectable
     {
         rectTransform = GetComponent<RectTransform>();
         handManager = GetComponentInParent<HandManager>();
+    }
+
+    public void SetCard(Card c)
+    {
+        card = c;
     }
 
     public override void OnPointerEnter(PointerEventData eventData)
@@ -128,11 +134,7 @@ public class CardClick : Selectable
 
     private void FadeOut()
     {
-        if (this == handManager.lastSelectedCard)
-        {
-            
-        } 
-        else
+        if (this != handManager.lastSelectedCard)
         {
             foreach (TextMeshProUGUI text in GetComponentsInChildren<TextMeshProUGUI>())
             {
@@ -159,7 +161,7 @@ public class CardClick : Selectable
             var indexDiff = i - index;
             if (indexDiff != 0)
             {
-                var distance = BellCurve(indexDiff, 0, 1) * zoomFactor;
+                var distance = Utils.BellCurve(indexDiff, 0, 1) * zoomFactor;
                 if (indexDiff < 0)
                 {
                     distance *= -1;
@@ -186,12 +188,5 @@ public class CardClick : Selectable
                         0.3f).SetEase(Ease.OutQuint);
             }
         }
-    }
-
-    // The normal distribution function.
-    private float BellCurve(float x, float mean, float var)
-    {
-        return (float)(1 / (2 * Mathf.PI) *
-            Math.Exp(-(x - mean) * (x - mean) / (2 * var)));
     }
 }
