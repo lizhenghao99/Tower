@@ -11,14 +11,18 @@ using TMPro;
 
 public class HandManager : MonoBehaviour
 {
+    [Header("Owner")]
     [SerializeField] Card.Owner owner;
     [SerializeField] CardClick cardPrefab;
-    [SerializeField] float cardXPos;
-    [SerializeField] float cardYPos;
-
+    [Header("Card Dimensions")]
+    [SerializeField] float cardXOffset = -100;
+    [SerializeField] float cardXSpacing = -120;
+    [SerializeField] float cardYPos = 100;
+    [SerializeField] float cardWidth = 150;
+    [SerializeField] float cardHeight = 250;
+    
     public CardClick lastSelectedCard { get; private set; }
     public PlayerController player;
-    private HorizontalLayoutGroup group;
     private List<CardClick> hand;
 
     private float fadeTime = 0.1f;
@@ -31,17 +35,46 @@ public class HandManager : MonoBehaviour
                 .FirstOrDefault();
         player.startCasting += OnStartCasting;
         player.finishCasting += OnFinishCasting;
-        group = GetComponentInParent<HorizontalLayoutGroup>();
     }
 
     private void Start()
     {
-        hand = GetComponentsInChildren<CardClick>().ToList();
-        foreach(CardClick c in hand)
+
+    }
+
+    public void StartCombat()
+    {
+        StartCoroutine(DrawInitialCards());
+    }
+
+    private IEnumerator DrawInitialCards()
+    {
+        for (int i = 0; i < 5; i++)
         {
+            var card = Instantiate(cardPrefab, gameObject.transform);
+            InitializeCardPos(card);
+            card.interactable = false;
+
             var newCard = DeckManager.Instance.DrawCard(owner);
-            c.SetCard(newCard);
-            c.GetComponent<CardDisplay>().SetCard(newCard);
+            card.SetCard(newCard);
+            card.GetComponent<CardDisplay>().SetCard(newCard);
+
+            var rectTransform = card.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = new Vector2(cardXOffset, 0);
+
+            rectTransform.DOAnchorPosY(cardYPos, 0.3f)
+                .SetEase(Ease.OutQuint)
+                .OnComplete(() =>
+                    rectTransform.DOAnchorPosX(
+                        cardXSpacing * (4 - i) + cardXOffset, 1f)
+                    .SetEase(Ease.OutQuint)
+                );
+            yield return new WaitForSecondsRealtime(0.5f);
+        }
+        hand = GetComponentsInChildren<CardClick>().ToList();
+        foreach (CardClick c in hand)
+        {
+            c.interactable = true;
         }
     }
 
@@ -80,7 +113,7 @@ public class HandManager : MonoBehaviour
 
     private void StartCardAnimation()
     {
-        lastSelectedCard.transform.DOLocalMoveY(300, 0.5f)
+        lastSelectedCard.transform.DOLocalMoveY(300, 0.4f)
                                     .SetRelative(true)
                                     .SetEase(Ease.OutQuint)
                                     .OnComplete(CompleteFade);
@@ -88,16 +121,17 @@ public class HandManager : MonoBehaviour
         var index = hand.IndexOf(lastSelectedCard);
         foreach(CardClick c in hand.Skip(index+1))
         {
-            c.transform.DOLocalMoveX(-cardXPos, 1f)
+            c.transform.DOLocalMoveX(cardXSpacing, 1f)
                         .SetRelative(true)
                         .SetEase(Ease.OutQuint);
         }
-        Destroy(lastSelectedCard.gameObject, 0.8f);
+        Destroy(lastSelectedCard.gameObject, 0.6f);
         //lastSelectedCard.transform.SetParent(gameObject.transform.parent, true);
         StartCoroutine(Utils.Timeout(
             () => {
                 var card = Instantiate(cardPrefab, gameObject.transform);
                 card.interactable = false;
+                InitializeCardPos(card);
 
                 var newCard = DeckManager.Instance.DrawCard(owner);
                 card.SetCard(newCard);
@@ -122,11 +156,20 @@ public class HandManager : MonoBehaviour
     {
         foreach (TextMeshProUGUI text in lastSelectedCard.GetComponentsInChildren<TextMeshProUGUI>())
         {
-            text.DOFade(0f, 0.3f).SetEase(Ease.OutQuint);
+            text.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
         }
         foreach (Image i in lastSelectedCard.GetComponentsInChildren<Image>())
         {
-            i.DOFade(0f, 0.3f).SetEase(Ease.OutQuint);
+            i.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
         }
+    }
+
+    private void InitializeCardPos(CardClick c)
+    {
+        c.xOffset = cardXOffset;
+        c.xSpacing = cardXSpacing;
+        c.cardYPos = cardYPos;
+        c.cardWidth = cardWidth;
+        c.cardHeight = cardHeight;
     }
 }

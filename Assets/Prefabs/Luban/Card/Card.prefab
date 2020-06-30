@@ -184,7 +184,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824030337102861006}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -262,7 +262,11 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 0}
-  card: {fileID: 11400000, guid: 34ce13348a8caf44684d7c2c233dea88, type: 2}
+  xOffset: -100
+  xSpacing: -120
+  cardYPos: 100
+  cardWidth: 150
+  cardHeight: 250
 --- !u!114 &824030337102860992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0d65eed420db645894b0922bb28859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 11400000, guid: 34ce13348a8caf44684d7c2c233dea88, type: 2}
 --- !u!1 &3830795614455238652
 GameObject:
   m_ObjectHideFlags: 0

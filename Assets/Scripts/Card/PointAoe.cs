@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Point AOE", menuName = "Card/Point Aoe")]

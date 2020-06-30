@@ -9,6 +9,7 @@ public abstract class Card : ScriptableObject
 
     [Header("Basic")]
     public string cardName;
+    [TextArea]
     public string description;
     public int primaryChange;
     public int secondaryChange;

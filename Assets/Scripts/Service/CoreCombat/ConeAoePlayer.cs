@@ -13,16 +13,12 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
 
     public void Awake()
     {
-        cardPlaying = (ConeAoe) CardPlayer.Instance.cardPlaying;
-        splat = CardPlayer.Instance.splat;
         layerMask = LayerMask.GetMask("Enemy");
-        playerTransform = FindObjectsOfType<PlayerController>()
-            .Where(player => player.gameObject.name == cardPlaying.owner.ToString())
-            .FirstOrDefault().gameObject.transform;
     }
 
     public void Ready()
     {
+        Refresh();
         splat.SelectSpellIndicator(cardPlaying.owner + "ConeSelector");
         Cone currentSpellIndicator = (Cone) splat.CurrentSpellIndicator;
         currentSpellIndicator.Scale = (cardPlaying.range + 2) * 2;
@@ -32,6 +28,7 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
 
     public void Play()
     {
+        Refresh();
         var rotation = Quaternion.LookRotation(
                 (Vector3.ProjectOnPlane(splat.Get3DMousePosition()
                 - playerTransform.position, new Vector3(0, 1, 0)).normalized));
@@ -84,5 +81,14 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
         e.GetComponent<Health>().TakeDamage(damage);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         yield return null;
+    }
+
+    private void Refresh()
+    {
+        cardPlaying = (ConeAoe)CardPlayer.Instance.cardPlaying;
+        splat = CardPlayer.Instance.splat;
+        playerTransform = FindObjectsOfType<PlayerController>()
+           .Where(player => player.gameObject.name == cardPlaying.owner.ToString())
+           .FirstOrDefault().gameObject.transform;
     }
 }

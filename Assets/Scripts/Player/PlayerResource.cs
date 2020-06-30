@@ -16,5 +16,6 @@ public abstract class PlayerResource : MonoBehaviour
         secondaryResource = startingSecondaryResource;
     }
 
+    public abstract bool isResourceEnough(int primaryAmount, int secondaryAmount);
     public abstract bool changeResource(int primaryAmount, int secondaryAmount);
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Follow : MonoBehaviour
 {
     [SerializeField] Transform body;
+    [SerializeField] Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,6 @@ public class Follow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = body.position;
+        gameObject.transform.position = body.position + offset;
     }
 }

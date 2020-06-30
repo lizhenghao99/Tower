@@ -24,5 +24,10 @@ public class Health : MonoBehaviour
     {
         currHealth -= damage;
         healthbar.SetValue(currHealth, maxHealth);
+        
+        if (currHealth <= 0)
+        {
+            Destroy(transform.parent.gameObject);
+        }
     }
 }

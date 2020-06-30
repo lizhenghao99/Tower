@@ -62,5 +62,5 @@ Material:
     m_Colors:
     - _ChargeColor: {r: 0.11724138, g: 1, b: 0, a: 1}
     - _FillColor: {r: 1, g: 1, b: 1, a: 1}
-    - _MainColor: {r: 0.7264151, g: 0.2993361, b: 0.13020648, a: 0.5647059}
+    - _MainColor: {r: 0.6981132, g: 0.0461018, b: 0.0461018, a: 0.6117647}
     - _SecondaryColor: {r: 0, g: 0, b: 0, a: 0.95000017}

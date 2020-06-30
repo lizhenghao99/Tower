@@ -13,7 +13,7 @@ public class CardPlayer : Singleton<CardPlayer>
     private PlayerController player;
     private PlayerResource resource;
     private LayerMask layerMask;
-    private bool isPlayingCard = false;
+    public bool isPlayingCard { get; private set; } = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +43,7 @@ public class CardPlayer : Singleton<CardPlayer>
         }
     }
 
-    public void Play(Card card)
+    public bool Play(Card card)
     {
         cardPlaying = card;
         player = FindObjectsOfType<PlayerController>()
@@ -54,28 +54,40 @@ public class CardPlayer : Singleton<CardPlayer>
 
         if (player.isCasting)
         {
-            
+            return false;
         }
         else
         {
-            if (resource.changeResource(cardPlaying.primaryChange,
+            if (resource.isResourceEnough(cardPlaying.primaryChange,
                                         cardPlaying.secondaryChange))
             {
                 isPlayingCard = true;
                 player.isSelected = false;
 
                 cardPlaying.Ready();
+
+                return true;
             }
             else
             {
-                // not enough resource notification
+                isPlayingCard = false;
+                splat.CancelSpellIndicator();
+                splat.SelectRangeIndicator(cardPlaying.owner + "Range");
+
+                player.isSelected = false;
+
+                return false;
             }
         }
     }
 
     private void ConfirmCard()
     {
+        resource.changeResource(cardPlaying.primaryChange,
+                                cardPlaying.secondaryChange);
+
         isPlayingCard = false;
+        player.isSelected = false;
         player.setIsCasting(true);
         player.spriteRenderer.flipX = splat.Get3DMousePosition().x 
                                       < player.gameObject.transform.position.x;
@@ -92,6 +104,7 @@ public class CardPlayer : Singleton<CardPlayer>
 
     private void CancelCard()
     {
+        player.isSelected = false;
         EventSystem.current.SetSelectedGameObject(null);
         isPlayingCard = false;
         splat.CancelSpellIndicator();

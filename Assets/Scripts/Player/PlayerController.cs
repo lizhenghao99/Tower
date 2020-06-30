@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Velocity", agent.velocity.magnitude);
         if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting)
         {
-            spriteRenderer.flipX = agent.velocity.x < 0;
+            spriteRenderer.flipX = agent.velocity.x < -0.5;
         }
         // mouse left
         if (Input.GetMouseButtonDown(0) 
@@ -52,7 +52,8 @@ public class PlayerController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 1000, layerMask))
             {
-                if (isSelected && hit.transform.tag == "Floor")
+                if (isSelected && hit.transform.tag == "Floor"
+                    && !CardPlayer.Instance.isPlayingCard)
                 {
                     Waypoint wp = FindObjectsOfType<Waypoint>()
                                     .Where(p => p.name == waypoint.name+"(Clone)")

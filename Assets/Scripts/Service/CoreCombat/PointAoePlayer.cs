@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using Werewolf.StatusIndicators.Components;
+using System.Runtime.CompilerServices;
 
 public class PointAoePlayer : Singleton<PointAoePlayer>
 {
@@ -12,13 +13,12 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
 
     public void Awake()
     {
-        cardPlaying = (PointAoe)CardPlayer.Instance.cardPlaying;
-        splat = CardPlayer.Instance.splat;
         layerMask = LayerMask.GetMask("Enemy");
     }
 
     public void Ready()
     {
+        Refresh();
         splat.SelectSpellIndicator(cardPlaying.owner + "PointSelector");
         splat.CurrentSpellIndicator.SetRange(cardPlaying.range);
         splat.CurrentSpellIndicator.Scale = cardPlaying.radius * 2;
@@ -27,6 +27,7 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
 
     public void Play()
     {
+        Refresh();
         Instantiate(
             cardPlaying.vfx,
             splat.GetSpellCursorPosition() + cardPlaying.vfxOffset,
@@ -64,5 +65,11 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         e.GetComponent<Health>().TakeDamage(damage);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         yield return null;
+    }
+
+    private void Refresh()
+    {
+        cardPlaying = (PointAoe)CardPlayer.Instance.cardPlaying;
+        splat = CardPlayer.Instance.splat;
     }
 }

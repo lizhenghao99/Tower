@@ -7,6 +7,7 @@ using Werewolf.StatusIndicators.Components;
 
 public class PlayerAutoAttack : MonoBehaviour
 {
+    [SerializeField] int attackDamage = 20;
     [SerializeField] float attackRange;
     [SerializeField] float attackRate;
     [SerializeField] float stopRange;
@@ -96,7 +97,11 @@ public class PlayerAutoAttack : MonoBehaviour
             if (attackTimer < 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<Health>()?.TakeDamage(20);
+                if (gameObject.name == "Luban")
+                {
+                    GetComponent<LubanResource>().ResourceAutoGen();
+                }
+                target.GetComponent<Health>()?.TakeDamage(attackDamage);
                 attackTimer = attackRate;
             }   
         }

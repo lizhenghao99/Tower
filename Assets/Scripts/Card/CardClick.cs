@@ -12,15 +12,18 @@ using TowerUtils;
 public class CardClick : Selectable
 {
     public Card card { get; private set; }
+
+    public float xOffset = -100;
+    public float xSpacing = -120;
+    public float cardYPos = 100;
+    public float cardWidth = 150;
+    public float cardHeight = 250;
+
+
     private RectTransform rectTransform;
     private HandManager handManager;
 
     private float fadeTime = 0.3f;
-    private float cardWidth = 150;
-    private float cardHeight = 250;
-
-    private float xOffset = -100;
-    private float xSpacing = -120;
 
     private float zoomFactor = 500;
 
@@ -69,8 +72,15 @@ public class CardClick : Selectable
         if (IsInteractable())
         {
             base.OnPointerDown(eventData);
-            CardPlayer.Instance.Play(card);
             EventSystem.current.SetSelectedGameObject(gameObject);
+
+            var success = CardPlayer.Instance.Play(card);
+
+            if (!success)
+            {
+                rectTransform.DOShakeAnchorPos(0.3f, 10, 20)
+                    .SetEase(Ease.OutQuint);
+            }
         }  
     }
 
@@ -166,9 +176,13 @@ public class CardClick : Selectable
                 {
                     distance *= -1;
                 }
+
+                var position = new Vector2(
+                    (hand.Count - 1 - i) * xSpacing + xOffset + distance,
+                    cardYPos);
+
                 hand[i].GetComponent<RectTransform>()
-                    .DOAnchorPosX((hand.Count - 1 - i) * xSpacing + xOffset + distance, 
-                    0.3f).SetEase(Ease.OutQuint);
+                    .DOAnchorPos(position,0.3f).SetEase(Ease.OutQuint);
             } 
         }
     }
@@ -183,9 +197,13 @@ public class CardClick : Selectable
             var indexDiff = i - index;
             if (indexDiff != 0)
             {
+
+                var position = new Vector2(
+                    (hand.Count - 1 - i) * xSpacing + xOffset,
+                    cardYPos);
+
                 hand[i].GetComponent<RectTransform>()
-                        .DOAnchorPosX((hand.Count - 1 - i) * xSpacing + xOffset, 
-                        0.3f).SetEase(Ease.OutQuint);
+                        .DOAnchorPos(position, 0.3f).SetEase(Ease.OutQuint);
             }
         }
     }
