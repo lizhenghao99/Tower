@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     public bool isCasting { get; private set; } = false;
     private int layerMask;
 
+    private float autoStopWalkTimer = 3;
+
     private void Start()
     {
         agent.updateRotation = false;
@@ -76,6 +78,42 @@ public class PlayerController : MonoBehaviour
                     isWalking = true;
                     isSelected = false;
                 }
+                else if (isSelected && hit.transform.tag == "Enemy"
+                    && !CardPlayer.Instance.isPlayingCard)
+                {
+                    Waypoint wp = FindObjectsOfType<Waypoint>()
+                                    .Where(p => p.name == waypoint.name + "(Clone)")
+                                    .FirstOrDefault();
+                    RaycastHit hitInfo;
+                    var mask = LayerMask.GetMask("Enemy");
+                    if (Physics.Linecast(gameObject.transform.position,
+                                            hit.collider.transform.position,
+                                            out hitInfo, mask))
+                    {
+                        if (wp != null)
+                        {
+                            wp.transform.position = hitInfo.point
+                                + new Vector3(0, waypointHeight, 0);
+                        }
+                        else
+                        {
+                            wp = Instantiate(
+                                waypoint,
+                                hitInfo.point + new Vector3(0, waypointHeight, 0),
+                                Quaternion.Euler(waypointXRotation, 0, 0));
+                            wp.destinationReached += OnDestinationReached;
+                        }
+                        agent.stoppingDistance = 0;
+                        agent.SetDestination(hitInfo.point);
+                        isWalking = true;
+                        isSelected = false;
+                    }
+                    else
+                    {
+                        print("line cast not hit");
+                    }
+                   
+                }
                 else 
                 {
                     if (hit.transform.name == gameObject.name)
@@ -114,6 +152,17 @@ public class PlayerController : MonoBehaviour
         {
             agent.isStopped = false;
         }
+
+        if (isWalking && autoStopWalkTimer < 0)
+        {
+            agent.SetDestination(gameObject.transform.position);
+            var wp = (FindObjectsOfType<Waypoint>()
+                                    .Where(p => p.name == waypoint.name + "(Clone)")
+                                    .FirstOrDefault());
+            Destroy(wp.gameObject);
+            isWalking = false;
+            autoStopWalkTimer = 3;
+        }
     }
 
     public void setIsCasting(bool flag)
@@ -142,5 +191,21 @@ public class PlayerController : MonoBehaviour
     private void OnFinishCasting()
     {
         finishCasting?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            autoStopWalkTimer -= Time.deltaTime;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            autoStopWalkTimer = 3;
+        }
     }
 }

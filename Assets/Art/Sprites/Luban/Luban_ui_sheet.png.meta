@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: d6ee02bb6eb39e44f819f9f8e780d144
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2158312395605565131
+    second: Luban_ui_sheet_0
+  - first:
+      213: -255655137129031570
+    second: Luban_ui_sheet_1
+  - first:
+      213: 6676666376788426110
+    second: Luban_ui_sheet_2
+  - first:
+      213: 5312804193410022154
+    second: Luban_ui_sheet_3
+  - first:
+      213: 1451359677477370402
+    second: Luban_ui_sheet_4
+  - first:
+      213: -459707810714006889
+    second: Luban_ui_sheet_5
+  - first:
+      213: -5122566648689627093
+    second: Luban_ui_sheet_6
+  - first:
+      213: -8122593742565813150
+    second: Luban_ui_sheet_7
+  - first:
+      213: -4320198309958099308
+    second: Luban_ui_sheet_8
+  - first:
+      213: -8887526637123558728
+    second: Luban_ui_sheet_9
+  - first:
+      213: 6090735971555162304
+    second: Luban_ui_sheet_10
+  - first:
+      213: -3980125188177053410
+    second: Luban_ui_sheet_11
+  - first:
+      213: 7026931545093369379
+    second: Luban_ui_sheet_12
+  - first:
+      213: 5486976245667097909
+    second: Luban_ui_sheet_13
+  - first:
+      213: -2752018210890839606
+    second: Luban_ui_sheet_14
+  - first:
+      213: -8746657105781260463
+    second: Luban_ui_sheet_15
+  - first:
+      213: 8241304573243227634
+    second: Luban_ui_sheet_16
+  - first:
+      213: -462895731687757471
+    second: Luban_ui_sheet_17
+  - first:
+      213: 1558775900346113181
+    second: Luban_ui_sheet_18
+  - first:
+      213: -337831198495581819
+    second: Luban_ui_sheet_19
+  - first:
+      213: -335932845377684648
+    second: Luban_ui_sheet_20
+  - first:
+      213: 1645742982579786268
+    second: Luban_ui_sheet_21
+  - first:
+      213: 1643766724665715006
+    second: Luban_ui_sheet_22
+  - first:
+      213: -4713980461321549431
+    second: Luban_ui_sheet_23
+  - first:
+      213: -1595515986200947556
+    second: Luban_ui_sheet_24
+  - first:
+      213: -8126462498986436849
+    second: Luban_ui_sheet_25
+  - first:
+      213: 305917306145405132
+    second: Luban_ui_sheet_26
+  - first:
+      213: -7359233756034657587
+    second: Luban_ui_sheet_27
+  - first:
+      213: -2693482788341695078
+    second: Luban_ui_sheet_28
+  - first:
+      213: 8311640437491973496
+    second: Luban_ui_sheet_29
+  - first:
+      213: 2109683270125797462
+    second: Luban_ui_sheet_30
+  - first:
+      213: 4755227637310620245
+    second: Luban_ui_sheet_31
+  - first:
+      213: -9172504790724202532
+    second: Luban_ui_sheet_15
+  - first:
+      213: 662252416179174964
+    second: Luban_ui_sheet_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luban_ui_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2065
+        width: 8
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e689b6ed10bb37cf0800000000000000
+      internalID: -255655137129031570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1676
+        width: 377
+        height: 455
+      alignment: 9
+      pivot: {x: 0.532, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7db448f1b848ac50800000000000000
+      internalID: 6676666376788426110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1885
+        width: 263
+        height: 246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bf865f34fdab940800000000000000
+      internalID: 5312804193410022154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2024
+        width: 593
+        height: 47
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a3d51efe3442410800000000000000
+      internalID: 1451359677477370402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 2024
+        width: 593
+        height: 47
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a4be98e2ace99f0800000000000000
+      internalID: -459707810714006889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3625
+        y: 1836
+        width: 31
+        height: 273
+      alignment: 9
+      pivot: {x: 0.85401964, y: 0.015553904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20779606ccf8e8b0800000000000000
+      internalID: -5122566648689627093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 2018
+        width: 597
+        height: 47
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264dd87c600c64f80800000000000000
+      internalID: -8122593742565813150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1077
+        width: 569
+        height: 744
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2ad669c9929a480800000000000000
+      internalID: -8887526637123558728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1363
+        width: 522
+        height: 522
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c83d359814a68450800000000000000
+      internalID: 6090735971555162304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 1334
+        width: 524
+        height: 551
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e193f1d9a31c3c8c0800000000000000
+      internalID: -3980125188177053410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1355
+        width: 634
+        height: 75
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cd1903c62e1a510800000000000000
+      internalID: 1558775900346113181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 1361
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58950ab9058cf4bf0800000000000000
+      internalID: -337831198495581819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 1359
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b70e26bd6865bf0800000000000000
+      internalID: -335932845377684648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1349
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12924ce58ad6d610800000000000000
+      internalID: 1645742982579786268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 497
+        width: 735
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39ae458025dfc610800000000000000
+      internalID: 1643766724665715006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 456
+        width: 2187
+        height: 697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9890cc40fb3949eb0800000000000000
+      internalID: -4713980461321549431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 83
+        width: 171
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8f07b4b26de3400800000000000000
+      internalID: 305917306145405132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 83
+        width: 140
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc29d78c3efbed990800000000000000
+      internalID: -7359233756034657587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 83
+        width: 115
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9db348bca3de9ad0800000000000000
+      internalID: -2693482788341695078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3013
+        y: 84
+        width: 140
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d3b71e0f0e85370800000000000000
+      internalID: 8311640437491973496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 3381
+        y: 63
+        width: 134
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650ce60b1c9174d10800000000000000
+      internalID: 2109683270125797462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_ui_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3561
+        y: 63
+        width: 158
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55205048756fdf140800000000000000
+      internalID: 4755227637310620245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fb2dba780d7761245a3ecf277f664345
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
