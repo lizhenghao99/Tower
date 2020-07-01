@@ -20,13 +20,14 @@ public class HandManager : MonoBehaviour
     [SerializeField] float cardYPos = 100;
     [SerializeField] float cardWidth = 150;
     [SerializeField] float cardHeight = 250;
-    
+    [SerializeField] float zoomFactor = 500f;
+
     public CardClick lastSelectedCard { get; private set; }
     public PlayerController player;
     private List<CardClick> hand;
 
     private float fadeTime = 0.1f;
-    private float zoomFactor = 500f;
+    
 
     private void Awake()
     {
@@ -138,7 +139,7 @@ public class HandManager : MonoBehaviour
                 card.GetComponent<CardDisplay>().SetCard(newCard);
 
                 var rectTransform = card.GetComponent<RectTransform>();
-                rectTransform.anchoredPosition = new Vector2(-cardYPos, 0);
+                rectTransform.anchoredPosition = new Vector2(cardXOffset, 0);
 
                 foreach (TextMeshProUGUI text in card.GetComponentsInChildren<TextMeshProUGUI>())
                 {
@@ -171,5 +172,6 @@ public class HandManager : MonoBehaviour
         c.cardYPos = cardYPos;
         c.cardWidth = cardWidth;
         c.cardHeight = cardHeight;
+        c.zoomFactor = zoomFactor;
     }
 }

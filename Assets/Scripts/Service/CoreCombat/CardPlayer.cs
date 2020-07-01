@@ -58,7 +58,7 @@ public class CardPlayer : Singleton<CardPlayer>
         }
         else
         {
-            if (resource.isResourceEnough(cardPlaying.primaryChange,
+            if (resource.IsResourceEnough(cardPlaying.primaryChange,
                                         cardPlaying.secondaryChange))
             {
                 isPlayingCard = true;
@@ -83,14 +83,19 @@ public class CardPlayer : Singleton<CardPlayer>
 
     private void ConfirmCard()
     {
-        resource.changeResource(cardPlaying.primaryChange,
+        resource.ChangeResource(cardPlaying.primaryChange,
                                 cardPlaying.secondaryChange);
 
         isPlayingCard = false;
         player.isSelected = false;
         player.setIsCasting(true);
-        player.spriteRenderer.flipX = splat.Get3DMousePosition().x 
-                                      < player.gameObject.transform.position.x;
+
+        if (!(cardPlaying is Buff))
+        {
+            player.spriteRenderer.flipX = splat.Get3DMousePosition().x
+                                     < player.gameObject.transform.position.x;
+        }
+       
         Invoke("resumeAction", cardPlaying.castTime);
 
         cardPlaying.Play();

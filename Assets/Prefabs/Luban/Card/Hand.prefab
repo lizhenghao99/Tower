@@ -51,9 +51,10 @@ MonoBehaviour:
   owner: 0
   cardPrefab: {fileID: 824030337102860995, guid: ebdaa1527ba8efe4dab986b08ef9fc55,
     type: 3}
-  cardXOffset: -100
+  cardXOffset: -102
   cardXSpacing: -120
-  cardYPos: 100
+  cardYPos: 154
   cardWidth: 150
   cardHeight: 250
+  zoomFactor: 500
   player: {fileID: 0}

@@ -306,6 +306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingPrimaryResource: 100
   startingSecondaryResource: 0
+  maxPrimaryResource: 0
+  maxSecondaryResource: 0
   autoAttackPrimaryGen: 4
 --- !u!114 &641722208400027996
 MonoBehaviour:

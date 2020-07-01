@@ -45,7 +45,6 @@ public class BuffPlayer : Singleton<BuffPlayer>
     public void Play()
     {
         Refresh();
-        self.transform.parent.GetComponentInChildren<SpriteRenderer>().flipX = false;
         switch (cardPlaying.buffTarget)
         {
             case Buff.BuffTarget.AllPlayers:

@@ -6,13 +6,16 @@ using System;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 1000;
-    private int currHealth;
-    private int maxShield;
-    private int currShield;
+    [SerializeField] public int maxHealth = 1000;
+
+    public int maxShield { get; private set; }
+    public int currHealth { get; private set; }
+    public int currShield { get; private set; }
 
     public EventHandler healthChanged;
     public EventHandler shieldChanged;
+
+    
 
     // Start is called before the first frame update
     void Start()

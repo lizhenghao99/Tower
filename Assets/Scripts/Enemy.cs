@@ -37,7 +37,6 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         SetTarget();
-        agent.SetDestination(target.transform.position);
         Attack();
     }
 

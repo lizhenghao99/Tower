@@ -32,6 +32,9 @@ public class LevelController : Singleton<LevelController>
         Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Minion"),
                                      LayerMask.NameToLayer("Minion"),
                                      true);
+        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Minion"),
+                                     LayerMask.NameToLayer("Player"),
+                                     true);
         DeckManager.Instance.StartCombat();
         foreach (HandManager h in hands)
         {

@@ -13,11 +13,12 @@ public class CardClick : Selectable
 {
     public Card card { get; private set; }
 
-    public float xOffset = -100;
-    public float xSpacing = -120;
-    public float cardYPos = 100;
-    public float cardWidth = 150;
-    public float cardHeight = 250;
+    public float xOffset;
+    public float xSpacing;
+    public float cardYPos;
+    public float cardWidth;
+    public float cardHeight;
+    public float zoomFactor;
 
 
     private RectTransform rectTransform;
@@ -25,7 +26,7 @@ public class CardClick : Selectable
 
     private float fadeTime = 0.3f;
 
-    private float zoomFactor = 500;
+    
 
     private List<CardClick> hand;
 
