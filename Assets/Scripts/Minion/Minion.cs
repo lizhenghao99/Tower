@@ -29,6 +29,8 @@ public class Minion : MonoBehaviour
     private int layerMask;
     private float attackTimer;
 
+    private float meleeRange = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -104,7 +106,7 @@ public class Minion : MonoBehaviour
             agent.SetDestination(hitInfo.point);
         }
 
-        if (agent.velocity.magnitude < Mathf.Epsilon
+        if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
             && Vector3.Distance(
                 Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
                 Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))

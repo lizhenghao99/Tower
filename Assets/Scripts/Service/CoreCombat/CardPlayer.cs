@@ -58,11 +58,11 @@ public class CardPlayer : Singleton<CardPlayer>
         }
         else
         {
+            player.isSelected = false;
             if (resource.IsResourceEnough(cardPlaying.primaryChange,
                                         cardPlaying.secondaryChange))
             {
                 isPlayingCard = true;
-                player.isSelected = false;
 
                 cardPlaying.Ready();
 
@@ -73,8 +73,6 @@ public class CardPlayer : Singleton<CardPlayer>
                 isPlayingCard = false;
                 splat.CancelSpellIndicator();
                 splat.SelectRangeIndicator(cardPlaying.owner + "Range");
-
-                player.isSelected = false;
 
                 return false;
             }

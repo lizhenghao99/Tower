@@ -22,7 +22,7 @@ public class HandManager : MonoBehaviour
     [SerializeField] float cardHeight = 250;
     [SerializeField] float zoomFactor = 500f;
 
-    public CardClick lastSelectedCard { get; private set; }
+    public CardClick lastSelectedCard;
     public PlayerController player;
     private List<CardClick> hand;
 

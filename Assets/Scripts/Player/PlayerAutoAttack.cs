@@ -23,6 +23,8 @@ public class PlayerAutoAttack : MonoBehaviour
     private int layerMask;
     private float attackTimer;
 
+    private float meleeRange = 5f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -86,10 +88,10 @@ public class PlayerAutoAttack : MonoBehaviour
                                 out hitInfo, layerMask))
         {
             agent.stoppingDistance = stopRange;
-            agent.SetDestination(hitInfo.point);
+            agent.SetDestination(hitInfo.point);    
         }
 
-        if (agent.velocity.magnitude < Mathf.Epsilon)
+        if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange))
         {
             attackTimer -= Time.deltaTime;
             spriteRenderer.flipX =

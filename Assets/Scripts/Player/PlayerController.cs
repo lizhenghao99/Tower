@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Velocity", agent.velocity.magnitude);
         if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting)
         {
-            spriteRenderer.flipX = agent.velocity.x < -0.5;
+            spriteRenderer.flipX = agent.velocity.x < -0.2;
         }
         // mouse left
         if (Input.GetMouseButtonDown(0) 
@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
                     agent.SetDestination(hit.point);
                     isWalking = true;
                     isSelected = false;
+                    EventSystem.current.SetSelectedGameObject(null);
                 }
                 else if (isSelected && hit.transform.tag == "Enemy"
                     && !CardPlayer.Instance.isPlayingCard)
@@ -107,6 +108,7 @@ public class PlayerController : MonoBehaviour
                         agent.SetDestination(hitInfo.point);
                         isWalking = true;
                         isSelected = false;
+                        EventSystem.current.SetSelectedGameObject(null);
                     }
                     else
                     {
@@ -128,6 +130,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             isSelected = false;
+            EventSystem.current.SetSelectedGameObject(null);
             if (!isWalking)
             {
             }
@@ -153,7 +156,7 @@ public class PlayerController : MonoBehaviour
             agent.isStopped = false;
         }
 
-        if (isWalking && autoStopWalkTimer < 0)
+        if (isWalking && autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.5)
         {
             agent.SetDestination(gameObject.transform.position);
             var wp = (FindObjectsOfType<Waypoint>()

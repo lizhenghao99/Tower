@@ -23,6 +23,7 @@ public class CardClick : Selectable
 
     private RectTransform rectTransform;
     private HandManager handManager;
+    private DiscardButton discardButton;
 
     private float fadeTime = 0.3f;
 
@@ -35,8 +36,10 @@ public class CardClick : Selectable
 
     protected override void Start()
     {
+        base.Start();
         rectTransform = GetComponent<RectTransform>();
         handManager = GetComponentInParent<HandManager>();
+        discardButton = gameObject.transform.parent.parent.GetComponentInChildren<DiscardButton>();
     }
 
     public void SetCard(Card c)
@@ -75,12 +78,30 @@ public class CardClick : Selectable
             base.OnPointerDown(eventData);
             EventSystem.current.SetSelectedGameObject(gameObject);
 
-            var success = CardPlayer.Instance.Play(card);
+            bool success = false;
+            if (discardButton.isDiscarding)
+            {
+                if (eventData.button == PointerEventData.InputButton.Left)
+                {
+                    handManager.lastSelectedCard = this;
+                    success = discardButton.Discard(card);
+                }
+                else
+                {
+                    success = true;
+                }
+            }
+            else
+            {
+                success = CardPlayer.Instance.Play(card);
+            }
+             
 
             if (!success)
             {
-                rectTransform.DOShakeAnchorPos(0.3f, 10, 20)
+                rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
                     .SetEase(Ease.OutQuint);
+                EventSystem.current.SetSelectedGameObject(null);
             }
         }  
     }
