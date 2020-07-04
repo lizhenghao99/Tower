@@ -20,18 +20,13 @@ public class CardClick : Selectable
     public float cardHeight;
     public float zoomFactor;
 
-
     private RectTransform rectTransform;
     private HandManager handManager;
     private DiscardButton discardButton;
 
     private float fadeTime = 0.3f;
 
-    
-
     private List<CardClick> hand;
-
-    private bool isMoving;
 
 
     protected override void Start()
@@ -160,6 +155,10 @@ public class CardClick : Selectable
         }
         foreach (Image i in GetComponentsInChildren<Image>())
         {
+            Material mat = i.material;
+            DOTween.To(() => mat.GetFloat("_HsvSaturation"),
+                (x) => mat.SetFloat("_HsvSaturation", x),
+                1f, fadeTime).SetEase(Ease.OutQuint);
             i.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
         }
     }
@@ -170,11 +169,15 @@ public class CardClick : Selectable
         {
             foreach (TextMeshProUGUI text in GetComponentsInChildren<TextMeshProUGUI>())
             {
-                text.DOFade(0.7f, fadeTime).SetEase(Ease.OutQuint);
+                text.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
             }
             foreach (Image i in GetComponentsInChildren<Image>())
             {
-                i.DOFade(0.7f, fadeTime).SetEase(Ease.OutQuint);
+                Material mat = i.material;
+                DOTween.To(() => mat.GetFloat("_HsvSaturation"),
+                    (x) => mat.SetFloat("_HsvSaturation", x), 
+                    0.8f, fadeTime).SetEase(Ease.OutQuint);
+                i.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
             }
         }
     }

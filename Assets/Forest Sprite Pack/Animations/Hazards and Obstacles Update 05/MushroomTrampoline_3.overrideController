@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MushroomTrampoline_3
+  m_Controller: {fileID: 9100000, guid: ae117c97eea074342b5a068407833309, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9e1c7ed25f02d3347a498b9982982943, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 86dcc14adabb3f747b8dad0ac0df9d2f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a6bba50399861ac43a2f7354c8286561, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 091879141bceebf4080aaf94cfebd7c4, type: 2}

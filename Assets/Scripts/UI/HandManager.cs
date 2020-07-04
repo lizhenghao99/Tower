@@ -143,11 +143,11 @@ public class HandManager : MonoBehaviour
 
                 foreach (TextMeshProUGUI text in card.GetComponentsInChildren<TextMeshProUGUI>())
                 {
-                    text.DOFade(0.7f, fadeTime).SetEase(Ease.OutQuint);
+                    text.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
                 }
                 foreach (Image i in card.GetComponentsInChildren<Image>())
                 {
-                    i.DOFade(0.7f, fadeTime).SetEase(Ease.OutQuint);
+                    i.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
                 }
                 rectTransform.DOAnchorPosY(cardYPos, 1).SetEase(Ease.OutQuint);
             }, 0.3f));

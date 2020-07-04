@@ -1,0 +1,1 @@
+For playing the Demo Scene create and assign a new Layer for the Player object.

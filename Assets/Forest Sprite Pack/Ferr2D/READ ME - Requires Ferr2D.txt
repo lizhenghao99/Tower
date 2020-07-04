@@ -1,0 +1,7 @@
+This content inside the "Forest Sprite Pack/ Ferr2D" folder requires the Ferr2D plugin in order to work.
+Make sure to have the Ferr2D package imported into the project before importing this folder from the Forest Sprite Pack, just to ensure the Terrain Materials are set up properly.
+But in the case you already have the Ferr2D Package into the projecta and are experiencing errors, you can just delete the "Forest Sprite Pack/ Ferr2D" folder, import the Ferr2D Package, and then reimport the "Forest Sprite Pack/ Ferr2D".
+
+Ferr2D Package: https://assetstore.unity.com/packages/tools/level-design/ferr2d-terrain-tool-11653
+
+For playing the playable demo inside "Forest Sprite Pack/ Ferr2D/ Ferr2D Playable Demo" folder, make sure to have the "Forest Sprite Pack/ Scenes/ Playable Demo Scene/ 2D Character Controller" imported into the project as well, since that's the character controller used in the scene. 

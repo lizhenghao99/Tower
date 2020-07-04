@@ -38,24 +38,45 @@ public class DiscardButton : Selectable
 
     public override void OnPointerEnter(PointerEventData eventData)
     {
-        base.OnPointerEnter(eventData);
-        gameObject.transform.DORotate(
-            new Vector3(0, 0, 20), 0.3f);
+        if (IsInteractable())
+        {
+            base.OnPointerEnter(eventData);
+            gameObject.transform.DORotate(
+            new Vector3(0, 0, 20), 0.3f)
+            .SetEase(Ease.OutQuint);
+        }   
     }
 
     public override void OnPointerExit(PointerEventData eventData)
     {
-        base.OnPointerExit(eventData);
-        gameObject.transform.DORotate(
-            new Vector3(0, 0, 0), 0.3f);
+        if (!(EventSystem.current.currentSelectedGameObject == gameObject)
+            && IsInteractable())
+        {
+            base.OnPointerExit(eventData);
+            gameObject.transform.DORotate(
+                new Vector3(0, 0, 0), 0.3f)
+                .SetEase(Ease.OutQuint);
+        }
     }
 
     public override void OnPointerDown(PointerEventData eventData)
     {
-        base.OnPointerDown(eventData);
-        isDiscarding = true;
-        gameObject.transform.DOPunchRotation(
-            new Vector3(0, 0, 45), 0.5f);
+        if (IsInteractable())
+        {
+            base.OnPointerDown(eventData);
+            isDiscarding = true;
+            gameObject.transform.DOPunchRotation(
+                new Vector3(0, 0, 45), 0.5f)
+                .SetEase(Ease.OutQuint);
+        }  
+    }
+
+    public override void OnDeselect(BaseEventData eventData)
+    {
+        base.OnDeselect(eventData);
+        gameObject.transform.DORotate(
+                new Vector3(0, 0, 0), 0.3f)
+                .SetEase(Ease.OutQuint);
     }
 
 
