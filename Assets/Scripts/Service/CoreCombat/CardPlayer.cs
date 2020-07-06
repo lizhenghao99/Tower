@@ -10,7 +10,7 @@ public class CardPlayer : Singleton<CardPlayer>
     public Card cardPlaying { get; private set; }
     public SplatManager splat { get; private set; }
 
-    private PlayerController player;
+    public PlayerController player { get; private set; }
     private PlayerResource resource;
     private LayerMask layerMask;
     public bool isPlayingCard { get; private set; } = false;

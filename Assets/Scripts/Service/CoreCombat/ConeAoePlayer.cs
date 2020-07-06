@@ -56,6 +56,9 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
                 e.gameObject,
                 cardPlaying.damage,
                 force,
+                cardPlaying.effect,
+                cardPlaying.effectDuration, 
+                cardPlaying.effectAmount,
                 cardPlaying.delay));
         }
     }
@@ -75,11 +78,13 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
             .ToArray();
     }
 
-    IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force, float delay)
+    IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force, 
+        Effect.Type effect, float effectDuration, float effectAmount, float delay)
     {
         yield return new WaitForSeconds(delay);
-        e.GetComponent<Health>().TakeDamage(damage);
+        EffectManager.Instance.Register(e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+        e.GetComponent<Health>().TakeDamage(damage);
         yield return null;
     }
 

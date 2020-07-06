@@ -36,6 +36,30 @@ namespace TowerUtils
             }
             return list;
         }
+
+        // Calculate Projectile
+        public static Vector3 getProjectileVelocity(Vector3 source, Vector3 target, float angle)
+        {
+            Vector3 projectileXZPos = Vector3.ProjectOnPlane(
+                source, new Vector3(0, 1, 0));
+            Vector3 targetXZPos = Vector3.ProjectOnPlane(
+                target, new Vector3(0, 1, 0));
+
+
+            // shorthands for the formula
+            float R = Vector3.Distance(projectileXZPos, targetXZPos);
+            float G = Physics.gravity.y;
+            float tanAlpha = Mathf.Tan(angle * Mathf.Deg2Rad);
+            float H = target.y - source.y;
+
+            // calculate the local space components of the velocity 
+            // required to land the projectile on the target object 
+            float Vx = Mathf.Sqrt(G * R * R / (2.0f * (H - R * tanAlpha)));
+            float Vy = tanAlpha * Vx;
+
+            Vector3 direction = (targetXZPos - projectileXZPos).normalized;
+            return direction * Vx + new Vector3(0f, Vy, 0f);
+        }
     }
 }
 

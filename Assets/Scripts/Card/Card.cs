@@ -21,7 +21,6 @@ public abstract class Card : ScriptableObject
     public Vector3 vfxOffset;
     public float castTime;
 
-    
 
     public abstract void Ready();
     public abstract void Play();

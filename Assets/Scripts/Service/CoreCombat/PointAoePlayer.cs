@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using Werewolf.StatusIndicators.Components;
-using System.Runtime.CompilerServices;
+using TowerUtils;
+using System;
 
 public class PointAoePlayer : Singleton<PointAoePlayer>
 {
     private PointAoe cardPlaying;
     private SplatManager splat;
     private LayerMask layerMask;
+
+    private Vector3 impactPoint;
 
     public void Awake()
     {
@@ -21,27 +24,49 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         Refresh();
         splat.SelectSpellIndicator(cardPlaying.owner + "PointSelector");
         splat.CurrentSpellIndicator.SetRange(cardPlaying.range);
-        splat.CurrentSpellIndicator.Scale = cardPlaying.radius * 2;
+        splat.CurrentSpellIndicator.Scale = (cardPlaying.radius + 1) * 2;
         splat.CancelRangeIndicator();
     }
 
     public void Play()
     {
         Refresh();
-        Instantiate(
-            cardPlaying.vfx,
-            splat.GetSpellCursorPosition() + cardPlaying.vfxOffset,
-            Quaternion.identity);
+
+        impactPoint = splat.GetSpellCursorPosition();
+
+
+
+        if (cardPlaying.hasProjectile)
+        {
+            LaunchProjectile();
+        }
+        else
+        {
+            Impact();
+        }
+    }
+
+    private void Impact()
+    {
+       
 
         var enemies = GetEnemies(
-            splat.GetSpellCursorPosition(),
+            impactPoint,
             cardPlaying.radius);
 
-        foreach(Collider e in enemies)
+        StartCoroutine(Utils.Timeout(() =>
+            Instantiate(
+                cardPlaying.vfx,
+                impactPoint + cardPlaying.vfxOffset,
+                Quaternion.identity)
+            , cardPlaying.fxDelay
+        ));
+
+        foreach (Collider e in enemies)
         {
             var direction = Vector3.ProjectOnPlane(
                 e.gameObject.transform.position
-                - splat.GetSpellCursorPosition(), new Vector3(0,1,0)).normalized;
+                - impactPoint, new Vector3(0, 1, 0)).normalized;
 
             var force = direction * cardPlaying.force;
             StartCoroutine(
@@ -49,9 +74,11 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
                 e.gameObject,
                 cardPlaying.damage,
                 force,
+                cardPlaying.effect,
+                cardPlaying.effectDuration,
+                cardPlaying.effectAmount,
                 cardPlaying.delay));
         }
-
     }
 
     private Collider[] GetEnemies(Vector3 hitPoint, float attackRange)
@@ -59,11 +86,13 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         return Physics.OverlapSphere(hitPoint, attackRange, layerMask);
     }
 
-    IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force, float delay)
+    IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force,
+        Effect.Type effect, float effectDuration, float effectAmount, float delay)
     {
         yield return new WaitForSeconds(delay);
-        e.GetComponent<Health>().TakeDamage(damage);
+        EffectManager.Instance.Register(e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+        e.GetComponent<Health>().TakeDamage(damage);
         yield return null;
     }
 
@@ -71,5 +100,26 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
     {
         cardPlaying = (PointAoe)CardPlayer.Instance.cardPlaying;
         splat = CardPlayer.Instance.splat;
+    }
+
+    private void LaunchProjectile()
+    {
+        var projectile = Instantiate(cardPlaying.projectilePrefab,
+            CardPlayer.Instance.player.transform.position + 
+            new Vector3 (0, cardPlaying.projectileHeight, 0),
+            Quaternion.identity);
+        
+        projectile.GetComponent<Rigidbody>().velocity =
+            Utils.getProjectileVelocity(
+                projectile.transform.position,
+                impactPoint,
+                cardPlaying.projectileAngle);
+        projectile.GetComponent<Projectile>().hitFloor 
+            += OnHitFloor;
+    }
+
+    public void OnHitFloor(object sender, EventArgs e)
+    {
+        Impact();
     }
 }

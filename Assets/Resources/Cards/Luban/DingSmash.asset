@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
+  m_Name: DingSmash
+  m_EditorClassIdentifier: 
+  cardName: "\u5343\u65A4\u9F0E"
+  description: "\u5FF5\u8BF5\u5492\u6587\u5411\u6307\u5B9A\u8303\u56F4\u6295\u63B7\u5343\u65A4\u9F0E\uFF0C\u9020\u6210\u4F24\u5BB3\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A05\u79D2<b>\u660F\u8FF7</b>\u3002\u83B7\u5F973<b>\u7075\u6750</b>\u3002\r\n"
+  primaryChange: 60
+  secondaryChange: -1
+  owner: 0
+  art: {fileID: 0}
+  vfx: {fileID: 1716312745680982, guid: dd5339601d2c590459922e792c609de0, type: 3}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 3
+  damage: 600
+  force: 400
+  range: 15
+  radius: 5
+  delay: 0
+  fxDelay: 0
+  hasProjectile: 1
+  projectilePrefab: {fileID: 4530675629762051837, guid: d0ab93e910ef1194ba26c0ae443c7cd7,
+    type: 3}
+  projectileHeight: 5
+  projectileAngle: 45
+  effect: 3
+  effectDuration: 5
+  effectAmount: 0
