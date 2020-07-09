@@ -70,7 +70,7 @@
 				o.screenPos = ComputeScreenPos(o.vertex);
 				COMPUTE_EYEDEPTH(o.screenPos.z);
 				#endif
-                UNITY_TRANSFER_FOG(o,o.vertex);
+                //UNITY_TRANSFER_FOG(o,o.vertex);
 				o.color = v.color;
                 return o;
             }
