@@ -14,7 +14,7 @@ public class EffectManager : Singleton<EffectManager>
         
     }
 
-    public void Register(GameObject target, Effect.Type effectType, 
+    public void Register(GameObject caster, GameObject target, Effect.Type effectType, 
         float duration, float amount)
     {
         GameObject vfx = null;
@@ -46,7 +46,7 @@ public class EffectManager : Singleton<EffectManager>
         else
         {
             Effect newEffect = (Effect) target.AddComponent(T);
-            newEffect.Init(duration, amount, vfx);
+            newEffect.Init(caster, duration, amount, vfx);
         }
     }
 }

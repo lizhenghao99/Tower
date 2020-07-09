@@ -4,31 +4,26 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth : Health
 {
-    [SerializeField] public int maxHealth = 1000;
-
     public int maxShield { get; private set; }
-    public int currHealth { get; private set; }
     public int currShield { get; private set; }
 
-    public EventHandler healthChanged;
     public EventHandler shieldChanged;
 
-    
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        currHealth = maxHealth;
+        base.Start();
         currShield = 0;
         maxShield = maxHealth;
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        base.Update();
     }
 
     public void AddShield(int amount)
@@ -37,7 +32,18 @@ public class PlayerHealth : MonoBehaviour
         OnShieldChanged();
     }
 
-    public void ChangeHealth(int amount)
+    public override void TakeDamage(int damage)
+    {
+        ChangeHealth(-damage);
+    }
+
+    public override void TakeDamagePercent(float percent)
+    {
+        var damage = (int)percent * maxHealth;
+        ChangeHealth(-damage);
+    }
+
+    private void ChangeHealth(int amount)
     {
         if (amount < 0)
         {
@@ -58,14 +64,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (currHealth <= 0)
         {
-            currHealth = 0;
-            gameObject.transform.parent.gameObject.SetActive(false);
+            Die();
         }
-    }
-
-    private void OnHealthChanged()
-    {
-        healthChanged?.Invoke(gameObject, EventArgs.Empty);
     }
 
     private void OnShieldChanged()

@@ -18,22 +18,22 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 5
+    value: 7
   threshold:
     overrideState: 1
     value: 1.5
   softKnee:
     overrideState: 1
-    value: 0.6
+    value: 0.597
   clamp:
     overrideState: 0
     value: 65472
   diffusion:
-    overrideState: 0
-    value: 7
+    overrideState: 1
+    value: 3.45
   anamorphicRatio:
     overrideState: 0
-    value: 0.39
+    value: 1
   color:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -47,6 +47,34 @@ MonoBehaviour:
   dirtIntensity:
     overrideState: 0
     value: 0
+--- !u!114 &-4372698546735507359
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 1
+    value: 181.5
+  aperture:
+    overrideState: 1
+    value: 0.1
+  focalLength:
+    overrideState: 1
+    value: 195
+  kernelSize:
+    overrideState: 1
+    value: 2
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +91,7 @@ MonoBehaviour:
   - {fileID: 2496023116842709971}
   - {fileID: -7415118069355501076}
   - {fileID: 2186288513795720072}
+  - {fileID: -4372698546735507359}
 --- !u!114 &2186288513795720072
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -116,7 +145,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 0
+    value: -5
   tint:
     overrideState: 0
     value: 0
@@ -134,7 +163,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 0.3
+    value: 0.2
   contrast:
     overrideState: 1
     value: 0
@@ -173,7 +202,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0}
   gain:
     overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 0.80729383, y: 0.7646766, z: 1, w: 0.063559294}
   masterCurve:
     overrideState: 0
     value:
@@ -1401,7 +1430,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.454
+    value: 0.45
   smoothness:
     overrideState: 1
     value: 1

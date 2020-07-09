@@ -22,7 +22,7 @@ MonoBehaviour:
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
   damage: 600
-  force: 400
+  force: 0
   range: 15
   radius: 5
   delay: 0

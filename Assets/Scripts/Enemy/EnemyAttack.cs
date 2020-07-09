@@ -86,7 +86,7 @@ public class EnemyAttack : MonoBehaviour
             if (attackTimer < 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<PlayerHealth>()?.ChangeHealth(-attackDamage);
+                target.GetComponent<Health>()?.TakeDamage(attackDamage);
                 attackTimer = attackRate;
             }
         }

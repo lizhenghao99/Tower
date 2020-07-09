@@ -13,6 +13,7 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
     private LayerMask layerMask;
 
     private Vector3 impactPoint;
+    private PlayerController player;
 
     public void Awake()
     {
@@ -90,7 +91,7 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         Effect.Type effect, float effectDuration, float effectAmount, float delay)
     {
         yield return new WaitForSeconds(delay);
-        EffectManager.Instance.Register(e, effect, effectDuration, effectAmount);
+        EffectManager.Instance.Register(player.gameObject, e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         e.GetComponent<Health>().TakeDamage(damage);
         yield return null;
@@ -100,6 +101,9 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
     {
         cardPlaying = (PointAoe)CardPlayer.Instance.cardPlaying;
         splat = CardPlayer.Instance.splat;
+        player = FindObjectsOfType<PlayerController>()
+           .Where(player => player.gameObject.name == cardPlaying.owner.ToString())
+           .FirstOrDefault();
     }
 
     private void LaunchProjectile()

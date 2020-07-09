@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170026694}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -17.51, y: -4.779999, z: -12.700012}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6647725742678617358}
@@ -92,9 +92,10 @@ GameObject:
   - component: {fileID: 6647725742678617358}
   - component: {fileID: 6647725742678617355}
   - component: {fileID: 6647725742678617352}
-  - component: {fileID: 6647725742678617353}
   - component: {fileID: 6647725742678617359}
+  - component: {fileID: 6647725742678617353}
   - component: {fileID: 6647725742678617354}
+  - component: {fileID: 7692927565020350951}
   m_Layer: 10
   m_Name: Wolf
   m_TagString: Enemy
@@ -152,9 +153,23 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1.77
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &6647725742678617359
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725742678617357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.6
+  m_Height: 5.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.76, z: 0}
 --- !u!114 &6647725742678617353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,22 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7655b65ccdd5bc14c8933ed27a6fcf33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}
   maxHealth: 2500
---- !u!136 &6647725742678617359
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647725742678617357}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.8
-  m_Height: 4.38
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6647725742678617354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +198,19 @@ MonoBehaviour:
   agent: {fileID: 6647725742678617352}
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
-  stopRange: 2
-  attackDamage: 20
+  stopRange: 2.5
+  attackDamage: 40
   attackRate: 2
+--- !u!114 &7692927565020350951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725742678617357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0cafbc6a1a8174eb6835c76bb820b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthbar: {fileID: 0}

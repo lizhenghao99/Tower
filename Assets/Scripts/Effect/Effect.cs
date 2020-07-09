@@ -11,14 +11,16 @@ public abstract class Effect : MonoBehaviour
     public EventHandler finish;
 
     public Type type { get; protected set; }
+    public GameObject caster;
     protected float duration;
     protected float amount;
     protected GameObject effectVfx;
 
     private GameObject currentVfx;
 
-    public void Init(float d, float a, GameObject vfx)
+    public void Init(GameObject c, float d, float a, GameObject vfx)
     {
+        caster = c;
         duration = d;
         amount = a;
         effectVfx = vfx;

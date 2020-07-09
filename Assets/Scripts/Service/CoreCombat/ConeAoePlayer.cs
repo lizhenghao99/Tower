@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using Werewolf.StatusIndicators.Components;
+using TowerUtils;
 
 public class ConeAoePlayer : Singleton<ConeAoePlayer>
 {
@@ -32,12 +33,15 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
         var rotation = Quaternion.LookRotation(
                 (Vector3.ProjectOnPlane(splat.Get3DMousePosition()
                 - playerTransform.position, new Vector3(0, 1, 0)).normalized));
-        
-        Instantiate(
+
+        StartCoroutine(Utils.Timeout(()=>
+            Instantiate(
             cardPlaying.vfx,
             playerTransform.position
                 + rotation * cardPlaying.vfxOffset,
-            rotation);
+            rotation)
+            , cardPlaying.fxDelay));
+        
             
 
         var enemies = GetEnemies(
@@ -82,7 +86,8 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
         Effect.Type effect, float effectDuration, float effectAmount, float delay)
     {
         yield return new WaitForSeconds(delay);
-        EffectManager.Instance.Register(e, effect, effectDuration, effectAmount);
+
+        EffectManager.Instance.Register(playerTransform.gameObject, e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         e.GetComponent<Health>().TakeDamage(damage);
         yield return null;

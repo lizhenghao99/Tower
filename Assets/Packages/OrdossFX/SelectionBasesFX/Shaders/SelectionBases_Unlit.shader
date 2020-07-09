@@ -41,7 +41,7 @@
                 float2 uv1 : TEXCOORD0;
 				float2 uv2 : TEXCOORD1;
 				float2 uv3 : TEXCOORD2;
-                UNITY_FOG_COORDS(1)
+                //UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
 				float4 screenPos : TEXCOORD4;
 				float4 color : COLOR0;

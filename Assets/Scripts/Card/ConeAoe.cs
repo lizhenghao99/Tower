@@ -11,6 +11,7 @@ public class ConeAoe : Card
     public int range;
     public int angle;
     public float delay;
+    public float fxDelay;
 
     [Header("Apply Effect")]
     public Effect.Type effect;

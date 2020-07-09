@@ -25,7 +25,8 @@ MonoBehaviour:
   force: 300
   range: 8
   angle: 45
-  delay: 0.2
+  delay: 0.4
+  fxDelay: 0.2
   effect: 1
   effectDuration: 5
   effectAmount: 50
