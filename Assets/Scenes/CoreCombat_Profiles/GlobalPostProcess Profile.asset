@@ -71,10 +71,10 @@ MonoBehaviour:
     value: 0.1
   focalLength:
     overrideState: 1
-    value: 195
+    value: 173
   kernelSize:
     overrideState: 1
-    value: 2
+    value: 3
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
