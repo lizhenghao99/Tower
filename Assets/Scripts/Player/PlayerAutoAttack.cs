@@ -5,32 +5,18 @@ using UnityEngine;
 using UnityEngine.AI;
 using Werewolf.StatusIndicators.Components;
 
-public class PlayerAutoAttack : MonoBehaviour
+public class PlayerAutoAttack : AttackBase
 {
-    [SerializeField] int attackDamage = 20;
-    [SerializeField] float attackRange;
-    [SerializeField] float attackRate;
-    [SerializeField] float stopRange;
-    [SerializeField] NavMeshAgent agent;
-    [SerializeField] Animator animator;
-    [SerializeField] SpriteRenderer spriteRenderer;
-
     public SplatManager splat { get; set; }
-
     private PlayerController player;
-    private Collider[] enemiesInRange;
-    private GameObject target;
-    private int layerMask;
-    private float attackTimer;
-
-    private float meleeRange = 5f;
-
-
+    
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
-        player = GetComponent<PlayerController>();
+        base.Start();
         layerMask = LayerMask.GetMask("Enemy");
+
+        player = GetComponent<PlayerController>();
         splat = GetComponentInChildren<SplatManager>();
         
         splat.SelectRangeIndicator(gameObject.name + "Range");
@@ -39,77 +25,13 @@ public class PlayerAutoAttack : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        GetEnemies();
+        GetEnemies(gameObject.transform.position, attackRange);
         SetTarget();
         if (!player.isWalking && !player.isCasting)
         {
             Attack();
-        }
-    }
-
-    private void GetEnemies()
-    {
-        enemiesInRange = Physics.OverlapSphere(
-            gameObject.transform.position, attackRange, layerMask);
-    }
-
-    private void SetTarget()
-    {
-        if (enemiesInRange.Length == 0)
-        {
-            target = null;
-            return;
-        }
-
-        Collider closestEnemy = enemiesInRange[0];
-        float min_dist = Mathf.Infinity;
-        foreach (Collider e in enemiesInRange)
-        {
-            float dist = Vector3.Distance(gameObject.transform.position,
-                                            e.transform.position);
-            if (dist < min_dist)
-            {
-                closestEnemy = e;
-                min_dist = dist;
-            }
-        }
-        target = closestEnemy.gameObject;
-    }
-
-    private void Attack()
-    {
-        if (target == null) return;
-
-        RaycastHit hitInfo;
-        if (Physics.Linecast(gameObject.transform.position,
-                                target.transform.position,
-                                out hitInfo, layerMask))
-        {
-            agent.stoppingDistance = stopRange;
-            agent.SetDestination(hitInfo.point);    
-        }
-
-        if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange))
-        {
-            attackTimer -= Time.deltaTime;
-            spriteRenderer.flipX =
-               hitInfo.point.x < gameObject.transform.position.x;
-            if (attackTimer < 0)
-            {
-                animator.SetTrigger("Attack");
-                if (gameObject.name == "Luban")
-                {
-                    GetComponent<LubanResource>().ResourceAutoGen();
-                }
-                target.GetComponent<Health>()?.TakeDamage(attackDamage);
-                attackTimer = attackRate;
-            }   
-        }
-        else
-        {
-            attackTimer = attackRate;
         }
     }
 }
