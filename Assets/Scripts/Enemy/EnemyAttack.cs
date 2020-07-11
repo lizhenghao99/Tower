@@ -11,7 +11,7 @@ public class EnemyAttack : AttackBase
     protected override void Start()
     {
         base.Start();
-        layerMask = LayerMask.GetMask("Player");
+        layerMask = LayerMask.GetMask("Base");
     }
 
     // Update is called once per frame

@@ -31,7 +31,13 @@ public class PlayerAutoAttack : AttackBase
         SetTarget();
         if (!player.isWalking && !player.isCasting)
         {
+            ApplyTaunt();
             Attack();
         }
+    }
+
+    protected override bool TauntedBehavior()
+    {
+        return false;
     }
 }

@@ -28,9 +28,10 @@ public abstract class Effect : MonoBehaviour
         OnStart();
     }
 
-    public void Extend(float d, float a)
+    public virtual void Extend(GameObject c, float d, float a)
     {
-        duration = d;
+        caster = c;
+        duration += d;
         amount = a;
     }
 

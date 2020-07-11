@@ -46,5 +46,19 @@ public class Minion : AttackBase
                 agent.SetDestination(initialPosition);
             }
         }
+
+        if (taunt)
+        {
+            ApplyTaunt();
+        }
+    }
+
+    protected override void ApplyTaunt()
+    {
+        if (enemiesInRange == null) return;
+        foreach(Collider c in enemiesInRange)
+        {
+            EffectManager.Instance.Taunt(gameObject, c.gameObject, 0);
+        }
     }
 }

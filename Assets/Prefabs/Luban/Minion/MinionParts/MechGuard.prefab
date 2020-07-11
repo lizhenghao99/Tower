@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8217875034218107472}
   - component: {fileID: -3983046629357039049}
   - component: {fileID: 1885939688312799108}
+  - component: {fileID: 7540789521043378169}
   m_Layer: 11
   m_Name: MechGuard
   m_TagString: Untagged
@@ -98,21 +99,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cf17eafac3a3740931a44e782c405a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackDamage: 0
+  attackRange: 0
+  attackRate: 0
+  stopRange: 0
+  agent: {fileID: -5727728923947968418}
+  animator: {fileID: -8217875034218107472}
+  spriteRenderer: {fileID: 21274594}
+  taunter: {fileID: 0}
   taunt: 0
   invisible: 0
   guard: 0
   charge: 0
   ambush: 0
-  attackDamage: 0
-  attackRange: 0
-  attackRate: 0
-  stopRange: 0
   guardPosition: {x: 0, y: 0, z: 0}
   guardRadius: 0
   initialPosition: {x: 0, y: 0, z: 0}
-  agent: {fileID: -5727728923947968418}
-  animator: {fileID: -8217875034218107472}
-  spriteRenderer: {fileID: 21274594}
 --- !u!195 &-5727728923947968418
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -184,3 +186,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &7540789521043378169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7655b65ccdd5bc14c8933ed27a6fcf33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100

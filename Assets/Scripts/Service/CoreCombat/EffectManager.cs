@@ -41,12 +41,28 @@ public class EffectManager : Singleton<EffectManager>
         Effect oldEffect = (Effect) target.GetComponent(T);
         if (oldEffect)
         {
-            oldEffect.Extend(duration, amount);
+            oldEffect.Extend(caster, duration, amount);
         }
         else
         {
             Effect newEffect = (Effect) target.AddComponent(T);
             newEffect.Init(caster, duration, amount, vfx);
+        }
+    }
+
+    public void Taunt(GameObject caster, GameObject target, float level)
+    {
+        float tauntDuration = 5;
+
+        TauntEffect oldEffect = target.GetComponent<TauntEffect>();
+        if (oldEffect)
+        {
+            oldEffect.Extend(caster, tauntDuration, level);
+        }
+        else
+        {
+            TauntEffect newEffect = target.AddComponent<TauntEffect>();
+            newEffect.Init(caster, tauntDuration, level, null);
         }
     }
 }

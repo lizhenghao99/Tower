@@ -59,7 +59,7 @@ public class Health : MonoBehaviour
     public virtual void Die()
     {
         currHealth = 0;
-        gameObject.transform.parent.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     protected void OnHealthChanged()

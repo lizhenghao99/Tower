@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8217875034218107472}
   - component: {fileID: -3983046629357039049}
   - component: {fileID: -4077257038596269012}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: MechGuardCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

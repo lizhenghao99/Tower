@@ -6,13 +6,12 @@ using UnityEngine.AI;
 public class StunEffect : Effect
 {
     private NavMeshAgent agent;
-    private EnemyAttack attack;
+    private AttackBase attack;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        attack = GetComponent<EnemyAttack>();
-        
+        attack = GetComponent<AttackBase>();
     }
 
     protected override void OnStart()

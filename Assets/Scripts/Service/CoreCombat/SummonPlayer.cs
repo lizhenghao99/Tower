@@ -35,28 +35,32 @@ public class SummonPlayer : Singleton<SummonPlayer>
             splat.GetSpellCursorPosition() + cardPlaying.vfxOffset,
             Quaternion.identity);
 
+        MinionCenter center = null;
+
+        if (cardPlaying.centerPrefab)
+        {
+            center = Instantiate(
+                cardPlaying.centerPrefab,
+                splat.GetSpellCursorPosition(),
+                Quaternion.Euler(30, 0, 0));
+
+            center.setRadius(cardPlaying.radius);
+        }
+
         if (cardPlaying.count == 1)
         {
             var minion = Instantiate(
                 cardPlaying.minionPrefab,
                 splat.GetSpellCursorPosition(),
-                Quaternion.Euler(45, 0, 0));
+                Quaternion.Euler(30, 0, 0));
             InitializeMinion(minion);
+            if (center)
+            {
+                minion.transform.SetParent(center.transform);
+            }
         }
         else
         {
-            if (cardPlaying.centerPrefab)
-            {
-                var center = Instantiate(
-                    cardPlaying.centerPrefab,
-                    splat.GetSpellCursorPosition(),
-                    Quaternion.Euler(45, 0, 0)); 
-                if (center.GetComponent<MinionRangeMouseOver>())
-                {
-                    center.GetComponent<MinionRangeMouseOver>()
-                        .setRadius(cardPlaying.radius);
-                }
-            }
             for (int i = 0; i < cardPlaying.count; i++)
             {
                 var direction = Quaternion.Euler(0, 360/cardPlaying.count*i ,0)
@@ -68,9 +72,13 @@ public class SummonPlayer : Singleton<SummonPlayer>
                 var minion = Instantiate(
                     cardPlaying.minionPrefab,
                     position,
-                    Quaternion.Euler(45, 0, 0));
+                    Quaternion.Euler(30, 0, 0));
                 InitializeMinion(minion);
                 minion.initialPosition = position;
+                if (center)
+                {
+                    minion.transform.SetParent(center.transform);
+                }
             }
         }
     }

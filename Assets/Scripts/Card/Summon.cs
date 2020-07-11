@@ -10,7 +10,7 @@ public class Summon : Card
     public float radius;
     [Header("Minon")]
     public Minion minionPrefab;
-    public Transform centerPrefab;
+    public MinionCenter centerPrefab;
     public int count;
     public int attackDamage;
     public float attackRange;

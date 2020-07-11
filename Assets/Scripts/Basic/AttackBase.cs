@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,6 +15,7 @@ public abstract class AttackBase : MonoBehaviour
     [SerializeField] protected Animator animator;
     [SerializeField] protected SpriteRenderer spriteRenderer;
 
+    public GameObject taunter;
 
     protected Collider[] enemiesInRange;
     protected GameObject target;
@@ -39,6 +42,8 @@ public abstract class AttackBase : MonoBehaviour
 
     protected virtual void SetTarget()
     {
+        if (TauntedBehavior()) return;
+
         if (enemiesInRange.Length == 0)
         {
             target = null;
@@ -60,18 +65,41 @@ public abstract class AttackBase : MonoBehaviour
         target = closestEnemy.gameObject;
     }
 
+    protected virtual bool TauntedBehavior()
+    {
+        if (taunter && taunter.activeInHierarchy)
+        {
+            target = taunter;
+            return true;
+        }
+        else
+        {
+            target = null;
+            return false;
+        }
+    }
+
+    protected virtual void ApplyTaunt()
+    {
+        // do nothing
+    }
+
     protected virtual void Attack()
     {
-        if (target == null) return;
+        if (target == null || !target.activeInHierarchy) return;
 
+        RaycastHit[] hitInfoArray;
         RaycastHit hitInfo;
-        if (Physics.Linecast(gameObject.transform.position,
-                                target.transform.position,
-                                out hitInfo, layerMask))
-        {
-            agent.stoppingDistance = stopRange;
-            agent.SetDestination(hitInfo.point);
-        }
+
+        hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
+            target.transform.position - gameObject.transform.position);
+
+        if (hitInfoArray.Length == 0) return;
+
+        hitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
+            .FirstOrDefault();
+        agent.stoppingDistance = stopRange;
+        agent.SetDestination(hitInfo.point);
 
         if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
             && Vector3.Distance(
@@ -79,6 +107,7 @@ public abstract class AttackBase : MonoBehaviour
                 Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))
                 < stopRange + 2)
         {
+            SpeicalAttackUpdate();
             attackTimer -= Time.deltaTime;
             FlipX(hitInfo);
             if (attackTimer < 0)
@@ -102,6 +131,11 @@ public abstract class AttackBase : MonoBehaviour
     }
 
     protected virtual void SpecialAutoAttack()
+    {
+        // do nothing
+    }
+
+    protected virtual void SpeicalAttackUpdate()
     {
         // do nothing
     }

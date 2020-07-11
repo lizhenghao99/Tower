@@ -4,11 +4,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using Werewolf.StatusIndicators.Components;
 
-public class MinionRangeMouseOver : MonoBehaviour
+public class MinionCenter : MonoBehaviour
 {
     [SerializeField] SplatManager splat;
     private SplatManager mySplat;
-    
+    private float timer = 0f;
+
+    private void Update()
+    {
+        if (timer < 0.5f)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            if (!GetComponentInChildren<Minion>())
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
     public void setRadius(float radius)
     {
         mySplat = Instantiate(splat);
