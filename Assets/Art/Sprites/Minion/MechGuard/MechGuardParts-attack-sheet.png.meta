@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: b2f3ca637d26f1642a58e0371ad7e1e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2765003083226174667
+    second: MechGuardParts-attack-sheet_0
+  - first:
+      213: -2166130844123289699
+    second: MechGuardParts-attack-sheet_1
+  - first:
+      213: -5250344941191843338
+    second: MechGuardParts-attack-sheet_2
+  - first:
+      213: 849737105300830761
+    second: MechGuardParts-attack-sheet_3
+  - first:
+      213: 1534043032101607479
+    second: MechGuardParts-attack-sheet_4
+  - first:
+      213: -2631330718284142525
+    second: MechGuardParts-attack-sheet_5
+  - first:
+      213: -9132180490269625969
+    second: MechGuardParts-attack-sheet_6
+  - first:
+      213: 575181305332132681
+    second: MechGuardParts-attack-sheet_7
+  - first:
+      213: 5052524549536499345
+    second: MechGuardParts-attack-sheet_8
+  - first:
+      213: -18771924005778632
+    second: MechGuardParts-attack-sheet_9
+  - first:
+      213: -7663282490637937461
+    second: MechGuardParts-attack-sheet_10
+  - first:
+      213: 8598663326822004229
+    second: MechGuardParts-attack-sheet_11
+  - first:
+      213: 8694242572854746191
+    second: MechGuardParts-attack-sheet_12
+  - first:
+      213: -3689065022091045738
+    second: MechGuardParts-attack-sheet_13
+  - first:
+      213: 2076464816634692704
+    second: MechGuardParts-attack-sheet_14
+  - first:
+      213: -3772566600384656443
+    second: MechGuardParts-attack-sheet_15
+  - first:
+      213: 359953955850240871
+    second: MechGuardParts-attack-sheet_16
+  - first:
+      213: 3479553273973680225
+    second: MechGuardParts-attack-sheet_17
+  - first:
+      213: 1986495513683824971
+    second: MechGuardParts-attack-sheet_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ba17d685cb0a9d0800000000000000
+      internalID: -2765003083226174667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97a303597b50f1e0800000000000000
+      internalID: -2166130844123289699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1bdffe7170327b0800000000000000
+      internalID: -5250344941191843338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92abce9256fdacb00800000000000000
+      internalID: 849737105300830761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738549e82040a4510800000000000000
+      internalID: 1534043032101607479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348a91237a2ab7bd0800000000000000
+      internalID: -2631330718284142525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81f9bc7a3af34180800000000000000
+      internalID: -9132180490269625969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b64c989547bf700800000000000000
+      internalID: 575181305332132681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1964012fe4c2e1640800000000000000
+      internalID: 5052524549536499345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b82e9d80f4dbff0800000000000000
+      internalID: -18771924005778632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc41e043d2d86a590800000000000000
+      internalID: -7663282490637937461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5067762fcb6945770800000000000000
+      internalID: 8598663326822004229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 828
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cd5125e8728a870800000000000000
+      internalID: 8694242572854746191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 828
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694d1fc68eecdccc0800000000000000
+      internalID: -3689065022091045738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-attack-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 828
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0648b18cfb511dc10800000000000000
+      internalID: 2076464816634692704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1ab61972142a094429daa0be8e4a95f5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

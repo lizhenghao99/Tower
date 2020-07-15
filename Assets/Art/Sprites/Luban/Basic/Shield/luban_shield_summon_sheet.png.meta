@@ -1,0 +1,653 @@
+fileFormatVersion: 2
+guid: 524a16080bcac8948b67e35a7b919db2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9135955982672520919
+    second: luban_shield_summon_sheet_0
+  - first:
+      213: -9203950409241084749
+    second: luban_shield_summon_sheet_1
+  - first:
+      213: 225522305180630194
+    second: luban_shield_summon_sheet_2
+  - first:
+      213: -348685873329924705
+    second: luban_shield_summon_sheet_3
+  - first:
+      213: 3327008242344598041
+    second: luban_shield_summon_sheet_4
+  - first:
+      213: 3500088286850095654
+    second: luban_shield_summon_sheet_5
+  - first:
+      213: -7682241806995203312
+    second: luban_shield_summon_sheet_6
+  - first:
+      213: 1615125596830255062
+    second: luban_shield_summon_sheet_7
+  - first:
+      213: 7709262609111372180
+    second: luban_shield_summon_sheet_8
+  - first:
+      213: -7344963512970331886
+    second: luban_shield_summon_sheet_9
+  - first:
+      213: -1456860225037785115
+    second: luban_shield_summon_sheet_10
+  - first:
+      213: 710886937949996783
+    second: luban_shield_summon_sheet_11
+  - first:
+      213: 7817013630422821205
+    second: luban_shield_summon_sheet_12
+  - first:
+      213: -8325099079621088064
+    second: luban_shield_summon_sheet_13
+  - first:
+      213: 9052953014701035598
+    second: luban_shield_summon_sheet_14
+  - first:
+      213: 6648328250837969741
+    second: luban_shield_summon_sheet_15
+  - first:
+      213: 2618996399708836227
+    second: luban_shield_summon_sheet_16
+  - first:
+      213: -2839387998579028918
+    second: luban_shield_summon_sheet_17
+  - first:
+      213: 3318056529827069421
+    second: luban_shield_summon_sheet_18
+  - first:
+      213: 7909736774626150710
+    second: luban_shield_summon_sheet_19
+  - first:
+      213: 6854571017122937760
+    second: luban_shield_summon_sheet_20
+  - first:
+      213: 8949269783784227338
+    second: luban_shield_summon_sheet_21
+  - first:
+      213: -2749572121327336916
+    second: luban_shield_summon_sheet_22
+  - first:
+      213: 9216658115216843273
+    second: luban_shield_summon_sheet_23
+  - first:
+      213: 1870386631675611436
+    second: luban_shield_summon_sheet_24
+  - first:
+      213: 8582606043719389593
+    second: luban_shield_summon_sheet_25
+  - first:
+      213: 7982044534225852612
+    second: luban_shield_summon_sheet_26
+  - first:
+      213: -5121977694355411126
+    second: luban_shield_summon_sheet_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6ecc6df8f69ce70800000000000000
+      internalID: 9135955982672520919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcbfde0edff44080800000000000000
+      internalID: -9203950409241084749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcf7397757312300800000000000000
+      internalID: 225522305180630194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9519fdab08392bf0800000000000000
+      internalID: -348685873329924705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a1fb18e58eb2e20800000000000000
+      internalID: 3327008242344598041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a943ca0cfc29030800000000000000
+      internalID: 3500088286850095654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 3164
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b556f57c1336590800000000000000
+      internalID: -7682241806995203312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d745ba4c241a6610800000000000000
+      internalID: 1615125596830255062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491d8406f7dccfa60800000000000000
+      internalID: 7709262609111372180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219b239a992711a90800000000000000
+      internalID: -7344963512970331886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e72a37185138cbe0800000000000000
+      internalID: -1456860225037785115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe689f357e39dd900800000000000000
+      internalID: 710886937949996783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5592db50b7c9b7c60800000000000000
+      internalID: 7817013630422821205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 2232
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cce04fce7e477c80800000000000000
+      internalID: -8325099079621088064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e409e816dcc82ad70800000000000000
+      internalID: 9052953014701035598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b246dd15b934c50800000000000000
+      internalID: 6648328250837969741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3811ca8795b885420800000000000000
+      internalID: 2618996399708836227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c8035b8a77898d0800000000000000
+      internalID: -2839387998579028918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedf10585da1c0e20800000000000000
+      internalID: 3318056529827069421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6398f6e50b705cd60800000000000000
+      internalID: 7909736774626150710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_summon_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 1300
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abfc43e504502f50800000000000000
+      internalID: 6854571017122937760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b0c0ac7f5e1d1e2459a8f02b4de79c0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

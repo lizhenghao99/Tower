@@ -1,0 +1,551 @@
+fileFormatVersion: 2
+guid: 7bf399f107a47284cacda615ee1a3007
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2215110931135567622
+    second: MechWarriorParts-idle-sheet_0
+  - first:
+      213: -3180345917714041297
+    second: MechWarriorParts-idle-sheet_1
+  - first:
+      213: 1799661314118193328
+    second: MechWarriorParts-idle-sheet_2
+  - first:
+      213: 5005487165395573896
+    second: MechWarriorParts-idle-sheet_3
+  - first:
+      213: -5291774383080498303
+    second: MechWarriorParts-idle-sheet_4
+  - first:
+      213: -5072118157642861316
+    second: MechWarriorParts-idle-sheet_5
+  - first:
+      213: 1842557434437315352
+    second: MechWarriorParts-idle-sheet_6
+  - first:
+      213: 6056192026541232979
+    second: MechWarriorParts-idle-sheet_7
+  - first:
+      213: -5205523421266295555
+    second: MechWarriorParts-idle-sheet_8
+  - first:
+      213: -1141000229507452157
+    second: MechWarriorParts-idle-sheet_9
+  - first:
+      213: -7870779019871290132
+    second: MechWarriorParts-idle-sheet_10
+  - first:
+      213: -4232364672785635197
+    second: MechWarriorParts-idle-sheet_11
+  - first:
+      213: -5447307260523451675
+    second: MechWarriorParts-idle-sheet_12
+  - first:
+      213: -8773668853870175742
+    second: MechWarriorParts-idle-sheet_13
+  - first:
+      213: 1308537018702248866
+    second: MechWarriorParts-idle-sheet_14
+  - first:
+      213: 915385995169699298
+    second: MechWarriorParts-idle-sheet_15
+  - first:
+      213: 3095509963972603741
+    second: MechWarriorParts-idle-sheet_16
+  - first:
+      213: -318116591362613588
+    second: MechWarriorParts-idle-sheet_17
+  - first:
+      213: -6787284826129130230
+    second: MechWarriorParts-idle-sheet_18
+  - first:
+      213: -5497226752747737991
+    second: MechWarriorParts-idle-sheet_19
+  - first:
+      213: -8273450719493808618
+    second: MechWarriorParts-idle-sheet_20
+  - first:
+      213: 6765101505827826491
+    second: MechWarriorParts-idle-sheet_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8649328585241e0800000000000000
+      internalID: -2215110931135567622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f267acfec342dd3d0800000000000000
+      internalID: -3180345917714041297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b017002e6ea9f810800000000000000
+      internalID: 1799661314118193328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c1e258e00177540800000000000000
+      internalID: 5005487165395573896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b99f05c37df86b0800000000000000
+      internalID: -5291774383080498303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf473eaa8673c99b0800000000000000
+      internalID: -5072118157642861316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b24ed6934129910800000000000000
+      internalID: 1842557434437315352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3531b81af8aeb0450800000000000000
+      internalID: 6056192026541232979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df44275470442c7b0800000000000000
+      internalID: -5205523421266295555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b197265a5a20f0800000000000000
+      internalID: -1141000229507452157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec79febe2065c290800000000000000
+      internalID: -7870779019871290132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38823be01ce9345c0800000000000000
+      internalID: -4232364672785635197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1468
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eae71a58e64764b0800000000000000
+      internalID: -5447307260523451675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1468
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ad82c89aaad3680800000000000000
+      internalID: -8773668853870175742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1468
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab323f4c7bd82210800000000000000
+      internalID: 1308537018702248866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 1468
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5157276ba14bc00800000000000000
+      internalID: 915385995169699298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-idle-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 811
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fe44959e575fa20800000000000000
+      internalID: 3095509963972603741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c7c627a0582cc624bbeaf967f007cf60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

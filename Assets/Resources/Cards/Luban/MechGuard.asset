@@ -18,8 +18,8 @@ MonoBehaviour:
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}
-  vfx: {fileID: 1716312745680982, guid: 6deee82ae1b278948ab7a84313ec60fa, type: 3}
-  vfxOffset: {x: 0, y: 0, z: 0}
+  vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
+  vfxOffset: {x: 0, y: 3, z: -2.5}
   castTime: 2
   range: 8
   radius: 2.5
@@ -28,7 +28,7 @@ MonoBehaviour:
   centerPrefab: {fileID: -4077257038596269012, guid: 06a3324a4bb35aa4c9f2e2a10a649170,
     type: 3}
   count: 3
-  attackDamage: 10
+  attackDamage: 20
   attackRange: 0
   attackRate: 2
   stopRange: 1

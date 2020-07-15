@@ -27,6 +27,21 @@ public class Minion : AttackBase
 
     protected override void Update()
     {
+        // anmiation
+        animator.SetFloat("Velocity", agent.velocity.magnitude);
+        if (agent.velocity.magnitude > Mathf.Epsilon)
+        {
+            spriteRenderer.flipX = agent.velocity.x < -0.1;
+        }
+
+        if (health.isDead)
+        {
+            agent.destination = gameObject.transform.position;
+            agent.isStopped = true;
+            return;
+        }
+
+
         if (charge)
         {
             attackRange = 10000;

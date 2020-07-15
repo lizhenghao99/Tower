@@ -9,7 +9,7 @@ public class Buff : Card
 
     [Header("Buff")]
     public float duration;
-    public int shieldAmount;
+    public float shieldPercent;
     [Header("Targets")]
     public BuffTarget buffTarget;
     [Header("Debuff")]

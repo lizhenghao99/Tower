@@ -5,11 +5,16 @@ using UnityEngine;
 
 public class LevelController : Singleton<LevelController>
 {
+    [SerializeField] Material[] cardMaterials;
     private HandManager[] hands;
 
     private void Awake()
     {
         hands = FindObjectsOfType<HandManager>();
+        foreach (Material m in cardMaterials)
+        {
+            m.SetFloat("_HsvSaturation", 1f);
+        }
     }
 
     // Start is called before the first frame update

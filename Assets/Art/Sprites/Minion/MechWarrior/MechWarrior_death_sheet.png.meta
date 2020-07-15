@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 8bebf52764d10d84c9f05d705e4f0c0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9051474060580859359
+    second: MechWarrior_death_sheet_0
+  - first:
+      213: 8057745082878860669
+    second: MechWarrior_death_sheet_1
+  - first:
+      213: -4481364403341803766
+    second: MechWarrior_death_sheet_2
+  - first:
+      213: -613112114344992234
+    second: MechWarrior_death_sheet_3
+  - first:
+      213: 6545591652358968853
+    second: MechWarrior_death_sheet_4
+  - first:
+      213: 6108017184337266436
+    second: MechWarrior_death_sheet_5
+  - first:
+      213: 5779297923734442371
+    second: MechWarrior_death_sheet_6
+  - first:
+      213: -103109847035757800
+    second: MechWarrior_death_sheet_7
+  - first:
+      213: 6184343459856081574
+    second: MechWarrior_death_sheet_8
+  - first:
+      213: -7550847405873584726
+    second: MechWarrior_death_sheet_9
+  - first:
+      213: 4154551014583907555
+    second: MechWarrior_death_sheet_10
+  - first:
+      213: -2477173576107889959
+    second: MechWarrior_death_sheet_11
+  - first:
+      213: 3440783511880407595
+    second: MechWarrior_death_sheet_12
+  - first:
+      213: 2156500613963474345
+    second: MechWarrior_death_sheet_13
+  - first:
+      213: -818869193302929945
+    second: MechWarrior_death_sheet_14
+  - first:
+      213: 6899726619585713661
+    second: MechWarrior_death_sheet_15
+  - first:
+      213: 4177252152198051308
+    second: MechWarrior_death_sheet_16
+  - first:
+      213: 6813246818572485169
+    second: MechWarrior_death_sheet_17
+  - first:
+      213: 6095242490354964799
+    second: MechWarrior_death_sheet_18
+  - first:
+      213: -1027050909131634416
+    second: MechWarrior_death_sheet_19
+  - first:
+      213: -2725370170591620610
+    second: MechWarrior_death_sheet_20
+  - first:
+      213: 7880721360639413195
+    second: MechWarrior_death_sheet_21
+  - first:
+      213: -8483769965020385293
+    second: MechWarrior_death_sheet_22
+  - first:
+      213: -4498680729547823877
+    second: MechWarrior_death_sheet_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3327
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdda59a83bb4d9d70800000000000000
+      internalID: 9051474060580859359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 3327
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d15ab067cd2df60800000000000000
+      internalID: 8057745082878860669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 3327
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f3bb581defec1c0800000000000000
+      internalID: -4481364403341803766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 3327
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6126af8c7c9cd77f0800000000000000
+      internalID: -613112114344992234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 3327
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5165e938dec96da50800000000000000
+      internalID: 6545591652358968853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2558
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407876a744904c450800000000000000
+      internalID: 6108017184337266436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 2558
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381185377d0343050800000000000000
+      internalID: 5779297923734442371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 2558
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bb692f32ea19ef0800000000000000
+      internalID: -103109847035757800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 2558
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a26bb55c9333d550800000000000000
+      internalID: 6184343459856081574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2558
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5a9bb5a40063790800000000000000
+      internalID: -7550847405873584726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1789
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e43381d22ee7a930800000000000000
+      internalID: 4154551014583907555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 1789
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daea15d1cf4f9dd0800000000000000
+      internalID: -2477173576107889959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 1789
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a17aebf5e10cf20800000000000000
+      internalID: 3440783511880407595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 1789
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5643df1ed6ded10800000000000000
+      internalID: 2156500613963474345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1789
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed0ba7aecac2a4f0800000000000000
+      internalID: -818869193302929945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarrior_death_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 797
+        height: 769
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df596bfddc0c0cf50800000000000000
+      internalID: 6899726619585713661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6e6210faa444f03418991b563c97d40a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

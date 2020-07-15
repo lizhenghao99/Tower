@@ -53,7 +53,11 @@ public class BuffPlayer : Singleton<BuffPlayer>
                 break;
             case Buff.BuffTarget.Self:
                 self.isSelected = false;
-                self.GetComponent<PlayerHealth>().AddShield(cardPlaying.shieldAmount);
+                if (cardPlaying.vfx)
+                {
+                    Instantiate(cardPlaying.vfx, self.transform);
+                }
+                self.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
                 break;
             default:
                 break;

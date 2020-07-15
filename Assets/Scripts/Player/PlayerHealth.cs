@@ -17,18 +17,26 @@ public class PlayerHealth : Health
     {
         base.Start();
         currShield = 0;
-        maxShield = maxHealth;
+        maxShield = maxHealth;     
     }
 
     // Update is called once per frame
     protected override void Update()
     {
         base.Update();
+        GetComponentInChildren<Animator>().SetBool("Shield", currShield > 0);
     }
 
     public void AddShield(int amount)
     {
         currShield = Mathf.Clamp(currShield + amount, 0, maxShield);
+        OnShieldChanged();
+    }
+
+    public void AddShieldPercent(float percent)
+    {
+        currShield = Mathf.Clamp(
+            currShield + (int)(percent * maxShield), 0, maxShield);
         OnShieldChanged();
     }
 
@@ -47,10 +55,18 @@ public class PlayerHealth : Health
     {
         if (amount < 0)
         {
-            currShield += amount;
+            if (currShield > 0)
+            {
+                currShield += (int) (amount * 0.7);
+            }
+            else
+            {
+                currShield += amount;
+            }
+
             if (currShield < 0)
             {
-                currHealth += currShield;
+                currHealth = Mathf.Clamp(currHealth + currShield, 0, maxHealth);
                 currShield = 0;
             }
         }
@@ -66,6 +82,12 @@ public class PlayerHealth : Health
         {
             Die();
         }
+    }
+
+    public override void Die()
+    {
+        GetComponentInChildren<Animator>().SetBool("Death", true);
+        isDead = true;
     }
 
     private void OnShieldChanged()

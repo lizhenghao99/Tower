@@ -1,0 +1,764 @@
+fileFormatVersion: 2
+guid: 9d12e796b72da3e48b77de6406fc60f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -50834037734120407
+    second: MechWarriorParts-walk-sheet_0
+  - first:
+      213: 2499862256298428400
+    second: MechWarriorParts-walk-sheet_1
+  - first:
+      213: 2636416192707471243
+    second: MechWarriorParts-walk-sheet_2
+  - first:
+      213: 6040293046325475358
+    second: MechWarriorParts-walk-sheet_3
+  - first:
+      213: 5395663124838727313
+    second: MechWarriorParts-walk-sheet_4
+  - first:
+      213: 5896125494649659733
+    second: MechWarriorParts-walk-sheet_5
+  - first:
+      213: 4029618291204432784
+    second: MechWarriorParts-walk-sheet_6
+  - first:
+      213: 8522395870064477212
+    second: MechWarriorParts-walk-sheet_7
+  - first:
+      213: 2706106446736847797
+    second: MechWarriorParts-walk-sheet_8
+  - first:
+      213: -1101032532657902855
+    second: MechWarriorParts-walk-sheet_9
+  - first:
+      213: -3728709172555443959
+    second: MechWarriorParts-walk-sheet_10
+  - first:
+      213: 6616715346744737905
+    second: MechWarriorParts-walk-sheet_11
+  - first:
+      213: -5240226671668332733
+    second: MechWarriorParts-walk-sheet_12
+  - first:
+      213: -4684385293590761181
+    second: MechWarriorParts-walk-sheet_13
+  - first:
+      213: 7613155748315669824
+    second: MechWarriorParts-walk-sheet_14
+  - first:
+      213: -8393568100125317893
+    second: MechWarriorParts-walk-sheet_15
+  - first:
+      213: 6217452039553347715
+    second: MechWarriorParts-walk-sheet_16
+  - first:
+      213: -2012466009005827850
+    second: MechWarriorParts-walk-sheet_17
+  - first:
+      213: 406090924212824715
+    second: MechWarriorParts-walk-sheet_18
+  - first:
+      213: 6014655073459384246
+    second: MechWarriorParts-walk-sheet_19
+  - first:
+      213: 2964637457909553163
+    second: MechWarriorParts-walk-sheet_20
+  - first:
+      213: 3122068631647951775
+    second: MechWarriorParts-walk-sheet_21
+  - first:
+      213: -7993608176138758718
+    second: MechWarriorParts-walk-sheet_22
+  - first:
+      213: -3704902007019008889
+    second: MechWarriorParts-walk-sheet_23
+  - first:
+      213: 2743094626109239152
+    second: MechWarriorParts-walk-sheet_24
+  - first:
+      213: -2685431269193168173
+    second: MechWarriorParts-walk-sheet_25
+  - first:
+      213: -7942299746362447960
+    second: MechWarriorParts-walk-sheet_26
+  - first:
+      213: 1064503866334380633
+    second: MechWarriorParts-walk-sheet_27
+  - first:
+      213: 3439070755081147360
+    second: MechWarriorParts-walk-sheet_28
+  - first:
+      213: 4133944312318575356
+    second: MechWarriorParts-walk-sheet_29
+  - first:
+      213: 7843851469533341153
+    second: MechWarriorParts-walk-sheet_30
+  - first:
+      213: 5133861770339177538
+    second: MechWarriorParts-walk-sheet_31
+  - first:
+      213: 6041019482683728925
+    second: MechWarriorParts-walk-sheet_32
+  - first:
+      213: 8674262800433949639
+    second: MechWarriorParts-walk-sheet_33
+  - first:
+      213: -4590101358873998125
+    second: MechWarriorParts-walk-sheet_34
+  - first:
+      213: 3572432601607106203
+    second: MechWarriorParts-walk-sheet_35
+  - first:
+      213: 3395505994231088045
+    second: MechWarriorParts-walk-sheet_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924eb5646b66b4ff0800000000000000
+      internalID: -50834037734120407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7031e2a7b41b220800000000000000
+      internalID: 2499862256298428400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87aa661f8e669420800000000000000
+      internalID: 2636416192707471243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18fd75d58e63d350800000000000000
+      internalID: 6040293046325475358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ebfab460f31ea40800000000000000
+      internalID: 5395663124838727313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4885
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551a7bbf5ee33d150800000000000000
+      internalID: 5896125494649659733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5862
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09328ab6c741ce730800000000000000
+      internalID: 4029618291204432784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6839
+        y: 3439
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c140376e3e1a54670800000000000000
+      internalID: 8522395870064477212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3f42ac9750e8520800000000000000
+      internalID: 2706106446736847797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fae6ccbeb858b0f0800000000000000
+      internalID: -1101032532657902855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901971b53c6f04cc0800000000000000
+      internalID: -3728709172555443959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170889e0d8b43db50800000000000000
+      internalID: 6616715346744737905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3477ea42b99f647b0800000000000000
+      internalID: -5240226671668332733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4885
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3217578f468bdfeb0800000000000000
+      internalID: -4684385293590761181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5862
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045241e11dc57a960800000000000000
+      internalID: 7613155748315669824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6839
+        y: 2782
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4eaf1b84e048b80800000000000000
+      internalID: -8393568100125317893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380fa9140b3d84650800000000000000
+      internalID: 6217452039553347715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8d8aac3d84214e0800000000000000
+      internalID: -2012466009005827850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a27344b89b2a500800000000000000
+      internalID: 406090924212824715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf2c0c1ce8587350800000000000000
+      internalID: 6014655073459384246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3908
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0814868f02842920800000000000000
+      internalID: 2964637457909553163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4885
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b14c901e0d35b20800000000000000
+      internalID: 3122068631647951775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5862
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5579b37bff01190800000000000000
+      internalID: -7993608176138758718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6839
+        y: 2125
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c0008014b859cc0800000000000000
+      internalID: -3704902007019008889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechWarriorParts-walk-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1468
+        width: 977
+        height: 657
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f2686670e611620800000000000000
+      internalID: 2743094626109239152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5280bd526a369b34ab5dcc94975e6f53
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

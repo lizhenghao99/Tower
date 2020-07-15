@@ -1,0 +1,857 @@
+fileFormatVersion: 2
+guid: 2cce69618f4e84245bb02b3667392643
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1233846604203926583
+    second: MechGuardParts-idle-sheet_0
+  - first:
+      213: -8165575220017719200
+    second: MechGuardParts-idle-sheet_1
+  - first:
+      213: -1194615081501404031
+    second: MechGuardParts-idle-sheet_2
+  - first:
+      213: 6146303076166186221
+    second: MechGuardParts-idle-sheet_3
+  - first:
+      213: 8443635878954582848
+    second: MechGuardParts-idle-sheet_4
+  - first:
+      213: -8846673872815741243
+    second: MechGuardParts-idle-sheet_5
+  - first:
+      213: -909366220662048654
+    second: MechGuardParts-idle-sheet_6
+  - first:
+      213: 5115078546223876890
+    second: MechGuardParts-idle-sheet_7
+  - first:
+      213: -1350791135607529976
+    second: MechGuardParts-idle-sheet_8
+  - first:
+      213: -2676379517134039797
+    second: MechGuardParts-idle-sheet_9
+  - first:
+      213: -7911210577926907768
+    second: MechGuardParts-idle-sheet_10
+  - first:
+      213: -4130603808771573262
+    second: MechGuardParts-idle-sheet_11
+  - first:
+      213: -7031608901987770715
+    second: MechGuardParts-idle-sheet_12
+  - first:
+      213: -5289886557476344492
+    second: MechGuardParts-idle-sheet_13
+  - first:
+      213: -810447296301990847
+    second: MechGuardParts-idle-sheet_14
+  - first:
+      213: -7920089893055879753
+    second: MechGuardParts-idle-sheet_15
+  - first:
+      213: 4689703451395387358
+    second: MechGuardParts-idle-sheet_16
+  - first:
+      213: -1112457386049250676
+    second: MechGuardParts-idle-sheet_17
+  - first:
+      213: -184158584386099736
+    second: MechGuardParts-idle-sheet_18
+  - first:
+      213: 6316846322174103184
+    second: MechGuardParts-idle-sheet_19
+  - first:
+      213: -5171463446434528552
+    second: MechGuardParts-idle-sheet_20
+  - first:
+      213: -1092536162978407214
+    second: MechGuardParts-idle-sheet_21
+  - first:
+      213: 3295895917881513693
+    second: MechGuardParts-idle-sheet_22
+  - first:
+      213: -7662626011748157104
+    second: MechGuardParts-idle-sheet_23
+  - first:
+      213: 4332887175688909159
+    second: MechGuardParts-idle-sheet_24
+  - first:
+      213: -4820569813023487792
+    second: MechGuardParts-idle-sheet_25
+  - first:
+      213: -7337895096565122401
+    second: MechGuardParts-idle-sheet_26
+  - first:
+      213: -2584312142144109394
+    second: MechGuardParts-idle-sheet_27
+  - first:
+      213: -4385726973630611837
+    second: MechGuardParts-idle-sheet_28
+  - first:
+      213: 5994732175632696124
+    second: MechGuardParts-idle-sheet_29
+  - first:
+      213: 1368741616571915375
+    second: MechGuardParts-idle-sheet_30
+  - first:
+      213: -365996596458316603
+    second: MechGuardParts-idle-sheet_31
+  - first:
+      213: -3188855251599630796
+    second: MechGuardParts-idle-sheet_32
+  - first:
+      213: -8154907102699213523
+    second: MechGuardParts-idle-sheet_33
+  - first:
+      213: 7960215281600445640
+    second: MechGuardParts-idle-sheet_34
+  - first:
+      213: 8916179046029881178
+    second: MechGuardParts-idle-sheet_35
+  - first:
+      213: -1791820451832485257
+    second: MechGuardParts-idle-sheet_36
+  - first:
+      213: -1638672477814785477
+    second: MechGuardParts-idle-sheet_37
+  - first:
+      213: -3273792882838073825
+    second: MechGuardParts-idle-sheet_38
+  - first:
+      213: -959988664412265258
+    second: MechGuardParts-idle-sheet_39
+  - first:
+      213: 1193898174351385023
+    second: MechGuardParts-idle-sheet_40
+  - first:
+      213: -1933425910593161826
+    second: MechGuardParts-idle-sheet_41
+  - first:
+      213: -5629708127036743021
+    second: MechGuardParts-idle-sheet_42
+  - first:
+      213: -1239056001023738323
+    second: MechGuardParts-idle-sheet_0
+  - first:
+      213: -5404019907111274359
+    second: MechGuardParts-idle-sheet_1
+  - first:
+      213: 3415297026268106706
+    second: MechGuardParts-idle-sheet_2
+  - first:
+      213: 1913821000334663388
+    second: MechGuardParts-idle-sheet_3
+  - first:
+      213: -941146384894576483
+    second: MechGuardParts-idle-sheet_4
+  - first:
+      213: 7633172003641615383
+    second: MechGuardParts-idle-sheet_5
+  - first:
+      213: 2253288223805756729
+    second: MechGuardParts-idle-sheet_6
+  - first:
+      213: 2033424788637836350
+    second: MechGuardParts-idle-sheet_7
+  - first:
+      213: -6443415524174978229
+    second: MechGuardParts-idle-sheet_8
+  - first:
+      213: 5898438268364146968
+    second: MechGuardParts-idle-sheet_9
+  - first:
+      213: 5920179136325858481
+    second: MechGuardParts-idle-sheet_10
+  - first:
+      213: -4603475541792232251
+    second: MechGuardParts-idle-sheet_11
+  - first:
+      213: -2016964987600567333
+    second: MechGuardParts-idle-sheet_12
+  - first:
+      213: -3118870397984415966
+    second: MechGuardParts-idle-sheet_13
+  - first:
+      213: -704593391568423598
+    second: MechGuardParts-idle-sheet_14
+  - first:
+      213: 6016788616054241708
+    second: MechGuardParts-idle-sheet_15
+  - first:
+      213: -1346306751717610578
+    second: MechGuardParts-idle-sheet_16
+  - first:
+      213: -1108146539719307131
+    second: MechGuardParts-idle-sheet_17
+  - first:
+      213: 8237285937733831684
+    second: MechGuardParts-idle-sheet_18
+  - first:
+      213: 3264340867066385878
+    second: MechGuardParts-idle-sheet_19
+  - first:
+      213: 7984871417231359889
+    second: MechGuardParts-idle-sheet_20
+  - first:
+      213: -1226586074248733705
+    second: MechGuardParts-idle-sheet_21
+  - first:
+      213: -5895375369400150112
+    second: MechGuardParts-idle-sheet_22
+  - first:
+      213: -6768762852861812462
+    second: MechGuardParts-idle-sheet_23
+  - first:
+      213: 3464784056687085821
+    second: MechGuardParts-idle-sheet_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ef922c12dfdcee0800000000000000
+      internalID: -1239056001023738323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9883e75b6801105b0800000000000000
+      internalID: -5404019907111274359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df8825ec82956f20800000000000000
+      internalID: 3415297026268106706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde51a85f024f8a10800000000000000
+      internalID: 1913821000334663388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9837be695060f2f0800000000000000
+      internalID: -941146384894576483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4135
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714e38abe797ee960800000000000000
+      internalID: 7633172003641615383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4962
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935538c73b9454f10800000000000000
+      internalID: 2253288223805756729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5789
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e346b3c521d283c10800000000000000
+      internalID: 2033424788637836350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 6616
+        y: 3279
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43205d28b36496a0800000000000000
+      internalID: -6443415524174978229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8194a639a567bd150800000000000000
+      internalID: 5898438268364146968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4b16bde83b82250800000000000000
+      internalID: 5920179136325858481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc664f826b2d10c0800000000000000
+      internalID: -4603475541792232251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd30ba5b70d4204e0800000000000000
+      internalID: -2016964987600567333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f58a3c5eb87b4d0800000000000000
+      internalID: -3118870397984415966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4135
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255f9702b08c836f0800000000000000
+      internalID: -704593391568423598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4962
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9f6843e5def7350800000000000000
+      internalID: 6016788616054241708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 5789
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab69217425f05de0800000000000000
+      internalID: -1346306751717610578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6616
+        y: 2462
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580d3f4e7921f90f0800000000000000
+      internalID: -1108146539719307131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c02f7dae7b05270800000000000000
+      internalID: 8237285937733831684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5584f29b44d4d20800000000000000
+      internalID: 3264340867066385878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1654
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fbe319f36ffce60800000000000000
+      internalID: 7984871417231359889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb96f5d67a4afee0800000000000000
+      internalID: -1226586074248733705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a71159265b6f2ea0800000000000000
+      internalID: -5895375369400150112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4135
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211ef4a3c068012a0800000000000000
+      internalID: -6768762852861812462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-idle-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4962
+        y: 1645
+        width: 827
+        height: 817
+      alignment: 9
+      pivot: {x: 0.45, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8454a0eb2651030800000000000000
+      internalID: 3464784056687085821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 515f499ac82b8cc47baa68e30d20fa1f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

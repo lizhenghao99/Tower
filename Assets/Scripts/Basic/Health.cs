@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TowerUtils;
 
 public class Health : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Health : MonoBehaviour
     public int currHealth { get; protected set; }
 
     public EventHandler healthChanged;
+
+    public bool isDead = false;
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -59,7 +62,14 @@ public class Health : MonoBehaviour
     public virtual void Die()
     {
         currHealth = 0;
-        gameObject.SetActive(false);
+
+        GetComponentInChildren<Animator>().SetBool("Death", true);
+        isDead = true;
+
+        StartCoroutine(Utils.Timeout(() =>
+            gameObject.SetActive(false)
+            , 3f));
+        
     }
 
     protected void OnHealthChanged()

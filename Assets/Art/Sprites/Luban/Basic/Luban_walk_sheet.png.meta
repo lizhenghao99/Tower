@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 2436d01ce7351cd46b1e05befdf1475a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2121534798519115496
+    second: Luban_walk_sheet_0
+  - first:
+      213: -6480301214512710321
+    second: Luban_walk_sheet_1
+  - first:
+      213: -8057840430380334335
+    second: Luban_walk_sheet_2
+  - first:
+      213: 4145519252599130896
+    second: Luban_walk_sheet_3
+  - first:
+      213: -4124418025858423457
+    second: Luban_walk_sheet_4
+  - first:
+      213: 1027519185319009090
+    second: Luban_walk_sheet_5
+  - first:
+      213: 1227175457374890463
+    second: Luban_walk_sheet_6
+  - first:
+      213: 1746976962123484506
+    second: Luban_walk_sheet_7
+  - first:
+      213: 2687308285654505143
+    second: Luban_walk_sheet_8
+  - first:
+      213: -7019062618544010236
+    second: Luban_walk_sheet_9
+  - first:
+      213: -2408089682667995197
+    second: Luban_walk_sheet_10
+  - first:
+      213: 1272758208271469862
+    second: Luban_walk_sheet_11
+  - first:
+      213: 2483575825736072265
+    second: Luban_walk_sheet_12
+  - first:
+      213: -8423007165064764555
+    second: Luban_walk_sheet_13
+  - first:
+      213: -3800847057722895222
+    second: Luban_walk_sheet_14
+  - first:
+      213: 482267908802744121
+    second: Luban_walk_sheet_15
+  - first:
+      213: -3811536023574003788
+    second: Luban_walk_sheet_16
+  - first:
+      213: -6529405165299448793
+    second: Luban_walk_sheet_17
+  - first:
+      213: -4430870586610117574
+    second: Luban_walk_sheet_18
+  - first:
+      213: -7390971872868156921
+    second: Luban_walk_sheet_19
+  - first:
+      213: 1993314940122004593
+    second: Luban_walk_sheet_20
+  - first:
+      213: -3940837309069913674
+    second: Luban_walk_sheet_21
+  - first:
+      213: -603639288917594202
+    second: Luban_walk_sheet_22
+  - first:
+      213: -1619637777095169804
+    second: Luban_walk_sheet_23
+  - first:
+      213: 1478176504723057279
+    second: Luban_walk_sheet_24
+  - first:
+      213: -4527395340924918272
+    second: Luban_walk_sheet_25
+  - first:
+      213: 307723296112627932
+    second: Luban_walk_sheet_26
+  - first:
+      213: 6123954998533904382
+    second: Luban_walk_sheet_27
+  - first:
+      213: -4304399799641907183
+    second: Luban_walk_sheet_28
+  - first:
+      213: -3574371000456855281
+    second: Luban_walk_sheet_29
+  - first:
+      213: 4847088832555721638
+    second: Luban_walk_sheet_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luban_walk_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81163a3575bce82e0800000000000000
+      internalID: -2121534798519115496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dff6721685116a0800000000000000
+      internalID: -6480301214512710321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103466222dccc2090800000000000000
+      internalID: -8057840430380334335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc6bcdbc7d78930800000000000000
+      internalID: 4145519252599130896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55ad7758af13c6c0800000000000000
+      internalID: -4124418025858423457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b96d8414b724e00800000000000000
+      internalID: 1027519185319009090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd968ed939dc70110800000000000000
+      internalID: 1227175457374890463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 3193
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d492a8a428e3810800000000000000
+      internalID: 1746976962123484506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b69668d5ac3b4520800000000000000
+      internalID: 2687308285654505143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c067dacb7479e90800000000000000
+      internalID: -7019062618544010236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf7a45313fb49ed0800000000000000
+      internalID: -2408089682667995197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dcbf8d8deb9a110800000000000000
+      internalID: 1272758208271469862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cfeb11e0f677220800000000000000
+      internalID: 2483575825736072265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573aeb14c977b1b80800000000000000
+      internalID: -8423007165064764555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5580
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8496de1dbda04bc0800000000000000
+      internalID: -3800847057722895222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 2290
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f02ce9b1c51b600800000000000000
+      internalID: 482267908802744121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1387
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf34425e24ba1bc0800000000000000
+      internalID: -3811536023574003788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1387
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724c9bfa894e265a0800000000000000
+      internalID: -6529405165299448793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_walk_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1387
+        width: 930
+        height: 903
+      alignment: 9
+      pivot: {x: 0.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34906f5da26282c0800000000000000
+      internalID: -4430870586610117574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6c662686b8f716a4ca1ebafadcce29a9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

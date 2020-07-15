@@ -1,0 +1,854 @@
+fileFormatVersion: 2
+guid: 91ec09d49f9ee08488c7e59fd845939d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5090574421697775335
+    second: MechGuardParts-walk-sheet_0
+  - first:
+      213: 4700885616502181276
+    second: MechGuardParts-walk-sheet_1
+  - first:
+      213: -7479500871976851950
+    second: MechGuardParts-walk-sheet_2
+  - first:
+      213: 4402091360079497325
+    second: MechGuardParts-walk-sheet_3
+  - first:
+      213: 2640786780942934858
+    second: MechGuardParts-walk-sheet_4
+  - first:
+      213: 7069359919756590538
+    second: MechGuardParts-walk-sheet_5
+  - first:
+      213: 9186698264134725354
+    second: MechGuardParts-walk-sheet_6
+  - first:
+      213: 2510008802086675656
+    second: MechGuardParts-walk-sheet_7
+  - first:
+      213: 3098762508501046301
+    second: MechGuardParts-walk-sheet_8
+  - first:
+      213: -5402617679706597611
+    second: MechGuardParts-walk-sheet_9
+  - first:
+      213: -3564602934075523519
+    second: MechGuardParts-walk-sheet_10
+  - first:
+      213: 4139702651167670093
+    second: MechGuardParts-walk-sheet_11
+  - first:
+      213: 7935993224763705701
+    second: MechGuardParts-walk-sheet_12
+  - first:
+      213: -7903499720377150231
+    second: MechGuardParts-walk-sheet_13
+  - first:
+      213: 7277780621718133600
+    second: MechGuardParts-walk-sheet_14
+  - first:
+      213: -1045874339070222853
+    second: MechGuardParts-walk-sheet_15
+  - first:
+      213: -4272724687057924713
+    second: MechGuardParts-walk-sheet_16
+  - first:
+      213: -8213764993686056186
+    second: MechGuardParts-walk-sheet_17
+  - first:
+      213: -5483418586847975144
+    second: MechGuardParts-walk-sheet_18
+  - first:
+      213: 6428809273746955967
+    second: MechGuardParts-walk-sheet_19
+  - first:
+      213: 8985868636154549526
+    second: MechGuardParts-walk-sheet_20
+  - first:
+      213: -8211620858022412398
+    second: MechGuardParts-walk-sheet_21
+  - first:
+      213: 2147542175107593739
+    second: MechGuardParts-walk-sheet_22
+  - first:
+      213: -97221651078341373
+    second: MechGuardParts-walk-sheet_23
+  - first:
+      213: -8505954994054572977
+    second: MechGuardParts-walk-sheet_24
+  - first:
+      213: -5142080430891877021
+    second: MechGuardParts-walk-sheet_25
+  - first:
+      213: -851554110352048466
+    second: MechGuardParts-walk-sheet_26
+  - first:
+      213: -5698421534010011083
+    second: MechGuardParts-walk-sheet_27
+  - first:
+      213: -4646568542508274084
+    second: MechGuardParts-walk-sheet_28
+  - first:
+      213: 2780452048844923238
+    second: MechGuardParts-walk-sheet_29
+  - first:
+      213: -5215197942413830215
+    second: MechGuardParts-walk-sheet_30
+  - first:
+      213: 7701875561068270107
+    second: MechGuardParts-walk-sheet_31
+  - first:
+      213: -4904415966166750360
+    second: MechGuardParts-walk-sheet_32
+  - first:
+      213: -6264070694834105111
+    second: MechGuardParts-walk-sheet_33
+  - first:
+      213: 1373045498017189041
+    second: MechGuardParts-walk-sheet_34
+  - first:
+      213: 8833466906006864086
+    second: MechGuardParts-walk-sheet_35
+  - first:
+      213: 6487808605505254786
+    second: MechGuardParts-walk-sheet_36
+  - first:
+      213: 5939662202072478795
+    second: MechGuardParts-walk-sheet_37
+  - first:
+      213: 4096987514331888759
+    second: MechGuardParts-walk-sheet_38
+  - first:
+      213: -9151424470983614475
+    second: MechGuardParts-walk-sheet_39
+  - first:
+      213: -4939691098496803751
+    second: MechGuardParts-walk-sheet_40
+  - first:
+      213: -7421163161701524430
+    second: MechGuardParts-walk-sheet_41
+  - first:
+      213: 4385122450038722504
+    second: MechGuardParts-walk-sheet_42
+  - first:
+      213: -1442894162078840075
+    second: MechGuardParts-walk-sheet_43
+  - first:
+      213: 8355584258392901745
+    second: MechGuardParts-walk-sheet_44
+  - first:
+      213: -1755282791007098382
+    second: MechGuardParts-walk-sheet_45
+  - first:
+      213: 1678426678261847585
+    second: MechGuardParts-walk-sheet_46
+  - first:
+      213: 6225519671581989543
+    second: MechGuardParts-walk-sheet_47
+  - first:
+      213: 1771616727290092302
+    second: MechGuardParts-walk-sheet_48
+  - first:
+      213: 1490112848494760986
+    second: MechGuardParts-walk-sheet_49
+  - first:
+      213: -8728592657513933916
+    second: MechGuardParts-walk-sheet_50
+  - first:
+      213: -442221231663756375
+    second: MechGuardParts-walk-sheet_51
+  - first:
+      213: -4911329812148106146
+    second: MechGuardParts-walk-sheet_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919b304d885aa59b0800000000000000
+      internalID: -5090574421697775335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d0b55df86ec3140800000000000000
+      internalID: 4700885616502181276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2166894c599733890800000000000000
+      internalID: -7479500871976851950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68ca5ac4ce571d30800000000000000
+      internalID: 4402091360079497325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43a6a5f595f5a420800000000000000
+      internalID: 2640786780942934858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdb97654696b1260800000000000000
+      internalID: 7069359919756590538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeea274e565bd7f70800000000000000
+      internalID: 9186698264134725354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4ea77f4b755d220800000000000000
+      internalID: 2510008802086675656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5896
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14d0826514010b20800000000000000
+      internalID: 3098762508501046301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517d7d738db0605b0800000000000000
+      internalID: -5402617679706597611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 3300
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14efc1d748cf78ec0800000000000000
+      internalID: -3564602934075523519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f779ec0ad237930800000000000000
+      internalID: 4139702651167670093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56982fd8acf422e60800000000000000
+      internalID: 7935993224763705701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4558cf0e0215290800000000000000
+      internalID: -7903499720377150231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b1bb68aeedff460800000000000000
+      internalID: 7277780621718133600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdd50474de4c71f0800000000000000
+      internalID: -1045874339070222853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3685
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79dced4f88b34b4c0800000000000000
+      internalID: -4272724687057924713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603ddc2b148d20e80800000000000000
+      internalID: -8213764993686056186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819e62009dbf6e3b0800000000000000
+      internalID: -5483418586847975144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5896
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe9c6229f7b73950800000000000000
+      internalID: 6428809273746955967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615d0585ae734bc70800000000000000
+      internalID: 8985868636154549526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 7370
+        y: 2504
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fb26f26567a0e80800000000000000
+      internalID: -8211620858022412398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1708
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b063577ea3a9dcd10800000000000000
+      internalID: 2147542175107593739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1708
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d9ff66c6996aef0800000000000000
+      internalID: -97221651078341373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1708
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44dae7dff6c4f980800000000000000
+      internalID: -8505954994054572977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 1708
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36db33e8719a3a8b0800000000000000
+      internalID: -5142080430891877021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechGuardParts-walk-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2948
+        y: 1708
+        width: 737
+        height: 796
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae31716c0cae24f0800000000000000
+      internalID: -851554110352048466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e5272fc680903394da6fa26be85fc279
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

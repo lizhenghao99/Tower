@@ -18,7 +18,8 @@ public class TauntEffect : Effect
         if (isActive)
         {
             base.Update();
-            if (!caster.activeInHierarchy)
+            if (!caster.activeInHierarchy 
+                || caster.GetComponent<Health>().isDead)
             {
                 OnFinish();
             }

@@ -1,0 +1,1151 @@
+fileFormatVersion: 2
+guid: c0646fb5a0b591e4b995e9c0e0850506
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4253153655358642870
+    second: luban_shield_idle_sheet_0
+  - first:
+      213: 8516785544403371481
+    second: luban_shield_idle_sheet_1
+  - first:
+      213: -5716955488645266656
+    second: luban_shield_idle_sheet_2
+  - first:
+      213: -906929691410811138
+    second: luban_shield_idle_sheet_3
+  - first:
+      213: -6437848224895104480
+    second: luban_shield_idle_sheet_4
+  - first:
+      213: 3716833307451557455
+    second: luban_shield_idle_sheet_5
+  - first:
+      213: -237531608465611796
+    second: luban_shield_idle_sheet_6
+  - first:
+      213: 7651484606905271912
+    second: luban_shield_idle_sheet_7
+  - first:
+      213: -5338349280709687116
+    second: luban_shield_idle_sheet_8
+  - first:
+      213: -5315705570108630123
+    second: luban_shield_idle_sheet_9
+  - first:
+      213: 7249162543539086209
+    second: luban_shield_idle_sheet_10
+  - first:
+      213: -970139978830532078
+    second: luban_shield_idle_sheet_11
+  - first:
+      213: 5590583796724408636
+    second: luban_shield_idle_sheet_12
+  - first:
+      213: 6651701562878529035
+    second: luban_shield_idle_sheet_13
+  - first:
+      213: 2971443644022138819
+    second: luban_shield_idle_sheet_14
+  - first:
+      213: -8061743814999056887
+    second: luban_shield_idle_sheet_15
+  - first:
+      213: -7805427149549280175
+    second: luban_shield_idle_sheet_16
+  - first:
+      213: 3163392101689666698
+    second: luban_shield_idle_sheet_17
+  - first:
+      213: -929843189241429659
+    second: luban_shield_idle_sheet_18
+  - first:
+      213: 2981776962334790866
+    second: luban_shield_idle_sheet_19
+  - first:
+      213: 6805657282046611763
+    second: luban_shield_idle_sheet_20
+  - first:
+      213: -1620848379547296504
+    second: luban_shield_idle_sheet_21
+  - first:
+      213: 5693324500454449563
+    second: luban_shield_idle_sheet_22
+  - first:
+      213: -544850727191227745
+    second: luban_shield_idle_sheet_23
+  - first:
+      213: -6171427763168529682
+    second: luban_shield_idle_sheet_24
+  - first:
+      213: 9205105882101519406
+    second: luban_shield_idle_sheet_25
+  - first:
+      213: 4927927273160655675
+    second: luban_shield_idle_sheet_26
+  - first:
+      213: 4788394565933552526
+    second: luban_shield_idle_sheet_27
+  - first:
+      213: 6596018494021379483
+    second: luban_shield_idle_sheet_28
+  - first:
+      213: -8236728931377217533
+    second: luban_shield_idle_sheet_29
+  - first:
+      213: -4827259798471993521
+    second: luban_shield_idle_sheet_30
+  - first:
+      213: -576206363405451993
+    second: luban_shield_idle_sheet_31
+  - first:
+      213: 6182757957986184896
+    second: luban_shield_idle_sheet_32
+  - first:
+      213: 3136190533357185968
+    second: luban_shield_idle_sheet_33
+  - first:
+      213: 5368219082225050527
+    second: luban_shield_idle_sheet_34
+  - first:
+      213: 2913271132508058010
+    second: luban_shield_idle_sheet_35
+  - first:
+      213: 3993381996051346919
+    second: luban_shield_idle_sheet_36
+  - first:
+      213: -3394431797940709474
+    second: luban_shield_idle_sheet_37
+  - first:
+      213: 2044564987478954449
+    second: luban_shield_idle_sheet_38
+  - first:
+      213: 2559314235317072745
+    second: luban_shield_idle_sheet_39
+  - first:
+      213: 3787320404889758761
+    second: luban_shield_idle_sheet_40
+  - first:
+      213: 5914469290799596252
+    second: luban_shield_idle_sheet_41
+  - first:
+      213: -5100104360949500881
+    second: luban_shield_idle_sheet_42
+  - first:
+      213: 4959709501860754834
+    second: luban_shield_idle_sheet_43
+  - first:
+      213: 7687163530385955588
+    second: luban_shield_idle_sheet_44
+  - first:
+      213: -7771922304892279598
+    second: luban_shield_idle_sheet_45
+  - first:
+      213: -1667773950609380012
+    second: luban_shield_idle_sheet_46
+  - first:
+      213: 9183905916265603957
+    second: luban_shield_idle_sheet_47
+  - first:
+      213: -2843762931085972340
+    second: luban_shield_idle_sheet_48
+  - first:
+      213: -8624551779870700600
+    second: luban_shield_idle_sheet_49
+  - first:
+      213: -5365326226747636411
+    second: luban_shield_idle_sheet_50
+  - first:
+      213: 5531275805291869706
+    second: luban_shield_idle_sheet_51
+  - first:
+      213: 8106860819119701910
+    second: luban_shield_idle_sheet_52
+  - first:
+      213: -6804243903158455074
+    second: luban_shield_idle_sheet_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba5ec227bc360b30800000000000000
+      internalID: 4253153655358642870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5485a2453b13670800000000000000
+      internalID: 8516785544403371481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0234496d54b49a0b0800000000000000
+      internalID: -5716955488645266656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef634333040f963f0800000000000000
+      internalID: -906929691410811138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a8f3d062b28a6a0800000000000000
+      internalID: -6437848224895104480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f468df35338d49330800000000000000
+      internalID: 3716833307451557455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 7260
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3ea76b24e14bcf0800000000000000
+      internalID: -237531608465611796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86645fee5b88f2a60800000000000000
+      internalID: 7651484606905271912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8465cec9f5ae5b0800000000000000
+      internalID: -5338349280709687116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b1c13a2f1da36b0800000000000000
+      internalID: -5315705570108630123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183e6b6fce23a9460800000000000000
+      internalID: 7249162543539086209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212b66b44de5982f0800000000000000
+      internalID: -970139978830532078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3120dac75eb59d40800000000000000
+      internalID: 5590583796724408636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 6328
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e094744579f4c50800000000000000
+      internalID: 6651701562878529035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c728083040bc3920800000000000000
+      internalID: 2971443644022138819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e57c496beee1090800000000000000
+      internalID: -8061743814999056887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154ece6cc5d8da390800000000000000
+      internalID: -7805427149549280175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c2d7a2b50a6eb20800000000000000
+      internalID: 3163392101689666698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561c270cb888813f0800000000000000
+      internalID: -929843189241429659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4986f5956616920800000000000000
+      internalID: 2981776962334790866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 5396
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33150777d3d827e50800000000000000
+      internalID: 6805657282046611763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dd0568cf69189e0800000000000000
+      internalID: -1620848379547296504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91ad98f770c20f40800000000000000
+      internalID: 5693324500454449563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92572e762d4078f0800000000000000
+      internalID: -544850727191227745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee23b53a52faa5aa0800000000000000
+      internalID: -6171427763168529682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24158e670b1fbf70800000000000000
+      internalID: 9205105882101519406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3343b3eeb3836440800000000000000
+      internalID: 4927927273160655675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 4464
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8351eadc7bc37240800000000000000
+      internalID: 4788394565933552526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b952d048fd3c98b50800000000000000
+      internalID: 6596018494021379483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300041e4da241bd80800000000000000
+      internalID: -8236728931377217533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f479d890ac0220db0800000000000000
+      internalID: -4827259798471993521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72df5e78d57e008f0800000000000000
+      internalID: -576206363405451993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce6cf9ea919dc550800000000000000
+      internalID: 6182757957986184896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bba2b08cacf58b20800000000000000
+      internalID: 3136190533357185968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 3532
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f936f7030debf7a40800000000000000
+      internalID: 5368219082225050527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91fa8be8a40e6820800000000000000
+      internalID: 2913271132508058010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5b41f74c75b6730800000000000000
+      internalID: 3993381996051346919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e971475a34e84e0d0800000000000000
+      internalID: -3394431797940709474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d152e60601cf5c10800000000000000
+      internalID: 2044564987478954449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963bca8bcb2848320800000000000000
+      internalID: 2559314235317072745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_shield_idle_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 2600
+        width: 1025
+        height: 932
+      alignment: 9
+      pivot: {x: 0.58, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cea0897d34f8430800000000000000
+      internalID: 3787320404889758761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a794dce65b313ad43918c3d0db29e60b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

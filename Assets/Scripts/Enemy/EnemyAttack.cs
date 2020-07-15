@@ -21,7 +21,13 @@ public class EnemyAttack : AttackBase
         animator.SetFloat("Velocity", agent.velocity.magnitude);
         if (agent.velocity.magnitude > Mathf.Epsilon)
         {
-            spriteRenderer.flipX = agent.velocity.x > 0.5;
+            spriteRenderer.flipX = agent.velocity.x > 0.1;
+        }
+        if (health.isDead)
+        {
+            agent.destination = gameObject.transform.position;
+            agent.isStopped = true;
+            return;
         }
 
         GetEnemies(gameObject.transform.position, 10000);

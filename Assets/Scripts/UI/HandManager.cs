@@ -70,7 +70,7 @@ public class HandManager : MonoBehaviour
                         cardXSpacing * (4 - i) + cardXOffset, 1f)
                     .SetEase(Ease.OutQuint)
                 );
-            yield return new WaitForSecondsRealtime(0.5f);
+            yield return new WaitForSeconds(0.5f);
         }
         hand = GetComponentsInChildren<CardClick>().ToList();
         foreach (CardClick c in hand)

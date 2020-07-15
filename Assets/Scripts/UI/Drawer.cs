@@ -13,6 +13,9 @@ public class Drawer : MonoBehaviour
     private ResourceDisplay resource;
     private DiscardButton discardButton;
     private HeadButton headButton;
+    private PlayerHealth health;
+
+    private bool drawerDead = false;
 
     private void Awake()
     {
@@ -24,6 +27,7 @@ public class Drawer : MonoBehaviour
         resource = GetComponentInChildren<ResourceDisplay>();
         discardButton = GetComponentInChildren<DiscardButton>();
         headButton = GetComponentInChildren<HeadButton>();
+        health = player.GetComponent<PlayerHealth>();
         
 
         hand.player = player;
@@ -43,9 +47,23 @@ public class Drawer : MonoBehaviour
     void Update()
     {
         discardButton.interactable = 
-            !(CardPlayer.Instance.isPlayingCard || player.isCasting);
+            !(CardPlayer.Instance.isPlayingCard 
+            || player.isCasting 
+            || health.isDead);
 
         headButton.interactable =
-            !(CardPlayer.Instance.isPlayingCard);
+            !(CardPlayer.Instance.isPlayingCard || health.isDead);
+
+        if (health.isDead)
+        {
+            if (!drawerDead)
+            {
+                foreach (CardClick c in GetComponentsInChildren<CardClick>())
+                {
+                    c.SetInteractable(false);
+                }
+            }
+            drawerDead = true;
+        }
     }
 }

@@ -15,12 +15,14 @@ public abstract class AttackBase : MonoBehaviour
     [SerializeField] protected Animator animator;
     [SerializeField] protected SpriteRenderer spriteRenderer;
 
-    public GameObject taunter;
+    [HideInInspector] public GameObject taunter;
 
     protected Collider[] enemiesInRange;
     protected GameObject target;
     protected int layerMask;
     protected float attackTimer;
+
+    protected Health health;
 
     protected float meleeRange = 5f;
 
@@ -29,6 +31,7 @@ public abstract class AttackBase : MonoBehaviour
     {
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        health = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -54,6 +57,7 @@ public abstract class AttackBase : MonoBehaviour
         float min_dist = Mathf.Infinity;
         foreach (Collider e in enemiesInRange)
         {
+            if (e.gameObject.GetComponent<Health>().isDead) continue;
             float dist = Vector3.Distance(gameObject.transform.position,
                                             e.transform.position);
             if (dist < min_dist)
@@ -67,7 +71,8 @@ public abstract class AttackBase : MonoBehaviour
 
     protected virtual bool TauntedBehavior()
     {
-        if (taunter && taunter.activeInHierarchy)
+        if (taunter && taunter.activeInHierarchy 
+            && !taunter.GetComponent<Health>().isDead)
         {
             target = taunter;
             return true;
@@ -107,7 +112,6 @@ public abstract class AttackBase : MonoBehaviour
                 Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))
                 < stopRange + 2)
         {
-            SpeicalAttackUpdate();
             attackTimer -= Time.deltaTime;
             FlipX(hitInfo);
             if (attackTimer < 0)
@@ -117,6 +121,7 @@ public abstract class AttackBase : MonoBehaviour
                 target.GetComponent<Health>()?.TakeDamage(attackDamage);
                 attackTimer = attackRate;
             }
+            SpeicalAttackUpdate();
         }
         else
         {

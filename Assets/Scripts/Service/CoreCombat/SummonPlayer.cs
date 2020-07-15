@@ -35,6 +35,9 @@ public class SummonPlayer : Singleton<SummonPlayer>
             splat.GetSpellCursorPosition() + cardPlaying.vfxOffset,
             Quaternion.identity);
 
+        CardPlayer.Instance.player.GetComponentInChildren<Animator>()
+            .SetTrigger("Summon");
+
         MinionCenter center = null;
 
         if (cardPlaying.centerPrefab)
@@ -52,7 +55,7 @@ public class SummonPlayer : Singleton<SummonPlayer>
             var minion = Instantiate(
                 cardPlaying.minionPrefab,
                 splat.GetSpellCursorPosition(),
-                Quaternion.Euler(30, 0, 0));
+                Quaternion.identity);
             InitializeMinion(minion);
             if (center)
             {
@@ -72,7 +75,7 @@ public class SummonPlayer : Singleton<SummonPlayer>
                 var minion = Instantiate(
                     cardPlaying.minionPrefab,
                     position,
-                    Quaternion.Euler(30, 0, 0));
+                    Quaternion.identity);
                 InitializeMinion(minion);
                 minion.initialPosition = position;
                 if (center)

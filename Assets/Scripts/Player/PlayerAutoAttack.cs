@@ -27,12 +27,21 @@ public class PlayerAutoAttack : AttackBase
     // Update is called once per frame
     protected override void Update()
     {
+        if (health.isDead)
+        {
+            agent.destination = gameObject.transform.position;
+            agent.isStopped = true;
+            return;
+        }
         GetEnemies(gameObject.transform.position, attackRange);
         SetTarget();
-        if (!player.isWalking && !player.isCasting)
+        if (!player.isWalking)
         {
             ApplyTaunt();
-            Attack();
+            if (!player.isCasting)
+            {
+                Attack();
+            }
         }
     }
 

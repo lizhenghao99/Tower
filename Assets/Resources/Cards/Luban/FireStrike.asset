@@ -24,7 +24,7 @@ MonoBehaviour:
   damage: 100
   force: 300
   range: 8
-  angle: 45
+  angle: 60
   delay: 0.4
   fxDelay: 0.2
   effect: 1

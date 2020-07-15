@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
     public bool isCasting { get; private set; } = false;
     private int layerMask;
 
+    private PlayerHealth health;
+
     private float autoStopWalkTimer = 3;
 
     private void Start()
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         layerMask = LayerMask.GetMask("Environment", "Player", "Enemy");
+        health = GetComponent<PlayerHealth>();
     }
 
 
@@ -44,6 +47,12 @@ public class PlayerController : MonoBehaviour
         if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting)
         {
             spriteRenderer.flipX = agent.velocity.x < -0.2;
+        }
+        if (health.isDead)
+        {
+            agent.destination = gameObject.transform.position;
+            agent.isStopped = true;
+            return;
         }
         // mouse left
         if (Input.GetMouseButtonDown(0) 

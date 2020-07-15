@@ -10,7 +10,7 @@ namespace TowerUtils
         // Execute after delay
         public static IEnumerator Timeout(Action action, float time)
         {
-            yield return new WaitForSecondsRealtime(time);
+            yield return new WaitForSeconds(time);
             action();
         }
 
