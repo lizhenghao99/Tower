@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     public static bool isPaused = false;
 
+    private CanvasGroup group;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        group = pauseMenu.GetComponent<CanvasGroup>();
     }
 
     // Update is called once per frame
@@ -35,12 +38,14 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
+        group.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
     }
 
     public void Resume()
     {
         isPaused = false;
         Time.timeScale = 1f;
-        pauseMenu.SetActive(false);
+        group.DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
+            .OnComplete(() => pauseMenu.SetActive(false));
     }
 }

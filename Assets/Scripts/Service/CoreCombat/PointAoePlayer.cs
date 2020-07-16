@@ -49,18 +49,14 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
 
     private void Impact()
     {
-       
-
         var enemies = GetEnemies(
             impactPoint,
             cardPlaying.radius);
 
-        StartCoroutine(Utils.Timeout(() =>
-            Instantiate(
-                cardPlaying.vfx,
-                impactPoint + cardPlaying.vfxOffset,
-                Quaternion.identity)
-            , cardPlaying.fxDelay
+        StartCoroutine(Utils.Timeout(() => {
+            var fx = Instantiate(cardPlaying.vfx);
+            fx.transform.position = impactPoint + cardPlaying.vfxOffset;
+            }, cardPlaying.fxDelay
         ));
 
         foreach (Collider e in enemies)
@@ -118,6 +114,19 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
                 projectile.transform.position,
                 impactPoint,
                 cardPlaying.projectileAngle);
+
+        var axis = Quaternion.Euler(30, 0, 0) * Vector3.back;
+
+        var angularVelocity = 1.5f * (float)Math.PI;
+
+        if (impactPoint.x < projectile.transform.position.x)
+        {
+            angularVelocity *= -1;
+        }
+
+        projectile.GetComponent<Rigidbody>().angularVelocity =
+            axis * angularVelocity;
+
         projectile.GetComponent<Projectile>().hitFloor 
             += OnHitFloor;
     }

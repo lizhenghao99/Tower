@@ -34,13 +34,13 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
                 (Vector3.ProjectOnPlane(splat.Get3DMousePosition()
                 - playerTransform.position, new Vector3(0, 1, 0)).normalized));
 
-        StartCoroutine(Utils.Timeout(()=>
+        StartCoroutine(Utils.Timeout(()=> {
             Instantiate(
             cardPlaying.vfx,
             playerTransform.position
                 + rotation * cardPlaying.vfxOffset,
-            rotation)
-            , cardPlaying.fxDelay));
+            rotation);
+            }, cardPlaying.fxDelay));
         
             
 

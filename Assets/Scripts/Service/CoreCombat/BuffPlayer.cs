@@ -55,7 +55,9 @@ public class BuffPlayer : Singleton<BuffPlayer>
                 self.isSelected = false;
                 if (cardPlaying.vfx)
                 {
-                    Instantiate(cardPlaying.vfx, self.transform);
+                    var fx = Instantiate(cardPlaying.vfx, self.transform);
+                    fx.transform.position =
+                        self.transform.position + cardPlaying.vfxOffset;
                 }
                 self.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
                 break;

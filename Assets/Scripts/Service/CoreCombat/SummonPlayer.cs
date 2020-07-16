@@ -30,10 +30,10 @@ public class SummonPlayer : Singleton<SummonPlayer>
         Refresh();
         cardPlaying = (Summon)CardPlayer.Instance.cardPlaying;
         splat = CardPlayer.Instance.splat;
-        Instantiate(
-            cardPlaying.vfx,
-            splat.GetSpellCursorPosition() + cardPlaying.vfxOffset,
-            Quaternion.identity);
+
+        var fx = Instantiate(cardPlaying.vfx);
+        fx.transform.position =
+            splat.GetSpellCursorPosition() + cardPlaying.vfxOffset;
 
         CardPlayer.Instance.player.GetComponentInChildren<Animator>()
             .SetTrigger("Summon");

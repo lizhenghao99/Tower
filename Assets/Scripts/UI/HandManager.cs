@@ -141,28 +141,15 @@ public class HandManager : MonoBehaviour
                 var rectTransform = card.GetComponent<RectTransform>();
                 rectTransform.anchoredPosition = new Vector2(cardXOffset, 0);
 
-                foreach (TextMeshProUGUI text in card.GetComponentsInChildren<TextMeshProUGUI>())
-                {
-                    text.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
-                }
-                foreach (Image i in card.GetComponentsInChildren<Image>())
-                {
-                    i.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
-                }
+                card.group.alpha = 0.8f;
+
                 rectTransform.DOAnchorPosY(cardYPos, 1).SetEase(Ease.OutQuint);
             }, 0.3f));
     }
 
     private void CompleteFade()
     {
-        foreach (TextMeshProUGUI text in lastSelectedCard.GetComponentsInChildren<TextMeshProUGUI>())
-        {
-            text.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
-        }
-        foreach (Image i in lastSelectedCard.GetComponentsInChildren<Image>())
-        {
-            i.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
-        }
+        lastSelectedCard.group.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
     }
 
     private void InitializeCardPos(CardClick c)

@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 700
+  isDead: 0
 --- !u!1 &7080708407393992435
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +181,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a280406b307ed8145a956fb76d968385, type: 2}
+  - {fileID: 2100000, guid: f3bdff0729a9dc04196cf6487723e3e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

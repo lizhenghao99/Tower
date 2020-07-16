@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TowerUtils;
+using DG.Tweening;
 
 public class Health : MonoBehaviour
 {
@@ -67,8 +68,15 @@ public class Health : MonoBehaviour
         isDead = true;
 
         StartCoroutine(Utils.Timeout(() =>
-            gameObject.SetActive(false)
-            , 3f));
+        {
+            Material mat = GetComponentInChildren<SpriteRenderer>().material;
+
+            DOTween.To(() => mat.GetFloat("_Fade"),
+                (x) => mat.SetFloat("_Fade", x),
+                0f, 2f)
+                .SetEase(Ease.OutQuint)
+                .OnComplete(() => gameObject.SetActive(false));
+        } , 2f));
         
     }
 

@@ -18,10 +18,13 @@ MonoBehaviour:
   secondaryChange: 2
   owner: 0
   art: {fileID: 0}
-  vfx: {fileID: 0}
-  vfxOffset: {x: 0, y: 0, z: 0}
+  vfx: {fileID: 141596, guid: a6240717d8ed7324d8028328118c312e, type: 3}
+  vfxOffset: {x: 0, y: 3, z: 0}
   castTime: 2
   duration: 0
-  shieldAmount: 0
+  shieldPercent: 0
   buffTarget: 2
   debuff: 0
+  effect: 0
+  effectDuration: 0
+  effectAmount: 0

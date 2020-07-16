@@ -20,6 +20,9 @@ public class CardClick : Selectable
     public float cardHeight;
     public float zoomFactor;
 
+    public Material cardMaterial;
+    public CanvasGroup group;
+
     private RectTransform rectTransform;
     private HandManager handManager;
     private DiscardButton discardButton;
@@ -28,6 +31,10 @@ public class CardClick : Selectable
 
     private List<CardClick> hand;
 
+    protected override void Awake()
+    {
+        group = GetComponent<CanvasGroup>();
+    }
 
     protected override void Start()
     {
@@ -149,36 +156,20 @@ public class CardClick : Selectable
 
     private void FadeIn()
     {
-        foreach (TextMeshProUGUI text in GetComponentsInChildren<TextMeshProUGUI>())
-        {
-            text.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
-        }
-        foreach (Image i in GetComponentsInChildren<Image>())
-        {
-            Material mat = i.material;
-            DOTween.To(() => mat.GetFloat("_HsvSaturation"),
-                (x) => mat.SetFloat("_HsvSaturation", x),
-                1f, fadeTime).SetEase(Ease.OutQuint);
-            i.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
-        }
+        DOTween.To(() => cardMaterial.GetFloat("_HsvSaturation"),
+                    (x) => cardMaterial.SetFloat("_HsvSaturation", x),
+                    1f, fadeTime).SetEase(Ease.OutQuint);
+        group.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
     }
 
     private void FadeOut()
     {
         if (this != handManager.lastSelectedCard)
         {
-            foreach (TextMeshProUGUI text in GetComponentsInChildren<TextMeshProUGUI>())
-            {
-                text.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
-            }
-            foreach (Image i in GetComponentsInChildren<Image>())
-            {
-                Material mat = i.material;
-                DOTween.To(() => mat.GetFloat("_HsvSaturation"),
-                    (x) => mat.SetFloat("_HsvSaturation", x), 
+            DOTween.To(() => cardMaterial.GetFloat("_HsvSaturation"),
+                    (x) => cardMaterial.SetFloat("_HsvSaturation", x),
                     0.8f, fadeTime).SetEase(Ease.OutQuint);
-                i.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
-            }
+            group.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
         }
     }
 

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using UnityEngine;
+using DG.Tweening;
 
 public class Drawer : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class Drawer : MonoBehaviour
     private HeadButton headButton;
     private PlayerHealth health;
 
-    private bool drawerDead = false;
+    private CanvasGroup group;
 
     private void Awake()
     {
@@ -28,7 +30,8 @@ public class Drawer : MonoBehaviour
         discardButton = GetComponentInChildren<DiscardButton>();
         headButton = GetComponentInChildren<HeadButton>();
         health = player.GetComponent<PlayerHealth>();
-        
+
+        group = gameObject.GetComponent<CanvasGroup>();
 
         hand.player = player;
         healthbar.player = player;
@@ -48,22 +51,15 @@ public class Drawer : MonoBehaviour
     {
         discardButton.interactable = 
             !(CardPlayer.Instance.isPlayingCard 
-            || player.isCasting 
-            || health.isDead);
+            || player.isCasting );
 
         headButton.interactable =
-            !(CardPlayer.Instance.isPlayingCard || health.isDead);
+            !(CardPlayer.Instance.isPlayingCard);
 
         if (health.isDead)
         {
-            if (!drawerDead)
-            {
-                foreach (CardClick c in GetComponentsInChildren<CardClick>())
-                {
-                    c.SetInteractable(false);
-                }
-            }
-            drawerDead = true;
+            group.interactable = false;
+            group.DOFade(0.5f, 0.3f).SetEase(Ease.OutQuint);
         }
     }
 }
