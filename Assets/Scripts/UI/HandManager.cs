@@ -40,12 +40,22 @@ public class HandManager : MonoBehaviour
 
     private void Start()
     {
-
+        LevelController.Instance.StartCombat += OnStartCombat;
+        LevelController.Instance.EndCombat += OnEndCombat;
     }
 
-    public void StartCombat()
+    public void OnStartCombat(object sender, EventArgs e)
     {
         StartCoroutine(DrawInitialCards());
+    }
+
+    public void OnEndCombat(object sender, EventArgs e)
+    {
+        foreach (CardClick c in hand)
+        {
+            c.group.DOFade(0f, fadeTime).SetEase(Ease.OutQuint);
+            Destroy(c, 1f);
+        }
     }
 
     private IEnumerator DrawInitialCards()

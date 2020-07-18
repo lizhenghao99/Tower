@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6647725742678617358}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &170026696
 SpriteRenderer:
@@ -93,10 +93,10 @@ GameObject:
   - component: {fileID: 6647725742678617355}
   - component: {fileID: 6647725742678617352}
   - component: {fileID: 6647725742678617359}
-  - component: {fileID: 6647725742678617353}
   - component: {fileID: 7692927565020350951}
   - component: {fileID: 1427915824}
   - component: {fileID: 7831976801237021901}
+  - component: {fileID: -8540037159236758093}
   m_Layer: 10
   m_Name: Wolf
   m_TagString: Enemy
@@ -115,8 +115,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 170026695}
   - {fileID: 6647725743354277935}
+  - {fileID: 170026695}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -172,20 +172,6 @@ CapsuleCollider:
   m_Height: 5.03
   m_Direction: 1
   m_Center: {x: 0, y: 0.76, z: 0}
---- !u!114 &6647725742678617353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647725742678617357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7655b65ccdd5bc14c8933ed27a6fcf33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 2500
-  isDead: 0
 --- !u!114 &7692927565020350951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +217,20 @@ MonoBehaviour:
   animator: {fileID: 6647725743354277930}
   spriteRenderer: {fileID: 6647725743354277929}
   taunter: {fileID: 0}
+--- !u!114 &-8540037159236758093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725742678617357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b3bc6cc55678348a03c6e78f38543b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  isDead: 0
 --- !u!1 &6647725743354277934
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +262,7 @@ Transform:
   m_Children:
   - {fileID: 6647725744518592621}
   m_Father: {fileID: 6647725742678617358}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!212 &6647725743354277929
 SpriteRenderer:

@@ -45,6 +45,8 @@ public abstract class AttackBase : MonoBehaviour
 
     protected virtual void SetTarget()
     {
+        target = null;
+
         if (TauntedBehavior()) return;
 
         if (enemiesInRange.Length == 0)
@@ -53,7 +55,7 @@ public abstract class AttackBase : MonoBehaviour
             return;
         }
 
-        Collider closestEnemy = enemiesInRange[0];
+        Collider closestEnemy = null;
         float min_dist = Mathf.Infinity;
         foreach (Collider e in enemiesInRange)
         {
@@ -66,7 +68,10 @@ public abstract class AttackBase : MonoBehaviour
                 min_dist = dist;
             }
         }
-        target = closestEnemy.gameObject;
+        if (closestEnemy)
+        {
+            target = closestEnemy.gameObject;
+        }
     }
 
     protected virtual bool TauntedBehavior()

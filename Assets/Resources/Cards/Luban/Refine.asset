@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Refine
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
-  description: "\u6D88\u8017\u6240\u6709\u7075\u6750\uFF0C\u5C06\u5176\u70BC\u5316\u62102\u9897<b>\u7075\u6838<\\b>\u3002"
-  primaryChange: -100
-  secondaryChange: 2
+  description: "\u6D88\u80173\u4E2A\u7075\u6750\uFF0C\u5C06\u5176\u70BC\u5316\u62101\u9897<b>\u7075\u6838<\\b>\u3002"
+  primaryChange: -60
+  secondaryChange: 1
   owner: 0
   art: {fileID: 0}
   vfx: {fileID: 141596, guid: a6240717d8ed7324d8028328118c312e, type: 3}

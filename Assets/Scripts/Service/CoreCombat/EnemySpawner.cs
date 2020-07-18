@@ -3,30 +3,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : Singleton<EnemySpawner>
 {
-    [SerializeField] Wave[] waves;
+    [SerializeField] WaveStage[] waveStages;
+    private WaveStage currStage = null;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        LevelController.Instance.StartCombat += OnStartCombat;
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach(Wave wave in waves)
+        if (currStage != null)
         {
-            wave.update();
+            if (currStage.stageClear)
+            {
+                currStage = null;
+                LevelController.Instance.ClearStage();
+            }
+            else
+            {
+                currStage.update();
+            }
         }
+    }
+
+    private void OnStartCombat(object sender, EventArgs e)
+    {
+        currStage = waveStages[LevelController.Instance.currStage.index];
+    }
+
+    public void CheckAllEnemiesDead()
+    {
+        foreach (Wave w in currStage.waves)
+        {
+            foreach (Enemy e in w.enemies)
+            {
+                if (!e.GetComponent<Health>().isDead)
+                {
+                    return;
+                }
+            }
+        }
+
+        currStage.stageClear = true;
     }
 }
 
 [System.Serializable]
 public class Wave
 {
-    [SerializeField] Enemy[] enemies;
+    [SerializeField] public Enemy[] enemies;
     [SerializeField] float timer;
 
     public void update()
@@ -46,6 +76,21 @@ public class Wave
         foreach(Enemy enemy in enemies)
         {
             enemy.Spawn();
+        }
+    }
+}
+
+[System.Serializable]
+public class WaveStage
+{
+    [SerializeField] public Wave[] waves;
+    public bool stageClear = false;
+
+    public void update()
+    {
+        foreach (Wave wave in waves)
+        {
+            wave.update();
         }
     }
 }

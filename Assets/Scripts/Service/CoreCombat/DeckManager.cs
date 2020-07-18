@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TowerUtils;
+using System;
 
 public class DeckManager : Singleton<DeckManager>
 {
@@ -29,7 +30,12 @@ public class DeckManager : Singleton<DeckManager>
     // Start is called before the first frame update
     private void Awake()
     {
-        StartCombat();
+        OnEndCombat(gameObject, EventArgs.Empty);
+    }
+
+    private void Start()
+    {
+        LevelController.Instance.EndCombat += OnEndCombat;
     }
 
     // Update is called once per frame
@@ -38,7 +44,7 @@ public class DeckManager : Singleton<DeckManager>
         
     }
 
-    public void StartCombat()
+    private void OnEndCombat(object sender, EventArgs e)
     {
         deck = new Dictionary<Card.Owner, List<Card>>();
         drawPile = new Dictionary<Card.Owner, Stack<Card>>();

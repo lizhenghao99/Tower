@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -18,10 +19,21 @@ public class PlayerAutoAttack : AttackBase
 
         player = GetComponent<PlayerController>();
         splat = GetComponentInChildren<SplatManager>();
-        
+
+        LevelController.Instance.StartCombat += OnStartCombat;
+        LevelController.Instance.EndCombat += OnEndCombat;
+    }
+
+    public void OnStartCombat(object sender, EventArgs e)
+    {
         splat.SelectRangeIndicator(gameObject.name + "Range");
         splat.CurrentRangeIndicator.DefaultScale = (attackRange + 1) * 2;
         splat.CurrentRangeIndicator.Scale = (attackRange + 1) * 2;
+    }
+
+    public void OnEndCombat(object sender, EventArgs e)
+    {
+        splat.CancelRangeIndicator();
     }
 
     // Update is called once per frame

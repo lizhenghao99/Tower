@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class Drawer : MonoBehaviour
 {
@@ -43,7 +44,9 @@ public class Drawer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        group.interactable = false;
+        LevelController.Instance.StartCombat += OnStartCombat;
+        LevelController.Instance.EndCombat += OnEndCombat;
     }
 
     // Update is called once per frame
@@ -61,5 +64,15 @@ public class Drawer : MonoBehaviour
             group.interactable = false;
             group.DOFade(0.5f, 0.3f).SetEase(Ease.OutQuint);
         }
+    }
+
+    private void OnStartCombat(object sender, EventArgs e)
+    {
+        group.interactable = true;
+    }
+
+    private void OnEndCombat(object sender, EventArgs e)
+    {
+        group.interactable = false;
     }
 }

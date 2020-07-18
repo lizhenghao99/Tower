@@ -31,7 +31,7 @@ public class Minion : AttackBase
         animator.SetFloat("Velocity", agent.velocity.magnitude);
         if (agent.velocity.magnitude > Mathf.Epsilon)
         {
-            spriteRenderer.flipX = agent.velocity.x < -0.1;
+            spriteRenderer.flipX = agent.velocity.x < -0.3;
         }
 
         if (health.isDead)

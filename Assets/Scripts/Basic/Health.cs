@@ -30,7 +30,7 @@ public class Health : MonoBehaviour
     {
         currHealth = Mathf.Clamp(currHealth - damage, 0, maxHealth);
         OnHealthChanged();
-        if (currHealth <= 0)
+        if (currHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -41,7 +41,7 @@ public class Health : MonoBehaviour
         currHealth = Mathf.Clamp(
             currHealth - (int)(maxHealth * percent), 0, maxHealth);
         OnHealthChanged();
-        if (currHealth <= 0)
+        if (currHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -76,8 +76,7 @@ public class Health : MonoBehaviour
                 0f, 2f)
                 .SetEase(Ease.OutQuint)
                 .OnComplete(() => gameObject.SetActive(false));
-        } , 2f));
-        
+        }, 2f));
     }
 
     protected void OnHealthChanged()
