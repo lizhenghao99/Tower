@@ -23,6 +23,7 @@ public class LevelController : Singleton<LevelController>
 
     public EventHandler StartCombat;
     public EventHandler EndCombat;
+    public EventHandler StageClear;
 
     private ProCamera2DNumericBoundaries numericBoundaries;
     private ProCamera2DCinematics cinematics;
@@ -82,10 +83,16 @@ public class LevelController : Singleton<LevelController>
         EndCombat?.Invoke(gameObject, EventArgs.Empty);
     }
 
+    public void OnStageClear()
+    {
+        StageClear?.Invoke(gameObject, EventArgs.Empty);
+    }
+
     public void ClearStage()
     {
         StartCoroutine(TowerUtils.Utils.Timeout(() => StartNextStage()
             , 5f));
+        OnStageClear();
     }
 
     public void StartNextStage()

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "\u706B\u88AD"
   description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A05\u79D2<b>\u71C3\u70E7</b>\u6548\u679C\u3002"
-  primaryChange: 0
+  primaryChange: -20
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}

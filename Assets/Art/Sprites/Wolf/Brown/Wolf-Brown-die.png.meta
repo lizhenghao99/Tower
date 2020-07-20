@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 8ef19d2e7bed9cf4a90507cdd47ddf85
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3270915703492664228
+    second: Wolf-Brown-die_0
+  - first:
+      213: -2746780051820162471
+    second: Wolf-Brown-die_1
+  - first:
+      213: -7825382671536510012
+    second: Wolf-Brown-die_2
+  - first:
+      213: -3048888794224468070
+    second: Wolf-Brown-die_3
+  - first:
+      213: -4448843113984831220
+    second: Wolf-Brown-die_4
+  - first:
+      213: -7226125397307460792
+    second: Wolf-Brown-die_5
+  - first:
+      213: 6091983032841136402
+    second: Wolf-Brown-die_6
+  - first:
+      213: -4959373489222869480
+    second: Wolf-Brown-die_7
+  - first:
+      213: -3577971506555096750
+    second: Wolf-Brown-die_8
+  - first:
+      213: -8585536456370157620
+    second: Wolf-Brown-die_9
+  - first:
+      213: -1286934146786568524
+    second: Wolf-Brown-die_10
+  - first:
+      213: 3677604424807183259
+    second: Wolf-Brown-die_11
+  - first:
+      213: 3781083184590510484
+    second: Wolf-Brown-die_12
+  - first:
+      213: 7293951309110280608
+    second: Wolf-Brown-die_13
+  - first:
+      213: 6623841744826334862
+    second: Wolf-Brown-die_14
+  - first:
+      213: -2910952576840693827
+    second: Wolf-Brown-die_0
+  - first:
+      213: -6318724476812358784
+    second: Wolf-Brown-die_1
+  - first:
+      213: -422560945902817532
+    second: Wolf-Brown-die_2
+  - first:
+      213: -6767511672115852909
+    second: Wolf-Brown-die_3
+  - first:
+      213: 6126807452190786720
+    second: Wolf-Brown-die_4
+  - first:
+      213: -6731261782759673978
+    second: Wolf-Brown-die_5
+  - first:
+      213: 8081882158619906926
+    second: Wolf-Brown-die_6
+  - first:
+      213: -4405300074515379566
+    second: Wolf-Brown-die_7
+  - first:
+      213: 275461404887401612
+    second: Wolf-Brown-die_8
+  - first:
+      213: 1473476618082639289
+    second: Wolf-Brown-die_9
+  - first:
+      213: 4858727054365243127
+    second: Wolf-Brown-die_10
+  - first:
+      213: -2458840605397815385
+    second: Wolf-Brown-die_11
+  - first:
+      213: -2144785169384099552
+    second: Wolf-Brown-die_12
+  - first:
+      213: -2463999337993232606
+    second: Wolf-Brown-die_13
+  - first:
+      213: -5962141535711079040
+    second: Wolf-Brown-die_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-Brown-die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db70763ed083a97d0800000000000000
+      internalID: -2910952576840693827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_1
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b880ef0916f48a0800000000000000
+      internalID: -6318724476812358784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_2
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f628bfe03c22af0800000000000000
+      internalID: -422560945902817532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39989327df7f412a0800000000000000
+      internalID: -6767511672115852909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a44c03aaeac60550800000000000000
+      internalID: 6126807452190786720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_5
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f62748211c592a0800000000000000
+      internalID: -6731261782759673978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e635b1de00d982070800000000000000
+      internalID: 8081882158619906926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a42892cea3dd2c0800000000000000
+      internalID: -4405300074515379566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_8
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84c4a330b2a2d300800000000000000
+      internalID: 275461404887401612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdd8a56d27d27410800000000000000
+      internalID: 1473476618082639289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f63508638aad6340800000000000000
+      internalID: 4858727054365243127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_11
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afe4f33f7170edd0800000000000000
+      internalID: -2458840605397815385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021b55380413c32e0800000000000000
+      internalID: -2144785169384099552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_13
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f9d1c28ad1ecdd0800000000000000
+      internalID: -2463999337993232606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-die_14
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085d65facd7324da0800000000000000
+      internalID: -5962141535711079040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 53fe1e95a5a94ad4598bca87f7729991
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -16,11 +17,14 @@ public class Minion : AttackBase
     [HideInInspector] public float guardRadius;
     [HideInInspector] public Vector3 initialPosition;
 
+    private bool inCombat = true;
+
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         layerMask = LayerMask.GetMask("Enemy");
+        LevelController.Instance.StageClear += OnStageClear;
     }
 
     // Update is called once per frame
@@ -34,9 +38,9 @@ public class Minion : AttackBase
             spriteRenderer.flipX = agent.velocity.x < -0.3;
         }
 
-        if (health.isDead)
+        if (!inCombat || health.isDead)
         {
-            agent.destination = gameObject.transform.position;
+            agent.destination = transform.position;
             agent.isStopped = true;
             return;
         }
@@ -44,7 +48,7 @@ public class Minion : AttackBase
 
         if (charge)
         {
-            attackRange = 10000;
+            attackRange = 100;
             GetEnemies(gameObject.transform.position, attackRange);
             SetTarget();
             Attack();
@@ -75,5 +79,11 @@ public class Minion : AttackBase
         {
             EffectManager.Instance.Taunt(gameObject, c.gameObject, 0);
         }
+    }
+
+
+    protected virtual void OnStageClear(object sender, EventArgs e)
+    {
+        inCombat = false;
     }
 }

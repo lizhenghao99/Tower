@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: be92a40bf1cccf94097bbec42eca206f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1048818255417614036
+    second: Wolf-Grey-bite_0
+  - first:
+      213: -5748879358267462257
+    second: Wolf-Grey-bite_1
+  - first:
+      213: 2917417081938858250
+    second: Wolf-Grey-bite_2
+  - first:
+      213: -6937546584010780154
+    second: Wolf-Grey-bite_3
+  - first:
+      213: 5173776714502618611
+    second: Wolf-Grey-bite_4
+  - first:
+      213: -2013004742796700933
+    second: Wolf-Grey-bite_5
+  - first:
+      213: -6573136002620694274
+    second: Wolf-Grey-bite_6
+  - first:
+      213: -3079962698346003564
+    second: Wolf-Grey-bite_7
+  - first:
+      213: -7885895479842751082
+    second: Wolf-Grey-bite_8
+  - first:
+      213: 7749668335085067446
+    second: Wolf-Grey-bite_9
+  - first:
+      213: -3330589293558749858
+    second: Wolf-Grey-bite_10
+  - first:
+      213: -9111621990550824204
+    second: Wolf-Grey-bite_11
+  - first:
+      213: 576992079211408509
+    second: Wolf-Grey-bite_12
+  - first:
+      213: 4667881558281196186
+    second: Wolf-Grey-bite_13
+  - first:
+      213: -3751902008080885729
+    second: Wolf-Grey-bite_14
+  - first:
+      213: -1876487558091943933
+    second: Wolf-Grey-bite_15
+  - first:
+      213: 5582819399083054980
+    second: Wolf-Grey-bite_16
+  - first:
+      213: 3805047830720685982
+    second: Wolf-Grey-bite_17
+  - first:
+      213: 8376998044913608364
+    second: Wolf-Grey-bite_18
+  - first:
+      213: -101148398647928865
+    second: Wolf-Grey-bite_19
+  - first:
+      213: -8078343989102844732
+    second: Wolf-Grey-bite_20
+  - first:
+      213: -7339425042555109454
+    second: Wolf-Grey-bite_21
+  - first:
+      213: -8939460519658636663
+    second: Wolf-Grey-bite_22
+  - first:
+      213: 4321580832310412039
+    second: Wolf-Grey-bite_23
+  - first:
+      213: -4945895568247101146
+    second: Wolf-Grey-bite_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2163e38a59d171f0800000000000000
+      internalID: -1048818255417614036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_1
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d64e9bea0e730b0800000000000000
+      internalID: -5748879358267462257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_2
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a015f9ef06fbc7820800000000000000
+      internalID: 2917417081938858250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_3
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60210577322e8bf90800000000000000
+      internalID: -6937546584010780154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_4
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdbd1f8282fcc740800000000000000
+      internalID: 5173776714502618611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf21d6e0ade5014e0800000000000000
+      internalID: -2013004742796700933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_6
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0667fa1a787c4a0800000000000000
+      internalID: -6573136002620694274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_7
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49302a38e36c145d0800000000000000
+      internalID: -3079962698346003564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_8
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d3d14a7dbaf8290800000000000000
+      internalID: -7885895479842751082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_9
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc96df8a4a5c8b60800000000000000
+      internalID: 7749668335085067446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5526b80fae57c1d0800000000000000
+      internalID: -3330589293558749858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_11
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa949533140d8180800000000000000
+      internalID: -9111621990550824204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_12
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c2c9f2d33e10800800000000000000
+      internalID: 576992079211408509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_13
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9292f6bb85a7c040800000000000000
+      internalID: 4667881558281196186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_14
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18934880019eebc0800000000000000
+      internalID: -3751902008080885729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3005d7a028065f5e0800000000000000
+      internalID: -1876487558091943933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_16
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48751871aa82a7d40800000000000000
+      internalID: 5582819399083054980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_17
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e972a7f87de3ec430800000000000000
+      internalID: 3805047830720685982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_18
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6a73fa653114470800000000000000
+      internalID: 8376998044913608364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_19
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd79dfc3116a89ef0800000000000000
+      internalID: -101148398647928865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4ec1c51f4f3ef80800000000000000
+      internalID: -8078343989102844732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_21
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf75ea4fcf152a90800000000000000
+      internalID: -7339425042555109454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-bite_22
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a3e1a4508a0f380800000000000000
+      internalID: -8939460519658636663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 756ae071a1ecbff4b8d3c5feef698dbc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

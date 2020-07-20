@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "\u6728\u7532\u6218\u58EB"
   description: "\u653E\u51FA3\u4E2A<b>\u51B2\u950B</b>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
-  primaryChange: 0
+  primaryChange: -20
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}
@@ -27,10 +27,10 @@ MonoBehaviour:
     type: 3}
   centerPrefab: {fileID: 0}
   count: 3
-  attackDamage: 40
+  attackDamage: 60
   attackRange: 0
   attackRate: 1.5
-  stopRange: 1
+  stopRange: 3
   taunt: 0
   invisible: 0
   guard: 0

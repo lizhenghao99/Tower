@@ -7,18 +7,18 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    private void Awake()
+
+    protected virtual void Awake()
     {
         gameObject.SetActive(false);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
-
+        // do nothing
     }
 
-    public void Spawn()
+    public virtual void Spawn()
     {
         gameObject.SetActive(true);
     }  

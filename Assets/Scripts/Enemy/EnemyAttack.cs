@@ -30,7 +30,7 @@ public class EnemyAttack : AttackBase
             return;
         }
 
-        GetEnemies(gameObject.transform.position, 10000);
+        GetEnemies(gameObject.transform.position, 100);
         SetTarget();
         Attack();
     }

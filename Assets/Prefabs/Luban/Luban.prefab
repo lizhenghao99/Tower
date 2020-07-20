@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8730300238010060600}
   - component: {fileID: 8923698843579247746}
   - component: {fileID: 8729792688550215930}
+  - component: {fileID: 1815128013591404530}
   m_Layer: 9
   m_Name: Luban Sprite
   m_TagString: Player
@@ -102,6 +103,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1815128013591404530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729658002155953774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c8d7e5bdb671c4ca2efab046de8664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8729792688421412076
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,9 +331,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1
-  m_Height: 6
+  m_Height: 4
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!195 &8729792689411822763
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -331,7 +344,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.8
-  m_Speed: 1.5
+  m_Speed: 1.2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -378,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 20
   attackRange: 3.5
-  attackRate: 1.5
+  attackRate: 3
   stopRange: 2.5
   agent: {fileID: 8729792689411822763}
   animator: {fileID: 8729792688550215930}
@@ -400,7 +413,7 @@ MonoBehaviour:
   startingSecondaryResource: 0
   maxPrimaryResource: 100
   maxSecondaryResource: 3
-  autoAttackPrimaryGen: 4
+  autoAttackPrimaryGen: 12
 --- !u!114 &641722208400027996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,15 +585,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1ff5fc68ff1389478fd2e835e1351fd, type: 3}
---- !u!1 &8829092949100398208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2599370030651255251, guid: f1ff5fc68ff1389478fd2e835e1351fd,
-    type: 3}
-  m_PrefabInstance: {fileID: 6815613127729262419}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3234018267070291586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8247329508321128913, guid: f1ff5fc68ff1389478fd2e835e1351fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6815613127729262419}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8829092949100398208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2599370030651255251, guid: f1ff5fc68ff1389478fd2e835e1351fd,
     type: 3}
   m_PrefabInstance: {fileID: 6815613127729262419}
   m_PrefabAsset: {fileID: 0}

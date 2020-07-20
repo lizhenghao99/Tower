@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
+using TowerUtils;
 
 public abstract class AttackBase : MonoBehaviour
 {
@@ -26,12 +27,17 @@ public abstract class AttackBase : MonoBehaviour
 
     protected float meleeRange = 5f;
 
+    protected bool isSpecialing = false;
+    protected AttackEvent attackEvent;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         health = GetComponent<Health>();
+        attackEvent = GetComponentInChildren<AttackEvent>();
+        attackEvent.attack += OnAttack;
     }
 
     // Update is called once per frame
@@ -119,12 +125,15 @@ public abstract class AttackBase : MonoBehaviour
         {
             attackTimer -= Time.deltaTime;
             FlipX(hitInfo);
-            if (attackTimer < 0)
+            if (!isSpecialing)
             {
-                animator.SetTrigger("Attack");
-                SpecialAutoAttack();
-                target.GetComponent<Health>()?.TakeDamage(attackDamage);
-                attackTimer = attackRate;
+                if (attackTimer < 0)
+                {
+                    agent.isStopped = true;
+                    animator.SetTrigger("Attack");
+                    // attack behavior moved to animation
+                    attackTimer = attackRate;
+                }
             }
             SpeicalAttackUpdate();
         }
@@ -148,5 +157,29 @@ public abstract class AttackBase : MonoBehaviour
     protected virtual void SpeicalAttackUpdate()
     {
         // do nothing
+    }
+
+    protected virtual void OnAttack(object sender, EventArgs e)
+    {
+        ResumeFromAttack();
+
+        if (target == null) return;
+
+        if (Vector3.Distance(
+                Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
+                Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))
+                < stopRange + 2)
+        {
+            SpecialAutoAttack();
+            target.GetComponent<Health>()?.TakeDamage(attackDamage);
+        }  
+    }
+
+    protected virtual void ResumeFromAttack()
+    {
+        StartCoroutine(Utils.Timeout(() =>
+        {
+            agent.isStopped = false;
+        }, attackRate/2));
     }
 }

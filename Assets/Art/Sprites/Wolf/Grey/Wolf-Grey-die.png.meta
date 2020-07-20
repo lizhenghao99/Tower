@@ -1,0 +1,488 @@
+fileFormatVersion: 2
+guid: cadd2b6573c0adb40a95fd15545731fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4585517832250001832
+    second: Wolf-Grey-die_0
+  - first:
+      213: -3659252374869803082
+    second: Wolf-Grey-die_1
+  - first:
+      213: 8442085720193242326
+    second: Wolf-Grey-die_2
+  - first:
+      213: 5746280772570697983
+    second: Wolf-Grey-die_3
+  - first:
+      213: 5066136907173354408
+    second: Wolf-Grey-die_4
+  - first:
+      213: -5733375411150796988
+    second: Wolf-Grey-die_5
+  - first:
+      213: -4710271231758408682
+    second: Wolf-Grey-die_6
+  - first:
+      213: -1735386694504253120
+    second: Wolf-Grey-die_7
+  - first:
+      213: 7579546804807617750
+    second: Wolf-Grey-die_8
+  - first:
+      213: -1653991595167674545
+    second: Wolf-Grey-die_9
+  - first:
+      213: 1116500903767497342
+    second: Wolf-Grey-die_10
+  - first:
+      213: 302914362891535103
+    second: Wolf-Grey-die_11
+  - first:
+      213: -4188276212844651795
+    second: Wolf-Grey-die_12
+  - first:
+      213: 1158345532764721870
+    second: Wolf-Grey-die_13
+  - first:
+      213: 3747957069109308353
+    second: Wolf-Grey-die_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-Grey-die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856f481a3d7fc50c0800000000000000
+      internalID: -4585517832250001832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_1
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf71644a59b73dc0800000000000000
+      internalID: -3659252374869803082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_2
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1670
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d414830c30582570800000000000000
+      internalID: 8442085720193242326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0dbb4eae3eebf40800000000000000
+      internalID: 5746280772570697983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab509feca88e4640800000000000000
+      internalID: 5066136907173354408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_5
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1292
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447c566b075fe60b0800000000000000
+      internalID: -5733375411150796988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6146c435541c1aeb0800000000000000
+      internalID: -4710271231758408682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049722eeefaaae7e0800000000000000
+      internalID: -1735386694504253120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_8
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 914
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc410b29a5ff2960800000000000000
+      internalID: 7579546804807617750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f8c8c4867db09e0800000000000000
+      internalID: -1653991595167674545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_10
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ad67018ab9e7f00800000000000000
+      internalID: 1116500903767497342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_11
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 536
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff28385120b243400800000000000000
+      internalID: 302914362891535103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea1d2099f040e5c0800000000000000
+      internalID: -4188276212844651795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_13
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec21a97ff15431010800000000000000
+      internalID: 1158345532764721870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-die_14
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 158
+        width: 641
+        height: 378
+      alignment: 9
+      pivot: {x: 0.55, y: -0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbaca9c81b630430800000000000000
+      internalID: 3747957069109308353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f0d861705f45fa34680c6e3ebd08e202
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: f1a7e3707ae237845a8668caec346bb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8781376161116140039
+    second: Wolf-Brown-bite_0
+  - first:
+      213: -6465307998873504793
+    second: Wolf-Brown-bite_1
+  - first:
+      213: 126915432083818265
+    second: Wolf-Brown-bite_2
+  - first:
+      213: 8507121785854468430
+    second: Wolf-Brown-bite_3
+  - first:
+      213: -8611107369567171950
+    second: Wolf-Brown-bite_4
+  - first:
+      213: 2897886164267827707
+    second: Wolf-Brown-bite_5
+  - first:
+      213: -7250284902107055836
+    second: Wolf-Brown-bite_6
+  - first:
+      213: 2237976112505590313
+    second: Wolf-Brown-bite_7
+  - first:
+      213: 579064661614698417
+    second: Wolf-Brown-bite_8
+  - first:
+      213: -6119633960176067710
+    second: Wolf-Brown-bite_9
+  - first:
+      213: 5822451029852654762
+    second: Wolf-Brown-bite_10
+  - first:
+      213: 8857778020528053303
+    second: Wolf-Brown-bite_11
+  - first:
+      213: 4732029467491531457
+    second: Wolf-Brown-bite_12
+  - first:
+      213: 5167393548168747424
+    second: Wolf-Brown-bite_13
+  - first:
+      213: 5002538364722006834
+    second: Wolf-Brown-bite_14
+  - first:
+      213: 1331288752373677216
+    second: Wolf-Brown-bite_15
+  - first:
+      213: -567466356604169582
+    second: Wolf-Brown-bite_16
+  - first:
+      213: -3640192973462183500
+    second: Wolf-Brown-bite_17
+  - first:
+      213: 4106200408419745132
+    second: Wolf-Brown-bite_18
+  - first:
+      213: 5092016847428200884
+    second: Wolf-Brown-bite_19
+  - first:
+      213: 6042915120479692873
+    second: Wolf-Brown-bite_20
+  - first:
+      213: -7740873492561554061
+    second: Wolf-Brown-bite_21
+  - first:
+      213: -6654535808352738682
+    second: Wolf-Brown-bite_22
+  - first:
+      213: 2766011852905508137
+    second: Wolf-Brown-bite_23
+  - first:
+      213: -2031403503866115077
+    second: Wolf-Brown-bite_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7023962c717bdd970800000000000000
+      internalID: 8781376161116140039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_1
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e337a331ac9646a0800000000000000
+      internalID: -6465307998873504793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_2
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9170fddb9e4e2c100800000000000000
+      internalID: 126915432083818265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_3
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41a7da013e5f0670800000000000000
+      internalID: 8507121785854468430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_4
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a433298733f7880800000000000000
+      internalID: -8611107369567171950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf104bcdc1c573820800000000000000
+      internalID: 2897886164267827707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_6
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429f7819b40d16b90800000000000000
+      internalID: -7250284902107055836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_7
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92294b1ca63ee0f10800000000000000
+      internalID: 2237976112505590313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_8
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf9681ed30490800800000000000000
+      internalID: 579064661614698417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_9
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28bd9402651b21ba0800000000000000
+      internalID: -6119633960176067710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac897cec508dc050800000000000000
+      internalID: 5822451029852654762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_11
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c56dcdd262dea70800000000000000
+      internalID: 8857778020528053303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_12
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca7384babb8ba140800000000000000
+      internalID: 4732029467491531457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_13
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a95e35dd0546b740800000000000000
+      internalID: 5167393548168747424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_14
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bc48c53269c6540800000000000000
+      internalID: 5002538364722006834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acb4ba1110b97210800000000000000
+      internalID: 1331288752373677216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_16
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2929f90fa54ff18f0800000000000000
+      internalID: -567466356604169582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_17
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1e9e6f6cf6b7dc0800000000000000
+      internalID: -3640192973462183500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_18
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d3c6014872cf830800000000000000
+      internalID: 4106200408419745132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_19
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 1224
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b92345185a7aa640800000000000000
+      internalID: 5092016847428200884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948670c094fbcd350800000000000000
+      internalID: 6042915120479692873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_21
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37591a84294e29490800000000000000
+      internalID: -7740873492561554061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Brown-bite_22
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 506
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682a40680f656a3a0800000000000000
+      internalID: -6654535808352738682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 924bbb9356d56324e9d5fb0f52c88b45
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

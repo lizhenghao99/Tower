@@ -74,8 +74,11 @@ public class Health : MonoBehaviour
             DOTween.To(() => mat.GetFloat("_Fade"),
                 (x) => mat.SetFloat("_Fade", x),
                 0f, 2f)
-                .SetEase(Ease.OutQuint)
-                .OnComplete(() => gameObject.SetActive(false));
+                .SetEase(Ease.OutQuint);
+            StartCoroutine(Utils.Timeout(() => 
+            {
+                gameObject.SetActive(false);
+            }, 1f));
         }, 2f));
     }
 

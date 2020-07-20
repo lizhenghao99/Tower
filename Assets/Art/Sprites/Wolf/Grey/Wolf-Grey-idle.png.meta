@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: 8bc35cf4bb7ac72438591226feba4d22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1054400344865864472
+    second: Wolf-Grey-idle_0
+  - first:
+      213: -4566087422632641105
+    second: Wolf-Grey-idle_1
+  - first:
+      213: -6500894691977264601
+    second: Wolf-Grey-idle_2
+  - first:
+      213: -1592905088296637239
+    second: Wolf-Grey-idle_3
+  - first:
+      213: -5767663176400998668
+    second: Wolf-Grey-idle_4
+  - first:
+      213: -5270870986951808760
+    second: Wolf-Grey-idle_5
+  - first:
+      213: 6513990366236235483
+    second: Wolf-Grey-idle_6
+  - first:
+      213: -1920494694141447729
+    second: Wolf-Grey-idle_7
+  - first:
+      213: 5961562579679111461
+    second: Wolf-Grey-idle_8
+  - first:
+      213: 97501203584817668
+    second: Wolf-Grey-idle_9
+  - first:
+      213: 7488619809246274321
+    second: Wolf-Grey-idle_10
+  - first:
+      213: 5808586709426313276
+    second: Wolf-Grey-idle_11
+  - first:
+      213: -2104439653741501998
+    second: Wolf-Grey-idle_12
+  - first:
+      213: -2496273634029549170
+    second: Wolf-Grey-idle_13
+  - first:
+      213: 8106414138711014723
+    second: Wolf-Grey-idle_14
+  - first:
+      213: -3922244139969585650
+    second: Wolf-Grey-idle_15
+  - first:
+      213: 892638018115509067
+    second: Wolf-Grey-idle_16
+  - first:
+      213: -712945106865868210
+    second: Wolf-Grey-idle_17
+  - first:
+      213: 1474861168511400040
+    second: Wolf-Grey-idle_18
+  - first:
+      213: -8129735784234505951
+    second: Wolf-Grey-idle_19
+  - first:
+      213: 2777617267505415803
+    second: Wolf-Grey-idle_20
+  - first:
+      213: 8958477151578444408
+    second: Wolf-Grey-idle_21
+  - first:
+      213: -1427637952094623021
+    second: Wolf-Grey-idle_22
+  - first:
+      213: 5135833169455676892
+    second: Wolf-Grey-idle_23
+  - first:
+      213: 4333305533794045743
+    second: Wolf-Grey-idle_24
+  - first:
+      213: -86494190010681509
+    second: Wolf-Grey-idle_25
+  - first:
+      213: -5787594967502985743
+    second: Wolf-Grey-idle_26
+  - first:
+      213: -4377538299682690272
+    second: Wolf-Grey-idle_27
+  - first:
+      213: -8576748879700121598
+    second: Wolf-Grey-idle_28
+  - first:
+      213: 8201815929393817385
+    second: Wolf-Grey-idle_29
+  - first:
+      213: 6270810954832949926
+    second: Wolf-Grey-idle_30
+  - first:
+      213: 6940354313668327172
+    second: Wolf-Grey-idle_31
+  - first:
+      213: -540033052844067777
+    second: Wolf-Grey-idle_32
+  - first:
+      213: -6001752424955449011
+    second: Wolf-Grey-idle_33
+  - first:
+      213: -254164553408057155
+    second: Wolf-Grey-idle_34
+  - first:
+      213: 7852968261912420761
+    second: Wolf-Grey-idle_35
+  - first:
+      213: 426744136142746448
+    second: Wolf-Grey-idle_36
+  - first:
+      213: 6556840787357719401
+    second: Wolf-Grey-idle_37
+  - first:
+      213: -8442936635289191712
+    second: Wolf-Grey-idle_38
+  - first:
+      213: -7343444540163563958
+    second: Wolf-Grey-idle_39
+  - first:
+      213: 7325577513145619531
+    second: Wolf-Grey-idle_40
+  - first:
+      213: -1080876635604438218
+    second: Wolf-Grey-idle_41
+  - first:
+      213: 8284562577483412591
+    second: Wolf-Grey-idle_42
+  - first:
+      213: -7510248781214123786
+    second: Wolf-Grey-idle_43
+  - first:
+      213: -9081509023277160149
+    second: Wolf-Grey-idle_44
+  - first:
+      213: -5148235903034025350
+    second: Wolf-Grey-idle_45
+  - first:
+      213: 8849243260377119536
+    second: Wolf-Grey-idle_46
+  - first:
+      213: -6317268930246175891
+    second: Wolf-Grey-idle_47
+  - first:
+      213: 12289383854198239
+    second: Wolf-Grey-idle_48
+  - first:
+      213: 2524822142314166827
+    second: Wolf-Grey-idle_49
+  - first:
+      213: -4332209486864367018
+    second: Wolf-Grey-idle_50
+  - first:
+      213: -6016874639996493928
+    second: Wolf-Grey-idle_51
+  - first:
+      213: 5106303665134623270
+    second: Wolf-Grey-idle_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b77c6f68bf1ae00800000000000000
+      internalID: 1054400344865864472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_1
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad3a986eaff1a0c0800000000000000
+      internalID: -4566087422632641105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722097a88be28c5a0800000000000000
+      internalID: -6500894691977264601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_3
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccaa23034dd4e9e0800000000000000
+      internalID: -1592905088296637239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_4
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe648246e425ffa0800000000000000
+      internalID: -5767663176400998668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_5
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80923dd73ca1ad6b0800000000000000
+      internalID: -5270870986951808760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_6
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6d3d9b9b7566a50800000000000000
+      internalID: 6513990366236235483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_7
+      rect:
+        serializedVersion: 2
+        x: 4963
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc13daa30480955e0800000000000000
+      internalID: -1920494694141447729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_8
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529e80c9499bbb250800000000000000
+      internalID: 5961562579679111461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_9
+      rect:
+        serializedVersion: 2
+        x: 6381
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a98dcf3d46a5100800000000000000
+      internalID: 97501203584817668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_10
+      rect:
+        serializedVersion: 2
+        x: 7090
+        y: 3378
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113e3144a0cece760800000000000000
+      internalID: 7488619809246274321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38196646de3c9050800000000000000
+      internalID: 5808586709426313276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_12
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1ed73e8478bc2e0800000000000000
+      internalID: -2104439653741501998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_13
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89ce7d0b547b5dd0800000000000000
+      internalID: -2496273634029549170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_14
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34df214a5b4cf7070800000000000000
+      internalID: 8106414138711014723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_15
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e51c25cb36199c0800000000000000
+      internalID: -3922244139969585650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_16
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b98ce4c89436c00800000000000000
+      internalID: 892638018115509067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_17
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4238e0e33c1b16f0800000000000000
+      internalID: -712945106865868210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_18
+      rect:
+        serializedVersion: 2
+        x: 4963
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868b32a2b62c77410800000000000000
+      internalID: 1474861168511400040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_19
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129abee90606d2f80800000000000000
+      internalID: -8129735784234505951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_20
+      rect:
+        serializedVersion: 2
+        x: 6381
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76c6a730341c8620800000000000000
+      internalID: 2777617267505415803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_21
+      rect:
+        serializedVersion: 2
+        x: 7090
+        y: 2660
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872594c5187e25c70800000000000000
+      internalID: 8958477151578444408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3daa885b8d2003ce0800000000000000
+      internalID: -1427637952094623021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_23
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddf21b8e05264740800000000000000
+      internalID: 5135833169455676892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_24
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f47059c6ef22c30800000000000000
+      internalID: 4333305533794045743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_25
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5737411ef5bccef0800000000000000
+      internalID: -86494190010681509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_26
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f565228a055eafa0800000000000000
+      internalID: -5787594967502985743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_27
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02beeb01c1cdf33c0800000000000000
+      internalID: -4377538299682690272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_28
+      rect:
+        serializedVersion: 2
+        x: 4254
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208aeb1e55449f880800000000000000
+      internalID: -8576748879700121598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_29
+      rect:
+        serializedVersion: 2
+        x: 4963
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927a8a8f124b2d170800000000000000
+      internalID: 8201815929393817385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-Grey-idle_30
+      rect:
+        serializedVersion: 2
+        x: 5672
+        y: 1942
+        width: 709
+        height: 718
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a23278d655660750800000000000000
+      internalID: 6270810954832949926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff530c690f5839c4382874330631e387
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
