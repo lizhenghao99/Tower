@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: MechWarriorAttack
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 886aa9c97decbeb46b48002abd203158, type: 3}
+  - {fileID: 8300000, guid: 1396ed5c150549a459c18b95abcc0380, type: 3}
+  - {fileID: 8300000, guid: 1b47e9103d569e34da9d2094bb62e3a5, type: 3}
+  - {fileID: 8300000, guid: 9d02cc96717c66841a4f61016d05fae1, type: 3}
+  - {fileID: 8300000, guid: 413b829bdd5a7bb41977a0d29f8f83c3, type: 3}
+  soundTag: Hit
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1
+  spatialBlend: 0.3

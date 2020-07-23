@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: FireStrike
   m_EditorClassIdentifier: 
   cardName: "\u706B\u88AD"
-  description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A05\u79D2<b>\u71C3\u70E7</b>\u6548\u679C\u3002"
+  description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A05\u79D2\"\u71C3\u70E7\"\u6548\u679C\u3002"
   primaryChange: -20
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: 9425f1f2bef43c941bfc00381758ab68, type: 2}
   vfx: {fileID: 1447435588197194, guid: 47c52812ffacd164e839d6cc78ad41bb, type: 3}
   vfxOffset: {x: 0, y: 2, z: 2}
-  castTime: 1.5
+  castTime: 2
   damage: 100
   force: 300
   range: 8
@@ -29,4 +30,4 @@ MonoBehaviour:
   fxDelay: 0.2
   effect: 1
   effectDuration: 5
-  effectAmount: 50
+  effectAmount: 100

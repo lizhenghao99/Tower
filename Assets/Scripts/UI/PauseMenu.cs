@@ -39,6 +39,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         group.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        GlobalAudioManager.Instance.Play("Pause", Vector3.zero);
     }
 
     public void Resume()
@@ -47,5 +48,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         group.DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
             .OnComplete(() => pauseMenu.SetActive(false));
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using Werewolf.StatusIndicators.Components;
 using TowerUtils;
+using System;
 
 public class ConeAoePlayer : Singleton<ConeAoePlayer>
 {
@@ -34,15 +35,7 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
                 (Vector3.ProjectOnPlane(splat.Get3DMousePosition()
                 - playerTransform.position, new Vector3(0, 1, 0)).normalized));
 
-        StartCoroutine(Utils.Timeout(()=> {
-            Instantiate(
-            cardPlaying.vfx,
-            playerTransform.position
-                + rotation * cardPlaying.vfxOffset,
-            rotation);
-            }, cardPlaying.fxDelay));
-        
-            
+        PlayVfx(cardPlaying, playerTransform.position, rotation);
 
         var enemies = GetEnemies(
             playerTransform.position,
@@ -52,7 +45,7 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
         {
             var direction = Vector3.ProjectOnPlane(
                 e.gameObject.transform.position
-                - playerTransform.position, new Vector3(0,1,0)).normalized;
+                - playerTransform.position, new Vector3(0, 1, 0)).normalized;
 
             var force = direction * cardPlaying.force;
             StartCoroutine(
@@ -61,10 +54,26 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
                 cardPlaying.damage,
                 force,
                 cardPlaying.effect,
-                cardPlaying.effectDuration, 
+                cardPlaying.effectDuration,
                 cardPlaying.effectAmount,
                 cardPlaying.delay));
         }
+    }
+
+    private void PlayVfx(ConeAoe c, Vector3 p, Quaternion r)
+    {
+        StartCoroutine(Utils.Timeout(() =>
+        {
+            Instantiate(
+            c.vfx,
+            p + r * c.vfxOffset,
+            r);
+        }, c.fxDelay));
+    }
+
+    private void PlayVfx()
+    {
+
     }
 
     private Collider[] GetEnemies(Vector3 hitPoint, float attackRange)

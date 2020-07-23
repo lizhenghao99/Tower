@@ -12,6 +12,7 @@ public class Summon : Card
     public Minion minionPrefab;
     public MinionCenter centerPrefab;
     public int count;
+    public int health;
     public int attackDamage;
     public float attackRange;
     public float attackRate;

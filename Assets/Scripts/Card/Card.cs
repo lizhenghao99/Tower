@@ -17,6 +17,7 @@ public abstract class Card : ScriptableObject
 
     [Header("Advanced")]
     public Sprite art;
+    public Sound sfx;
     public GameObject vfx;
     public Vector3 vfxOffset;
     public float castTime;

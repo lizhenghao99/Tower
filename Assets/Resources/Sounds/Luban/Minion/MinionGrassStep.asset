@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: MinionGrassStep
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: e9c5f59fc3b12594781302de5c304e14, type: 3}
+  - {fileID: 8300000, guid: 11e2ff78185815c4b989243a59047510, type: 3}
+  - {fileID: 8300000, guid: 528b730495ef46d40835759ff1515a7c, type: 3}
+  - {fileID: 8300000, guid: 1926dd00d19052242b1e20374830a549, type: 3}
+  - {fileID: 8300000, guid: d2235da9d20d1f34585f269b5c3bf4c0, type: 3}
+  - {fileID: 8300000, guid: 7a834a0c310f34b4fbcc4f7095cf82f7, type: 3}
+  - {fileID: 8300000, guid: 6c94f6c9263552b4cbf66dc501c11016, type: 3}
+  - {fileID: 8300000, guid: c7e2c78931e69c24caada56b348c4e13, type: 3}
+  - {fileID: 8300000, guid: b0ed6d7591d292040907c82b3d233d92, type: 3}
+  - {fileID: 8300000, guid: 782f3d34f5d238f4ea94e2ae6b2c0e55, type: 3}
+  - {fileID: 8300000, guid: 8c83986e1c1d58e4fbf1cc2983847122, type: 3}
+  - {fileID: 8300000, guid: 12ac479fadfa86348ae3d0d006fe94a8, type: 3}
+  - {fileID: 8300000, guid: 5856ccdfc0a0023449a36daa2debafbd, type: 3}
+  - {fileID: 8300000, guid: 217ae41f7912ec54e8444913bf485308, type: 3}
+  - {fileID: 8300000, guid: 39d9af7f05ac87e408c4459522a6e349, type: 3}
+  soundTag: Step
+  loop: 0
+  priority: 128
+  volume: 0.2
+  pitch: 1.1
+  spatialBlend: 0.3

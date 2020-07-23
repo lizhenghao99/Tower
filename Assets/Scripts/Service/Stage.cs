@@ -14,4 +14,6 @@ public class Stage : ScriptableObject
     public float bottom;
     public float left;
     public float right;
+    [Header("Environment")]
+    public float sunLightIntensity = 1f;
 }

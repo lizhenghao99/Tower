@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Refine
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
-  description: "\u6D88\u80173\u4E2A\u7075\u6750\uFF0C\u5C06\u5176\u70BC\u5316\u62101\u9897<b>\u7075\u6838<\\b>\u3002"
+  description: "\u6D88\u80175\u4E2A\"\u7075\u6750\"\uFF0C\u5C06\u5176\u70BC\u5316\u62102\u9897\"\u7075\u6838\"\u3002"
   primaryChange: -100
   secondaryChange: 2
   owner: 0
   art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: e286f1952bf05b74084c80a4afda43d8, type: 2}
   vfx: {fileID: 141596, guid: a6240717d8ed7324d8028328118c312e, type: 3}
   vfxOffset: {x: 0, y: 3, z: 0}
   castTime: 2

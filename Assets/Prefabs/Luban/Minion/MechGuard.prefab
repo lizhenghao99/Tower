@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1885939688312799108}
   - component: {fileID: 7540789521043378169}
   - component: {fileID: 4012550217159084720}
+  - component: {fileID: -3203242611042483950}
   m_Layer: 11
   m_Name: MechGuard
   m_TagString: Minion
@@ -144,6 +145,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0cafbc6a1a8174eb6835c76bb820b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3203242611042483950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fba53fb5494004f952874c69da7570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - {fileID: 11400000, guid: abf61593035b44249a80293878aee917, type: 2}
+  - {fileID: 11400000, guid: e263e6d5ce83500438c682160fcb2ac5, type: 2}
+  - {fileID: 11400000, guid: 9ef2e6ed90c991c44baf01f594c2ed42, type: 2}
+  - {fileID: 11400000, guid: 58b9dd3689c0db848ba7cf5867475086, type: 2}
+  - {fileID: 11400000, guid: 9618dadbad6ae6147abdf89a2d8c1acf, type: 2}
 --- !u!1 &7080708407393992435
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +175,8 @@ GameObject:
   - component: {fileID: 7080708407406143957}
   - component: {fileID: 8050049069637491591}
   - component: {fileID: 5560478774682897949}
+  - component: {fileID: 5717243233733271726}
+  - component: {fileID: 4187595502886642179}
   m_Layer: 11
   m_Name: MechGuardSprite
   m_TagString: Untagged
@@ -258,6 +279,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84c8d7e5bdb671c4ca2efab046de8664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5717243233733271726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080708407393992435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32dc7338ce341724bb230e9c1f4e152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4187595502886642179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080708407393992435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca612de14e8eff54fa8a7a1b47817677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &241986169398723142

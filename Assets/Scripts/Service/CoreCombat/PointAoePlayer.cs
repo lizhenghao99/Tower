@@ -43,38 +43,40 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         }
         else
         {
-            Impact();
+            Impact(cardPlaying, impactPoint);
         }
     }
 
-    private void Impact()
+    private void Impact(PointAoe c, Vector3 p)
     {
+        GlobalAudioManager.Instance.Play(c.impactSfx, p);
+
         var enemies = GetEnemies(
-            impactPoint,
-            cardPlaying.radius);
+            p,
+            c.radius);
 
         StartCoroutine(Utils.Timeout(() => {
-            var fx = Instantiate(cardPlaying.vfx);
-            fx.transform.position = impactPoint + cardPlaying.vfxOffset;
-            }, cardPlaying.fxDelay
+            var fx = Instantiate(c.vfx);
+            fx.transform.position = p + c.vfxOffset;
+            }, c.fxDelay
         ));
 
         foreach (Collider e in enemies)
         {
             var direction = Vector3.ProjectOnPlane(
                 e.gameObject.transform.position
-                - impactPoint, new Vector3(0, 1, 0)).normalized;
+                - p, new Vector3(0, 1, 0)).normalized;
 
-            var force = direction * cardPlaying.force;
+            var force = direction * c.force;
             StartCoroutine(
                 hitAfterDelay(
                 e.gameObject,
-                cardPlaying.damage,
+                c.damage,
                 force,
-                cardPlaying.effect,
-                cardPlaying.effectDuration,
-                cardPlaying.effectAmount,
-                cardPlaying.delay));
+                c.effect,
+                c.effectDuration,
+                c.effectAmount,
+                c.delay));
         }
     }
 
@@ -129,10 +131,14 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
 
         projectile.GetComponent<Projectile>().hitFloor 
             += OnHitFloor;
+
+        projectile.GetComponent<Projectile>().card = cardPlaying;
     }
 
-    public void OnHitFloor(object sender, EventArgs e)
+    public void OnHitFloor(object sender, Vector3 point)
     {
-        Impact();
+        GameObject projectile = (GameObject)sender;
+        
+        Impact((PointAoe)projectile.GetComponent<Projectile>().card, point);
     }
 }

@@ -87,6 +87,7 @@ public class PlayerController : MonoBehaviour
                     isWalking = true;
                     isSelected = false;
                     EventSystem.current.SetSelectedGameObject(null);
+                    GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
                 }
                 else if (isSelected && hit.transform.tag == "Enemy"
                     && !CardPlayer.Instance.isPlayingCard)
@@ -118,6 +119,7 @@ public class PlayerController : MonoBehaviour
                         isWalking = true;
                         isSelected = false;
                         EventSystem.current.SetSelectedGameObject(null);
+                        GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
                     }
                     else
                     {
@@ -130,19 +132,16 @@ public class PlayerController : MonoBehaviour
                     if (hit.transform.name == gameObject.name)
                     {
                         isSelected = true;
+                        GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
                     }
                 } 
             }
         }
 
-        // mouse right
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && isSelected)
         {
             isSelected = false;
             EventSystem.current.SetSelectedGameObject(null);
-            if (!isWalking)
-            {
-            }
         }
 
         // select effect
@@ -190,7 +189,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnDestinationReached(object sender, EventArgs e)
+    public void OnDestinationReached(object sender, EventArgs e)
     {
         isWalking = false;
     }

@@ -30,6 +30,8 @@ public abstract class AttackBase : MonoBehaviour
     protected bool isSpecialing = false;
     protected AttackEvent attackEvent;
 
+    protected InstanceAudioManager audioManager;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -38,6 +40,11 @@ public abstract class AttackBase : MonoBehaviour
         health = GetComponent<Health>();
         attackEvent = GetComponentInChildren<AttackEvent>();
         attackEvent.attack += OnAttack;
+        audioManager = GetComponent<InstanceAudioManager>();
+        if (audioManager == null)
+        {
+            audioManager = gameObject.AddComponent<InstanceAudioManager>();
+        }
     }
 
     // Update is called once per frame
@@ -131,6 +138,10 @@ public abstract class AttackBase : MonoBehaviour
                 {
                     agent.isStopped = true;
                     animator.SetTrigger("Attack");
+                    StartCoroutine(Utils.Timeout(() =>
+                    {
+                        audioManager.Play("Attack");
+                    }, 0.2f));
                     // attack behavior moved to animation
                     attackTimer = attackRate;
                 }
@@ -172,6 +183,7 @@ public abstract class AttackBase : MonoBehaviour
         {
             SpecialAutoAttack();
             target.GetComponent<Health>()?.TakeDamage(attackDamage);
+            audioManager.Play("Hit");
         }  
     }
 

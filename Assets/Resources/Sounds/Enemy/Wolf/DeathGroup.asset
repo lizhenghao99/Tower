@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: DeathGroup
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 56e032e44fe5570468a7e469f8b13347, type: 3}
+  - {fileID: 8300000, guid: 2b73e074e37b24b44ac143a43340ee77, type: 3}
+  - {fileID: 8300000, guid: 8899a9a21da427946b449cd29094b5ea, type: 3}
+  - {fileID: 8300000, guid: 9bbb118cb0c3c8b44bb978c206d2b679, type: 3}
+  - {fileID: 8300000, guid: a0001a9f1322ffe42a1f406361e5d405, type: 3}
+  - {fileID: 8300000, guid: 62f614e7473a0424b8057766aa1fd155, type: 3}
+  soundTag: Death
+  loop: 0
+  priority: 128
+  volume: 0.35
+  pitch: 1
+  spatialBlend: 0.3

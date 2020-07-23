@@ -63,9 +63,15 @@ public class Health : MonoBehaviour
     public virtual void Die()
     {
         currHealth = 0;
-
+        
         GetComponentInChildren<Animator>().SetBool("Death", true);
         isDead = true;
+
+        InstanceAudioManager audioManager = GetComponent<InstanceAudioManager>();
+        if (audioManager != null)
+        {
+            audioManager.Play("Death");
+        }
 
         StartCoroutine(Utils.Timeout(() =>
         {

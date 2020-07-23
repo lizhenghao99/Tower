@@ -68,6 +68,20 @@ public class DiscardButton : Selectable
             gameObject.transform.DOPunchRotation(
                 new Vector3(0, 0, 45), 0.5f)
                 .SetEase(Ease.OutQuint);
+
+
+            switch (owner)
+            {
+                case Card.Owner.Luban:
+                    GlobalAudioManager.Instance.Play("Hammer", Vector3.zero);
+                    break;
+                case Card.Owner.secondChar:
+                    break;
+                case Card.Owner.thirdChar:
+                    break;
+                default:
+                    break;
+            }
         }  
     }
 
@@ -90,7 +104,7 @@ public class DiscardButton : Selectable
             case Card.Owner.Luban:
                 player.setIsCasting(true);
                 StartCoroutine(Utils.Timeout(() =>
-                    player.setIsCasting(false), 10f));          
+                    player.setIsCasting(false), 10f));
                 break;
             case Card.Owner.secondChar:
                 break;

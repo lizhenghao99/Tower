@@ -97,6 +97,9 @@ public class CardPlayer : Singleton<CardPlayer>
         Invoke("resumeAction", cardPlaying.castTime);
 
         cardPlaying.Play();
+        GlobalAudioManager.Instance.Play("Place", Vector3.zero);
+        GlobalAudioManager.Instance.Play(
+            cardPlaying.sfx, player.transform.position);
         DeckManager.Instance.DiscardCard(cardPlaying);
         
         splat.CancelSpellIndicator();
@@ -112,6 +115,7 @@ public class CardPlayer : Singleton<CardPlayer>
         isPlayingCard = false;
         splat.CancelSpellIndicator();
         splat.SelectRangeIndicator(cardPlaying.owner +"Range");
+        GlobalAudioManager.Instance.Play("Cancel", Vector3.zero);
     }
 
     private void resumeAction()

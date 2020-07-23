@@ -13,20 +13,22 @@ MonoBehaviour:
   m_Name: MechWarrior
   m_EditorClassIdentifier: 
   cardName: "\u6728\u7532\u6218\u58EB"
-  description: "\u653E\u51FA3\u4E2A<b>\u51B2\u950B</b>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
+  description: "\u653E\u51FA3\u4E2A\"\u51B2\u950B\"\u7684\u6728\u7532\u6218\u58EB\u3002\r"
   primaryChange: -20
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: a5782ee2f744f6348953878d2ae481d3, type: 2}
   vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
   vfxOffset: {x: 0, y: 3, z: -2.5}
-  castTime: 2
-  range: 5
-  radius: 2
+  castTime: 1.5
+  range: 6
+  radius: 3
   minionPrefab: {fileID: -5445547200232668209, guid: e03db0757ee3cb6469261eb6339f96d9,
     type: 3}
   centerPrefab: {fileID: 0}
   count: 3
+  health: 400
   attackDamage: 60
   attackRange: 0
   attackRate: 1.5

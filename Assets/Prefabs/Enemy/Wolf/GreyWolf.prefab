@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 1427915824}
   - component: {fileID: -8540037159236758093}
   - component: {fileID: 7330390830280316237}
+  - component: {fileID: 3820824553086636112}
   m_Layer: 10
   m_Name: GreyWolf
   m_TagString: Enemy
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b3bc6cc55678348a03c6e78f38543b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 3500
   isDead: 0
 --- !u!114 &7330390830280316237
 MonoBehaviour:
@@ -231,6 +232,23 @@ MonoBehaviour:
   spriteRenderer: {fileID: 6647725743354277929}
   taunter: {fileID: 0}
   stompFx: {fileID: 195466, guid: 77b9e0532b674db4a8fc067593422d12, type: 3}
+--- !u!114 &3820824553086636112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725742678617357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fba53fb5494004f952874c69da7570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - {fileID: 11400000, guid: f7bacdcf693b94646ba833fbee17753e, type: 2}
+  - {fileID: 11400000, guid: 886d13f1a2459214780b0a5a8efff481, type: 2}
+  - {fileID: 11400000, guid: d82b57341b71a554cb2c5f8f6acaed56, type: 2}
+  - {fileID: 11400000, guid: 23738d4753c8dc446806f28829982ec0, type: 2}
 --- !u!1 &6647725743354277934
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +262,7 @@ GameObject:
   - component: {fileID: 6647725743354277930}
   - component: {fileID: 178347554801842987}
   - component: {fileID: 8648758606775361633}
+  - component: {fileID: 355214238387926611}
   m_Layer: 10
   m_Name: Wolf Sprite
   m_TagString: Enemy
@@ -358,6 +377,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84c8d7e5bdb671c4ca2efab046de8664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &355214238387926611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725743354277934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32dc7338ce341724bb230e9c1f4e152c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4845202928713119418

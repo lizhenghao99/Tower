@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: MechGuardAttack
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6b1cbf99bce5ffc45a2ddf11f27eefbb, type: 3}
+  - {fileID: 8300000, guid: 1cfa113d2e1828b48913add6fa3e817f, type: 3}
+  - {fileID: 8300000, guid: e0d472b54cef50544b6fea4e5251dd1e, type: 3}
+  - {fileID: 8300000, guid: 3caf72001198fd74bb2b58f7ec869546, type: 3}
+  - {fileID: 8300000, guid: fbbddee828de2904c9ca7c87de391e7c, type: 3}
+  soundTag: Hit
+  loop: 0
+  priority: 128
+  volume: 0.7
+  pitch: 1
+  spatialBlend: 0.3

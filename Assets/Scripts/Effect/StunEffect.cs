@@ -7,17 +7,23 @@ public class StunEffect : Effect
 {
     private NavMeshAgent agent;
     private AttackBase attack;
+    private Animator animator;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         attack = GetComponent<AttackBase>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     protected override void OnStart()
     {
         agent.isStopped = true;
         attack.enabled = false;
+        if (animator != null)
+        {
+            animator.SetFloat("Velocity", 0f);
+        }
         base.OnStart();
     }
 

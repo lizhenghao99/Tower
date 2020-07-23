@@ -15,6 +15,7 @@ public class PointAoe : Card
     [Header("Projectile")]
     public bool hasProjectile;
     public Projectile projectilePrefab;
+    public Sound impactSfx;
     public float projectileHeight;
     public float projectileAngle;
 

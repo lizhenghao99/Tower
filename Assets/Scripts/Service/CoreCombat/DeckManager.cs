@@ -80,9 +80,12 @@ public class DeckManager : Singleton<DeckManager>
         {
             drawPile[owner] = new Stack<Card>(discardPile[owner].Shuffle());
             discardPile[owner].Clear();
+            GlobalAudioManager.Instance.Play("Shuffle", Vector3.zero);
         }
 
         var newCard = drawPile[owner].Pop();
+
+        GlobalAudioManager.Instance.Play("Deal", Vector3.zero);
 
         return newCard;
     }

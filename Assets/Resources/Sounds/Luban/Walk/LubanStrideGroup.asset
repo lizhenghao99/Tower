@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: LubanStrideGroup
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3a699a36b09ea384a94a7ea7cb38c043, type: 3}
+  - {fileID: 8300000, guid: a1e443a1d57fb174fbbef075fee76f10, type: 3}
+  - {fileID: 8300000, guid: 446607b951c6e9d4ba085032d2674239, type: 3}
+  - {fileID: 8300000, guid: 4a3c3f89ed629b944b10515920e2212d, type: 3}
+  - {fileID: 8300000, guid: a7fa57724f8e33647b760b0a953ca49c, type: 3}
+  - {fileID: 8300000, guid: 91be134adee402b49a6064e2b6b41456, type: 3}
+  - {fileID: 8300000, guid: 7e9f13af59662c642867a9bafdac2d6b, type: 3}
+  - {fileID: 8300000, guid: bde0c59ca9e6ab84f8210b7a09b5ab3e, type: 3}
+  - {fileID: 8300000, guid: b92e663eadddc2a4e87f94f6da126312, type: 3}
+  - {fileID: 8300000, guid: 11d27aae80151ac488bb1a16d2ebf6e9, type: 3}
+  soundTag: Stride
+  loop: 0
+  priority: 128
+  volume: 0.6
+  pitch: 1
+  spatialBlend: 0.3

@@ -6,6 +6,7 @@ using UnityEngine;
 using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine.AI;
 using TowerUtils;
+using DG.Tweening;
 
 public class LevelController : Singleton<LevelController>
 {
@@ -20,6 +21,8 @@ public class LevelController : Singleton<LevelController>
     [SerializeField] PlayerController[] players;
     [Header("Materials")]
     [SerializeField] Material[] cardMaterials;
+    [Header("Sun")]
+    [SerializeField] Light sunLight;
 
     public EventHandler StartCombat;
     public EventHandler EndCombat;
@@ -122,6 +125,9 @@ public class LevelController : Singleton<LevelController>
         }
         currStage = nextStage;
 
+        sunLight.DOIntensity(currStage.sunLightIntensity, 0.3f)
+            .SetEase(Ease.InQuad);
+
         
         // cinematics
         if (currStage.index == 1)
@@ -158,6 +164,7 @@ public class LevelController : Singleton<LevelController>
                     currStage.charPostions[i] - new Vector3(5f, 0, 0);
                 players[i].GetComponent<NavMeshAgent>()
                     .SetDestination(currStage.charPostions[i]);
+                players[i].OnDestinationReached(gameObject, EventArgs.Empty);
             }
         }
     }

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: PlayerGrassStepGroup
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: a8f043cb561c8344099edcb70aeb0414, type: 3}
+  - {fileID: 8300000, guid: d7da529570167e044a9c1d5d8064fd57, type: 3}
+  - {fileID: 8300000, guid: 85cef92cb1e02be4fa9bc76fcdf76231, type: 3}
+  - {fileID: 8300000, guid: 62ae0fb71256e80429f7b02bdf0d94fb, type: 3}
+  - {fileID: 8300000, guid: 855238e6270f249488d536c6bf6f3b63, type: 3}
+  - {fileID: 8300000, guid: 7a9bb17645ab49e42810f13b394ec25c, type: 3}
+  - {fileID: 8300000, guid: 9f4dc2dbf8a72e14090f8fa7752d9530, type: 3}
+  - {fileID: 8300000, guid: 62a6e76e820dba14c81338af6604bb64, type: 3}
+  - {fileID: 8300000, guid: ecd0333e24a94904ca07052b0c67a522, type: 3}
+  - {fileID: 8300000, guid: 5e16f79a21438a84b8a09cb90e548e46, type: 3}
+  - {fileID: 8300000, guid: 06c4a5e7c63ff34479d0bf6b6dbe1cb0, type: 3}
+  - {fileID: 8300000, guid: 3f58d6bcf82223b45886505d408d09ff, type: 3}
+  - {fileID: 8300000, guid: 826452fb0dfce7e4bac7ce12d2d483a4, type: 3}
+  - {fileID: 8300000, guid: bb422aaee0638ed40afc578d768705ff, type: 3}
+  - {fileID: 8300000, guid: 673d870ab59816b4fa8ef3774fa3a268, type: 3}
+  - {fileID: 8300000, guid: 265cc710a4c61c8419aa71672b3cf4ae, type: 3}
+  - {fileID: 8300000, guid: 4e03d8db55a44a1478362652376045b0, type: 3}
+  - {fileID: 8300000, guid: b82bc76cb30149346bde251149b4e6d9, type: 3}
+  - {fileID: 8300000, guid: 493e0fed3afcdc44480e1ea7e9511d03, type: 3}
+  - {fileID: 8300000, guid: 4d0978ffebe330d45b04f61f6582967f, type: 3}
+  - {fileID: 8300000, guid: e62453dd6eff3a24d863d63ae2e75396, type: 3}
+  - {fileID: 8300000, guid: 03b7cf699be28774ab208ad7594ed2fc, type: 3}
+  - {fileID: 8300000, guid: 9c85448798d89ea45b2d674eb0a2e0b1, type: 3}
+  - {fileID: 8300000, guid: 981ba2c7233f1ec419488db7e1eed6a2, type: 3}
+  - {fileID: 8300000, guid: aca1beb25057dc84c9c918f813fb0770, type: 3}
+  - {fileID: 8300000, guid: a46add2d52579424c85ca334c2a2e4be, type: 3}
+  - {fileID: 8300000, guid: 4101d0103b79d3945a3af0775cceb871, type: 3}
+  - {fileID: 8300000, guid: 1c25620e843699e4fa32b3d72a5200c7, type: 3}
+  - {fileID: 8300000, guid: 05b61a2f6051a7942b0b98cc015825c9, type: 3}
+  - {fileID: 8300000, guid: d1f0d96469c962843a568abcd65b599c, type: 3}
+  - {fileID: 8300000, guid: d2b4c5f74b200ad45990d86c5b498c17, type: 3}
+  - {fileID: 8300000, guid: edf73ccb2c5d691488fe744155dadd84, type: 3}
+  - {fileID: 8300000, guid: cc198a1ca5a4bac4291fce939df2baf7, type: 3}
+  - {fileID: 8300000, guid: 83b5a568502317b41a89c6c9c1197b30, type: 3}
+  - {fileID: 8300000, guid: 2e3de87b7b957ed4e9e494308b894807, type: 3}
+  - {fileID: 8300000, guid: 11d49be13eb961c40bfbba532316337b, type: 3}
+  - {fileID: 8300000, guid: 5b3f4ca25ae3f194ba9dcea2ece56801, type: 3}
+  - {fileID: 8300000, guid: 20eb7ab70e96f9d41ae522677ffa402b, type: 3}
+  - {fileID: 8300000, guid: 0faf555cf3899e241a814e5c5b30f8c1, type: 3}
+  - {fileID: 8300000, guid: ad1edbdf7c9caa548a117bedbf8eeab5, type: 3}
+  soundTag: Step
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1
+  spatialBlend: 0.3

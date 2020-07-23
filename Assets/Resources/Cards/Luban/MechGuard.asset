@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: MechGuard
   m_EditorClassIdentifier: 
   cardName: "\u94C1\u7532\u62A4\u536B"
-  description: "\u653E\u51FA3\u4E2A<b>\u5632\u8BBD</b>\uFF0C<b>\u56FA\u5B88</b>\u7684\u94C1\u7532\u62A4\u536B\u3002"
+  description: "\u653E\u51FA3\u4E2A\"\u5632\u8BBD\"\uFF0C\"\u56FA\u5B88\"\u7684\u94C1\u7532\u62A4\u536B\u3002"
   primaryChange: -40
   secondaryChange: 0
   owner: 0
   art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: a5782ee2f744f6348953878d2ae481d3, type: 2}
   vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
   vfxOffset: {x: 0, y: 3, z: -2.5}
-  castTime: 2
+  castTime: 1.5
   range: 8
   radius: 4
   minionPrefab: {fileID: -5445547200232668209, guid: 36835c969c3e7bb4f83edb2b4320ae80,
@@ -28,6 +29,7 @@ MonoBehaviour:
   centerPrefab: {fileID: -4077257038596269012, guid: 06a3324a4bb35aa4c9f2e2a10a649170,
     type: 3}
   count: 3
+  health: 1000
   attackDamage: 20
   attackRange: 0
   attackRate: 2

@@ -88,6 +88,11 @@ public class PlayerHealth : Health
     {
         GetComponentInChildren<Animator>().SetBool("Death", true);
         isDead = true;
+        InstanceAudioManager audioManager = GetComponent<InstanceAudioManager>();
+        if (audioManager != null)
+        {
+            audioManager.Play("Death");
+        }
     }
 
     private void OnShieldChanged()

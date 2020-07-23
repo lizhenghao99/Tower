@@ -23,6 +23,7 @@ public class HeadButton : Selectable
     public override void OnPointerDown(PointerEventData eventData)
     {
         base.OnPointerDown(eventData);
-        player.isSelected = true; ;
+        player.isSelected = true;
+        GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
     }
 }

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: MechWarriorStride
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 240c6b7273a07ef4db30ef969a371c26, type: 3}
+  - {fileID: 8300000, guid: eed31e161b0aedb4ab16313d41d11567, type: 3}
+  - {fileID: 8300000, guid: 06f126bf9b97e3848ae4968075a25bff, type: 3}
+  soundTag: Stride
+  loop: 0
+  priority: 128
+  volume: 0.1
+  pitch: 0.6
+  spatialBlend: 0.3

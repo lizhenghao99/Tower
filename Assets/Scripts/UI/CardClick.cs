@@ -31,6 +31,8 @@ public class CardClick : Selectable
 
     private List<CardClick> hand;
 
+    private InspectMenu inspectMenu;
+
     protected override void Awake()
     {
         group = GetComponent<CanvasGroup>();
@@ -42,6 +44,7 @@ public class CardClick : Selectable
         rectTransform = GetComponent<RectTransform>();
         handManager = GetComponentInParent<HandManager>();
         discardButton = gameObject.transform.parent.parent.GetComponentInChildren<DiscardButton>();
+        inspectMenu = FindObjectOfType<InspectMenu>();
     }
 
     public void SetCard(Card c)
@@ -80,11 +83,15 @@ public class CardClick : Selectable
             base.OnPointerDown(eventData);
             EventSystem.current.SetSelectedGameObject(gameObject);
 
+            
+
             bool success = false;
             if (discardButton.isDiscarding)
             {
                 if (eventData.button == PointerEventData.InputButton.Left)
                 {
+                    GlobalAudioManager.Instance.Play("BlackSmith", Vector3.zero);
+
                     handManager.lastSelectedCard = this;
                     success = discardButton.Discard(card);
                 }
@@ -95,7 +102,21 @@ public class CardClick : Selectable
             }
             else
             {
-                success = CardPlayer.Instance.Play(card);
+                if (eventData.button == PointerEventData.InputButton.Left)
+                {
+                    GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
+
+                    success = CardPlayer.Instance.Play(card);
+                }
+                else if (eventData.button == PointerEventData.InputButton.Right)
+                {
+                    success = true;
+                    inspectMenu.Enter(GetComponent<CardDisplay>(), card);
+                }
+                else
+                {
+                    success = true;
+                }
             }
              
 
@@ -104,6 +125,8 @@ public class CardClick : Selectable
                 rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
                     .SetEase(Ease.OutQuint);
                 EventSystem.current.SetSelectedGameObject(null);
+
+                GlobalAudioManager.Instance.Play("Error", Vector3.zero);
             }
         }  
     }

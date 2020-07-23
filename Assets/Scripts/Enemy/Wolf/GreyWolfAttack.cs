@@ -39,6 +39,8 @@ public class GreyWolfAttack : EnemyAttack
         var fx = Instantiate(stompFx, gameObject.transform);
         fx.transform.localScale = new Vector3(stompRange/2, stompRange/2, 0.5f);
 
+        audioManager.Play("Stomp");
+
 
         var swipeMask = LayerMask.GetMask("Player", "Minion", "base");
         Collider[] colliders = Physics.OverlapSphere(

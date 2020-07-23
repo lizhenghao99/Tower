@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: AttackGroup
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 572bdf311f64e1a4a8e15c6f7a305cd3, type: 3}
+  - {fileID: 8300000, guid: 7787428412d516c46a0f8f607f27a29c, type: 3}
+  - {fileID: 8300000, guid: cd10e16088ec7ba418ae30d6f0bd99bd, type: 3}
+  - {fileID: 8300000, guid: dcb290d016299e24a88fadb39bb358b7, type: 3}
+  - {fileID: 8300000, guid: 6f6d6b94ea70fff45bca1b7a69c63ad6, type: 3}
+  soundTag: Hit
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1
+  spatialBlend: 0.3
