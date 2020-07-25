@@ -21,3 +21,4 @@ MonoBehaviour:
   left: -20
   right: 40
   sunLightIntensity: 1
+  RepeatOnFailure: 1

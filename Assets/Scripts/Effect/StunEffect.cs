@@ -18,13 +18,20 @@ public class StunEffect : Effect
 
     protected override void OnStart()
     {
-        agent.isStopped = true;
-        attack.enabled = false;
-        if (animator != null)
+        if (!GetComponent<Health>().immuneStun)
         {
-            animator.SetFloat("Velocity", 0f);
+            agent.isStopped = true;
+            attack.enabled = false;
+            if (animator != null)
+            {
+                animator.SetFloat("Velocity", 0f);
+            }
+            base.OnStart();
         }
-        base.OnStart();
+        else
+        {
+            OnFinish();
+        }
     }
 
     protected override void OnFinish()

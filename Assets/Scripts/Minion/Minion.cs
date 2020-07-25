@@ -56,7 +56,7 @@ public class Minion : AttackBase
 
         if (guard)
         {
-            GetEnemies(guardPosition, guardRadius);
+            GetEnemies(guardPosition, guardRadius+0.5f);
             SetTarget();
             Attack();
             if (target == null)

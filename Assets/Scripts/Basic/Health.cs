@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
 
     public bool isDead = false;
 
+    public bool immuneStun = false;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {

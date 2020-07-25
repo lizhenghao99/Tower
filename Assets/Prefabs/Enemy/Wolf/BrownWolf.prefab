@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 70
-  attackRange: 0
+  attackRange: 3
   attackRate: 2.5
   stopRange: 3.5
   agent: {fileID: 6647725742678617352}

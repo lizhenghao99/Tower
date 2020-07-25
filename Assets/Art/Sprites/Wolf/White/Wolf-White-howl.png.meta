@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: 197f5291d509de047a28806200ce49fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4875028450761179363
+    second: Wolf-White-howl_0
+  - first:
+      213: -596718915195151482
+    second: Wolf-White-howl_1
+  - first:
+      213: -2910490549014260376
+    second: Wolf-White-howl_2
+  - first:
+      213: 1828963059649295508
+    second: Wolf-White-howl_3
+  - first:
+      213: -8578986543270177034
+    second: Wolf-White-howl_4
+  - first:
+      213: 5823805837649300569
+    second: Wolf-White-howl_5
+  - first:
+      213: 4258702157745713968
+    second: Wolf-White-howl_6
+  - first:
+      213: -6641950050634416249
+    second: Wolf-White-howl_7
+  - first:
+      213: 5572985155852735419
+    second: Wolf-White-howl_8
+  - first:
+      213: 7930209003537146240
+    second: Wolf-White-howl_9
+  - first:
+      213: 782116482626958779
+    second: Wolf-White-howl_10
+  - first:
+      213: -4124715896011432124
+    second: Wolf-White-howl_11
+  - first:
+      213: -7724179190257747801
+    second: Wolf-White-howl_12
+  - first:
+      213: -8232616284501947102
+    second: Wolf-White-howl_13
+  - first:
+      213: -7315167067364131869
+    second: Wolf-White-howl_14
+  - first:
+      213: 614999652026576937
+    second: Wolf-White-howl_15
+  - first:
+      213: 703240268683844808
+    second: Wolf-White-howl_16
+  - first:
+      213: 895534246755765904
+    second: Wolf-White-howl_17
+  - first:
+      213: -2576222882696433627
+    second: Wolf-White-howl_18
+  - first:
+      213: -6840064569609257187
+    second: Wolf-White-howl_19
+  - first:
+      213: -6224013918443581417
+    second: Wolf-White-howl_20
+  - first:
+      213: -3987966104390298438
+    second: Wolf-White-howl_21
+  - first:
+      213: -8319768495229797756
+    second: Wolf-White-howl_22
+  - first:
+      213: 3660508075442414749
+    second: Wolf-White-howl_23
+  - first:
+      213: -4110513650222528244
+    second: Wolf-White-howl_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-White-howl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e00b850c8497a340800000000000000
+      internalID: 4875028450761179363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b5905ee4708b7f0800000000000000
+      internalID: -596718915195151482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8659fdf144cdb97d0800000000000000
+      internalID: -2910490549014260376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49435b56638c16910800000000000000
+      internalID: 1828963059649295508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6568b313151f880800000000000000
+      internalID: -8578986543270177034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ccee1bd8052d050800000000000000
+      internalID: 5823805837649300569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0337f948c03f91b30800000000000000
+      internalID: 4258702157745713968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_7
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f3c089e9d03d3a0800000000000000
+      internalID: -6641950050634416249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_8
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb39029e878375d40800000000000000
+      internalID: 5572985155852735419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_9
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081af6a9213cd0e60800000000000000
+      internalID: 7930209003537146240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb535ff0cc2aada00800000000000000
+      internalID: 782116482626958779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fd4da0fb012c6c0800000000000000
+      internalID: -4124715896011432124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_12
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8f83f63f33ec490800000000000000
+      internalID: -7724179190257747801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_13
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d4a268b1fdfbd80800000000000000
+      internalID: -8232616284501947102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_14
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebff154f4e4b7a90800000000000000
+      internalID: -7315167067364131869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9207804dceae88800800000000000000
+      internalID: 614999652026576937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_16
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc96a66c4962c900800000000000000
+      internalID: 703240268683844808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_17
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e031617a39d6c00800000000000000
+      internalID: 895534246755765904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_18
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52075a600fa6f3cd0800000000000000
+      internalID: -2576222882696433627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_19
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f74bf93853311a0800000000000000
+      internalID: -6840064569609257187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7105512415cdf99a0800000000000000
+      internalID: -6224013918443581417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_21
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4948b05f5e7a8c0800000000000000
+      internalID: -3987966104390298438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-howl_22
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a775432ae3a8c80800000000000000
+      internalID: -8319768495229797756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a83233c676387f949a3de2c660d59c3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

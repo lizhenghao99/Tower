@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - Enemy
   - Minion
+  - Base
   layers:
   - Default
   - TransparentFX

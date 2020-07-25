@@ -1,0 +1,557 @@
+fileFormatVersion: 2
+guid: 56ef69a76fe6e4141a72b5bc390eebda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6341705147167821979
+    second: Wolf-White-stomp_0
+  - first:
+      213: 8691994444668810356
+    second: Wolf-White-stomp_1
+  - first:
+      213: 4839462898773906073
+    second: Wolf-White-stomp_2
+  - first:
+      213: 6204145398556616735
+    second: Wolf-White-stomp_3
+  - first:
+      213: 6940929766841240115
+    second: Wolf-White-stomp_4
+  - first:
+      213: -8116765592781887169
+    second: Wolf-White-stomp_5
+  - first:
+      213: -6680288986461276291
+    second: Wolf-White-stomp_6
+  - first:
+      213: 6572422340964235939
+    second: Wolf-White-stomp_7
+  - first:
+      213: -7873137531433515980
+    second: Wolf-White-stomp_8
+  - first:
+      213: -1370186802849372641
+    second: Wolf-White-stomp_9
+  - first:
+      213: 1092797563625125295
+    second: Wolf-White-stomp_10
+  - first:
+      213: 3470067276146181925
+    second: Wolf-White-stomp_11
+  - first:
+      213: -7269375275507539963
+    second: Wolf-White-stomp_12
+  - first:
+      213: -4824519562770994289
+    second: Wolf-White-stomp_13
+  - first:
+      213: 3210111032544790422
+    second: Wolf-White-stomp_14
+  - first:
+      213: -7626539624880573139
+    second: Wolf-White-stomp_15
+  - first:
+      213: 1257078702352996961
+    second: Wolf-White-stomp_16
+  - first:
+      213: 2181193756317523206
+    second: Wolf-White-stomp_17
+  - first:
+      213: -5266146930703332962
+    second: Wolf-White-stomp_18
+  - first:
+      213: 4707148904467501566
+    second: Wolf-White-stomp_19
+  - first:
+      213: -828354931722746110
+    second: Wolf-White-stomp_20
+  - first:
+      213: -675469602934349901
+    second: Wolf-White-stomp_21
+  - first:
+      213: 7646442536183300982
+    second: Wolf-White-stomp_22
+  - first:
+      213: -3564379146847827131
+    second: Wolf-White-stomp_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-White-stomp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fabc8b4ccbdf7a0800000000000000
+      internalID: -6341705147167821979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474372035ea20a870800000000000000
+      internalID: 8691994444668810356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992d919add9392340800000000000000
+      internalID: 4839462898773906073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1867d77e5d891650800000000000000
+      internalID: 6204145398556616735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ac18b29d2235060800000000000000
+      internalID: 6940929766841240115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f396f15a2b47b5f80800000000000000
+      internalID: -8116765592781887169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77750d7f88da43a0800000000000000
+      internalID: -6680288986461276291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_7
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aab3030c4fe53b50800000000000000
+      internalID: 6572422340964235939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_8
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4340c1bf02ffcb290800000000000000
+      internalID: -7873137531433515980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_9
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f162c34cc5e1cfce0800000000000000
+      internalID: -1370186802849372641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5b94f18956a2f00800000000000000
+      internalID: 1092797563625125295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527866d6dc7282030800000000000000
+      internalID: 3470067276146181925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_12
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500ad54a3bdfd1b90800000000000000
+      internalID: -7269375275507539963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_13
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bac11e40ddb0db0800000000000000
+      internalID: -4824519562770994289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_14
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6970568e9fa9c8c20800000000000000
+      internalID: 3210111032544790422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d257d894e96192690800000000000000
+      internalID: -7626539624880573139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-stomp_16
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a95746b6a027110800000000000000
+      internalID: 1257078702352996961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 97a1efed291c2c043ac410682eb88a38
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

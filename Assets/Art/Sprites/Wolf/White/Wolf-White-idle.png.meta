@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: ea43aa861460cc14abfaf95247c3ce0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 96373322447229231
+    second: Wolf-White-idle_0
+  - first:
+      213: 3494194552798661362
+    second: Wolf-White-idle_1
+  - first:
+      213: 8526449042665174284
+    second: Wolf-White-idle_2
+  - first:
+      213: 4446000844592755247
+    second: Wolf-White-idle_3
+  - first:
+      213: -3457847839752569374
+    second: Wolf-White-idle_4
+  - first:
+      213: 7577361579396387171
+    second: Wolf-White-idle_5
+  - first:
+      213: 9110043504899730163
+    second: Wolf-White-idle_6
+  - first:
+      213: -3749331234097917750
+    second: Wolf-White-idle_7
+  - first:
+      213: 1791852857967470609
+    second: Wolf-White-idle_8
+  - first:
+      213: 5898499840747367404
+    second: Wolf-White-idle_9
+  - first:
+      213: -3040227047515313929
+    second: Wolf-White-idle_10
+  - first:
+      213: -1543781452915932093
+    second: Wolf-White-idle_11
+  - first:
+      213: -2181584121583490844
+    second: Wolf-White-idle_12
+  - first:
+      213: -1151691204510609463
+    second: Wolf-White-idle_13
+  - first:
+      213: -2166356988117586953
+    second: Wolf-White-idle_14
+  - first:
+      213: -2653104270635711707
+    second: Wolf-White-idle_15
+  - first:
+      213: -2724067642681057742
+    second: Wolf-White-idle_16
+  - first:
+      213: 7756044248151088011
+    second: Wolf-White-idle_17
+  - first:
+      213: -5592891525478175139
+    second: Wolf-White-idle_18
+  - first:
+      213: 2217121254920152034
+    second: Wolf-White-idle_19
+  - first:
+      213: 4076163532820739641
+    second: Wolf-White-idle_20
+  - first:
+      213: 6968420725797349410
+    second: Wolf-White-idle_21
+  - first:
+      213: -8914707990541538716
+    second: Wolf-White-idle_22
+  - first:
+      213: -528354419640850847
+    second: Wolf-White-idle_23
+  - first:
+      213: -3197322352984918773
+    second: Wolf-White-idle_24
+  - first:
+      213: -6689657056831250639
+    second: Wolf-White-idle_25
+  - first:
+      213: 1281753178780326545
+    second: Wolf-White-idle_26
+  - first:
+      213: 1305829094018254534
+    second: Wolf-White-idle_27
+  - first:
+      213: -2187566259998297765
+    second: Wolf-White-idle_28
+  - first:
+      213: 5555321856667391440
+    second: Wolf-White-idle_29
+  - first:
+      213: -5797275457754843424
+    second: Wolf-White-idle_30
+  - first:
+      213: 5477894721847330040
+    second: Wolf-White-idle_31
+  - first:
+      213: -5598494920078814798
+    second: Wolf-White-idle_32
+  - first:
+      213: -1004653016592089463
+    second: Wolf-White-idle_33
+  - first:
+      213: 5481252704290968109
+    second: Wolf-White-idle_34
+  - first:
+      213: 3568451577658219207
+    second: Wolf-White-idle_35
+  - first:
+      213: -3446659341931380156
+    second: Wolf-White-idle_36
+  - first:
+      213: -4174670731946687982
+    second: Wolf-White-idle_37
+  - first:
+      213: 8897826303661858035
+    second: Wolf-White-idle_38
+  - first:
+      213: -6019127582053444988
+    second: Wolf-White-idle_39
+  - first:
+      213: 8850209596046211532
+    second: Wolf-White-idle_40
+  - first:
+      213: -8098014869718492096
+    second: Wolf-White-idle_41
+  - first:
+      213: 5751551337355255730
+    second: Wolf-White-idle_42
+  - first:
+      213: -407796677195709570
+    second: Wolf-White-idle_43
+  - first:
+      213: -9047533105446958525
+    second: Wolf-White-idle_44
+  - first:
+      213: -2432793579511551923
+    second: Wolf-White-idle_45
+  - first:
+      213: -2689528931702204188
+    second: Wolf-White-idle_46
+  - first:
+      213: 8093893826593035961
+    second: Wolf-White-idle_47
+  - first:
+      213: 4315561916361097905
+    second: Wolf-White-idle_48
+  - first:
+      213: 3577211378213112777
+    second: Wolf-White-idle_49
+  - first:
+      213: -1588143113729108877
+    second: Wolf-White-idle_50
+  - first:
+      213: 7827850442224384885
+    second: Wolf-White-idle_51
+  - first:
+      213: -355588671844674043
+    second: Wolf-White-idle_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-White-idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f219a42b603665100800000000000000
+      internalID: 96373322447229231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa4ba7ce6fdd7030800000000000000
+      internalID: 3494194552798661362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05f68faa38045670800000000000000
+      internalID: 8526449042665174284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22b905563e53bd30800000000000000
+      internalID: 4446000844592755247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed3230d5b14300d0800000000000000
+      internalID: -3457847839752569374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_5
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3615d9ab532382960800000000000000
+      internalID: 7577361579396387171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_6
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa27e5fc406d6e70800000000000000
+      internalID: 9110043504899730163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_7
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0115e7b13b7fbc0800000000000000
+      internalID: -3749331234097917750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_8
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1186be04ea0fdd810800000000000000
+      internalID: 1791852857967470609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_9
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebe1738a5eabd150800000000000000
+      internalID: 5898499840747367404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_10
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8a05cab91fec5d0800000000000000
+      internalID: -3040227047515313929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3440c18a2f2639ae0800000000000000
+      internalID: -1543781452915932093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_12
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e82269ccc479b1e0800000000000000
+      internalID: -2181584121583490844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_13
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf043093fe5400f0800000000000000
+      internalID: -1151691204510609463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_14
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbe0921ccd8fe1e0800000000000000
+      internalID: -2166356988117586953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_15
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523cfacf8b74e2bd0800000000000000
+      internalID: -2653104270635711707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_16
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e1cd569ea223ad0800000000000000
+      internalID: -2724067642681057742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_17
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bd141862103ab60800000000000000
+      internalID: 7756044248151088011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_18
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ea49c3ace0262b0800000000000000
+      internalID: -5592891525478175139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_19
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3eb77d80cc4ce10800000000000000
+      internalID: 2217121254920152034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_20
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9367e2cf221719830800000000000000
+      internalID: 4076163532820739641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_21
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228ee96dabdc4b060800000000000000
+      internalID: 6968420725797349410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a6f639058984480800000000000000
+      internalID: -8914707990541538716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_23
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166acc56478eaa8f0800000000000000
+      internalID: -528354419640850847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_24
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05fae59244d0a3d0800000000000000
+      internalID: -3197322352984918773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_25
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f5362a9509923a0800000000000000
+      internalID: -6689657056831250639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_26
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19addee99b3b9c110800000000000000
+      internalID: 1281753178780326545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_27
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6045674ac3f1210800000000000000
+      internalID: 1305829094018254534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_28
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51fb26a31434a1e0800000000000000
+      internalID: -2187566259998297765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_29
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d59f979bc7781d40800000000000000
+      internalID: 5555321856667391440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-idle_30
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6be6bbfa0fb8fa0800000000000000
+      internalID: -5797275457754843424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 051fdd27e8060c847a60ea376bb4513d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

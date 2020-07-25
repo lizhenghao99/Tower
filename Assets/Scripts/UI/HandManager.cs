@@ -42,6 +42,15 @@ public class HandManager : MonoBehaviour
     {
         LevelController.Instance.StartCombat += OnStartCombat;
         LevelController.Instance.EndCombat += OnEndCombat;
+        LevelController.Instance.StageClear += OnStageClear;
+    }
+
+    public void OnStageClear(object sender, EventArgs e)
+    {
+        foreach (CardClick c in hand)
+        {
+            c.interactable = false;
+        }
     }
 
     public void OnStartCombat(object sender, EventArgs e)

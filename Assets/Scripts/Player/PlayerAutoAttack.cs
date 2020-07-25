@@ -61,4 +61,9 @@ public class PlayerAutoAttack : AttackBase
     {
         return false;
     }
+
+    protected override void NoTargetBehavior()
+    {
+        // do nothing
+    }
 }

@@ -8,6 +8,7 @@ public class EffectManager : Singleton<EffectManager>
     [SerializeField] GameObject burnVfx;
     [SerializeField] GameObject freezeVfx;
     [SerializeField] GameObject stunVfx;
+    [SerializeField] GameObject rageVfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,9 @@ public class EffectManager : Singleton<EffectManager>
                 break;
             case Effect.Type.Stun:
                 vfx = stunVfx;
+                break;
+            case Effect.Type.Rage:
+                vfx = rageVfx;
                 break;
             default:
                 break;

@@ -1,0 +1,686 @@
+fileFormatVersion: 2
+guid: dd9c7fb7ccae42241a53ce9a89bdea64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5457447437613739964
+    second: Wolf-White-bite_0
+  - first:
+      213: 748704588505648165
+    second: Wolf-White-bite_1
+  - first:
+      213: 1704145661891559148
+    second: Wolf-White-bite_2
+  - first:
+      213: -8673130355432361607
+    second: Wolf-White-bite_3
+  - first:
+      213: 7336446014693292206
+    second: Wolf-White-bite_4
+  - first:
+      213: -8031154630304131599
+    second: Wolf-White-bite_5
+  - first:
+      213: -4714495433007315538
+    second: Wolf-White-bite_6
+  - first:
+      213: -1535620503279990989
+    second: Wolf-White-bite_7
+  - first:
+      213: -1246132347899889125
+    second: Wolf-White-bite_8
+  - first:
+      213: 998576938096667005
+    second: Wolf-White-bite_9
+  - first:
+      213: 5368822825099337979
+    second: Wolf-White-bite_10
+  - first:
+      213: 97012782456821623
+    second: Wolf-White-bite_11
+  - first:
+      213: 6607293498540011065
+    second: Wolf-White-bite_12
+  - first:
+      213: 1202976642498361965
+    second: Wolf-White-bite_13
+  - first:
+      213: 2946977753195702584
+    second: Wolf-White-bite_14
+  - first:
+      213: -4302205477467743536
+    second: Wolf-White-bite_15
+  - first:
+      213: -5756336422273847651
+    second: Wolf-White-bite_16
+  - first:
+      213: 417808527708311458
+    second: Wolf-White-bite_17
+  - first:
+      213: 3768627271121928514
+    second: Wolf-White-bite_18
+  - first:
+      213: -4895931014086303760
+    second: Wolf-White-bite_19
+  - first:
+      213: -8762071538743298737
+    second: Wolf-White-bite_20
+  - first:
+      213: 1910197509149836579
+    second: Wolf-White-bite_21
+  - first:
+      213: -3124157512292072116
+    second: Wolf-White-bite_22
+  - first:
+      213: -1170135004468901733
+    second: Wolf-White-bite_23
+  - first:
+      213: -1953644097178722606
+    second: Wolf-White-bite_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-White-bite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440daa468704344b0800000000000000
+      internalID: -5457447437613739964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c859f3bdee36a00800000000000000
+      internalID: 748704588505648165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeb196537756a710800000000000000
+      internalID: 1704145661891559148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971fbc9d4e9d2a780800000000000000
+      internalID: -8673130355432361607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8bf9bb7ca40d560800000000000000
+      internalID: 7336446014693292206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f51d742a6b9b8090800000000000000
+      internalID: -8031154630304131599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5c564d16fb29eb0800000000000000
+      internalID: -4714495433007315538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_7
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3378030d94160bae0800000000000000
+      internalID: -1535620503279990989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_8
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1abd4c5b39d4bee0800000000000000
+      internalID: -1246132347899889125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_9
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79262c3f68abdd00800000000000000
+      internalID: 998576938096667005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf02e080ae3e18a40800000000000000
+      internalID: 5368822825099337979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777d2059c98a85100800000000000000
+      internalID: 97012782456821623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_12
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ea9331e62d1bb50800000000000000
+      internalID: 6607293498540011065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_13
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6af439f1e4d1b010800000000000000
+      internalID: 1202976642498361965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_14
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839653c17a4c5e820800000000000000
+      internalID: 2946977753195702584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da9bcc89ee7b44c0800000000000000
+      internalID: -4302205477467743536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_16
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e69b6b5826d10b0800000000000000
+      internalID: -5756336422273847651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_17
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afce2e64aa5cc500800000000000000
+      internalID: 417808527708311458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_18
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241821a398adc4430800000000000000
+      internalID: 3768627271121928514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_19
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1152
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff5194bea82e0cb0800000000000000
+      internalID: -4895931014086303760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4535a4eb5ed66680800000000000000
+      internalID: -8762071538743298737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_21
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32546bf8382628a10800000000000000
+      internalID: 1910197509149836579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-bite_22
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 416
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4586798b43c4a4d0800000000000000
+      internalID: -3124157512292072116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 74acfd8b6e1ecc8469e1bfee49441806
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: bd11e8a49ee1e5d4784bedf4b27370f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4243241068872576110
+    second: Wolf-White-die_0
+  - first:
+      213: -7051828345269190293
+    second: Wolf-White-die_1
+  - first:
+      213: 1422598695243884592
+    second: Wolf-White-die_2
+  - first:
+      213: -7446484094271179854
+    second: Wolf-White-die_3
+  - first:
+      213: 9219893784540861724
+    second: Wolf-White-die_4
+  - first:
+      213: 1564451143919995642
+    second: Wolf-White-die_5
+  - first:
+      213: 193968237163799029
+    second: Wolf-White-die_6
+  - first:
+      213: -5924611580318161373
+    second: Wolf-White-die_7
+  - first:
+      213: 8230642295699356884
+    second: Wolf-White-die_8
+  - first:
+      213: -4403168301013733008
+    second: Wolf-White-die_9
+  - first:
+      213: 4405983492862118156
+    second: Wolf-White-die_10
+  - first:
+      213: -7722003489568793878
+    second: Wolf-White-die_11
+  - first:
+      213: 7252534746009897769
+    second: Wolf-White-die_12
+  - first:
+      213: 4229846385500984455
+    second: Wolf-White-die_13
+  - first:
+      213: -6971146561583461963
+    second: Wolf-White-die_14
+  - first:
+      213: -1033194340425597174
+    second: Wolf-White-die_15
+  - first:
+      213: 4225516349333358644
+    second: Wolf-White-die_16
+  - first:
+      213: -6158949340777320031
+    second: Wolf-White-die_17
+  - first:
+      213: -3170642774136480710
+    second: Wolf-White-die_18
+  - first:
+      213: 1331395029921564906
+    second: Wolf-White-die_19
+  - first:
+      213: 1111324684557580724
+    second: Wolf-White-die_20
+  - first:
+      213: -3634487432279194582
+    second: Wolf-White-die_21
+  - first:
+      213: 7685735731021328022
+    second: Wolf-White-die_22
+  - first:
+      213: -8032593511057575101
+    second: Wolf-White-die_23
+  - first:
+      213: -6065100245495638536
+    second: Wolf-White-die_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wolf-White-die_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2935081cabafc15c0800000000000000
+      internalID: -4243241068872576110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61033f6b7fd22e90800000000000000
+      internalID: -7051828345269190293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03822ffd9f51eb310800000000000000
+      internalID: 1422598695243884592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3be5f5b26c8a890800000000000000
+      internalID: -7446484094271179854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3360
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15d3664c84a3ff70800000000000000
+      internalID: 9219893784540861724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa0ecdc60c06b510800000000000000
+      internalID: 1564451143919995642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f16bd1851d11b200800000000000000
+      internalID: 193968237163799029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_7
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32668fa582d87cda0800000000000000
+      internalID: -5924611580318161373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_8
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc37746f8d193270800000000000000
+      internalID: 8230642295699356884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_9
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2624
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071f0db52cdc4e2c0800000000000000
+      internalID: -4403168301013733008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09084294a2352d30800000000000000
+      internalID: 4405983492862118156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeadce93dbee5d490800000000000000
+      internalID: -7722003489568793878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_12
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b09190ded26a460800000000000000
+      internalID: 7252534746009897769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_13
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784914e70ee63ba30800000000000000
+      internalID: 4229846385500984455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf-White-die_14
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1888
+        width: 722
+        height: 736
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9c1af0323814f90800000000000000
+      internalID: -6971146561583461963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4f9d56a2399696343b4697aa579989a5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

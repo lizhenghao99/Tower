@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Effect : MonoBehaviour
 {
-    public enum Type { None, Burn, Freeze, Stun };
+    public enum Type { None, Burn, Freeze, Stun, Rage };
 
     public EventHandler start;
     public EventHandler finish;
@@ -49,6 +49,7 @@ public abstract class Effect : MonoBehaviour
         currentVfx = Instantiate(effectVfx, gameObject.transform);
         var scale = GetComponent<CapsuleCollider>().radius;
         currentVfx.transform.localScale = new Vector3(1.2f*scale, 1.2f*scale, 1.2f*scale);
+        currentVfx.transform.position += new Vector3(0f, 0.5f * scale, 0f);
         start?.Invoke(this, EventArgs.Empty);
     }
 

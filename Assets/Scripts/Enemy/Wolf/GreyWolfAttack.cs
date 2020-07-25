@@ -42,7 +42,7 @@ public class GreyWolfAttack : EnemyAttack
         audioManager.Play("Stomp");
 
 
-        var swipeMask = LayerMask.GetMask("Player", "Minion", "base");
+        var swipeMask = LayerMask.GetMask("Player", "Minion", "Base");
         Collider[] colliders = Physics.OverlapSphere(
             gameObject.transform.position, stompRange, swipeMask);
         foreach (Collider c in colliders)

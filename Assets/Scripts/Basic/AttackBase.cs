@@ -20,6 +20,7 @@ public abstract class AttackBase : MonoBehaviour
 
     protected Collider[] enemiesInRange;
     protected GameObject target;
+    protected RaycastHit targetHitInfo;
     protected int layerMask;
     protected float attackTimer;
 
@@ -109,29 +110,32 @@ public abstract class AttackBase : MonoBehaviour
 
     protected virtual void Attack()
     {
-        if (target == null || !target.activeInHierarchy) return;
+        if (target == null || !target.activeInHierarchy)
+        {
+            NoTargetBehavior();
+            return;
+        }
 
         RaycastHit[] hitInfoArray;
-        RaycastHit hitInfo;
 
         hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
             target.transform.position - gameObject.transform.position);
 
         if (hitInfoArray.Length == 0) return;
 
-        hitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
+        targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
             .FirstOrDefault();
         agent.stoppingDistance = stopRange;
-        agent.SetDestination(hitInfo.point);
+        agent.SetDestination(targetHitInfo.point);
 
         if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
             && Vector3.Distance(
                 Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
-                Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))
+                Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
                 < stopRange + 2)
         {
             attackTimer -= Time.deltaTime;
-            FlipX(hitInfo);
+            FlipX(targetHitInfo);
             if (!isSpecialing)
             {
                 if (attackTimer < 0)
@@ -178,7 +182,7 @@ public abstract class AttackBase : MonoBehaviour
 
         if (Vector3.Distance(
                 Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
-                Vector3.ProjectOnPlane(target.transform.position, new Vector3(0, 1, 0)))
+                Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
                 < stopRange + 2)
         {
             SpecialAutoAttack();
@@ -193,5 +197,10 @@ public abstract class AttackBase : MonoBehaviour
         {
             agent.isStopped = false;
         }, attackRate/2));
+    }
+
+    protected virtual void NoTargetBehavior()
+    {
+        agent.SetDestination(gameObject.transform.position);
     }
 }
