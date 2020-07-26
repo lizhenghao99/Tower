@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MechGuard
   m_EditorClassIdentifier: 
   cardName: "\u94C1\u7532\u62A4\u536B"
-  description: "\u653E\u51FA3\u4E2A\"\u5632\u8BBD\"\uFF0C\"\u56FA\u5B88\"\u7684\u94C1\u7532\u62A4\u536B\u3002"
+  description: "\u653E\u51FA3\u4E2A<u>\u5632\u8BBD</u>\uFF0C<u>\u56FA\u5B88</u>\u7684\u94C1\u7532\u62A4\u536B\u3002"
   primaryChange: -40
   secondaryChange: 0
   owner: 0

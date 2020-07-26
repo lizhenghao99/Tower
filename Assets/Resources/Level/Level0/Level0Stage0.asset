@@ -15,10 +15,9 @@ MonoBehaviour:
   index: 0
   basePosition: {x: -101.8, y: 0.36, z: 0}
   charPostions:
-  - {x: -90.14, y: 0, z: -3.56}
+  - {x: -93, y: 0, z: -3.56}
   top: -118
   bottom: -143
   left: -110
   right: -45
   sunLightIntensity: 1.2
-  RepeatOnFailure: 1

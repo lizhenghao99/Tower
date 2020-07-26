@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MechWarrior
   m_EditorClassIdentifier: 
   cardName: "\u6728\u7532\u6218\u58EB"
-  description: "\u653E\u51FA3\u4E2A\"\u51B2\u950B\"\u7684\u6728\u7532\u6218\u58EB\u3002\r"
+  description: "\u653E\u51FA3\u4E2A<u>\u51B2\u950B</u>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
   primaryChange: -20
   secondaryChange: 0
   owner: 0

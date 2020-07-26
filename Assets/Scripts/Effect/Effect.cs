@@ -47,9 +47,11 @@ public abstract class Effect : MonoBehaviour
     protected virtual void OnStart()
     {
         currentVfx = Instantiate(effectVfx, gameObject.transform);
-        var scale = GetComponent<CapsuleCollider>().radius;
-        currentVfx.transform.localScale = new Vector3(1.2f*scale, 1.2f*scale, 1.2f*scale);
-        currentVfx.transform.position += new Vector3(0f, 0.5f * scale, 0f);
+        var scale = GetComponentInChildren<SpriteRenderer>().bounds.size;
+        currentVfx.transform.localScale = 
+            Vector3.one * (scale.magnitude * 0.3f);
+        currentVfx.transform.position += 
+            new Vector3(0f, 0.2f * scale.y, 0f);
         start?.Invoke(this, EventArgs.Empty);
     }
 

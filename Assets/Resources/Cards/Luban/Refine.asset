@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Refine
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
-  description: "\u6D88\u80175\u4E2A\"\u7075\u6750\"\uFF0C\u5C06\u5176\u70BC\u5316\u62102\u9897\"\u7075\u6838\"\u3002"
+  description: "\u6D88\u80175\u4E2A<u>\u7075\u6750</u>\uFF0C\u5C06\u5176\u70BC\u5316\u62102\u9897<u>\u7075\u6838</u>\u3002"
   primaryChange: -100
   secondaryChange: 2
   owner: 0

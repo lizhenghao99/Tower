@@ -31,7 +31,7 @@ public class EnemySpawner : Singleton<EnemySpawner>
         }
     }
 
-    private void OnStartCombat(object sender, EventArgs e)
+    public void OnStartCombat(object sender, EventArgs e)
     {
         currStage = waveStages[LevelController.Instance.currStage.index];
     }
