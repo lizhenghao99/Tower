@@ -7,6 +7,6 @@ public class EnemyHealth : Health
     public override void Die()
     {
         base.Die();
-        EnemySpawner.Instance.CheckAllEnemiesDead();
+        FindObjectOfType<EnemySpawner>().CheckAllEnemiesDead();
     }
 }

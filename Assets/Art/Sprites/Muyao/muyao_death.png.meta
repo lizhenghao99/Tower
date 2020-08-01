@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: 8f6635ec578648e4490e64e2d0262a03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6476788664439282185
+    second: muyao_death_0
+  - first:
+      213: -8696412203828169953
+    second: muyao_death_1
+  - first:
+      213: -1793725511699038836
+    second: muyao_death_2
+  - first:
+      213: 3813874559413858739
+    second: muyao_death_3
+  - first:
+      213: 6910110793055924450
+    second: muyao_death_4
+  - first:
+      213: -6641348195798044918
+    second: muyao_death_5
+  - first:
+      213: -841704154185563805
+    second: muyao_death_6
+  - first:
+      213: 8094992229269194208
+    second: muyao_death_7
+  - first:
+      213: -2785552658851141450
+    second: muyao_death_8
+  - first:
+      213: 5096134283258371030
+    second: muyao_death_9
+  - first:
+      213: -6669544637148666323
+    second: muyao_death_10
+  - first:
+      213: -8141368207734362661
+    second: muyao_death_11
+  - first:
+      213: -6777072543856551059
+    second: muyao_death_12
+  - first:
+      213: -8321690787072958243
+    second: muyao_death_13
+  - first:
+      213: 9182266915076461917
+    second: muyao_death_14
+  - first:
+      213: 9095390914838037443
+    second: muyao_death_15
+  - first:
+      213: -4179628803266669445
+    second: muyao_death_16
+  - first:
+      213: -1069428520854113405
+    second: muyao_death_17
+  - first:
+      213: 4533737090051388908
+    second: muyao_death_18
+  - first:
+      213: -4897356011207614611
+    second: muyao_death_19
+  - first:
+      213: 6762359770456499939
+    second: muyao_death_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muyao_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7077
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a1e2d89fc22e950800000000000000
+      internalID: 6476788664439282185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_1
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 7077
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13337a1d23205780800000000000000
+      internalID: -8696412203828169953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_2
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 7077
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d7f9296286b17e0800000000000000
+      internalID: -1793725511699038836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5962
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b133cb74ba9de430800000000000000
+      internalID: 3813874559413858739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_4
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 5962
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0f0baa725a5ef50800000000000000
+      internalID: 6910110793055924450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_5
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 5962
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fa6c7d00135d3a0800000000000000
+      internalID: -6641348195798044918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4847
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3618cc3088aa154f0800000000000000
+      internalID: -841704154185563805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_7
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 4847
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5432d1b80375070800000000000000
+      internalID: 8094992229269194208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_8
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 4847
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b868028d9ab759d0800000000000000
+      internalID: -2785552658851141450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3732
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db1e41512b19b640800000000000000
+      internalID: 5096134283258371030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_10
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 3732
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2664214d740173a0800000000000000
+      internalID: -6669544637148666323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_11
+      rect:
+        serializedVersion: 2
+        x: 4208
+        y: 3732
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdda558ffbc040f80800000000000000
+      internalID: -8141368207734362661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_death_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2617
+        width: 2104
+        height: 1115
+      alignment: 9
+      pivot: {x: 0.69, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b90668d6003f1a0800000000000000
+      internalID: -6777072543856551059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a8162d4744d7f734aa47cf55ba79fdb0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

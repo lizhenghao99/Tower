@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TowerUtils;
 using System;
+using System.Linq;
 
-public class DeckManager : Singleton<DeckManager>
+public class DeckManager : MonoBehaviour
 {
     public Card.Owner firstOwner;
     public Card.Owner secondOwner;
@@ -30,12 +31,25 @@ public class DeckManager : Singleton<DeckManager>
     // Start is called before the first frame update
     private void Awake()
     {
+        Card[] cards = Resources.LoadAll<Card>("Cards");
+        var data = SaveSystem.LoadDeck();
+        if (deck1.Count == 0 && data != null 
+            && data.playerDecks.ContainsKey((int)firstOwner))
+        {
+            foreach (string name in data.playerDecks[(int)firstOwner])
+            {
+                var cardToAdd = cards
+                    .Where(c => c.owner == firstOwner && c.cardName == name)
+                    .FirstOrDefault();
+                deck1.Add(cardToAdd);
+            }
+        }
         OnEndCombat(gameObject, EventArgs.Empty);
     }
 
     private void Start()
     {
-        LevelController.Instance.EndCombat += OnEndCombat;
+        FindObjectOfType<LevelController>().EndCombat += OnEndCombat;
     }
 
     // Update is called once per frame

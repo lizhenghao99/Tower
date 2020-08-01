@@ -11,8 +11,12 @@ public class Health : MonoBehaviour
     public int currHealth { get; protected set; }
 
     public EventHandler healthChanged;
+    public EventHandler death;
+    public EventHandler revive;
 
     public bool isDead = false;
+
+    public bool isImmune = false;
 
     public bool immuneStun = false;
 
@@ -30,6 +34,7 @@ public class Health : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
+        if (isImmune) return;
         currHealth = Mathf.Clamp(currHealth - damage, 0, maxHealth);
         OnHealthChanged();
         if (currHealth <= 0 && !isDead)
@@ -40,6 +45,7 @@ public class Health : MonoBehaviour
 
     public virtual void TakeDamagePercent(float percent)
     {
+        if (isImmune) return;
         currHealth = Mathf.Clamp(
             currHealth - (int)(maxHealth * percent), 0, maxHealth);
         OnHealthChanged();
@@ -60,6 +66,15 @@ public class Health : MonoBehaviour
         currHealth = Mathf.Clamp(
             currHealth + (int)(maxHealth * percent), 0, maxHealth);
         OnHealthChanged();
+    }
+
+    public virtual void Revive(float percent)
+    {
+        currHealth = (int) (maxHealth * percent);
+        isDead = false;
+        GetComponentInChildren<Animator>().SetBool("Death", false);
+        OnHealthChanged();
+        OnRevive();
     }
 
     public virtual void Die()
@@ -88,10 +103,22 @@ public class Health : MonoBehaviour
                 gameObject.SetActive(false);
             }, 1f));
         }, 2f));
+
+        OnDeath();
     }
 
     protected void OnHealthChanged()
     {
         healthChanged?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    protected void OnDeath()
+    {
+        death?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    protected void OnRevive()
+    {
+        revive?.Invoke(gameObject, EventArgs.Empty);
     }
 }

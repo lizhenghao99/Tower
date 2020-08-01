@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Werewolf.StatusIndicators.Components;
 using System.Linq;
-using System.Diagnostics;
 
 public class BuffPlayer : Singleton<BuffPlayer>
 {
@@ -15,9 +14,18 @@ public class BuffPlayer : Singleton<BuffPlayer>
     private PlayerController[] players;
     private PlayerController self;
 
+    private List<GameObject> targets;
+
+    private EffectManager effectManager;
+
     public void Awake()
     {
         layerMask = LayerMask.GetMask("Enemy");
+    }
+
+    private void Start()
+    {
+        effectManager = FindObjectOfType<EffectManager>();
     }
 
     public void Ready()
@@ -28,47 +36,91 @@ public class BuffPlayer : Singleton<BuffPlayer>
         self = players
             .Where(p => p.name == cardPlaying.owner.ToString())
             .FirstOrDefault();
+
+        targets = new List<GameObject>();
+
         switch (cardPlaying.buffTarget)
         {
-            case Buff.BuffTarget.AllPlayers:
-                break;
-            case Buff.BuffTarget.AllScreen:
-                break;
             case Buff.BuffTarget.Self:
-                self.isSelected = true;
+                targets.Add(self.gameObject);
+                break;
+            case Buff.BuffTarget.OwnMinions:
+                GameObject[] ownMinions = FindObjectsOfType<Minion>()
+                    .Where(m => m.owner == cardPlaying.owner)
+                    .Select(m => m.gameObject)
+                    .ToArray();
+                targets.AddRange(ownMinions);
+                break;
+            case Buff.BuffTarget.AllMinions:
+                break;
+            case Buff.BuffTarget.AllChars:
+                break;
+            case Buff.BuffTarget.AllFriendlies:
+                break;
+            case Buff.BuffTarget.AllEnemies:
                 break;
             default:
                 break;
         }
+
+        SelectTargets();
     }
 
     public void Play()
     {
         Refresh();
-        switch (cardPlaying.buffTarget)
-        {
-            case Buff.BuffTarget.AllPlayers:
-                break;
-            case Buff.BuffTarget.AllScreen:
-                break;
-            case Buff.BuffTarget.Self:
-                self.isSelected = false;
-                if (cardPlaying.vfx)
-                {
-                    var fx = Instantiate(cardPlaying.vfx, self.transform);
-                    fx.transform.position =
-                        self.transform.position + cardPlaying.vfxOffset;
-                }
-                self.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
-                break;
-            default:
-                break;
-        }
+
+        ApplyBuff();
     }
 
     private void Refresh()
     {
         cardPlaying = (Buff)CardPlayer.Instance.cardPlaying;
         splat = CardPlayer.Instance.splat;
+    }
+
+    private void SelectTargets()
+    {
+        foreach (GameObject t in targets)
+        {
+            if (t.GetComponent<PlayerController>())
+            {
+                t.GetComponent<PlayerController>().isSelected = true;
+            }
+            else if (t.GetComponent<Minion>())
+            {
+                t.GetComponent<Minion>().isSelected = true;
+            }
+        }
+    }
+
+    private void ApplyBuff()
+    {
+        foreach (GameObject t in targets)
+        {
+            if (t.GetComponent<PlayerController>())
+            {
+                t.GetComponent<PlayerController>().isSelected = false;
+                t.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
+            }
+            else if (t.GetComponent<Minion>())
+            {
+                t.GetComponent<Minion>().isSelected = false;
+            }
+
+            effectManager.Register(
+                self.gameObject,
+                t,
+                cardPlaying.effect,
+                cardPlaying.effectDuration,
+                cardPlaying.effectAmount);
+
+            if (cardPlaying.vfx)
+            {
+                var fx = Instantiate(cardPlaying.vfx, t.transform);
+                fx.transform.position =
+                    t.transform.position + cardPlaying.vfxOffset;
+            }
+        } 
     }
 }

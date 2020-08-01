@@ -29,10 +29,10 @@ MonoBehaviour:
   centerPrefab: {fileID: 0}
   count: 3
   health: 400
-  attackDamage: 60
+  attackDamage: 80
   attackRange: 0
   attackRate: 1.5
-  stopRange: 3
+  stopRange: 2
   taunt: 0
   invisible: 0
   guard: 0

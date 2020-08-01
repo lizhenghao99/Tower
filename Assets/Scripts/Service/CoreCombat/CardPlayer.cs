@@ -41,6 +41,11 @@ public class CardPlayer : Singleton<CardPlayer>
                 CancelCard();
             }
         }
+        if (isPlayingCard && player.GetComponent<Health>().isDead)
+        {
+            CancelCard();
+            splat.CancelRangeIndicator();
+        }
     }
 
     public bool Play(Card card)
@@ -100,7 +105,7 @@ public class CardPlayer : Singleton<CardPlayer>
         GlobalAudioManager.Instance.Play("Place", Vector3.zero);
         GlobalAudioManager.Instance.Play(
             cardPlaying.sfx, player.transform.position);
-        DeckManager.Instance.DiscardCard(cardPlaying);
+        FindObjectOfType<DeckManager>().DiscardCard(cardPlaying);
         
         splat.CancelSpellIndicator();
         splat.SelectRangeIndicator(cardPlaying.owner + "Range");

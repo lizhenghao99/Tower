@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Refine
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
-  description: "\u6D88\u80175\u4E2A<u>\u7075\u6750</u>\uFF0C\u5C06\u5176\u70BC\u5316\u62102\u9897<u>\u7075\u6838</u>\u3002"
-  primaryChange: -100
-  secondaryChange: 2
+  description: "\u6D88\u80173\u4E2A<u>\u7075\u6750</u>\uFF0C\u5C06\u5176\u70BC\u5316\u62101\u9897<u>\u7075\u6838</u>\u3002"
+  primaryChange: -60
+  secondaryChange: 1
   owner: 0
   art: {fileID: 0}
   sfx: {fileID: 11400000, guid: e286f1952bf05b74084c80a4afda43d8, type: 2}
@@ -24,8 +24,7 @@ MonoBehaviour:
   castTime: 2
   duration: 0
   shieldPercent: 0
-  buffTarget: 2
-  debuff: 0
+  buffTarget: 0
   effect: 0
   effectDuration: 0
   effectAmount: 0

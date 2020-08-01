@@ -5,15 +5,13 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Buff", menuName = "Card/Buff")]
 public class Buff : Card
 {
-    public enum BuffTarget {AllPlayers, AllScreen, Self};
+    public enum BuffTarget 
+        {Self, OwnMinions, AllMinions, AllChars, AllFriendlies, AllEnemies};
 
-    [Header("Buff")]
-    public float duration;
+    [Header("Shield")]
     public float shieldPercent;
     [Header("Targets")]
     public BuffTarget buffTarget;
-    [Header("Debuff")]
-    public bool debuff;
     [Header("Apply Effect")]
     public Effect.Type effect;
     public float effectDuration;

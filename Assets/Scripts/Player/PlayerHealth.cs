@@ -93,6 +93,8 @@ public class PlayerHealth : Health
         {
             audioManager.Play("Death");
         }
+        currHealth = 0;
+        OnDeath();
     }
 
     private void OnShieldChanged()

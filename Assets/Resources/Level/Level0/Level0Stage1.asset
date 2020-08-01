@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level0Stage1
   m_EditorClassIdentifier: 
   index: 1
-  basePosition: {x: -22.62, y: 0.36, z: 0}
+  basePosition: {x: -22.62, y: 0, z: -2}
   charPostions:
   - {x: -14, y: 0, z: 0}
   top: -118
@@ -21,4 +21,3 @@ MonoBehaviour:
   left: -20
   right: 40
   sunLightIntensity: 1
-  RepeatOnFailure: 1

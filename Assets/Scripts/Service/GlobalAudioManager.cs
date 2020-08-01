@@ -6,10 +6,12 @@ using UnityEngine;
 public class GlobalAudioManager : Singleton<GlobalAudioManager>
 {
     public Sound[] sounds;
+    private AudioMixerManager audioMixerManager;
 
     private void Start()
     {
-        sounds = Resources.LoadAll<Sound>("");
+        sounds = Resources.LoadAll<Sound>("Sounds");
+        audioMixerManager = AudioMixerManager.Instance;
     }
 
     public void Play(Sound sound, Vector3 position)
@@ -44,6 +46,8 @@ public class GlobalAudioManager : Singleton<GlobalAudioManager>
         var tempGO = new GameObject("TempAudio");
         tempGO.transform.position = position;
         var audioSource = tempGO.AddComponent<AudioSource>();
+
+        audioSource.outputAudioMixerGroup = audioMixerManager.sfxGroup;
 
         audioSource.clip = sound.clip;
         audioSource.loop = sound.loop;

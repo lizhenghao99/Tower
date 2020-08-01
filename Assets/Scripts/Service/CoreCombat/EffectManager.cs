@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EffectManager : Singleton<EffectManager>
+public class EffectManager : MonoBehaviour
 {
     [SerializeField] GameObject burnVfx;
     [SerializeField] GameObject freezeVfx;
@@ -12,7 +12,7 @@ public class EffectManager : Singleton<EffectManager>
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void Register(GameObject caster, GameObject target, Effect.Type effectType, 

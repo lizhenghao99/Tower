@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EliteWolfHowlShake
   m_EditorClassIdentifier: 
   Strength: {x: 3, y: 3, z: 0}
-  Duration: 1
+  Duration: 1.5
   Vibrato: 40
   Randomness: 0.3
   Smoothness: 0.1

@@ -11,7 +11,7 @@ public class EliteWolfAttack : EnemyAttack
 {
     [SerializeField] GameObject stompFx;
     [SerializeField] GameObject[] spawnees;
-    private float swipeTimer = 5f;
+    private float swipeTimer = 10f;
     private float howlTimer = 20f;
     private int spawnCounter = 0;
     private List<GameObject> spawnedObjects;
@@ -21,6 +21,7 @@ public class EliteWolfAttack : EnemyAttack
     private int phase = 0;
 
     private int stompDamage = 100;
+    private EffectManager effectManager;
 
 
     protected override void Start()
@@ -31,6 +32,7 @@ public class EliteWolfAttack : EnemyAttack
         GetComponent<Health>().immuneStun = true;
         shake = Camera.main.GetComponent<ProCamera2DShake>();
         spawnedObjects = new List<GameObject>();
+        effectManager = FindObjectOfType<EffectManager>();
     }
 
     protected override void Update()
@@ -43,6 +45,7 @@ public class EliteWolfAttack : EnemyAttack
         else if (phase == 1 && health.currHealth <= health.maxHealth * 0.05)
         {
             EnterWipe();
+            health.isImmune = true;
         }
     }
     
@@ -102,7 +105,7 @@ public class EliteWolfAttack : EnemyAttack
                 isSpecialing = false;
             }, 2f));
             animator.SetTrigger("Stomp");
-            swipeTimer = 5f;
+            swipeTimer = 10f;
         }
     }
 
@@ -138,7 +141,7 @@ public class EliteWolfAttack : EnemyAttack
         {
             if (e.activeInHierarchy && !e.GetComponent<Health>().isDead)
             {
-                EffectManager.Instance.Register(gameObject, e,
+                effectManager.Register(gameObject, e,
                     Effect.Type.Rage, 10f, 0.25f);
             }
         }
@@ -223,7 +226,7 @@ public class EliteWolfAttack : EnemyAttack
         {
             if (e.activeInHierarchy && !e.GetComponent<Health>().isDead)
             {
-                EffectManager.Instance.Register(gameObject, e,
+                effectManager.Register(gameObject, e,
                     Effect.Type.Rage, 500f, 2f);
             }
         }
@@ -231,7 +234,7 @@ public class EliteWolfAttack : EnemyAttack
         shake.Shake("EliteWolfHowlShake");
         audioManager.Play("Howl");
 
-        EffectManager.Instance.Register(gameObject, gameObject,
+        effectManager.Register(gameObject, gameObject,
             Effect.Type.Rage, 500f, 0.5f);
     }
 
@@ -241,5 +244,6 @@ public class EliteWolfAttack : EnemyAttack
         isSpecialing = true;
         stompDamage = 10000;
         animator.SetTrigger("Stomp");
+        enabled = false;
     }
 }

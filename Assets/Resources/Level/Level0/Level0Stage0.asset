@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level0Stage0
   m_EditorClassIdentifier: 
   index: 0
-  basePosition: {x: -101.8, y: 0.36, z: 0}
+  basePosition: {x: -101.8, y: 0, z: -2}
   charPostions:
   - {x: -93, y: 0, z: -3.56}
   top: -118

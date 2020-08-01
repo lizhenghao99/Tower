@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using UnityEngine.AI;
 using System;
+using UnityEngine.Audio;
 
 public class InstanceAudioManager : MonoBehaviour
 {
@@ -32,7 +32,7 @@ public class InstanceAudioManager : MonoBehaviour
             stride.stride += OnStride;
         }
 
-
+        audioSource.outputAudioMixerGroup = AudioMixerManager.Instance.sfxGroup;
 
         Play("Spawn");
     }

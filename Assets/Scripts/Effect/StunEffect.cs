@@ -20,6 +20,7 @@ public class StunEffect : Effect
     {
         if (!GetComponent<Health>().immuneStun)
         {
+            agent.SetDestination(gameObject.transform.position);
             agent.isStopped = true;
             attack.enabled = false;
             if (animator != null)

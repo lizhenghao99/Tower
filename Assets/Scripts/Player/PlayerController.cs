@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
         }
         if (health.isDead)
         {
+            isSelected = false;
             agent.destination = gameObject.transform.position;
             agent.isStopped = true;
             return;
@@ -101,21 +102,26 @@ public class PlayerController : MonoBehaviour
                                             hit.collider.transform.position,
                                             out hitInfo, mask))
                     {
+                        var direction = Vector3.ProjectOnPlane(
+                            gameObject.transform.position - hitInfo.point,
+                            new Vector3(0, 1, 0)).normalized;
+                        var destination = hitInfo.point
+                            + direction * GetComponent<AttackBase>().stopRange;
                         if (wp != null)
                         {
-                            wp.transform.position = hitInfo.point
+                            wp.transform.position = destination
                                 + new Vector3(0, waypointHeight, 0);
                         }
                         else
                         {
                             wp = Instantiate(
                                 waypoint,
-                                hitInfo.point + new Vector3(0, waypointHeight, 0),
+                                destination + new Vector3(0, waypointHeight, 0),
                                 Quaternion.Euler(waypointXRotation, 0, 0));
                             wp.destinationReached += OnDestinationReached;
                         }
                         agent.stoppingDistance = 0;
-                        agent.SetDestination(hitInfo.point);
+                        agent.SetDestination(destination);
                         isWalking = true;
                         isSelected = false;
                         EventSystem.current.SetSelectedGameObject(null);
@@ -164,7 +170,7 @@ public class PlayerController : MonoBehaviour
             agent.isStopped = false;
         }
 
-        if (isWalking && autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.5)
+        if (isWalking && autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.1f)
         {
             agent.SetDestination(gameObject.transform.position);
             var wp = (FindObjectsOfType<Waypoint>()
@@ -206,7 +212,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             autoStopWalkTimer -= Time.deltaTime;
         }
@@ -214,7 +220,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             autoStopWalkTimer = 3;
         }

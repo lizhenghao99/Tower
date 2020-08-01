@@ -102,6 +102,8 @@ public class SummonPlayer : Singleton<SummonPlayer>
         m.guardPosition = splat.GetSpellCursorPosition();
         m.guardRadius = cardPlaying.radius;
 
+        m.owner = cardPlaying.owner;
+
         if (cardPlaying.health > 0)
         {
             m.GetComponent<Health>().maxHealth = cardPlaying.health;

@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class LubanAutoAttack : PlayerAutoAttack
 {
+    private EffectManager effectManager;
+
+    protected override void Start()
+    {
+        base.Start();
+        effectManager = FindObjectOfType<EffectManager>();
+    }
+
     protected override void SpecialAutoAttack()
     {
         GetComponent<LubanResource>().ResourceAutoGen();
@@ -14,7 +22,7 @@ public class LubanAutoAttack : PlayerAutoAttack
         if (enemiesInRange == null) return;
         foreach(Collider c in enemiesInRange)
         {
-            EffectManager.Instance.Taunt(gameObject, c.gameObject, 1);
+            effectManager.Taunt(gameObject, c.gameObject, 1);
         }
     }
 }

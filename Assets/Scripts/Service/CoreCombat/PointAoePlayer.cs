@@ -89,7 +89,7 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         Effect.Type effect, float effectDuration, float effectAmount, float delay)
     {
         yield return new WaitForSeconds(delay);
-        EffectManager.Instance.Register(player.gameObject, e, effect, effectDuration, effectAmount);
+        FindObjectOfType<EffectManager>().Register(player.gameObject, e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         e.GetComponent<Health>().TakeDamage(damage);
         yield return null;

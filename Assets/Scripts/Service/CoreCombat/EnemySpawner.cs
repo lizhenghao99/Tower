@@ -3,15 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : Singleton<EnemySpawner>
+public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] WaveStage[] waveStages;
     private WaveStage currStage = null;
+    private LevelController levelController;
 
     // Start is called before the first frame update
     void Start()
     {
-        LevelController.Instance.StartCombat += OnStartCombat;
+        levelController = FindObjectOfType<LevelController>();
+        levelController.StartCombat += OnStartCombat;
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class EnemySpawner : Singleton<EnemySpawner>
             if (currStage.stageClear)
             {
                 currStage = null;
-                LevelController.Instance.ClearStage();
+                levelController.ClearStage();
             }
             else
             {
@@ -33,7 +35,7 @@ public class EnemySpawner : Singleton<EnemySpawner>
 
     public void OnStartCombat(object sender, EventArgs e)
     {
-        currStage = waveStages[LevelController.Instance.currStage.index];
+        currStage = waveStages[levelController.currStage.index];
     }
 
     public void CheckAllEnemiesDead()

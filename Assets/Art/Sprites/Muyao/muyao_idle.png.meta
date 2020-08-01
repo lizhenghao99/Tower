@@ -1,0 +1,983 @@
+fileFormatVersion: 2
+guid: 9fa30cc2d64da494dba3118de77177fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8288588048118793903
+    second: muyao_idle_0
+  - first:
+      213: 7436811983150246394
+    second: muyao_idle_1
+  - first:
+      213: -5693241492877306994
+    second: muyao_idle_2
+  - first:
+      213: 2307932140323822363
+    second: muyao_idle_3
+  - first:
+      213: -5256459867871726979
+    second: muyao_idle_4
+  - first:
+      213: -1843980277901744686
+    second: muyao_idle_5
+  - first:
+      213: -2915109982660137668
+    second: muyao_idle_6
+  - first:
+      213: -4759898033177810230
+    second: muyao_idle_7
+  - first:
+      213: -3290592462608894599
+    second: muyao_idle_8
+  - first:
+      213: 2485380920148383392
+    second: muyao_idle_9
+  - first:
+      213: 2697735561345661008
+    second: muyao_idle_10
+  - first:
+      213: 2037039950472913737
+    second: muyao_idle_11
+  - first:
+      213: -1062072423410052201
+    second: muyao_idle_12
+  - first:
+      213: -2082722549927659175
+    second: muyao_idle_13
+  - first:
+      213: -811547495768328156
+    second: muyao_idle_14
+  - first:
+      213: 704802895380820082
+    second: muyao_idle_15
+  - first:
+      213: -1780237805333744746
+    second: muyao_idle_16
+  - first:
+      213: -2632806978599634129
+    second: muyao_idle_17
+  - first:
+      213: -5779590522523504769
+    second: muyao_idle_18
+  - first:
+      213: 920979373143505863
+    second: muyao_idle_19
+  - first:
+      213: -3623543136079844613
+    second: muyao_idle_20
+  - first:
+      213: 3953029563619746821
+    second: muyao_idle_21
+  - first:
+      213: 4401230661123406335
+    second: muyao_idle_22
+  - first:
+      213: 7643677460287665292
+    second: muyao_idle_23
+  - first:
+      213: -4420216500383232304
+    second: muyao_idle_24
+  - first:
+      213: -6013318957969243139
+    second: muyao_idle_25
+  - first:
+      213: -2843510094611062054
+    second: muyao_idle_26
+  - first:
+      213: -7588201754128056128
+    second: muyao_idle_27
+  - first:
+      213: -3216334129910770637
+    second: muyao_idle_28
+  - first:
+      213: 7068876597289809451
+    second: muyao_idle_29
+  - first:
+      213: 1476067847848829222
+    second: muyao_idle_30
+  - first:
+      213: 6556847495904110163
+    second: muyao_idle_31
+  - first:
+      213: 5066158272952601291
+    second: muyao_idle_32
+  - first:
+      213: 8778676744552358375
+    second: muyao_idle_33
+  - first:
+      213: 1214072558837727155
+    second: muyao_idle_34
+  - first:
+      213: 1869500318070528289
+    second: muyao_idle_35
+  - first:
+      213: -4356454609837475807
+    second: muyao_idle_36
+  - first:
+      213: -417290983362195067
+    second: muyao_idle_37
+  - first:
+      213: -11553674624964935
+    second: muyao_idle_38
+  - first:
+      213: 6977455404979010140
+    second: muyao_idle_39
+  - first:
+      213: 7123476849055221290
+    second: muyao_idle_40
+  - first:
+      213: -4178746030472480634
+    second: muyao_idle_41
+  - first:
+      213: 5573933136259140019
+    second: muyao_idle_42
+  - first:
+      213: -8099550718515578269
+    second: muyao_idle_43
+  - first:
+      213: 965585248099286682
+    second: muyao_idle_44
+  - first:
+      213: -8291018662175817048
+    second: muyao_idle_0
+  - first:
+      213: -451549493158597358
+    second: muyao_idle_1
+  - first:
+      213: 6964585382024032321
+    second: muyao_idle_2
+  - first:
+      213: 1490570441433786826
+    second: muyao_idle_3
+  - first:
+      213: -3815388589381509074
+    second: muyao_idle_4
+  - first:
+      213: -1135540369402347608
+    second: muyao_idle_5
+  - first:
+      213: 8140998681871903946
+    second: muyao_idle_6
+  - first:
+      213: 4366889426451303860
+    second: muyao_idle_7
+  - first:
+      213: -6271069364896791801
+    second: muyao_idle_8
+  - first:
+      213: -5107052212068442425
+    second: muyao_idle_9
+  - first:
+      213: -144208055257918587
+    second: muyao_idle_10
+  - first:
+      213: -871121621442794138
+    second: muyao_idle_11
+  - first:
+      213: -8823805339810004966
+    second: muyao_idle_12
+  - first:
+      213: -681133625821068705
+    second: muyao_idle_13
+  - first:
+      213: 3821707582232931380
+    second: muyao_idle_14
+  - first:
+      213: -5310544578514542600
+    second: muyao_idle_15
+  - first:
+      213: 1204670934949551893
+    second: muyao_idle_16
+  - first:
+      213: 3809955512952420225
+    second: muyao_idle_17
+  - first:
+      213: -3682720146708215154
+    second: muyao_idle_18
+  - first:
+      213: -2687047749866491491
+    second: muyao_idle_19
+  - first:
+      213: 9016548984141310646
+    second: muyao_idle_20
+  - first:
+      213: -3172675972566259538
+    second: muyao_idle_21
+  - first:
+      213: -4025756965658328488
+    second: muyao_idle_22
+  - first:
+      213: 5940655876414083478
+    second: muyao_idle_23
+  - first:
+      213: 1437608199107149178
+    second: muyao_idle_24
+  - first:
+      213: 2162344733179925306
+    second: muyao_idle_25
+  - first:
+      213: 7202103110835940309
+    second: muyao_idle_26
+  - first:
+      213: -3391106796381584451
+    second: muyao_idle_27
+  - first:
+      213: 5529356918170462044
+    second: muyao_idle_28
+  - first:
+      213: 2280066966608383387
+    second: muyao_idle_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muyao_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7321
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a240e6547260fc80800000000000000
+      internalID: -8291018662175817048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_1
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 7321
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d26cdd026cbb9f0800000000000000
+      internalID: -451549493158597358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_2
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 7321
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140bb67418d27a060800000000000000
+      internalID: 6964585382024032321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_3
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 7321
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9ab5a4be19fa410800000000000000
+      internalID: 1490570441433786826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_4
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 7321
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2026d1fa440d0bc0800000000000000
+      internalID: -3815388589381509074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6450
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af38a5ec00cd30f0800000000000000
+      internalID: -1135540369402347608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 6450
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acce5e51b23aaf070800000000000000
+      internalID: 8140998681871903946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_7
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 6450
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd0a0debce4a9c30800000000000000
+      internalID: 4366889426451303860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_8
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 6450
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7030e7f53afa8f8a0800000000000000
+      internalID: -6271069364896791801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_9
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 6450
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce994a421b1029b0800000000000000
+      internalID: -5107052212068442425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5579
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5831a9ca98baffdf0800000000000000
+      internalID: -144208055257918587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 5579
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d6dbd208729e3f0800000000000000
+      internalID: -871121621442794138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_12
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 5579
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a100e614bcb8b8580800000000000000
+      internalID: -8823805339810004966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_13
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 5579
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f528c5c73902c86f0800000000000000
+      internalID: -681133625821068705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_14
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 5579
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c296a3cce690530800000000000000
+      internalID: 3821707582232931380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4708
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff93c1a7d72d46b0800000000000000
+      internalID: -5310544578514542600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_16
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 4708
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd7ec25d9d7b010800000000000000
+      internalID: 1204670934949551893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_17
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 4708
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f19f5a5eafd430800000000000000
+      internalID: 3809955512952420225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_18
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 4708
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a4848d98954ecc0800000000000000
+      internalID: -3682720146708215154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_19
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 4708
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91f1bede40b5bad0800000000000000
+      internalID: -2687047749866491491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3837
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae6a38787312d70800000000000000
+      internalID: 9016548984141310646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_21
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 3837
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea865c3330468f3d0800000000000000
+      internalID: -3172675972566259538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_22
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 3837
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85281ed7e53a128c0800000000000000
+      internalID: -4025756965658328488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_23
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 3837
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6919f7e6b03717250800000000000000
+      internalID: 5940655876414083478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_24
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 3837
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d78f15a0963f310800000000000000
+      internalID: 1437608199107149178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2966
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3350270411320e10800000000000000
+      internalID: 2162344733179925306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_26
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 2966
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbac15fe9203f360800000000000000
+      internalID: 7202103110835940309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_27
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 2966
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db34346e55e50f0d0800000000000000
+      internalID: -3391106796381584451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_28
+      rect:
+        serializedVersion: 2
+        x: 4821
+        y: 2966
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5726ef32d83cbc40800000000000000
+      internalID: 5529356918170462044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_idle_29
+      rect:
+        serializedVersion: 2
+        x: 6428
+        y: 2966
+        width: 1607
+        height: 871
+      alignment: 9
+      pivot: {x: 0.6, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d8bc863dc64af10800000000000000
+      internalID: 2280066966608383387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 76ab069a0560ccd4ab422bf8727d97f8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

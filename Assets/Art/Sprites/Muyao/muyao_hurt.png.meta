@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 1476a2f3748202b41a1f0c53d9a6cad8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1239312295429387353
+    second: muyao_hurt_0
+  - first:
+      213: -580371477499016303
+    second: muyao_hurt_1
+  - first:
+      213: 7869986349070427670
+    second: muyao_hurt_2
+  - first:
+      213: -7450086864147878805
+    second: muyao_hurt_3
+  - first:
+      213: 8276971560955752110
+    second: muyao_hurt_4
+  - first:
+      213: -9132367365092370812
+    second: muyao_hurt_5
+  - first:
+      213: 965128608547473682
+    second: muyao_hurt_6
+  - first:
+      213: 1360538967656786077
+    second: muyao_hurt_7
+  - first:
+      213: -2954456044891975520
+    second: muyao_hurt_8
+  - first:
+      213: -5360064217416095670
+    second: muyao_hurt_9
+  - first:
+      213: 7760443550548266530
+    second: muyao_hurt_10
+  - first:
+      213: 8934323021601268503
+    second: muyao_hurt_11
+  - first:
+      213: 2998758236969466246
+    second: muyao_hurt_12
+  - first:
+      213: 307700497306490137
+    second: muyao_hurt_13
+  - first:
+      213: 1748937987151577263
+    second: muyao_hurt_14
+  - first:
+      213: 7158837795004185213
+    second: muyao_hurt_15
+  - first:
+      213: 5149950898371370309
+    second: muyao_hurt_16
+  - first:
+      213: 6276552402524518218
+    second: muyao_hurt_17
+  - first:
+      213: 7949293410369766613
+    second: muyao_hurt_18
+  - first:
+      213: -3014482989770529664
+    second: muyao_hurt_19
+  - first:
+      213: -1821769578170114163
+    second: muyao_hurt_0
+  - first:
+      213: -9218737489351634968
+    second: muyao_hurt_1
+  - first:
+      213: -8844571553612151099
+    second: muyao_hurt_2
+  - first:
+      213: -3281762879548454057
+    second: muyao_hurt_3
+  - first:
+      213: 513128255766783251
+    second: muyao_hurt_4
+  - first:
+      213: 3513343020862615003
+    second: muyao_hurt_5
+  - first:
+      213: -8575264133186261250
+    second: muyao_hurt_6
+  - first:
+      213: -1927284866647422041
+    second: muyao_hurt_7
+  - first:
+      213: 1199096496583680763
+    second: muyao_hurt_8
+  - first:
+      213: 6062846840799240212
+    second: muyao_hurt_9
+  - first:
+      213: 5151683034072873892
+    second: muyao_hurt_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muyao_hurt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3143
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f9e868836c7b6e0800000000000000
+      internalID: -1821769578170114163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_1
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3143
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef8e9da817701080800000000000000
+      internalID: -9218737489351634968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_2
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 3143
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c64c645805c14580800000000000000
+      internalID: -8844571553612151099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_3
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 3143
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b837f6c06d472d0800000000000000
+      internalID: -3281762879548454057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_4
+      rect:
+        serializedVersion: 2
+        x: 6416
+        y: 3143
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315e1311e6ffe1700800000000000000
+      internalID: 513128255766783251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2190
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd2d9cecd6e1c030800000000000000
+      internalID: 3513343020862615003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_6
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 2190
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efee84e54ba8ef880800000000000000
+      internalID: -8575264133186261250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_7
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 2190
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab8e7eff98e045e0800000000000000
+      internalID: -1927284866647422041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_8
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 2190
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2294a19eb04a010800000000000000
+      internalID: 1199096496583680763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_9
+      rect:
+        serializedVersion: 2
+        x: 6416
+        y: 2190
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4102071541f832450800000000000000
+      internalID: 6062846840799240212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muyao_hurt_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1237
+        width: 1604
+        height: 953
+      alignment: 9
+      pivot: {x: 0.61, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abf159bc647e7740800000000000000
+      internalID: 5151683034072873892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b74b18f83b97e2e46bde88137668454d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

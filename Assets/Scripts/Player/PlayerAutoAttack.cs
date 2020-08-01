@@ -10,6 +10,7 @@ public class PlayerAutoAttack : AttackBase
 {
     public SplatManager splat { get; set; }
     private PlayerController player;
+    private LevelController levelController;
     
     // Start is called before the first frame update
     protected override void Start()
@@ -20,8 +21,12 @@ public class PlayerAutoAttack : AttackBase
         player = GetComponent<PlayerController>();
         splat = GetComponentInChildren<SplatManager>();
 
-        LevelController.Instance.StartCombat += OnStartCombat;
-        LevelController.Instance.EndCombat += OnEndCombat;
+        levelController = FindObjectOfType<LevelController>();
+
+        levelController.StartCombat += OnStartCombat;
+        levelController.EndCombat += OnEndCombat;
+        health.death += OnPlayerDeath;
+        health.revive += OnPlayerRevive;
     }
 
     public void OnStartCombat(object sender, EventArgs e)
@@ -34,6 +39,18 @@ public class PlayerAutoAttack : AttackBase
     public void OnEndCombat(object sender, EventArgs e)
     {
         splat.CancelRangeIndicator();
+    }
+
+    public void OnPlayerDeath(object sender, EventArgs e)
+    {
+        splat.CancelRangeIndicator();
+    }
+
+    public void OnPlayerRevive(object sender, EventArgs e)
+    {
+        splat.SelectRangeIndicator(gameObject.name + "Range");
+        splat.CurrentRangeIndicator.DefaultScale = (attackRange + 1) * 2;
+        splat.CurrentRangeIndicator.Scale = (attackRange + 1) * 2;
     }
 
     // Update is called once per frame
@@ -53,6 +70,13 @@ public class PlayerAutoAttack : AttackBase
             if (!player.isCasting)
             {
                 Attack();
+            }
+        }
+        else
+        {
+            if (player.isCasting)
+            {
+                ApplyTaunt();
             }
         }
     }

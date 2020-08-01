@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4994efddaaf64194685eed1d20d7228c, type: 3}
+  m_Name: Test5
+  m_EditorClassIdentifier: 
+  cardName: 5
+  description: 
+  primaryChange: 0
+  secondaryChange: 0
+  owner: 0
+  art: {fileID: 0}
+  sfx: {fileID: 0}
+  vfx: {fileID: 0}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 0
+  shieldPercent: 0
+  buffTarget: 0
+  effect: 0
+  effectDuration: 0
+  effectAmount: 0

@@ -7,8 +7,10 @@ using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine.AI;
 using TowerUtils;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class LevelController : Singleton<LevelController>
+public class LevelController : MonoBehaviour
 {
     [Header("Sequence")]
     [SerializeField] Stage[] stages;
@@ -23,6 +25,8 @@ public class LevelController : Singleton<LevelController>
     [SerializeField] Material[] cardMaterials;
     [Header("Sun")]
     [SerializeField] Light sunLight;
+    [Header("Ending")]
+    [SerializeField] LevelEnding levelEnding;
 
     public EventHandler StartCombat;
     public EventHandler EndCombat;
@@ -35,18 +39,16 @@ public class LevelController : Singleton<LevelController>
 
     private void Awake()
     {
+        Time.timeScale = 1f;
+
         foreach (Material m in cardMaterials)
         {
             m.SetFloat("_HsvSaturation", 1f);
         }
 
-        if (Screen.width/Screen.height > 1.8f)
-        {
-            Camera.main.rect = new Rect(0.128f, 0f, 0.744f, 1f);
-        }
-
         numericBoundaries = Camera.main.GetComponent<ProCamera2DNumericBoundaries>();
         cinematics = Camera.main.GetComponent<ProCamera2DCinematics>();
+        var globalAudioManager = GlobalAudioManager.Instance;
     }
 
     // Start is called before the first frame update
@@ -62,6 +64,7 @@ public class LevelController : Singleton<LevelController>
                                      LayerMask.NameToLayer("Player"),
                                      true);
 
+        baseTower.death += OnTowerDeath;
         StartNextStage();
     }
 
@@ -110,8 +113,7 @@ public class LevelController : Singleton<LevelController>
 
             if (currStage.index + 1 >= stages.Length)
             {
-                // you win
-                print("YOU WIN!");
+                Win();
                 return;
             }
             else
@@ -172,5 +174,20 @@ public class LevelController : Singleton<LevelController>
     public void OnCinematicFinished()
     {
         OnStartCombat();
+    }
+
+    public void OnTowerDeath(object sender, EventArgs e)
+    {
+        Invoke("Lose", 5f);
+    }
+
+    public void Win()
+    {
+        levelEnding.Win();
+    }
+
+    public void Lose()
+    {
+        levelEnding.Lose();
     }
 }

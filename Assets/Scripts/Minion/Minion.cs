@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class Minion : AttackBase
 {
+    [SerializeField] GameObject highlight;
     [HideInInspector] public bool taunt;
     [HideInInspector] public bool invisible;
     [HideInInspector] public bool guard;
@@ -17,14 +17,21 @@ public class Minion : AttackBase
     [HideInInspector] public float guardRadius;
     [HideInInspector] public Vector3 initialPosition;
 
+    [HideInInspector] public Card.Owner owner;
+    [HideInInspector] public bool isSelected = false;
+
     private bool inCombat = true;
+    private EffectManager effectManager;
+    private LevelController levelController;
 
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         layerMask = LayerMask.GetMask("Enemy");
-        LevelController.Instance.StageClear += OnStageClear;
+        effectManager = FindObjectOfType<EffectManager>();
+        levelController = FindObjectOfType<LevelController>();
+        levelController.StageClear += OnStageClear;
     }
 
     // Update is called once per frame
@@ -70,6 +77,15 @@ public class Minion : AttackBase
         {
             ApplyTaunt();
         }
+
+        if (isSelected)
+        {
+            highlight.SetActive(true);
+        }
+        else
+        {
+            highlight.SetActive(false);
+        }
     }
 
     protected override void ApplyTaunt()
@@ -77,7 +93,7 @@ public class Minion : AttackBase
         if (enemiesInRange == null) return;
         foreach(Collider c in enemiesInRange)
         {
-            EffectManager.Instance.Taunt(gameObject, c.gameObject, 0);
+            effectManager.Taunt(gameObject, c.gameObject, 0);
         }
     }
 

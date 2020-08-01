@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: a22dc2c104ee1af43b4647eabb668272
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3262679237232457817
+    second: luban_attack_noshield_0
+  - first:
+      213: -7222558409635423512
+    second: luban_attack_noshield_1
+  - first:
+      213: 7236190461778734201
+    second: luban_attack_noshield_2
+  - first:
+      213: -2346886114038872
+    second: luban_attack_noshield_3
+  - first:
+      213: -7652652962313617112
+    second: luban_attack_noshield_4
+  - first:
+      213: 7880039715054073617
+    second: luban_attack_noshield_5
+  - first:
+      213: 7996896164577311969
+    second: luban_attack_noshield_6
+  - first:
+      213: 6765182477904165770
+    second: luban_attack_noshield_7
+  - first:
+      213: 7040759448486838856
+    second: luban_attack_noshield_8
+  - first:
+      213: 8942227921054031019
+    second: luban_attack_noshield_9
+  - first:
+      213: -3862827312881550994
+    second: luban_attack_noshield_10
+  - first:
+      213: 4979300405924792217
+    second: luban_attack_noshield_11
+  - first:
+      213: 6394132487181666461
+    second: luban_attack_noshield_12
+  - first:
+      213: -4201970675720083597
+    second: luban_attack_noshield_13
+  - first:
+      213: -673015579336024408
+    second: luban_attack_noshield_14
+  - first:
+      213: 8090082006706342994
+    second: luban_attack_noshield_15
+  - first:
+      213: -6511077054511387644
+    second: luban_attack_noshield_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: luban_attack_noshield_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6656
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a787b82582a8b2d0800000000000000
+      internalID: -3262679237232457817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 6656
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea9b28a46154cb90800000000000000
+      internalID: -7222558409635423512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_2
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 6656
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c2461d2ec1c6460800000000000000
+      internalID: 7236190461778734201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_3
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 6656
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab28def489a7fff0800000000000000
+      internalID: -2346886114038872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_4
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 6656
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821c4ff1da05cc590800000000000000
+      internalID: -7652652962313617112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5120
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117b4cfde568b5d60800000000000000
+      internalID: 7880039715054073617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 5120
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec705b31beaafe60800000000000000
+      internalID: 7996896164577311969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 5120
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bbc24ce91c2ed50800000000000000
+      internalID: 6765182477904165770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_8
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 5120
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84288043a6dc5b160800000000000000
+      internalID: 7040759448486838856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_9
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 5120
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac510f8aec291c70800000000000000
+      internalID: 8942227921054031019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69b40b660b746ac0800000000000000
+      internalID: -3862827312881550994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 3584
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9970b1576570a1540800000000000000
+      internalID: 4979300405924792217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3584
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d988f399e958cb850800000000000000
+      internalID: 6394132487181666461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_13
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 3584
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377a815fee99fa5c0800000000000000
+      internalID: -4201970675720083597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: luban_attack_noshield_14
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3584
+        width: 1536
+        height: 1536
+      alignment: 9
+      pivot: {x: 0.4, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae5f5975e7f8a6f0800000000000000
+      internalID: -673015579336024408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 595d53f1025dbda41abe6393ca2cb326
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

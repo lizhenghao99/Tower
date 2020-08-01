@@ -96,7 +96,7 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
     {
         yield return new WaitForSeconds(delay);
 
-        EffectManager.Instance.Register(playerTransform.gameObject, e, effect, effectDuration, effectAmount);
+        FindObjectOfType<EffectManager>().Register(playerTransform.gameObject, e, effect, effectDuration, effectAmount);
         e.GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
         e.GetComponent<Health>().TakeDamage(damage);
         yield return null;
