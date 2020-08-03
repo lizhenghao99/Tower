@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82cd1eb9a7058784fb3a0667d75c06dd, type: 3}
+  m_Name: FireStrikePlus
+  m_EditorClassIdentifier: 
+  cardName: "\u706B\u88AD"
+  upgraded: 1
+  description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A010\u79D2<u>\u71C3\u70E7</u>\u6548\u679C\u3002"
+  primaryChange: -20
+  secondaryChange: 0
+  owner: 0
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: 9425f1f2bef43c941bfc00381758ab68, type: 2}
+  vfx: {fileID: 1447435588197194, guid: 47c52812ffacd164e839d6cc78ad41bb, type: 3}
+  vfxOffset: {x: 0, y: 2, z: 2}
+  castTime: 2
+  damage: 100
+  force: 300
+  range: 8
+  angle: 60
+  delay: 0.4
+  fxDelay: 0.2
+  effect: 1
+  effectDuration: 10
+  effectAmount: 100

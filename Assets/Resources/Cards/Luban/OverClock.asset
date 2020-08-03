@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: OverClock
   m_EditorClassIdentifier: 
   cardName: "\u7075\u529B\u50AC\u52A8"
+  upgraded: 0
   description: "\u5FF5\u8BF5\u5492\u6587\uFF0C\u6D88\u8017\u7075\u6838\u50AC\u52A8\u6240\u6709\u673A\u5173\u8FDB\u5165<u>\u72C2\u66B4</u>20\u79D2\u3002"
   primaryChange: 0
-  secondaryChange: 0
+  secondaryChange: -2
   owner: 0
   art: {fileID: 0}
   sfx: {fileID: 11400000, guid: e286f1952bf05b74084c80a4afda43d8, type: 2}

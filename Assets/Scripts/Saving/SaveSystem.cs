@@ -7,13 +7,14 @@ using System.Linq;
 
 public static class SaveSystem
 {
+    private static string filename = "/PlayerData.save";
     public static void SaveDeck(Card.Owner owner, Card[] cards)
     {
         var data = Load();
         data.playerDecks[(int)owner] = 
             cards.Select(c => c.cardName).ToArray();
 
-        string path = Application.persistentDataPath + "/player.save";
+        string path = Application.persistentDataPath + filename;
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(path, FileMode.Create);
 
@@ -23,12 +24,20 @@ public static class SaveSystem
 
     public static void SaveUpgrade(Card card)
     {
+        var data = Load();
+        data.cardsUpgrade[card.cardName] = true;
 
+        string path = Application.persistentDataPath + filename;
+        BinaryFormatter formatter = new BinaryFormatter();
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
     }
 
     public static PlayerData Load()
     {
-        string path = Application.persistentDataPath + "/player.save";
+        string path = Application.persistentDataPath + filename;
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();

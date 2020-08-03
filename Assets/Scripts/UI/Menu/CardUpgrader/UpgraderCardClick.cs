@@ -1,15 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using DG.Tweening;
-using TMPro;
-using System;
-using System.Linq;
-using TowerUtils;
 
-public class CollectionCardClick : Selectable
+public class UpgraderCardClick : Selectable
 {
     public Card card { get; private set; }
 
@@ -23,7 +17,7 @@ public class CollectionCardClick : Selectable
     private float fadeTime = 0.3f;
 
     private InspectMenu inspectMenu;
-    private DeckCardManager deckCardManager;
+    private CardUpgrader upgrader;
 
     protected override void Awake()
     {
@@ -35,7 +29,7 @@ public class CollectionCardClick : Selectable
         base.Start();
         rectTransform = GetComponent<RectTransform>();
         inspectMenu = FindObjectOfType<InspectMenu>();
-        deckCardManager = FindObjectOfType<DeckCardManager>();
+        upgrader = FindObjectOfType<CardUpgrader>();
     }
 
     public void SetCard(Card c)
@@ -60,29 +54,16 @@ public class CollectionCardClick : Selectable
         if (IsInteractable())
         {
             base.OnPointerDown(eventData);
-
             if (eventData.button == PointerEventData.InputButton.Left)
             {
+                ClickZoom();
                 GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
-                bool success = deckCardManager.AddCard(card);
-
-                if (!success)
-                {
-                    rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
-                        .SetEase(Ease.OutQuint);
-                    EventSystem.current.SetSelectedGameObject(null);
-
-                    GlobalAudioManager.Instance.Play("Error", Vector3.zero);
-                }
-                else
-                {
-                    ClickZoom();
-                }
+                upgrader.EnterUpgrade(GetComponent<CardDisplay>(), card);
             }
-            else if (eventData.button == PointerEventData.InputButton.Right)
+            else
             {
                 inspectMenu.Enter(GetComponent<CardDisplay>(), card);
-            }    
+            }
         }
     }
 

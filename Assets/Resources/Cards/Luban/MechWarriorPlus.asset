@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0229120e9ca08347b826bdf8548580e, type: 3}
+  m_Name: MechWarriorPlus
+  m_EditorClassIdentifier: 
+  cardName: "\u6728\u7532\u6218\u58EB"
+  upgraded: 1
+  description: "\u653E\u51FA3\u4E2A<u>\u51B2\u950B</u>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
+  primaryChange: -20
+  secondaryChange: 0
+  owner: 0
+  art: {fileID: 8670243668265584831, guid: 3cde3af0a31432346944122dc211ba2e, type: 3}
+  sfx: {fileID: 11400000, guid: a5782ee2f744f6348953878d2ae481d3, type: 2}
+  vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
+  vfxOffset: {x: 0, y: 3, z: -2.5}
+  castTime: 1.5
+  range: 6.5
+  radius: 3
+  minionPrefab: {fileID: -5445547200232668209, guid: e03db0757ee3cb6469261eb6339f96d9,
+    type: 3}
+  centerPrefab: {fileID: 0}
+  count: 3
+  health: 400
+  attackDamage: 80
+  attackRange: 0
+  attackRate: 1.5
+  stopRange: 2
+  taunt: 0
+  invisible: 0
+  guard: 0
+  charge: 1
+  ambush: 0

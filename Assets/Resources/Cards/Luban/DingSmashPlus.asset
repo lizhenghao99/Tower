@@ -23,10 +23,10 @@ MonoBehaviour:
   vfx: {fileID: 1716312745680982, guid: dd5339601d2c590459922e792c609de0, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
-  damage: 600
+  damage: 720
   force: 0
-  range: 15
-  radius: 5
+  range: 20
+  radius: 7
   delay: 0
   fxDelay: 0
   hasProjectile: 1

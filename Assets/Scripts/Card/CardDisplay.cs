@@ -31,7 +31,8 @@ public class CardDisplay : MonoBehaviour
                     .FirstOrDefault();
         if (card.upgraded)
         {
-            cardName.text = card.cardName + "<size=70%><voffset=.12em> · 精</voffset>";
+            cardName.text = card.cardName +
+                "<voffset=.12em><size=30%> <size=70%>·<size=30%> <size=70%>精</voffset>";
         }
         else
         {

@@ -39,7 +39,9 @@ public class DeckManager : MonoBehaviour
             foreach (string name in data.playerDecks[(int)firstOwner])
             {
                 var cardToAdd = cards
-                    .Where(c => c.owner == firstOwner && c.cardName == name)
+                    .Where(c => c.owner == firstOwner 
+                        && c.cardName == name
+                        && c.upgraded == data.cardsUpgrade[c.cardName])
                     .FirstOrDefault();
                 deck1.Add(cardToAdd);
             }

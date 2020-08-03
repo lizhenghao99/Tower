@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4994efddaaf64194685eed1d20d7228c, type: 3}
-  m_Name: Refine
+  m_Name: RefinePlus
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
-  upgraded: 0
+  upgraded: 1
   description: "\u6D88\u80173\u4E2A<u>\u7075\u6750</u>\uFF0C\u5C06\u5176\u70BC\u5316\u62101\u9897<u>\u7075\u6838</u>\u3002"
   primaryChange: -60
   secondaryChange: 1

@@ -49035,6 +49035,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1694969969}
     m_Modifications:
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 555259665}
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 183697731}
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LeftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 303556609135540797, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 858311992863350824, guid: 77bd281d95968b5409afe6b60603df66,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -49184,6 +49214,96 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 555259665}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 183697731}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LeftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2811947395457081007, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 555259665}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 183697731}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LeftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253925211353202484, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 555259665}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 183697731}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LeftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292930885860657602, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77bd281d95968b5409afe6b60603df66, type: 3}
@@ -49850,6 +49970,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SettingsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 555259665}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 183697731}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LeftClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461343625867981723, guid: 089ed425798a3a7478fb524d05231512,
+        type: 3}
+      propertyPath: onClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 089ed425798a3a7478fb524d05231512, type: 3}
