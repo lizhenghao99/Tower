@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TowerUtils;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -56,7 +57,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        group.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        group.DOFade(1f, 0.1f).SetEase(Ease.OutQuint).SetUpdate(true);
         GlobalAudioManager.Instance.Play("Pause", Vector3.zero);
         audioMixerManager.FadeOutMusic(0.5f);
     }
@@ -126,5 +127,10 @@ public class PauseMenu : MonoBehaviour
     public void SetSfxVolume(float value)
     {
         audioMixerManager.SetSfxVolume(value);
+    }
+
+    public void LoadMainMenu()
+    {
+        StartCoroutine(Utils.LoadAsync(0, loadingScreen));
     }
 }

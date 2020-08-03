@@ -12,10 +12,12 @@ public class AudioMixerManager : Singleton<AudioMixerManager>
     public AudioMixerGroup ambienceGroup { get; private set; }
     public AudioMixerGroup sfxGroup { get; private set; }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         audioMixer = Resources.Load<AudioMixer>("MasterMixer");
+        bgmGroup = audioMixer.FindMatchingGroups("Music/Bgm")[0];
+        ambienceGroup = audioMixer.FindMatchingGroups("Music/Ambience")[0];
+        sfxGroup = audioMixer.FindMatchingGroups("Sfx")[0];
     }
 
     public void SetMasterVolume(float value)

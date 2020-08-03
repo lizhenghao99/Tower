@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: MechWarrior
   m_EditorClassIdentifier: 
   cardName: "\u6728\u7532\u6218\u58EB"
+  upgraded: 0
   description: "\u653E\u51FA3\u4E2A<u>\u51B2\u950B</u>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
   primaryChange: -20
   secondaryChange: 0
   owner: 0
-  art: {fileID: 0}
+  art: {fileID: 8670243668265584831, guid: 3cde3af0a31432346944122dc211ba2e, type: 3}
   sfx: {fileID: 11400000, guid: a5782ee2f744f6348953878d2ae481d3, type: 2}
   vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
   vfxOffset: {x: 0, y: 3, z: -2.5}

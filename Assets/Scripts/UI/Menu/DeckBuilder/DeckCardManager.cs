@@ -4,21 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using TowerUtils;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DeckCardManager : MonoBehaviour
 {
     [Header("Deck")]
     [SerializeField] public int cardMaxCount = 10;
     [Header("Owner")]
-    [SerializeField] Card.Owner owner;
-    [SerializeField] DeckCardClick cardPrefab;
+    [SerializeField] public Card.Owner owner;
+    [SerializeField] public GameObject cardPrefab;
     [Header("Card Dimensions")]
-    [SerializeField] float cardXOffset = -100;
-    [SerializeField] float cardXSpacing = -120;
+    [SerializeField] float cardXOffset = 700;
+    [SerializeField] float cardXSpacing = 250;
     [SerializeField] float cardYPos = 100;
-    [SerializeField] float cardWidth = 150;
-    [SerializeField] float cardHeight = 250;
-    [SerializeField] float zoomFactor = 500f;
+    [SerializeField] float cardWidth = 299;
+    [SerializeField] float cardHeight = 390;
+    [SerializeField] float zoomFactor = 350f;
 
     public List<DeckCardClick> deckCards;
 
@@ -27,13 +28,15 @@ public class DeckCardManager : MonoBehaviour
     {
         Card[] ownCard = GetComponentInParent<DeckBuilder>().ownCards;
         deckCards = new List<DeckCardClick>();
-        var data = SaveSystem.LoadDeck();
+        var data = SaveSystem.Load();
 
-        if (data != null && data.playerDecks.ContainsKey((int)owner))
+        if (data.playerDecks.ContainsKey((int)owner))
         {
             foreach (string name in data.playerDecks[(int)owner])
             {
-                AddCard(ownCard.Where(c => c.cardName == name).FirstOrDefault());
+                AddCard(ownCard.Where(c => c.cardName == name
+                                        && c.upgraded == data.cardsUpgrade[name]
+                                        ).FirstOrDefault());
             }
         }
 
@@ -57,12 +60,18 @@ public class DeckCardManager : MonoBehaviour
 
         if (deckCards.Count == cardMaxCount) return false;
 
-        var cardObject = Instantiate(cardPrefab, gameObject.transform, false);
+        var cardObject = Instantiate(cardPrefab, gameObject.transform, false)
+            .AddComponent<DeckCardClick>();
+            
         InitializeCardPos(cardObject);
         cardObject.SetCard(cardToAdd);
         cardObject.GetComponent<CardDisplay>().SetCard(cardToAdd);
         cardObject.GetComponent<RectTransform>().sizeDelta =
             new Vector2(cardWidth, cardHeight);
+        cardObject.GetComponent<RectTransform>().anchorMin =
+            new Vector2(0, 0f);
+        cardObject.GetComponent<RectTransform>().anchorMax =
+            new Vector2(0, 0f);
 
 
         if (deckCards.Count == 0)
@@ -136,6 +145,22 @@ public class DeckCardManager : MonoBehaviour
                 c.SetInteractable(true);
             }
         }, removeTime+0.1f));
+    }
+
+    public void ClearDeck()
+    {
+        float clearTime = 0.3f;
+        foreach (DeckCardClick c in deckCards)
+        {
+            c.SetInteractable(false);
+            c.transform.DOLocalMoveY(300, clearTime)
+                                    .SetRelative(true)
+                                    .SetEase(Ease.OutQuint);
+            c.GetComponent<CanvasGroup>().DOFade(0f, clearTime)
+                                        .SetEase(Ease.OutQuint);
+            Destroy(c.gameObject, clearTime + 0.1f);
+        }
+        deckCards.Clear();
     }
 
     private void InitializeCardPos(DeckCardClick c)

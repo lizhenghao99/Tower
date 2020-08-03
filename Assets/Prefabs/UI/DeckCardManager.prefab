@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5556650377874679198}
   - component: {fileID: 1097942910564242725}
+  - component: {fileID: 1264958937}
   m_Layer: 5
   m_Name: DeckCardManager
   m_TagString: Untagged
@@ -52,10 +53,22 @@ MonoBehaviour:
   owner: 0
   cardPrefab: {fileID: -1375577379493429536, guid: bb9807e14cd9d0f44b05ff7728c2196e,
     type: 3}
-  cardXOffset: -100
-  cardXSpacing: -120
+  cardXOffset: 700
+  cardXSpacing: 250
   cardYPos: 100
-  cardWidth: 150
-  cardHeight: 250
-  zoomFactor: 500
+  cardWidth: 299
+  cardHeight: 390
+  zoomFactor: 350
   deckCards: []
+--- !u!225 &1264958937
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556650377874679201}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

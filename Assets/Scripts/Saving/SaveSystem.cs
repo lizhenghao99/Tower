@@ -9,38 +9,45 @@ public static class SaveSystem
 {
     public static void SaveDeck(Card.Owner owner, Card[] cards)
     {
-        var currDeck = LoadDeck();
-        if (currDeck == null)
-        {
-            currDeck = new DeckData();
-        }
-        currDeck.playerDecks[(int)owner] = 
+        var data = Load();
+        data.playerDecks[(int)owner] = 
             cards.Select(c => c.cardName).ToArray();
 
-        string path = Application.persistentDataPath + "/deck.save";
+        string path = Application.persistentDataPath + "/player.save";
         BinaryFormatter formatter = new BinaryFormatter();
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        formatter.Serialize(stream, currDeck);
+        formatter.Serialize(stream, data);
         stream.Close();
     }
 
-    public static DeckData LoadDeck()
+    public static void SaveUpgrade(Card card)
     {
-        string path = Application.persistentDataPath + "/deck.save";
+
+    }
+
+    public static PlayerData Load()
+    {
+        string path = Application.persistentDataPath + "/player.save";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
             stream.Position = 0;
-            DeckData data = formatter.Deserialize(stream) as DeckData;
+            PlayerData data = formatter.Deserialize(stream) as PlayerData;
 
             stream.Close();
             return data;
         }
         else
         {
-            return null;
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Create);
+            var data = new PlayerData();
+            formatter.Serialize(stream, data);
+
+            stream.Close();
+            return data;
         }
     }
 }

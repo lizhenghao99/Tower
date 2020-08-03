@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TowerUtils;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject loadingScreen;
-    [SerializeField] Slider loadingSlider;
 
     public void StartGame()
     {
-        StartCoroutine(LoadAsync(1));
+        StartCoroutine(Utils.LoadAsync(1, loadingScreen));
     }
 
     public void QuitGame()
@@ -19,17 +19,5 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private IEnumerator LoadAsync(int sceneIndex)
-    {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-        loadingScreen.SetActive(true);
-
-        while (!operation.isDone)
-        {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            loadingSlider.value = progress;
-
-            yield return null;
-        }
-    }
+    
 }

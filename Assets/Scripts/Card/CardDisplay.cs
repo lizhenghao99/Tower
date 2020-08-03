@@ -11,6 +11,7 @@ public class CardDisplay : MonoBehaviour
 {
     public Card card { get; private set; }
 
+    private Image art;
     private TextMeshProUGUI cardName;
     private TextMeshProUGUI primaryResource;
     private TextMeshProUGUI secondaryResrouce;
@@ -28,7 +29,20 @@ public class CardDisplay : MonoBehaviour
         cardName = GetComponentsInChildren<TextMeshProUGUI>()
                     .Where(c => c.gameObject.name == "CardName")
                     .FirstOrDefault();
-        cardName.text = card.cardName;
+        if (card.upgraded)
+        {
+            cardName.text = card.cardName + "<size=70%><voffset=.12em> · 精</voffset>";
+        }
+        else
+        {
+            cardName.text = card.cardName;
+        }
+        
+
+        art = GetComponentsInChildren<Image>()
+                    .Where(a => a.gameObject.name == "Art")
+                    .FirstOrDefault();
+        art.sprite = card.art;
 
         switch (card.owner)
         {

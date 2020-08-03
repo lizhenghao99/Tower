@@ -11,7 +11,7 @@ public class DeckBuilder : MonoBehaviour
 {
     [Header("Deck")]
     [SerializeField] Card.Owner owner;
-    [SerializeField] CollectionCardClick collectionCardPrefab;
+    [SerializeField] GameObject collectionCardPrefab;
     [Header("UI")]
     [SerializeField] int cardsPerPage = 8;
     [SerializeField] TextMeshProUGUI cardCountText;
@@ -19,6 +19,7 @@ public class DeckBuilder : MonoBehaviour
     [SerializeField] TextMeshProUGUI confirmButtonWarning;
     [SerializeField] Button nextPage;
     [SerializeField] Button lastPage;
+    [SerializeField] Button resetDeck;
 
     [HideInInspector] public Card[] cards;
     [HideInInspector] public int collectionCardCount;
@@ -36,15 +37,14 @@ public class DeckBuilder : MonoBehaviour
         cards = Resources.LoadAll<Card>("Cards");
         grid = GetComponentInChildren<GridLayoutGroup>();
         gridPosition = grid.GetComponent<RectTransform>().anchoredPosition;
-
-        ownCards = cards.Where(c => c.owner == owner)
-            .OrderByDescending(c => Math.Min(c.secondaryChange, 0))
-            .ThenByDescending(c => Math.Min(c.primaryChange, 0))
-            .ThenBy(c => c.cardName)
-            .ToArray();
-        collectionCardCount = ownCards.Length;
-
         deckCardManager = GetComponentInChildren<DeckCardManager>();
+
+        Refresh();
+    }
+
+    private void OnEnable()
+    {
+        Refresh();
     }
 
     // Start is called before the first frame update
@@ -87,19 +87,6 @@ public class DeckBuilder : MonoBehaviour
         }
     }
 
-    public void ShowCollection()
-    {
-        foreach (Card c in ownCards)
-        {
-            var cardObject = Instantiate(collectionCardPrefab,
-                grid.gameObject.transform);
-            cardObject.SetCard(c);
-            cardObject.GetComponent<CardDisplay>().SetCard(c);
-            cardObject.cardWidth = grid.cellSize.x;
-            cardObject.cardHeight = grid.cellSize.y;
-        }
-    }
-
     private void ShowPage(int p)
     {
         float animationTime = 0.3f;
@@ -116,7 +103,9 @@ public class DeckBuilder : MonoBehaviour
             i++)
         {
             var cardObject = Instantiate(collectionCardPrefab,
-                grid.gameObject.transform);
+                grid.gameObject.transform)
+                .AddComponent<CollectionCardClick>();
+            cardObject.gameObject.AddComponent<LayoutElement>();
             cardObject.SetCard(ownCards[i]);
             cardObject.GetComponent<CardDisplay>().SetCard(ownCards[i]);
             cardObject.cardWidth = grid.cellSize.x;
@@ -149,5 +138,22 @@ public class DeckBuilder : MonoBehaviour
     {
         SaveSystem.SaveDeck(
             owner, deckCardManager.deckCards.Select(c => c.card).ToArray());
+    }
+
+    public void ResetDeck()
+    {
+        deckCardManager.ClearDeck();
+    }
+
+    private void Refresh()
+    {
+        var data = SaveSystem.Load();
+        ownCards = cards.Where(c => c.owner == owner
+                                && c.upgraded == data.cardsUpgrade[c.cardName])
+            .OrderByDescending(c => Math.Min(c.secondaryChange, 0))
+            .ThenByDescending(c => Math.Min(c.primaryChange, 0))
+            .ThenBy(c => c.cardName)
+            .ToArray();
+        collectionCardCount = ownCards.Length;
     }
 }

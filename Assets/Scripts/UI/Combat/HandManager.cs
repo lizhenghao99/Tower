@@ -13,7 +13,8 @@ public class HandManager : MonoBehaviour
 {
     [Header("Owner")]
     [SerializeField] Card.Owner owner;
-    [SerializeField] CardClick cardPrefab;
+    [SerializeField] GameObject cardPrefab;
+    [SerializeField] Material cardMaterial;
     [Header("Card Dimensions")]
     [SerializeField] float cardXOffset = -100;
     [SerializeField] float cardXSpacing = -120;
@@ -75,7 +76,8 @@ public class HandManager : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            var card = Instantiate(cardPrefab, gameObject.transform);
+            var card = Instantiate(cardPrefab, gameObject.transform)
+                .AddComponent<CardClick>();
             InitializeCardPos(card);
             card.interactable = false;
 
@@ -153,7 +155,8 @@ public class HandManager : MonoBehaviour
         //lastSelectedCard.transform.SetParent(gameObject.transform.parent, true);
         StartCoroutine(Utils.Timeout(
             () => {
-                var card = Instantiate(cardPrefab, gameObject.transform);
+                var card = Instantiate(cardPrefab, gameObject.transform)
+                    .AddComponent<CardClick>();
                 card.interactable = false;
                 InitializeCardPos(card);
 
@@ -183,5 +186,6 @@ public class HandManager : MonoBehaviour
         c.cardWidth = cardWidth;
         c.cardHeight = cardHeight;
         c.zoomFactor = zoomFactor;
+        c.cardMaterial = cardMaterial;
     }
 }

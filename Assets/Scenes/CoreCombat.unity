@@ -49165,6 +49165,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 183697731}
+    - target: {fileID: 858311993170146373, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 858311993881803293, guid: 77bd281d95968b5409afe6b60603df66,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -49175,6 +49180,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 183697731}
+    - target: {fileID: 858311993881803293, guid: 77bd281d95968b5409afe6b60603df66,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenSettings
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77bd281d95968b5409afe6b60603df66, type: 3}
 --- !u!1001 &2337859133811107337
@@ -49348,6 +49358,17 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1953522634}
+    - target: {fileID: 4083452161148837315, guid: 88dbef3255f3eed488b31eec14d8a53b,
+        type: 3}
+      propertyPath: cardPrefab
+      value: 
+      objectReference: {fileID: 824030337102861006, guid: ebdaa1527ba8efe4dab986b08ef9fc55,
+        type: 3}
+    - target: {fileID: 4083452161148837315, guid: 88dbef3255f3eed488b31eec14d8a53b,
+        type: 3}
+      propertyPath: cardMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a8613c642ae1e1a45b0f7cf9b24f61ed, type: 2}
     - target: {fileID: 4083452162712621454, guid: 88dbef3255f3eed488b31eec14d8a53b,
         type: 3}
       propertyPath: m_AnchoredPosition.x

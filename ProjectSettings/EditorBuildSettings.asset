@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CoreCombat.unity
     guid: 337a9e6892b9b8a46bcbfda1fb4903d6
+  - enabled: 1
+    path: Assets/Scenes/InitialCamp.unity
+    guid: 5aa38d146c834b74fa3c0db6b8b7024e
   m_configObjects: {}

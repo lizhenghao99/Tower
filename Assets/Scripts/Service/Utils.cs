@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace TowerUtils
 {
@@ -59,6 +61,21 @@ namespace TowerUtils
 
             Vector3 direction = (targetXZPos - projectileXZPos).normalized;
             return direction * Vx + new Vector3(0f, Vy, 0f);
+        }
+
+        public static IEnumerator LoadAsync(int sceneIndex, GameObject loadingScreen)
+        {
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+            loadingScreen.SetActive(true);
+            Slider loadingSlider = loadingScreen.GetComponentInChildren<Slider>();
+
+            while (!operation.isDone)
+            {
+                float progress = Mathf.Clamp01(operation.progress / 0.9f);
+                loadingSlider.value = progress;
+
+                yield return null;
+            }
         }
     }
 }

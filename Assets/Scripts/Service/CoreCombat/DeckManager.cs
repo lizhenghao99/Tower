@@ -32,8 +32,8 @@ public class DeckManager : MonoBehaviour
     private void Awake()
     {
         Card[] cards = Resources.LoadAll<Card>("Cards");
-        var data = SaveSystem.LoadDeck();
-        if (deck1.Count == 0 && data != null 
+        var data = SaveSystem.Load();
+        if (deck1.Count == 0
             && data.playerDecks.ContainsKey((int)firstOwner))
         {
             foreach (string name in data.playerDecks[(int)firstOwner])
