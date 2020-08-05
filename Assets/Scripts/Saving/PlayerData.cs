@@ -9,6 +9,8 @@ public class PlayerData
     public Dictionary<int, string[]> playerDecks;
     public Dictionary<string, bool> cardsUpgrade;
 
+    public int money;
+
     public PlayerData()
     {
         var cards = Resources.LoadAll<Card>("Cards");
@@ -18,5 +20,7 @@ public class PlayerData
         {
             cardsUpgrade[c.cardName] = false;
         }
+
+        money = 0;
     }
 }

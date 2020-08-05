@@ -18,11 +18,13 @@ public class CardUpgrader : MonoBehaviour
     [SerializeField] Button lastPage;
     [SerializeField] CardUpgradeView upgradeView;
     [SerializeField] public GameObject resultView;
+    [SerializeField] public TextMeshProUGUI upgradeCostText;
 
     [HideInInspector] public Card[] cards;
     [HideInInspector] public Card[] ownCards;
     [HideInInspector] public int collectionCardCount;
     [HideInInspector] public CardUpgradeInfo[] upgradeInfo;
+    
 
     private GridLayoutGroup grid;
     private int currPage = 0;
@@ -98,6 +100,13 @@ public class CardUpgrader : MonoBehaviour
             cardObject.cardHeight = grid.cellSize.y;
             cardObject.GetComponent<CanvasGroup>().DOFade(1f, animationTime / 2)
                 .SetEase(Ease.OutQuint);
+
+            var costText = Instantiate(upgradeCostText,
+                cardObject.transform);
+            costText.gameObject.SetActive(true);
+            costText.text = upgradeInfo
+                .Where(info => info.cardName == cardObject.card.cardName)
+                .FirstOrDefault()?.upgradeCost.ToString();
         }
         grid.GetComponent<RectTransform>().anchoredPosition +=
             new Vector2(-shiftDistance, 0);

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DingSmashUpgrade
   m_EditorClassIdentifier: 
   cardName: "\u5343\u65A4\u9F0E"
-  upgradeCost: 200
-  upgradeDescription: "<u>\u660F\u8FF7</u>\u6301\u7EED\u65F6\u95F4\u589E\u52A05\u79D2\u3002\n\u4F24\u5BB3\u589E\u52A020%\u3002\n\u8303\u56F4\u53CA\u5C04\u7A0B\u589E\u52A0\u3002"
+  upgradeCost: 1500
+  upgradeDescription: "<u>\u660F\u8FF7</u>\u6301\u7EED\u65F6\u95F4\u589E\u52A05\u79D2\u3002\n\u4F24\u5BB3\u63D0\u9AD820%\u3002\n\u8303\u56F4\uFF0C\u5C04\u7A0B\u589E\u52A0\u3002"

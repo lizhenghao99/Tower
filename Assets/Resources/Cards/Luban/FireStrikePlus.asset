@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "\u706B\u88AD"
   upgraded: 1
-  description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A010\u79D2<u>\u71C3\u70E7</u>\u6548\u679C\u3002"
+  description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A08\u79D2<u>\u71C3\u70E7</u>\u6548\u679C\u3002"
   primaryChange: -20
   secondaryChange: 0
   owner: 0
@@ -23,12 +23,12 @@ MonoBehaviour:
   vfx: {fileID: 1447435588197194, guid: 47c52812ffacd164e839d6cc78ad41bb, type: 3}
   vfxOffset: {x: 0, y: 2, z: 2}
   castTime: 2
-  damage: 100
+  damage: 150
   force: 300
-  range: 8
-  angle: 60
+  range: 10
+  angle: 90
   delay: 0.4
   fxDelay: 0.2
   effect: 1
-  effectDuration: 10
-  effectAmount: 100
+  effectDuration: 8
+  effectAmount: 150

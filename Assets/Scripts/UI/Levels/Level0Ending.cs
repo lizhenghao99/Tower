@@ -17,19 +17,17 @@ public class Level0Ending : LevelEnding
 
     public override void Lose()
     {
-        if (levelController.currStage.index == 2)
+        if (levelController.currStage.index == 2 &&
+            (float)bossHealth.currHealth <= bossHealth.maxHealth * 0.2)
         {
-            if ((float)bossHealth.currHealth <= bossHealth.maxHealth * 0.2)
-            {
-                base.Lose();
-            }
+            base.Win();
         }
         else
         {
             if (FindObjectOfType<TutorialController>() == null)
             {
-                base.Win();
+                base.Lose();
             }
-        } 
+        }
     }
 }

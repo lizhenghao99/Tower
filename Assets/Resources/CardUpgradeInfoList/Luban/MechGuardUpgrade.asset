@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d58ac2ad5d1e841bcb436b76cebd7e, type: 3}
+  m_Name: MechGuardUpgrade
+  m_EditorClassIdentifier: 
+  cardName: "\u94C1\u7532\u62A4\u536B"
+  upgradeCost: 300
+  upgradeDescription: "\u94C1\u7532\u62A4\u536B\u6570\u91CF\u52A0\u4E00\u3002\n\u94C1\u7532\u62A4\u536B\u751F\u547D\u503C\u589E\u52A0\u3002\n<u>\u56FA\u5B88</u>\u8303\u56F4\u589E\u52A0\u3002"

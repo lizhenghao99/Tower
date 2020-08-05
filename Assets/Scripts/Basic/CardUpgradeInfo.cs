@@ -8,6 +8,6 @@ public class CardUpgradeInfo : ScriptableObject
 {
     public string cardName;
     public int upgradeCost;
-    [TextArea]
+    [TextArea(5, 10)]
     public string upgradeDescription;
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: "\u5CA9\u76FE"
   upgraded: 1
-  description: "\u673A\u5173\u5E08\u88C5\u5907\u5CA9\u76FE\uFF0C\u83B7\u5F97\u751F\u547D\u4E0A\u965025%\u7684\u62A4\u76FE\u3002"
+  description: "\u673A\u5173\u5E08\u88C5\u5907\u5CA9\u76FE\uFF0C\u83B7\u5F97\u751F\u547D\u4E0A\u965030%\u7684\u62A4\u76FE\u3002"
   primaryChange: 0
   secondaryChange: 0
   owner: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   vfx: {fileID: 147642, guid: 0a7ced3f8eb7d4c48952023e4cc85a67, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 1
-  shieldPercent: 0.25
+  shieldPercent: 0.3
   buffTarget: 0
   effect: 0
   effectDuration: 0

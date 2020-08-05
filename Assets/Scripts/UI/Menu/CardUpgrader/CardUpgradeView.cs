@@ -50,6 +50,23 @@ public class CardUpgradeView : MonoBehaviour
             newCard.GetComponent<Selectable>().enabled = false;
         }
 
+        var oldCostText = oldCard.GetComponentsInChildren<TextMeshProUGUI>()
+            .Where(t => t.transform.parent == oldCard.transform)
+            .FirstOrDefault();
+        if (oldCostText != null)
+        {
+            oldCostText.gameObject.SetActive(false);
+        }
+
+        var newCostText = newCard.GetComponentsInChildren<TextMeshProUGUI>()
+            .Where(t => t.transform.parent == newCard.transform)
+            .FirstOrDefault();
+        if (newCostText != null)
+        {
+            newCostText.gameObject.SetActive(false);
+        }
+
+
         foreach (TextMeshProUGUI text in oldCard.GetComponentsInChildren<TextMeshProUGUI>())
         {
             text.fontSizeMax = 200;

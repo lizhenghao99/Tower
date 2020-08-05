@@ -8,6 +8,32 @@ using System.Linq;
 public static class SaveSystem
 {
     private static string filename = "/PlayerData.save";
+
+    public static PlayerData Load()
+    {
+        string path = Application.persistentDataPath + filename;
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+            stream.Position = 0;
+            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+
+            stream.Close();
+            return data;
+        }
+        else
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Create);
+            var data = new PlayerData();
+            formatter.Serialize(stream, data);
+
+            stream.Close();
+            return data;
+        }
+    }
+
     public static void SaveDeck(Card.Owner owner, Card[] cards)
     {
         var data = Load();
@@ -35,28 +61,16 @@ public static class SaveSystem
         stream.Close();
     }
 
-    public static PlayerData Load()
+    public static void SaveMoney(int value)
     {
+        var data = Load();
+        data.money = value;
+
         string path = Application.persistentDataPath + filename;
-        if (File.Exists(path))
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-            stream.Position = 0;
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+        BinaryFormatter formatter = new BinaryFormatter();
+        FileStream stream = new FileStream(path, FileMode.Create);
 
-            stream.Close();
-            return data;
-        }
-        else
-        {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Create);
-            var data = new PlayerData();
-            formatter.Serialize(stream, data);
-
-            stream.Close();
-            return data;
-        }
+        formatter.Serialize(stream, data);
+        stream.Close();
     }
 }

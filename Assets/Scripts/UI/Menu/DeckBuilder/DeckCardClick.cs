@@ -73,7 +73,7 @@ public class DeckCardClick : Selectable
             EventSystem.current.SetSelectedGameObject(null);
             if (eventData.button == PointerEventData.InputButton.Left)
             {
-                GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
+                GlobalAudioManager.Instance.Play("Place", Vector3.zero);
                 deckCardManager.RemoveCard(this);
             }
             else
