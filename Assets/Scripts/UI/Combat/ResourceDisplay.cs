@@ -76,7 +76,7 @@ public class ResourceDisplay : MonoBehaviour
                 }
 
                 break;
-            case Card.Owner.secondChar:
+            case Card.Owner.Daoshi:
                 break;
             case Card.Owner.thirdChar:
                 break;

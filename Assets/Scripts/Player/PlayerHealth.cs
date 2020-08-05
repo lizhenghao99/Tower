@@ -10,6 +10,7 @@ public class PlayerHealth : Health
     public int currShield { get; private set; }
 
     public EventHandler shieldChanged;
+    public EventHandler damaged;
 
 
     // Start is called before the first frame update
@@ -43,12 +44,14 @@ public class PlayerHealth : Health
     public override void TakeDamage(int damage)
     {
         ChangeHealth(-damage);
+        OnDamaged();
     }
 
     public override void TakeDamagePercent(float percent)
     {
         var damage = (int)percent * maxHealth;
         ChangeHealth(-damage);
+        OnDamaged();
     }
 
     private void ChangeHealth(int amount)
@@ -100,5 +103,10 @@ public class PlayerHealth : Health
     private void OnShieldChanged()
     {
         shieldChanged?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    private void OnDamaged()
+    {
+        damaged?.Invoke(gameObject, EventArgs.Empty);
     }
 }

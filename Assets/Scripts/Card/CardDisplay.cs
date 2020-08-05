@@ -62,7 +62,7 @@ public class CardDisplay : MonoBehaviour
                     card.secondaryChange < 0 ?
                     (-card.secondaryChange).ToString() : "0";
                 break;
-            case Card.Owner.secondChar:
+            case Card.Owner.Daoshi:
                 break;
             case Card.Owner.thirdChar:
                 break;

@@ -75,7 +75,7 @@ public class DiscardButton : Selectable
                 case Card.Owner.Luban:
                     GlobalAudioManager.Instance.Play("Hammer", Vector3.zero);
                     break;
-                case Card.Owner.secondChar:
+                case Card.Owner.Daoshi:
                     break;
                 case Card.Owner.thirdChar:
                     break;
@@ -106,7 +106,7 @@ public class DiscardButton : Selectable
                 StartCoroutine(Utils.Timeout(() =>
                     player.setIsCasting(false), 10f));
                 break;
-            case Card.Owner.secondChar:
+            case Card.Owner.Daoshi:
                 break;
             case Card.Owner.thirdChar:
                 break;

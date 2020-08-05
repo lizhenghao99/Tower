@@ -5,7 +5,7 @@ using UnityEngine;
 //[CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public abstract class Card : ScriptableObject
 {
-    public enum Owner { Luban, secondChar, thirdChar };
+    public enum Owner { Luban, Daoshi, thirdChar };
 
     [Header("Basic")]
     public string cardName;

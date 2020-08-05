@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     public EventHandler startCasting;
     public EventHandler finishCasting;
+    public EventHandler startWalking;
 
     public bool isSelected = false;
     public bool isWalking { get; private set; } = false;
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour
                     isSelected = false;
                     EventSystem.current.SetSelectedGameObject(null);
                     GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
+                    OnStartWalking();
                 }
                 else if (isSelected && hit.transform.tag == "Enemy"
                     && !CardPlayer.Instance.isPlayingCard)
@@ -105,8 +107,17 @@ public class PlayerController : MonoBehaviour
                         var direction = Vector3.ProjectOnPlane(
                             gameObject.transform.position - hitInfo.point,
                             new Vector3(0, 1, 0)).normalized;
-                        var destination = hitInfo.point
+                        Vector3 destination;
+                        if (Vector3.Distance(gameObject.transform.position, 
+                            hitInfo.point) < GetComponent<AttackBase>().stopRange)
+                        {
+                            destination = gameObject.transform.position;
+                        }
+                        else
+                        {
+                            destination = hitInfo.point
                             + direction * GetComponent<AttackBase>().stopRange;
+                        }
                         if (wp != null)
                         {
                             wp.transform.position = destination
@@ -126,6 +137,7 @@ public class PlayerController : MonoBehaviour
                         isSelected = false;
                         EventSystem.current.SetSelectedGameObject(null);
                         GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
+                        OnStartWalking();
                     }
                     else
                     {
@@ -208,6 +220,11 @@ public class PlayerController : MonoBehaviour
     private void OnFinishCasting()
     {
         finishCasting?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    private void OnStartWalking()
+    {
+        startWalking?.Invoke(gameObject, EventArgs.Empty);
     }
 
     private void OnCollisionStay(Collision collision)

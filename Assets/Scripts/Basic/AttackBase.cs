@@ -22,7 +22,7 @@ public abstract class AttackBase : MonoBehaviour
     protected GameObject target;
     protected RaycastHit targetHitInfo;
     protected int layerMask;
-    protected float attackTimer;
+    protected float attackTimer = 1;
 
     protected Health health;
 

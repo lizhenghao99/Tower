@@ -10,8 +10,8 @@ using DG.Tweening;
 public class DeckBuilder : MonoBehaviour
 {
     [Header("Deck")]
-    [SerializeField] Card.Owner owner;
-    [SerializeField] GameObject collectionCardPrefab;
+    [SerializeField] public Card.Owner owner;
+    [SerializeField] public GameObject collectionCardPrefab;
     [Header("UI")]
     [SerializeField] int cardsPerPage = 8;
     [SerializeField] TextMeshProUGUI cardCountText;
@@ -24,7 +24,7 @@ public class DeckBuilder : MonoBehaviour
     [HideInInspector] public Card[] cards;
     [HideInInspector] public int collectionCardCount;
 
-    public Card[] ownCards;
+    [HideInInspector] public Card[] ownCards;
     private GridLayoutGroup grid;
     private DeckCardManager deckCardManager;
     private int currPage = 0;
@@ -138,6 +138,9 @@ public class DeckBuilder : MonoBehaviour
     {
         SaveSystem.SaveDeck(
             owner, deckCardManager.deckCards.Select(c => c.card).ToArray());
+        GetComponent<CanvasGroup>()
+            .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
+            .OnComplete(() => gameObject.SetActive(false));
     }
 
     public void ResetDeck()

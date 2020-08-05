@@ -10,6 +10,7 @@ public class PlayerData
     public Dictionary<string, bool> cardsUpgrade;
 
     public int money;
+    public Dictionary<int, string[]> playerEquipments;
 
     public PlayerData()
     {
@@ -22,5 +23,6 @@ public class PlayerData
         }
 
         money = 0;
+        playerEquipments = new Dictionary<int, string[]>();
     }
 }

@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class DeckBuilderSelection : MonoBehaviour
+{
+    [SerializeField] DeckBuilder deckBuilder;
+    [SerializeField] Card.Owner[] owners;
+    [SerializeField] GameObject[] collectionCardPrefabs;
+
+    public void Enter()
+    {
+        gameObject.SetActive(true);
+        GetComponent<CanvasGroup>()
+            .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+    }
+
+    public void Exit()
+    {
+        GetComponent<CanvasGroup>()
+            .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
+            .OnComplete(() => gameObject.SetActive(false));
+    }
+
+    public void SelectCharacter(int index)
+    {
+        deckBuilder.owner = owners[index];
+        deckBuilder.collectionCardPrefab = collectionCardPrefabs[index];
+        deckBuilder.gameObject.SetActive(true);
+        deckBuilder.GetComponent<CanvasGroup>()
+            .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+    }
+}
