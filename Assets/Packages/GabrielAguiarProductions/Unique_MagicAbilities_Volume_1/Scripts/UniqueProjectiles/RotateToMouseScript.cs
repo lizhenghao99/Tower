@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿//
+//NOTES:
+//This script is used for DEMONSTRATION porpuses of the Projectiles. I recommend everyone to create their own code for their own projects.
+//This is just a basic example.
+//
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

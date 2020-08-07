@@ -88,7 +88,6 @@ public class PlayerController : MonoBehaviour
                     agent.SetDestination(hit.point);
                     isWalking = true;
                     isSelected = false;
-                    EventSystem.current.SetSelectedGameObject(null);
                     GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
                     OnStartWalking();
                 }
@@ -135,7 +134,6 @@ public class PlayerController : MonoBehaviour
                         agent.SetDestination(destination);
                         isWalking = true;
                         isSelected = false;
-                        EventSystem.current.SetSelectedGameObject(null);
                         GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
                         OnStartWalking();
                     }
@@ -159,7 +157,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && isSelected)
         {
             isSelected = false;
-            EventSystem.current.SetSelectedGameObject(null);
         }
 
         // select effect

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Effect : MonoBehaviour
 {
-    public enum Type { None, Burn, Freeze, Stun, Rage };
+    public enum Type { None, Burn, Freeze, Stun, Rage, Wood };
 
     public EventHandler start;
     public EventHandler finish;
@@ -33,6 +33,16 @@ public abstract class Effect : MonoBehaviour
         caster = c;
         duration += d;
         amount = a;
+    }
+
+    public virtual void Enhance()
+    {
+        duration *= 2f;
+    }
+
+    public virtual void Kill()
+    {
+        OnFinish();
     }
 
     public virtual void Update()

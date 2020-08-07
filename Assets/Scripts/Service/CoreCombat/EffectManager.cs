@@ -9,6 +9,7 @@ public class EffectManager : MonoBehaviour
     [SerializeField] GameObject freezeVfx;
     [SerializeField] GameObject stunVfx;
     [SerializeField] GameObject rageVfx;
+    [SerializeField] GameObject woodVfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,9 @@ public class EffectManager : MonoBehaviour
                 break;
             case Effect.Type.Rage:
                 vfx = rageVfx;
+                break;
+            case Effect.Type.Wood:
+                vfx = woodVfx;
                 break;
             default:
                 break;

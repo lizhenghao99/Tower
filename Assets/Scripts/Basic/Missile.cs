@@ -2,30 +2,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TowerUtils;
+using DG.Tweening;
 
 public class Missile : MonoBehaviour
 {
     
-    public float range;
+    [SerializeField] public float rotationSpeed = 0.3f;
+    [SerializeField] GameObject hitVfx;
+    [HideInInspector] public float range;
     public EventHandler<Vector3> hitEnemy;
     public EventHandler outOfRange;
+    public int type = 0;
     private Vector3 startingPosition;
-    private Rigidbody rigidbody;
+    private bool launched = false;
+    private Vector3 launchDirection;
 
     private void Start()
     {
         startingPosition = gameObject.transform.position;
-        rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        if (rigidbody.velocity.magnitude != 0)
-        {
-            transform.rotation =
-            Quaternion.LookRotation(rigidbody.velocity);
-        }
-        
         var currDistance =
             Vector3.Distance(gameObject.transform.position, startingPosition);
         if (currDistance > range)
@@ -39,8 +38,56 @@ public class Missile : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
+            var fx = Instantiate(hitVfx);
+            fx.transform.position = other.ClosestPointOnBounds(transform.position);
             hitEnemy?.Invoke(gameObject, gameObject.transform.position);
             Destroy(gameObject);
+        }
+    }
+
+    public void Launch(Vector3 direction, float missileSpeed)
+    {
+        var floater = GetComponentInChildren<Floater>();
+        if (floater != null)
+        {
+            floater.enabled = false;
+        }
+        launched = true;
+        launchDirection = direction;
+
+        var lookRotation = Quaternion.LookRotation(launchDirection);
+        transform.rotation =
+            Quaternion.Slerp(transform.rotation, lookRotation,
+                Time.deltaTime * rotationSpeed);
+        transform.DORotate(lookRotation.eulerAngles, rotationSpeed)
+            .SetEase(Ease.InQuint);
+
+        StartCoroutine(Utils.Timeout(() =>
+        {
+            GetComponent<Rigidbody>().AddForce(
+                direction.normalized
+                    * missileSpeed,
+                ForceMode.VelocityChange);
+        }, rotationSpeed));  
+    }
+
+    public void Cancel()
+    {
+        var floater = GetComponentInChildren<Floater>();
+        if (floater != null)
+        {
+            floater.enabled = false;
+        }
+        GetComponent<Rigidbody>().useGravity = true;
+        foreach (Material m in GetComponentInChildren<ParticleSystemRenderer>().materials)
+        {
+            if (m.HasProperty("_Opacity"))
+            {
+                DOTween.To(() => m.GetFloat("_Opacity"), 
+                           (x) => m.SetFloat("_Opacity", x),
+                            0f, 1f).SetEase(Ease.OutQuint)
+                            .OnComplete(() => Destroy(gameObject));
+            }
         }
     }
 }

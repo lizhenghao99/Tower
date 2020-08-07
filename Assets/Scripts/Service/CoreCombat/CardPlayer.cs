@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Werewolf.StatusIndicators.Components;
+using TowerUtils;
 
 public class CardPlayer : Singleton<CardPlayer>
 { 
@@ -36,10 +37,10 @@ public class CardPlayer : Singleton<CardPlayer>
             {
                 ConfirmCard();
             }
-            else if (Input.GetMouseButtonDown(1))
-            {
-                CancelCard();
-            }
+        }
+        if (isPlayingCard && Input.GetMouseButtonDown(1))
+        {
+            CancelCard();
         }
         if (isPlayingCard && player.GetComponent<Health>().isDead)
         {
@@ -63,7 +64,10 @@ public class CardPlayer : Singleton<CardPlayer>
         }
         else
         {
-            player.isSelected = false;
+            foreach (PlayerController p in FindObjectsOfType<PlayerController>())
+            {
+                p.isSelected = false;
+            }
             if (resource.IsResourceEnough(cardPlaying.primaryChange,
                                         cardPlaying.secondaryChange))
             {
@@ -98,8 +102,8 @@ public class CardPlayer : Singleton<CardPlayer>
             player.spriteRenderer.flipX = splat.Get3DMousePosition().x
                                      < player.gameObject.transform.position.x;
         }
-       
-        Invoke("resumeAction", cardPlaying.castTime);
+
+        Resume(player, cardPlaying.castTime);
 
         cardPlaying.Play();
         GlobalAudioManager.Instance.Play("Place", Vector3.zero);
@@ -123,8 +127,11 @@ public class CardPlayer : Singleton<CardPlayer>
         GlobalAudioManager.Instance.Play("Cancel", Vector3.zero);
     }
 
-    private void resumeAction()
+    private void Resume(PlayerController p, float time)
     {
-        player.setIsCasting(false);
+        StartCoroutine(Utils.Timeout(() =>
+        {
+            p.setIsCasting(false);
+        }, time));   
     }
 }

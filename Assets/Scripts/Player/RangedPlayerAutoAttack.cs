@@ -10,23 +10,23 @@ using TowerUtils;
 public class RangedPlayerAutoAttack : PlayerAutoAttack
 {
     [Header("Projectile")]
-    [SerializeField] int missileCount;
+    [SerializeField] public int missileCount;
     [SerializeField] float missileBlastRange;
-    [SerializeField] Missile missilePrefab;
+    [SerializeField] Missile[] missilePrefabs;
     [SerializeField] float missileHeight;
     [SerializeField] float missileSpeed;
     [SerializeField] float missileRange;
+    [SerializeField] protected float readyTime = 3f;
 
-    private List<Missile> missiles;
-    private Coroutine summonMissiles;
-    private Coroutine launchMissiles;
-
-    private float readyTime = 3f;
+    protected List<Missile> missiles;
+    protected Coroutine summonMissiles;
+    protected Coroutine launchMissiles;
 
     protected override void Start()
     {
         base.Start();
         GetComponent<PlayerController>().startWalking += OnInterrupt;
+        GetComponent<PlayerController>().startCasting += OnInterrupt;
         GetComponent<PlayerHealth>().damaged += OnInterrupt;
         missiles = new List<Missile>();
     }
@@ -80,8 +80,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                         rotation = Quaternion.LookRotation(Vector3.left);
                     }
 
-                    summonMissiles = 
-                        StartCoroutine(SummonMissiles(missileCount, rotation));
+                    ToSummonMissiles(missileCount, rotation);
                 }
             }
             SpeicalAttackUpdate();
@@ -126,10 +125,16 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
         {
             c.gameObject.GetComponent<Health>().TakeDamage(attackDamage);
         }
-        SpecialRangedAttack(hits);
+        SpecialRangedAttack(hits, 
+            ((GameObject) sender).GetComponent<Missile>().type);
     }
 
     protected virtual void SpecialRangedAttack(Collider[] hits)
+    {
+        // do nothing
+    }
+
+    protected virtual void SpecialRangedAttack(Collider[] hits, int type)
     {
         // do nothing
     }
@@ -152,12 +157,18 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
         
         foreach (Missile m in missiles)
         {
-            Destroy(m.gameObject);
+            m.Cancel();
         }
         missiles.Clear();
     }
 
-    private IEnumerator SummonMissiles(int count, Quaternion rotation)
+    protected virtual void ToSummonMissiles(int count, Quaternion rotation)
+    {
+        summonMissiles = 
+            StartCoroutine(SummonMissiles(count, rotation, 0));
+    }
+
+    protected IEnumerator SummonMissiles(int count, Quaternion rotation, int type)
     {
         int sign = 1;
         for (int i = 0; i < count; i++)
@@ -171,10 +182,11 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                 + transform.position;
             sign *= -1;
 
-            var m = Instantiate(missilePrefab,
+            var m = Instantiate(missilePrefabs[type],
                         position,
                         rotation);
             m.range = missileRange;
+            m.type = type;
             m.hitEnemy += OnHitEnemy;
             m.outOfRange += OnOutOfRange;
             m.enabled = false;
@@ -192,10 +204,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
             var direction = targetHitInfo.point - m.transform.position
                 + new Vector3(0, 2, 0);
             m.enabled = true;
-            m.GetComponent<Rigidbody>().AddForce(
-                direction.normalized
-                    * missileSpeed,
-                ForceMode.VelocityChange);
+            m.Launch(direction, missileSpeed);
             missiles.Remove(m);
             yield return new WaitForSeconds(0.2f);
         }

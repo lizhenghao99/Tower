@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 8897688417035505076}
   - component: {fileID: 773315910367340665}
   - component: {fileID: 8868537714718261347}
+  - component: {fileID: 611487061996551288}
   m_Layer: 9
   m_Name: Daoshi
   m_TagString: Player
@@ -277,13 +278,19 @@ MonoBehaviour:
   animator: {fileID: 773315911237860370}
   spriteRenderer: {fileID: 597415633494282346}
   taunter: {fileID: 0}
-  missileCount: 5
+  missileCount: 3
   missileBlastRange: 3
-  missilePrefab: {fileID: 7898821469450883059, guid: 10dc1d35a9c8e8d4481765e0a360fa6f,
-    type: 3}
+  missilePrefabs:
+  - {fileID: 9024818308866756089, guid: 82231cab1ccbb7540b89e3c6c457289c, type: 3}
+  - {fileID: 9024818308866756089, guid: add086b46f217374eb52ad8d767dea6c, type: 3}
+  - {fileID: 9024818308866756089, guid: 78d1e97ce89fb0e408acdb4b7a393499, type: 3}
+  - {fileID: 9024818308866756089, guid: e372318943a8af347b0e0ac336952ece, type: 3}
+  - {fileID: 9024818308866756089, guid: dde5a1aa6df5da64d8993afdd1ba51ee, type: 3}
+  - {fileID: 9024818308866756089, guid: 8a8cc258c0e8871468bef39bf5c1bed8, type: 3}
   missileHeight: 5
-  missileSpeed: 20
+  missileSpeed: 30
   missileRange: 30
+  readyTime: 3
 --- !u!114 &8897688417035505076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +338,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 93458aba94dd2a84b95b82fc7d67630a, type: 2}
   - {fileID: 11400000, guid: 011d7f1550985db4ea0d738f19969232, type: 2}
   - {fileID: 11400000, guid: 45c51350891d19c4aa4ea3b3215dd050, type: 2}
+--- !u!114 &611487061996551288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773315910367340608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3800ad63c40224f869c8f2b53f2d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingPrimaryResource: 50
+  startingSecondaryResource: 0
+  maxPrimaryResource: 100
+  maxSecondaryResource: 5
+  autoPrimaryRegen: 1
 --- !u!1 &773315910570632532
 GameObject:
   m_ObjectHideFlags: 0

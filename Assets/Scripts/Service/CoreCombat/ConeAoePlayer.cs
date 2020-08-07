@@ -71,11 +71,6 @@ public class ConeAoePlayer : Singleton<ConeAoePlayer>
         }, c.fxDelay));
     }
 
-    private void PlayVfx()
-    {
-
-    }
-
     private Collider[] GetEnemies(Vector3 hitPoint, float attackRange)
     {
         return Physics.OverlapSphere(hitPoint, attackRange, layerMask)

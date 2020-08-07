@@ -15,6 +15,14 @@ public class FreezeEffect : Effect
 
     protected override void OnStart()
     {
+        var huo = GetComponent<BurnEffect>();
+        if (huo != null)
+        {
+            huo.Kill();
+            OnFinish();
+            return;
+        }
+
         originalSpeed = agent.speed;
         agent.speed *= (1 - amount);
         base.OnStart();

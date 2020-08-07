@@ -1,0 +1,10 @@
+Load "Sword_FX.unity" for an example scene, or simply drag the required sword from the Prefab folder (in the Project window) into the Hierarchy window.
+
+To avoid sorting issues with the particles often drawing behind the sword blade, it is advisable to turn off Soft Particles. This setting can be found under the menu Edit -> Project Settings -> Quality
+
+Have fun!
+
+Thanks for purchasing this asset - please consider rating or writing a review about it. If you have any questions then don't hesitate to get in touch at bendurrant@rivermillstudios.com 
+
+If you use this or any of Rivermill Studios other assets then we'd love to know (and help you promote them!).
+

@@ -111,7 +111,7 @@ public class HandManager : MonoBehaviour
         if (selected)
         {
             var selectedCard = selected.GetComponent<CardClick>();
-            if (selectedCard)
+            if (selectedCard && selectedCard.card.owner == owner)
             {
                 lastSelectedCard = selectedCard;
             }
