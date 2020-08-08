@@ -35,6 +35,7 @@ public class InstanceAudioManager : MonoBehaviour
         audioSource.outputAudioMixerGroup = AudioMixerManager.Instance.sfxGroup;
 
         Play("Spawn");
+        Play("SpecialSpawn");
     }
 
     private void OnStep(object sender, EventArgs e)
@@ -54,8 +55,6 @@ public class InstanceAudioManager : MonoBehaviour
             soundGroups.Where(s => s.soundTag == tag).FirstOrDefault();
 
         if (desiredGroup == null) return;
-
-        
 
         audioSource.loop = desiredGroup.loop;
         audioSource.priority = desiredGroup.priority;

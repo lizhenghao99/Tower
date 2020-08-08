@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4847196408004658}
   - component: {fileID: 198652190930494444}
   - component: {fileID: 199499675225090684}
+  - component: {fileID: -657132027883841238}
+  - component: {fileID: -5052321688442772075}
   m_Layer: 0
   m_Name: MuHit
   m_TagString: Untagged
@@ -4830,6 +4832,116 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!82 &-657132027883841238
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012929371636226}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &-5052321688442772075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012929371636226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fba53fb5494004f952874c69da7570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundGroups:
+  - {fileID: 11400000, guid: 9a9101f05bf81504f82cadb472c24c71, type: 2}
 --- !u!1 &1046784998576440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5052,7 +5164,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0.120666504, g: 0.78431374, b: 0, a: 1}
-      maxColor: {r: 0.38046545, g: 1, b: 0.16509432, a: 1}
+      maxColor: {r: 0.72707945, g: 1, b: 0.6320754, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -9872,8 +9984,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.120666504, g: 0.78431374, b: 0, a: 1}
-      maxColor: {r: 0, g: 0.78431374, b: 0.2771593, a: 1}
+      minColor: {r: 0.19384125, g: 0.9339623, b: 0.19384125, a: 1}
+      maxColor: {r: 0.5380927, g: 1, b: 0.3773585, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -14694,7 +14806,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0, g: 1, b: 0.15304017, a: 1}
-      maxColor: {r: 1, g: 0.16470587, b: 0.96339786, a: 1}
+      maxColor: {r: 0.80526644, g: 1, b: 0.254717, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -19248,7 +19360,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9aaa13d175bcf1c4b8acc4d930ee06ee, type: 2}
+  - {fileID: 2100000, guid: 0b14fa2151e51a3419cb12e095e543ee, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -33951,7 +34063,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0.120666504, g: 0.78431374, b: 0, a: 1}
-      maxColor: {r: 0.38046545, g: 1, b: 0.16509432, a: 1}
+      maxColor: {r: 0.64310384, g: 1, b: 0.5188679, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -38772,7 +38884,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0, g: 1, b: 0.15304017, a: 1}
-      maxColor: {r: 1, g: 0.16470587, b: 0.96339786, a: 1}
+      maxColor: {r: 0.80526644, g: 1, b: 0.254717, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -43326,7 +43438,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9aaa13d175bcf1c4b8acc4d930ee06ee, type: 2}
+  - {fileID: 2100000, guid: 0b14fa2151e51a3419cb12e095e543ee, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -43593,7 +43705,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.1745283, g: 1, b: 0.1764706, a: 1}
+      maxColor: {r: 0.5566038, g: 1, b: 0.5566038, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

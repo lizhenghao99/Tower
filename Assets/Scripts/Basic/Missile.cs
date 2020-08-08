@@ -40,6 +40,7 @@ public class Missile : MonoBehaviour
         {
             var fx = Instantiate(hitVfx);
             fx.transform.position = other.ClosestPointOnBounds(transform.position);
+            fx.transform.rotation = Quaternion.LookRotation(launchDirection);
             hitEnemy?.Invoke(gameObject, gameObject.transform.position);
             Destroy(gameObject);
         }
@@ -47,6 +48,11 @@ public class Missile : MonoBehaviour
 
     public void Launch(Vector3 direction, float missileSpeed)
     {
+        var audio = GetComponent<InstanceAudioManager>();
+        if (audio != null)
+        {
+            audio.Play("Launch");
+        }
         var floater = GetComponentInChildren<Floater>();
         if (floater != null)
         {

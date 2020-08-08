@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: Launch
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 47ac8f50ce8da944e8175c02a9431338, type: 3}
+  - {fileID: 8300000, guid: 2ccb650c7bec9b142b5dd88bf29ef28a, type: 3}
+  - {fileID: 8300000, guid: 37748ae1d0a637d479fb8144faf09896, type: 3}
+  - {fileID: 8300000, guid: 1c4112bbd28a8e3429bfb9d8f00033e5, type: 3}
+  - {fileID: 8300000, guid: a71fd38374fe0e449b3d3db785a403d0, type: 3}
+  soundTag: Launch
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1.1
+  spatialBlend: 0.3

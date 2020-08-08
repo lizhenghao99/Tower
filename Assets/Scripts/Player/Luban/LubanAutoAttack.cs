@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TowerUtils;
 
 public class LubanAutoAttack : PlayerAutoAttack
 {
+    [Header("Vfx")]
+    [SerializeField] GameObject meleeVfx;
+    [SerializeField] float vfxDelay;
     private EffectManager effectManager;
 
     protected override void Start()
@@ -15,6 +19,14 @@ public class LubanAutoAttack : PlayerAutoAttack
     protected override void SpecialAutoAttack()
     {
         GetComponent<LubanResource>().ResourceAutoGen();
+        StartCoroutine(Utils.Timeout(() =>
+        {
+            var fx = Instantiate(meleeVfx, gameObject.transform);
+            if (targetHitInfo.point.x < gameObject.transform.position.x)
+            {
+                fx.transform.rotation = Quaternion.Euler(180, 180, 0);
+            }
+        }, vfxDelay));
     }
 
     protected override void ApplyTaunt()

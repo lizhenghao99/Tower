@@ -80,7 +80,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.485003, y: 20.48}
+  m_Size: {x: 9.48, y: 9.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -424,6 +424,8 @@ MonoBehaviour:
   animator: {fileID: 8729792688550215930}
   spriteRenderer: {fileID: 8923698843579247746}
   taunter: {fileID: 0}
+  meleeVfx: {fileID: 1044528419629608, guid: 76dc8e7762ae23a49917e43293e4b976, type: 3}
+  vfxDelay: 0.05
 --- !u!114 &1961301085
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -65,10 +65,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                 {
                     agent.isStopped = true;
                     animator.SetTrigger("Attack");
-                    StartCoroutine(Utils.Timeout(() =>
-                    {
-                        audioManager.Play("Attack");
-                    }, 0.2f));
+                    audioManager.Play("Attack");
                     // missle
                     Quaternion rotation;
                     if (targetHitInfo.point.x > transform.position.x)

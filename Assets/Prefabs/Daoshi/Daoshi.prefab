@@ -80,7 +80,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.485003, y: 20.48}
+  m_Size: {x: 9.48, y: 9.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -282,11 +282,11 @@ MonoBehaviour:
   missileBlastRange: 3
   missilePrefabs:
   - {fileID: 9024818308866756089, guid: 82231cab1ccbb7540b89e3c6c457289c, type: 3}
-  - {fileID: 9024818308866756089, guid: add086b46f217374eb52ad8d767dea6c, type: 3}
-  - {fileID: 9024818308866756089, guid: 78d1e97ce89fb0e408acdb4b7a393499, type: 3}
-  - {fileID: 9024818308866756089, guid: e372318943a8af347b0e0ac336952ece, type: 3}
-  - {fileID: 9024818308866756089, guid: dde5a1aa6df5da64d8993afdd1ba51ee, type: 3}
-  - {fileID: 9024818308866756089, guid: 8a8cc258c0e8871468bef39bf5c1bed8, type: 3}
+  - {fileID: 9024818308866756089, guid: 0a3a3e09a0c6f944fb22216edc51c779, type: 3}
+  - {fileID: 9024818308866756089, guid: 098d0075ad0458c4ca7767a1d1733d47, type: 3}
+  - {fileID: 9024818308866756089, guid: 8122cafaf34c5e541a60ae4766ef6890, type: 3}
+  - {fileID: 9024818308866756089, guid: 9151dad792715ad48910a7e252cde2fe, type: 3}
+  - {fileID: 9024818308866756089, guid: cfbccdc85304d894bac25d9f3ba4f715, type: 3}
   missileHeight: 5
   missileSpeed: 30
   missileRange: 30
@@ -333,11 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundGroups:
-  - {fileID: 11400000, guid: 0f0dff7e7e383f949bbaaa00016a0d81, type: 2}
-  - {fileID: 11400000, guid: d8182728a58854144bc6a0ca55d96390, type: 2}
-  - {fileID: 11400000, guid: 93458aba94dd2a84b95b82fc7d67630a, type: 2}
-  - {fileID: 11400000, guid: 011d7f1550985db4ea0d738f19969232, type: 2}
-  - {fileID: 11400000, guid: 45c51350891d19c4aa4ea3b3215dd050, type: 2}
+  - {fileID: 11400000, guid: 41952f9b996f89f459baed7d57dd7d7d, type: 2}
 --- !u!114 &611487061996551288
 MonoBehaviour:
   m_ObjectHideFlags: 0
