@@ -18,6 +18,13 @@ public class StunEffect : Effect
 
     protected override void OnStart()
     {
+        var jin = GetComponent<LightningEffect>();
+        if (jin != null)
+        {
+            jin.Enhance();
+        }
+
+
         if (!GetComponent<Health>().immuneStun)
         {
             agent.SetDestination(gameObject.transform.position);

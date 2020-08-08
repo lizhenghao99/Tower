@@ -459,6 +459,7 @@ MonoBehaviour:
   isDead: 0
   isImmune: 0
   immuneStun: 0
+  deathVfx: {fileID: 1610154298218290, guid: d26f4e406550f6d4da899065c176a50f, type: 3}
 --- !u!114 &8729792689411822737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,9 +932,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11404020, guid: 951756961d7062c40bef1a292f08dee0, type: 3}
+      propertyPath: scale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11935728, guid: 951756961d7062c40bef1a292f08dee0, type: 3}
       propertyPath: m_IgnoreLayers.m_Bits
       value: 3639
+      objectReference: {fileID: 0}
+    - target: {fileID: 11935728, guid: 951756961d7062c40bef1a292f08dee0, type: 3}
+      propertyPath: m_OrthographicSize
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 951756961d7062c40bef1a292f08dee0, type: 3}

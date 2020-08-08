@@ -15,6 +15,12 @@ public class FreezeEffect : Effect
 
     protected override void OnStart()
     {
+        var mu = GetComponent<WoodEffect>();
+        if (mu != null)
+        {
+            mu.Enhance();
+        }
+
         var huo = GetComponent<BurnEffect>();
         if (huo != null)
         {

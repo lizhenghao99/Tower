@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: JinSpawn
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 4a3f3b3b064a8424ab11e5e520a080e0, type: 3}
+  - {fileID: 8300000, guid: f774d1948c93b0f49b078c59295d97e5, type: 3}
+  - {fileID: 8300000, guid: d707014fa23550f438da853ba37c0117, type: 3}
+  soundTag: SpecialSpawn
+  loop: 0
+  priority: 128
+  volume: 0.7
+  pitch: 1
+  spatialBlend: 0.3

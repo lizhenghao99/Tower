@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Effect : MonoBehaviour
 {
-    public enum Type { None, Burn, Freeze, Stun, Rage, Wood };
+    public enum Type { None, Burn, Freeze, Stun, Rage, Wood, Lightning };
 
     public EventHandler start;
     public EventHandler finish;

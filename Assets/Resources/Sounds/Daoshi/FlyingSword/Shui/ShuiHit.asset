@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: ShuiHit
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6a3459947c95bb140ac1a8d67f8ad4ec, type: 3}
+  - {fileID: 8300000, guid: f888e7f79462dda499c1395c64e65fbe, type: 3}
+  - {fileID: 8300000, guid: 30fa2539238d39e4699dcd7291825f80, type: 3}
+  - {fileID: 8300000, guid: 5cabe1e2cf8310f4c81071c0c9b50f73, type: 3}
+  soundTag: SpecialSpawn
+  loop: 0
+  priority: 128
+  volume: 0.6
+  pitch: 1
+  spatialBlend: 0.3

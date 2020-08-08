@@ -107,6 +107,8 @@ public class DiscardButton : Selectable
                     player.setIsCasting(false), 10f));
                 break;
             case Card.Owner.Daoshi:
+                player.GetComponent<DaoshiResource>()
+                    .ChangeResource(card.primaryChange / 2, -1);
                 break;
             case Card.Owner.thirdChar:
                 break;

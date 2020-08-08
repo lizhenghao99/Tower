@@ -94,7 +94,7 @@ Material:
     - _Usecenterglow: 0
     - _Usedepth: 0
     m_Colors:
-    - _Color: {r: 0.5943396, g: 0.32954076, b: 0.16260235, a: 1}
+    - _Color: {r: 0.745283, g: 0.31792682, b: 0.070309706, a: 1}
     - _DistortionSpeedXYPowerZ: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpeedMainTexUVNoiseUV: {r: 0, g: 0, b: 0, a: 0}

@@ -25,6 +25,13 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
     {
         switch (type)
         {
+            case 1:
+                if (hits.Length > 0)
+                {
+                    effectManager.Register(gameObject, hits[0].gameObject,
+                        Effect.Type.Lightning, 1f, 3f);
+                }
+                break;
             case 2:
                 foreach (Collider c in hits)
                 {
@@ -36,7 +43,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                 foreach (Collider c in hits)
                 {
                     effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Freeze, 0.5f, 0.2f);
+                        Effect.Type.Freeze, 1f, 0.2f);
                 }
                 break;
             case 4:

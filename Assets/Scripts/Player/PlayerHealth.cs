@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
+using DG.Tweening;
 
 public class PlayerHealth : Health
 {
+    [Header("Vfx")]
+    [SerializeField] GameObject deathVfx;
     public int maxShield { get; private set; }
     public int currShield { get; private set; }
 
@@ -89,6 +92,7 @@ public class PlayerHealth : Health
 
     public override void Die()
     {
+        var fx = Instantiate(deathVfx, gameObject.transform);
         GetComponentInChildren<Animator>().SetBool("Death", true);
         isDead = true;
         InstanceAudioManager audioManager = GetComponent<InstanceAudioManager>();

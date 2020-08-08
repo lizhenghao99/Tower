@@ -53,7 +53,7 @@ ParticleSystem:
   serializedVersion: 6
   lengthInSec: 1
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
@@ -4941,7 +4941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundGroups:
-  - {fileID: 11400000, guid: 9a9101f05bf81504f82cadb472c24c71, type: 2}
+  - {fileID: 11400000, guid: a845eb7f69728dc47aedffff2dceca46, type: 2}
 --- !u!1 &1046784998576440
 GameObject:
   m_ObjectHideFlags: 0

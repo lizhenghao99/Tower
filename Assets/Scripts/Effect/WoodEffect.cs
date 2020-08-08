@@ -18,6 +18,12 @@ public class WoodEffect : Effect
 
     protected override void OnStart()
     {
+        var huo = GetComponent<BurnEffect>();
+        if (huo != null)
+        {
+            huo.Enhance();
+        }
+
         attack.attackDamage = (int) (attack.attackDamage * 0.8f);
         base.OnStart();
     }

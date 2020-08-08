@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4994efddaaf64194685eed1d20d7228c, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
   m_Name: Wu
   m_EditorClassIdentifier: 
   cardName: "\u65E0"
@@ -20,11 +20,20 @@ MonoBehaviour:
   owner: 1
   art: {fileID: 0}
   sfx: {fileID: 0}
-  vfx: {fileID: 141596, guid: a6240717d8ed7324d8028328118c312e, type: 3}
+  vfx: {fileID: 1529907042512856, guid: d77d260784e81094c8b0becadb75fb73, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
-  castTime: 2
-  shieldPercent: 0
-  buffTarget: 0
+  castTime: 3
+  damage: 0
+  force: 0
+  range: 20
+  radius: 5
+  delay: 0
+  fxDelay: 0
+  hasProjectile: 0
+  projectilePrefab: {fileID: 0}
+  impactSfx: {fileID: 0}
+  projectileHeight: 0
+  projectileAngle: 0
   effect: 0
   effectDuration: 0
   effectAmount: 0

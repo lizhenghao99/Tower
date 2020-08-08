@@ -24,7 +24,7 @@ public class LubanAutoAttack : PlayerAutoAttack
             var fx = Instantiate(meleeVfx, gameObject.transform);
             if (targetHitInfo.point.x < gameObject.transform.position.x)
             {
-                fx.transform.rotation = Quaternion.Euler(180, 180, 0);
+                fx.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
         }, vfxDelay));
     }

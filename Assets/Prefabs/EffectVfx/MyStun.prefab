@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 198796999921935306}
   - component: {fileID: 199498516851903882}
   m_Layer: 0
-  m_Name: Stun
+  m_Name: MyStun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ ParticleSystem:
   serializedVersion: 6
   lengthInSec: 1
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   cullingMode: 3
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}

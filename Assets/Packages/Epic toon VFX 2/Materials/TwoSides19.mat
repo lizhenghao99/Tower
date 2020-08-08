@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: TwoSides19
   m_Shader: {fileID: 4800000, guid: 56bedbcbfe68e1345a5e87fe73790dab, type: 3}
   m_ShaderKeywords: 
@@ -39,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 509425df8368aeb49ac69d0a04553f23, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:
@@ -72,7 +73,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.5
+    - _Cutoff: 0.3
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _Emission: 3
@@ -95,9 +96,9 @@ Material:
     - _UseFresnel: 0
     - __dirty: 1
     m_Colors:
-    - _BackFacesColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BackFacesColor: {r: 0.6981132, g: 0.04610178, b: 0.04610178, a: 0.6117647}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _FrontFacesColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0.6981132, g: 0.0461018, b: 0.0461018, a: 0.6117647}
+    - _FrontFacesColor: {r: 0.6981132, g: 0.04610178, b: 0.04610178, a: 0.6117647}
     - _SpeedMainTexUVNoiseZW: {r: 0, g: 0, b: 0, a: 0}

@@ -4885,7 +4885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundGroups:
   - {fileID: 11400000, guid: 161b87aab014c674a9093f0bea506511, type: 2}
-  - {fileID: 11400000, guid: 631418502f2766b4ebd9a83c139fffcf, type: 2}
+  - {fileID: 11400000, guid: 3b27e8d856ff6434388d5e4c67c77f16, type: 2}
 --- !u!1 &4012772502652690698
 GameObject:
   m_ObjectHideFlags: 0
