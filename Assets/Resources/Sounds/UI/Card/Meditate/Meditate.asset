@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8f2d8d4338eb54e97366cdfe3ddea8, type: 3}
+  m_Name: Meditate
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 1d2ffe36d332dce429361fb7ad3590a4, type: 3}
+  soundTag: Meditate
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1.1
+  spatialBlend: 0

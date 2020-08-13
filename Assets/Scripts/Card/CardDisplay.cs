@@ -11,10 +11,10 @@ public class CardDisplay : MonoBehaviour
 {
     public Card card { get; private set; }
 
-    private Image art;
-    private TextMeshProUGUI cardName;
-    private TextMeshProUGUI primaryResource;
-    private TextMeshProUGUI secondaryResrouce;
+    protected Image art;
+    protected TextMeshProUGUI cardName;
+    protected TextMeshProUGUI primaryResource;
+    protected TextMeshProUGUI secondaryResrouce;
 
     // Start is called before the first frame update
 
@@ -45,29 +45,11 @@ public class CardDisplay : MonoBehaviour
                     .FirstOrDefault();
         art.sprite = card.art;
 
-        switch (card.owner)
-        {
-            case Card.Owner.Luban:
-                primaryResource = GetComponentsInChildren<TextMeshProUGUI>()
-                    .Where(c => c.gameObject.name == "PrimaryResource")
-                    .FirstOrDefault();
-                primaryResource.text =
-                    card.primaryChange < 0 ? 
-                    (-card.primaryChange/20).ToString() : "0";
+        DisplayResource();
+    }
 
-                secondaryResrouce = GetComponentsInChildren<TextMeshProUGUI>()
-                            .Where(c => c.gameObject.name == "SecondaryResource")
-                            .FirstOrDefault();
-                secondaryResrouce.text =
-                    card.secondaryChange < 0 ?
-                    (-card.secondaryChange).ToString() : "0";
-                break;
-            case Card.Owner.Daoshi:
-                break;
-            case Card.Owner.thirdChar:
-                break;
-            default:
-                break;
-        }
+    protected virtual void DisplayResource()
+    {
+        // do nothing
     }
 }

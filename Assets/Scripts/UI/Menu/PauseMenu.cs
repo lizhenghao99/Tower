@@ -20,13 +20,13 @@ public class PauseMenu : MonoBehaviour
     private GlobalAudioManager globalAudioManager;
 
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         group = pauseMenu.GetComponent<CanvasGroup>();
         loadingSlider = loadingScreen.GetComponentInChildren<Slider>();
         audioMixerManager = AudioMixerManager.Instance;
         globalAudioManager = GlobalAudioManager.Instance;
+        audioMixerManager.Reset();
     }
 
     // Update is called once per frame
@@ -78,6 +78,7 @@ public class PauseMenu : MonoBehaviour
 
     public void RestartLevel()
     {
+        audioMixerManager.FadeInMusic(0.5f);
         StartCoroutine(LoadAsync(SceneManager.GetActiveScene().buildIndex));
     }
 

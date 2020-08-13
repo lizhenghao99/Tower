@@ -27,6 +27,8 @@ public class LevelController : MonoBehaviour
     [SerializeField] Light sunLight;
     [Header("Ending")]
     [SerializeField] LevelEnding levelEnding;
+    [Header("UI")]
+    [SerializeField] CanvasGroup[] groupsToHide;
 
     public EventHandler StartCombat;
     public EventHandler EndCombat;
@@ -64,6 +66,11 @@ public class LevelController : MonoBehaviour
                                      LayerMask.NameToLayer("Player"),
                                      true);
 
+        foreach (CanvasGroup g in groupsToHide)
+        {
+            g.alpha = 0f;
+        }
+
         baseTower.death += OnTowerDeath;
         StartNextStage();
     }
@@ -76,6 +83,11 @@ public class LevelController : MonoBehaviour
 
     public void OnStartCombat()
     {
+        foreach (CanvasGroup g in groupsToHide)
+        {
+            g.DOFade(1f, 0.3f).SetEase(Ease.OutQuint);
+        }
+        
         Minion[] minions = FindObjectsOfType<Minion>();
         foreach (Minion m in minions)
         {
@@ -86,6 +98,11 @@ public class LevelController : MonoBehaviour
 
     public void OnEndCombat()
     {
+        foreach (CanvasGroup g in groupsToHide)
+        {
+            g.DOFade(0f, 0.2f).SetEase(Ease.OutQuint);
+        }
+
         EndCombat?.Invoke(gameObject, EventArgs.Empty);
     }
 

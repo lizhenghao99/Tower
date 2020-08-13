@@ -168,8 +168,8 @@ GameObject:
   - component: {fileID: 824030337102861007}
   - component: {fileID: 824030337102861005}
   - component: {fileID: 824030337102860994}
-  - component: {fileID: 824030337102860992}
   - component: {fileID: 2517013833959534036}
+  - component: {fileID: 5267384566505058924}
   m_Layer: 5
   m_Name: LubanCard
   m_TagString: Untagged
@@ -223,18 +223,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &824030337102860992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 824030337102861006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0d65eed420db645894b0922bb28859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!225 &2517013833959534036
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -247,6 +235,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &5267384566505058924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824030337102861006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960e645a11b1e3a49853e4df338b5511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3830795614455238652
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class AudioMixerManager : Singleton<AudioMixerManager>
         bgmGroup = audioMixer.FindMatchingGroups("Music/Bgm")[0];
         ambienceGroup = audioMixer.FindMatchingGroups("Music/Ambience")[0];
         sfxGroup = audioMixer.FindMatchingGroups("Sfx")[0];
+        audioMixer.SetFloat("Lowpass", 22000f);
     }
 
     public void SetMasterVolume(float value)
@@ -54,5 +55,10 @@ public class AudioMixerManager : Singleton<AudioMixerManager>
     {
         audioMixer.DOSetFloat("Lowpass", 22000f, duration)
             .SetEase(Ease.OutQuint).SetUpdate(true);
+    }
+
+    public void Reset()
+    {
+        Awake();
     }
 }

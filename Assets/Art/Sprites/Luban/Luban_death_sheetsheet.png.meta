@@ -1,0 +1,1127 @@
+fileFormatVersion: 2
+guid: 77aab96f088e93844bd4c640d7f824b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3052095900161721179
+    second: Luban_death_sheetsheet_0
+  - first:
+      213: 5038973260961898212
+    second: Luban_death_sheetsheet_1
+  - first:
+      213: -5665264976370246221
+    second: Luban_death_sheetsheet_2
+  - first:
+      213: -9031817763657821733
+    second: Luban_death_sheetsheet_3
+  - first:
+      213: 2246249382781098378
+    second: Luban_death_sheetsheet_4
+  - first:
+      213: -2132044577947153518
+    second: Luban_death_sheetsheet_5
+  - first:
+      213: -3047173815023141316
+    second: Luban_death_sheetsheet_6
+  - first:
+      213: 3269151796385644893
+    second: Luban_death_sheetsheet_7
+  - first:
+      213: -535145635806955390
+    second: Luban_death_sheetsheet_8
+  - first:
+      213: -7265969364576844831
+    second: Luban_death_sheetsheet_9
+  - first:
+      213: 703585026363044622
+    second: Luban_death_sheetsheet_10
+  - first:
+      213: -8138690378434720495
+    second: Luban_death_sheetsheet_11
+  - first:
+      213: 7768951623383083512
+    second: Luban_death_sheetsheet_12
+  - first:
+      213: -4420415492477595190
+    second: Luban_death_sheetsheet_13
+  - first:
+      213: -6652723795873464904
+    second: Luban_death_sheetsheet_14
+  - first:
+      213: 7240170814726181259
+    second: Luban_death_sheetsheet_15
+  - first:
+      213: -1009600169382158292
+    second: Luban_death_sheetsheet_16
+  - first:
+      213: -8724004208521231737
+    second: Luban_death_sheetsheet_17
+  - first:
+      213: -7130145769151319357
+    second: Luban_death_sheetsheet_18
+  - first:
+      213: -661779744025908841
+    second: Luban_death_sheetsheet_19
+  - first:
+      213: 3239915834454718601
+    second: Luban_death_sheetsheet_20
+  - first:
+      213: -1183072836026107561
+    second: Luban_death_sheetsheet_21
+  - first:
+      213: -2811636616857739873
+    second: Luban_death_sheetsheet_22
+  - first:
+      213: -6963399762082552254
+    second: Luban_death_sheetsheet_23
+  - first:
+      213: -3820037801987033846
+    second: Luban_death_sheetsheet_24
+  - first:
+      213: -180888629159212239
+    second: Luban_death_sheetsheet_25
+  - first:
+      213: 2326597047893041480
+    second: Luban_death_sheetsheet_26
+  - first:
+      213: 2429393098321328128
+    second: Luban_death_sheetsheet_27
+  - first:
+      213: 1903409071056628435
+    second: Luban_death_sheetsheet_28
+  - first:
+      213: 187052076334112524
+    second: Luban_death_sheetsheet_29
+  - first:
+      213: -1411114500391150576
+    second: Luban_death_sheetsheet_30
+  - first:
+      213: -2064453374220977382
+    second: Luban_death_sheetsheet_31
+  - first:
+      213: -6881475149801788792
+    second: Luban_death_sheetsheet_32
+  - first:
+      213: 6103730609310804867
+    second: Luban_death_sheetsheet_33
+  - first:
+      213: 9027981350043367969
+    second: Luban_death_sheetsheet_34
+  - first:
+      213: 3205758944094777351
+    second: Luban_death_sheetsheet_35
+  - first:
+      213: -7838127691468309386
+    second: Luban_death_sheetsheet_36
+  - first:
+      213: 7884323513900534645
+    second: Luban_death_sheetsheet_37
+  - first:
+      213: -2544102559919684354
+    second: Luban_death_sheetsheet_38
+  - first:
+      213: 6241958902107523533
+    second: Luban_death_sheetsheet_39
+  - first:
+      213: 6148076104860153369
+    second: Luban_death_sheetsheet_40
+  - first:
+      213: 934914663765235304
+    second: Luban_death_sheetsheet_41
+  - first:
+      213: -7995658539454358872
+    second: Luban_death_sheetsheet_42
+  - first:
+      213: 8169895995723459658
+    second: Luban_death_sheetsheet_43
+  - first:
+      213: -8001228199376964381
+    second: Luban_death_sheetsheet_44
+  - first:
+      213: 2302309474427885977
+    second: Luban_death_sheetsheet_45
+  - first:
+      213: -8045806515479985537
+    second: Luban_death_sheetsheet_46
+  - first:
+      213: -7463125277586533787
+    second: Luban_death_sheetsheet_47
+  - first:
+      213: -3748238331137819390
+    second: Luban_death_sheetsheet_48
+  - first:
+      213: -5491873634038737455
+    second: Luban_death_sheetsheet_49
+  - first:
+      213: 9027206380887611704
+    second: Luban_death_sheetsheet_50
+  - first:
+      213: 8200553278325812903
+    second: Luban_death_sheetsheet_51
+  - first:
+      213: -1769087742242103873
+    second: Luban_death_sheetsheet_52
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53c09dec093b5a20800000000000000
+      internalID: 3052095900161721179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_1
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee5354bb770ee540800000000000000
+      internalID: 5038973260961898212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_2
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd5df4158fe061b0800000000000000
+      internalID: -5665264976370246221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_3
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1dc19b89988a280800000000000000
+      internalID: -9031817763657821733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_4
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a899b9999e74c2f10800000000000000
+      internalID: 2246249382781098378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_5
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b892e90c47962e0800000000000000
+      internalID: -2132044577947153518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_6
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e7ca25f8346b5d0800000000000000
+      internalID: -3047173815023141316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_7
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d518564fc3c5e5d20800000000000000
+      internalID: 3269151796385644893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_8
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28830aa21e7c298f0800000000000000
+      internalID: -535145635806955390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_9
+      rect:
+        serializedVersion: 2
+        x: 5463
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3c6831c571a2b90800000000000000
+      internalID: -7265969364576844831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_10
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0337ad8ad2a3c900800000000000000
+      internalID: 703585026363044622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_11
+      rect:
+        serializedVersion: 2
+        x: 6677
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d4280b8309d0f80800000000000000
+      internalID: -8138690378434720495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_12
+      rect:
+        serializedVersion: 2
+        x: 7284
+        y: 3270
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f961fcf65cd0db60800000000000000
+      internalID: 7768951623383083512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac15d3ba78787a2c0800000000000000
+      internalID: -4420415492477595190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_14
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd7c2e84f6cca3a0800000000000000
+      internalID: -6652723795873464904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_15
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8197e4fef04a7460800000000000000
+      internalID: 7240170814726181259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_16
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c206dcabefd2df1f0800000000000000
+      internalID: -1009600169382158292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_17
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7824414e46c1ee680800000000000000
+      internalID: -8724004208521231737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_18
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c23bf83332ac0d90800000000000000
+      internalID: -7130145769151319357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_19
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79969cd34d2e0d6f0800000000000000
+      internalID: -661779744025908841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_20
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98836de194e76fc20800000000000000
+      internalID: 3239915834454718601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_21
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 759ff391681e49fe0800000000000000
+      internalID: -1183072836026107561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_22
+      rect:
+        serializedVersion: 2
+        x: 5463
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d96b6c46f0bf8d0800000000000000
+      internalID: -2811636616857739873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_23
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246a7006fc80d5f90800000000000000
+      internalID: -6963399762082552254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_24
+      rect:
+        serializedVersion: 2
+        x: 6677
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05bff7cbdf7cfac0800000000000000
+      internalID: -3820037801987033846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_25
+      rect:
+        serializedVersion: 2
+        x: 7284
+        y: 2444
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bce0b00ca5d7df0800000000000000
+      internalID: -180888629159212239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841232f20bbb94020800000000000000
+      internalID: 2326597047893041480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_27
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0087a35c620f6b120800000000000000
+      internalID: 2429393098321328128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_28
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da269627744a6a10800000000000000
+      internalID: 1903409071056628435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_29
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fd4645fda889200800000000000000
+      internalID: 187052076334112524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_30
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c58ca96d6ba6ce0800000000000000
+      internalID: -1411114500391150576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_31
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bb33618969953e0800000000000000
+      internalID: -2064453374220977382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_32
+      rect:
+        serializedVersion: 2
+        x: 3642
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ae2659fc61080a0800000000000000
+      internalID: -6881475149801788792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_33
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b26a476aec4b450800000000000000
+      internalID: 6103730609310804867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_34
+      rect:
+        serializedVersion: 2
+        x: 4856
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12abf20a435d94d70800000000000000
+      internalID: 9027981350043367969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_35
+      rect:
+        serializedVersion: 2
+        x: 5463
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700fc4a56c42d7c20800000000000000
+      internalID: 3205758944094777351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_36
+      rect:
+        serializedVersion: 2
+        x: 6070
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cf0ed8460693390800000000000000
+      internalID: -7838127691468309386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_37
+      rect:
+        serializedVersion: 2
+        x: 6677
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b0d44867eba6d60800000000000000
+      internalID: 7884323513900534645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_38
+      rect:
+        serializedVersion: 2
+        x: 7284
+        y: 1618
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef443d3733881bcd0800000000000000
+      internalID: -2544102559919684354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luban_death_sheetsheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 607
+        height: 826
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9c4b6dc84ef9650800000000000000
+      internalID: 6241958902107523533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: efa4f18a368746041b4b31d6c0b0c767
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

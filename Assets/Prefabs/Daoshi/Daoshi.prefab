@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3800ad63c40224f869c8f2b53f2d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPrimaryResource: 50
+  startingPrimaryResource: 100
   startingSecondaryResource: 0
   maxPrimaryResource: 100
   maxSecondaryResource: 5

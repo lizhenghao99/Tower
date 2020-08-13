@@ -18,7 +18,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7d283a934f3fd7c43bfb311cebcc106e, type: 3}
   - {fileID: 8300000, guid: 3c1d5017f534668478fa4be48630f7af, type: 3}
   - {fileID: 8300000, guid: 0b4b4ce0cb3b8f04ea0596fda9c4f85d, type: 3}
-  soundTag: Death
+  soundTag: Fall
   loop: 0
   priority: 128
   volume: 1

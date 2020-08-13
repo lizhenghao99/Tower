@@ -6,7 +6,8 @@ public class BaseTowerHealth : Health
 {
     private InstanceAudioManager audioManager;
     private float hurtAudioTime;
-
+    [Header("Vfx")] 
+    [SerializeField] GameObject deathVfx;
     protected override void Start()
     {
         base.Start();
@@ -43,11 +44,13 @@ public class BaseTowerHealth : Health
     }
     public override void Die()
     {
+        Instantiate(deathVfx, gameObject.transform);
         GetComponentInChildren<Animator>().SetBool("Death", true);
         isDead = true;
         if (audioManager != null)
         {
             audioManager.Play("Death");
+            audioManager.Play("Fall");
         }
         currHealth = 0;
         OnDeath();

@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private int layerMask;
 
     private PlayerHealth health;
+    private Waypoint myWaypoint;
 
     private float autoStopWalkTimer = 3;
 
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         agent.updateUpAxis = false;
         layerMask = LayerMask.GetMask("Environment", "Player", "Enemy");
         health = GetComponent<PlayerHealth>();
+        health.death += OnPlayerDeath;
     }
 
 
@@ -82,6 +84,7 @@ public class PlayerController : MonoBehaviour
                             waypoint, 
                             hit.point + new Vector3(0,waypointHeight,0), 
                             Quaternion.Euler(waypointXRotation,0,0));
+                        myWaypoint = wp;
                         wp.destinationReached += OnDestinationReached;
                     }
                     agent.stoppingDistance = 0;
@@ -128,6 +131,7 @@ public class PlayerController : MonoBehaviour
                                 waypoint,
                                 destination + new Vector3(0, waypointHeight, 0),
                                 Quaternion.Euler(waypointXRotation, 0, 0));
+                            myWaypoint = wp;
                             wp.destinationReached += OnDestinationReached;
                         }
                         agent.stoppingDistance = 0;
@@ -237,6 +241,14 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             autoStopWalkTimer = 3;
+        }
+    }
+
+    private void OnPlayerDeath(object sender, EventArgs e)
+    {
+        if (myWaypoint != null)
+        {
+            Destroy(myWaypoint.gameObject);
         }
     }
 }

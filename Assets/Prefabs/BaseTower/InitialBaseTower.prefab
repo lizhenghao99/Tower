@@ -65,6 +65,7 @@ MonoBehaviour:
   isDead: 0
   isImmune: 0
   immuneStun: 0
+  deathVfx: {fileID: 1610154298218290, guid: d26f4e406550f6d4da899065c176a50f, type: 3}
 --- !u!114 &4087344055945438140
 MonoBehaviour:
   m_ObjectHideFlags: 0

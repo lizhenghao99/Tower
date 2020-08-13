@@ -93,7 +93,7 @@ public class CardUpgradeView : MonoBehaviour
             .upgradeInfo.Where(i => i.cardName == cardInfo.cardName)
             .FirstOrDefault();
         changeText.text = info.upgradeDescription;
-        costText.text = "消耗：" + info.upgradeCost + "金";
+        costText.text = info.upgradeCost.ToString();
 
         GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
     }

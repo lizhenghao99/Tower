@@ -90,7 +90,8 @@ public class CardClick : Selectable
             {
                 if (eventData.button == PointerEventData.InputButton.Left)
                 {
-                    GlobalAudioManager.Instance.Play("BlackSmith", Vector3.zero);
+                    GlobalAudioManager.Instance.Play(
+                        card.owner.ToString()+"Discard", Vector3.zero);
 
                     handManager.lastSelectedCard = this;
                     success = discardButton.Discard(card);

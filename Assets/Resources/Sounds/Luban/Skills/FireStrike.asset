@@ -16,6 +16,6 @@ MonoBehaviour:
   soundTag: "\u706B\u88AD"
   loop: 0
   priority: 128
-  volume: 0.3
+  volume: 1
   pitch: 1
   spatialBlend: 0.3

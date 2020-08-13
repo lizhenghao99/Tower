@@ -84,7 +84,7 @@ public class PlayerHealth : Health
         OnShieldChanged();
         OnHealthChanged();
 
-        if (currHealth <= 0)
+        if (currHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -99,6 +99,7 @@ public class PlayerHealth : Health
         if (audioManager != null)
         {
             audioManager.Play("Death");
+            audioManager.Play("Fall");
         }
         currHealth = 0;
         OnDeath();
