@@ -16,7 +16,7 @@ public abstract class PlayerResource : MonoBehaviour
     public EventHandler resourceChanged;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         primaryResource = startingPrimaryResource;
         secondaryResource = startingSecondaryResource;

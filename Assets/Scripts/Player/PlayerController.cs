@@ -246,6 +246,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnPlayerDeath(object sender, EventArgs e)
     {
+        isSelected = false;
         if (myWaypoint != null)
         {
             Destroy(myWaypoint.gameObject);

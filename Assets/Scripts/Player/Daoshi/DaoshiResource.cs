@@ -6,7 +6,22 @@ using UnityEngine;
 
 public class DaoshiResource : PlayerResource
 {
-    [SerializeField] int autoPrimaryRegen = 4;
+    [SerializeField] int autoPrimaryRegen = 2;
+
+    private LevelController levelController;
+    private PlayerHealth health;
+    private Coroutine autogen;
+
+    protected override void Start()
+    {
+        base.Start();
+        levelController = FindObjectOfType<LevelController>();
+        levelController.StartCombat += OnStartAutogen;
+        levelController.EndCombat += OnEndAutogen;
+        health = GetComponent<PlayerHealth>();
+        health.death += OnEndAutogen;
+        health.revive += OnStartAutogen;
+    }
 
     public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)
     {
@@ -53,5 +68,15 @@ public class DaoshiResource : PlayerResource
     private void OnResourceChanged()
     {
         resourceChanged?.Invoke(gameObject, EventArgs.Empty);
+    }
+
+    private void OnStartAutogen(object sender, EventArgs e)
+    {
+        autogen = StartCoroutine(ResourceAutoGen());
+    }
+
+    private void OnEndAutogen(object sender, EventArgs e)
+    {
+        StopCoroutine(autogen);
     }
 }

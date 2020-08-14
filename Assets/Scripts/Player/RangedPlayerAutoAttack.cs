@@ -64,6 +64,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                 if (attackTimer < 0)
                 {
                     agent.isStopped = true;
+                    animator.SetBool("Interrupt", false);
                     animator.SetTrigger("Attack");
                     audioManager.Play("Attack");
                     // missle
@@ -157,6 +158,8 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
             m.Cancel();
         }
         missiles.Clear();
+
+        animator.SetBool("Interrupt", true);
     }
 
     protected virtual void ToSummonMissiles(int count, Quaternion rotation)

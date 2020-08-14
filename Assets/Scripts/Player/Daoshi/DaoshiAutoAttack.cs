@@ -12,7 +12,6 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
         base.Start();
         effectManager = FindObjectOfType<EffectManager>();
         resource = GetComponent<DaoshiResource>();
-        StartCoroutine(resource.ResourceAutoGen());
     }
 
     protected override void ToSummonMissiles(int count, Quaternion rotation)
