@@ -22,6 +22,8 @@ public abstract class Card : ScriptableObject
     public GameObject vfx;
     public Vector3 vfxOffset;
     public float castTime;
+    [Header("Special")]
+    public CardSpecial specialPrefab;
 
 
     public abstract void Ready();

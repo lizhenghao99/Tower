@@ -5,11 +5,14 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using System.Linq;
+using TMPro;
 
 public class DaoshiResourceDisplay : ResourceDisplay
 {
     [SerializeField] float glowStart = -3.15f;
     [SerializeField] float glowEnd = 466.22f;
+    [Header("Primary")]
+    [SerializeField] TextMeshProUGUI primaryText;
     [Header("YinYang")]
     [SerializeField] Image yinyangGlow;
     [SerializeField] Image yinyangShadow;
@@ -48,6 +51,8 @@ public class DaoshiResourceDisplay : ResourceDisplay
                     (float)playerResource.maxPrimaryResource;
 
         primaryResource.DOFillAmount(percent, 0.3f).SetEase(Ease.OutQuint);
+
+        primaryText.text = (percent * 100).ToString();
 
         if (playerResource.primaryResource < playerResource.maxPrimaryResource)
         {

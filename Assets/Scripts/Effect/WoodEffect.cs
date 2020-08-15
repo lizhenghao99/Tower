@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WoodEffect : Effect
 {
+    public float healPlayerPercent;
+
     private float timer;
     private AttackBase attack;
     private int originalAttackDamage;
@@ -14,6 +16,7 @@ public class WoodEffect : Effect
         originalAttackDamage = attack.attackDamage;
         type = Type.Wood;
         timer = 0;
+        healPlayerPercent = 0.01f;
     }
 
     protected override void OnStart()
@@ -24,7 +27,7 @@ public class WoodEffect : Effect
             huo.Enhance();
         }
 
-        attack.attackDamage = (int) (attack.attackDamage * 0.8f);
+        attack.attackDamage = (int) (attack.attackDamage * 0.75f);
         base.OnStart();
     }
 
@@ -35,15 +38,16 @@ public class WoodEffect : Effect
         {
             timer = 1f;
             foreach (Collider c in 
-                Physics.OverlapSphere(gameObject.transform.position, 3f))
+                Physics.OverlapSphere(gameObject.transform.position, 
+                GetComponent<Collider>().bounds.extents.x + 3f))
             {
                 if (c.gameObject.CompareTag("Minion"))
                 {
-                    c.gameObject.GetComponent<Health>().HealPercent(0.03f);
+                    c.gameObject.GetComponent<Health>().HealAmount((int)amount);
                 }
                 else if (c.gameObject.CompareTag("Player"))
                 {
-                    c.gameObject.GetComponent<Health>().HealPercent(0.01f);
+                    c.gameObject.GetComponent<Health>().HealPercent(healPlayerPercent);
                 }
             }
         }

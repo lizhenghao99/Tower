@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Minion
   - Base
+  - Prop
   layers:
   - Default
   - TransparentFX

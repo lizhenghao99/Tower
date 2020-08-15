@@ -28,7 +28,7 @@ public class CardPlayer : Singleton<CardPlayer>
         RaycastHit hit;
 
         if (isPlayingCard && Physics.Raycast(ray, out hit, 1000, layerMask) 
-            && hit.transform.tag == "Floor")
+            && (hit.transform.tag == "Floor" || cardPlaying is Buff))
         {
 
             if (Input.GetMouseButtonDown(0) 
@@ -105,6 +105,12 @@ public class CardPlayer : Singleton<CardPlayer>
 
         Resume(player, cardPlaying.castTime);
 
+        if (cardPlaying.specialPrefab != null)
+        {
+            var special = Instantiate(cardPlaying.specialPrefab);
+            special.SetCard(cardPlaying);
+            special.transform.position = splat.GetSpellCursorPosition();
+        }
         cardPlaying.Play();
         GlobalAudioManager.Instance.Play("Place", Vector3.zero);
         GlobalAudioManager.Instance.Play(

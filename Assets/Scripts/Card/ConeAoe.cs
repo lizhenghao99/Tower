@@ -7,9 +7,9 @@ public class ConeAoe : Card
 {
     [Header("Cone AOE")]
     public int damage;
-    public int force;
-    public int range;
-    public int angle;
+    public float force;
+    public float range;
+    public float angle;
     public float delay;
     public float fxDelay;
 

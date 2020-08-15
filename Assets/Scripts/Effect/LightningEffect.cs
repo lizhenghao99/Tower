@@ -45,7 +45,8 @@ public class LightningEffect : Effect
     private void Spread()
     {
         var count = 0;
-        foreach (Collider c in Physics.OverlapSphere(transform.position, 5f))
+        foreach (Collider c in Physics.OverlapSphere(transform.position,
+            GetComponent<Collider>().bounds.extents.x + 5f))
         {
             if (c.CompareTag("Enemy"))
             {

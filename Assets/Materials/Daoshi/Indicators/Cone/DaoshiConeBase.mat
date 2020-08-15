@@ -42,7 +42,7 @@ Material:
     m_Floats:
     - _DistortX: 0.005
     - _DistortY: 0.01
-    - _Expand: 0.26666668
+    - _Expand: 0.24166666
     - _ExpandAmount: 0.23333333
     - _Fill: 0.727
     - _FillAmount: 0

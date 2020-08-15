@@ -7,9 +7,9 @@ public class PointAoe : Card
 {
     [Header("Point AOE")]
     public int damage;
-    public int force;
-    public int range;
-    public int radius;
+    public float force;
+    public float range;
+    public float radius;
     public float delay;
     public float fxDelay;
     [Header("Projectile")]

@@ -6,6 +6,8 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
 {
     private EffectManager effectManager;
     private DaoshiResource resource;
+    [Header("Healing")]
+    [SerializeField] float healPower;
 
     protected override void Start()
     {
@@ -35,7 +37,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                 foreach (Collider c in hits)
                 {
                     effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Wood, 1f, attackDamage / 3f);
+                        Effect.Type.Wood, 1f, healPower);
                 }
                 break;
             case 3:
@@ -54,7 +56,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                 break;
             case 5:
                 var chance = UnityEngine.Random.Range(0f, 1f);
-                if (chance < 0.3f)
+                if (chance < 0.4f)
                 {
                     foreach (Collider c in hits)
                     {

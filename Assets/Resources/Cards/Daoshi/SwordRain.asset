@@ -10,24 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
-  m_Name: Wu
+  m_Name: SwordRain
   m_EditorClassIdentifier: 
-  cardName: "\u65E0"
+  cardName: "\u7476\u5149\u5251\u5F0F"
   upgraded: 0
   description: 
-  primaryChange: -15
+  primaryChange: -20
   secondaryChange: 0
   owner: 1
   art: {fileID: 0}
-  sfx: {fileID: 0}
+  sfx: {fileID: 11400000, guid: ab323956e04594e459eb88b9e0268e1d, type: 2}
   vfx: {fileID: 1529907042512856, guid: d77d260784e81094c8b0becadb75fb73, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
-  damage: 0
+  specialPrefab: {fileID: 6552344617987050109, guid: c3d773a15d8d98846861c8b8d2176ab3,
+    type: 3}
+  damage: 1000
   force: 0
-  range: 20
-  radius: 5
-  delay: 0
+  range: 30
+  radius: 15
+  delay: 0.5
   fxDelay: 0
   hasProjectile: 0
   projectilePrefab: {fileID: 0}

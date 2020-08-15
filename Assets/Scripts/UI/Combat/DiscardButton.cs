@@ -75,9 +75,15 @@ public abstract class DiscardButton : Selectable
     public bool Discard(Card card)
     {
         isDiscarding = false;
-        FindObjectOfType<DeckManager>().DiscardCard(card);
-        
-        return DiscardBehavior(card);
+        if (DiscardBehavior(card))
+        {
+            FindObjectOfType<DeckManager>().DiscardCard(card);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     protected abstract void PointerDownBehavior();

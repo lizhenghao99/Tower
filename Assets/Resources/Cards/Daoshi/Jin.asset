@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: "\u91D1"
   upgraded: 0
   description: 
-  primaryChange: -20
+  primaryChange: -90
   secondaryChange: 1
   owner: 1
   art: {fileID: 0}

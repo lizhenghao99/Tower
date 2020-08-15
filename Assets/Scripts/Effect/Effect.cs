@@ -5,18 +5,19 @@ using UnityEngine;
 
 public abstract class Effect : MonoBehaviour
 {
-    public enum Type { None, Burn, Freeze, Stun, Rage, Wood, Lightning };
+    public enum Type { None, Burn, Freeze, Stun, Rage, Wood, Lightning, 
+        FiveSwords, SevenSwords };
 
     public EventHandler start;
     public EventHandler finish;
 
     public Type type { get; protected set; }
     public GameObject caster;
-    protected float duration;
-    protected float amount;
+    public float duration;
+    public float amount;
     protected GameObject effectVfx;
 
-    private GameObject currentVfx;
+    protected GameObject currentVfx;
 
     public void Init(GameObject c, float d, float a, GameObject vfx)
     {

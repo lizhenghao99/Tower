@@ -11,6 +11,11 @@ public class EffectManager : MonoBehaviour
     [SerializeField] GameObject rageVfx;
     [SerializeField] GameObject woodVfx;
     [SerializeField] GameObject lightningVfx;
+    [SerializeField] GameObject fiveSwordsVfx;
+    [SerializeField] GameObject sevenSwordsVfx;
+
+    public EventHandler<Effect> registerEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +49,12 @@ public class EffectManager : MonoBehaviour
             case Effect.Type.Lightning:
                 vfx = lightningVfx;
                 break;
+            case Effect.Type.FiveSwords:
+                vfx = fiveSwordsVfx;
+                break;
+            case Effect.Type.SevenSwords:
+                vfx = sevenSwordsVfx;
+                break;
             default:
                 break;
         }
@@ -58,6 +69,7 @@ public class EffectManager : MonoBehaviour
         else
         {
             Effect newEffect = (Effect) target.AddComponent(T);
+            OnRegister(caster, newEffect);
             newEffect.Init(caster, duration, amount, vfx);
         }
     }
@@ -76,5 +88,10 @@ public class EffectManager : MonoBehaviour
             TauntEffect newEffect = target.AddComponent<TauntEffect>();
             newEffect.Init(caster, tauntDuration, level, null);
         }
+    }
+
+    private void OnRegister(GameObject c, Effect e)
+    {
+        registerEvent?.Invoke(c, e);
     }
 }

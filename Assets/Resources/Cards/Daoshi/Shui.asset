@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: "\u6C34"
   upgraded: 0
   description: 
-  primaryChange: -10
+  primaryChange: -25
   secondaryChange: 3
   owner: 1
   art: {fileID: 0}

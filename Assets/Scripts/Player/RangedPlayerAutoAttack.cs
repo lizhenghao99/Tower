@@ -22,6 +22,11 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
     protected Coroutine summonMissiles;
     protected Coroutine launchMissiles;
 
+    private bool isCharging = false;
+
+    protected Vector3 aimedPos;
+    protected Vector3 lastTargetPos;
+
     protected override void Start()
     {
         base.Start();
@@ -42,12 +47,13 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
         RaycastHit[] hitInfoArray;
 
         hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
-            target.transform.position - gameObject.transform.position);
+            target.transform.position - gameObject.transform.position, layerMask);
 
         if (hitInfoArray.Length == 0) return;
 
         targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
             .FirstOrDefault();
+
         agent.stoppingDistance = stopRange;
         agent.SetDestination(targetHitInfo.point);
 
@@ -59,7 +65,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
         {
             attackTimer -= Time.deltaTime;
             FlipX(targetHitInfo);
-            if (!isSpecialing)
+            if (!isSpecialing && !isCharging)
             {
                 if (attackTimer < 0)
                 {
@@ -67,6 +73,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                     animator.SetBool("Interrupt", false);
                     animator.SetTrigger("Attack");
                     audioManager.Play("Attack");
+                    isCharging = true;
                     // missle
                     Quaternion rotation;
                     if (targetHitInfo.point.x > transform.position.x)
@@ -77,7 +84,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                     {
                         rotation = Quaternion.LookRotation(Vector3.left);
                     }
-
+                    lastTargetPos = target.transform.position;
                     ToSummonMissiles(missileCount, rotation);
                 }
             }
@@ -92,13 +99,25 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
     protected override void OnAttack(object sender, EventArgs e)
     {
         ResumeFromAttack();
+        isCharging = false;
+        attackTimer = attackRate;
 
-        if (target == null) return;
+        if (target == null)
+        {
+            SpecialAutoAttack();
+            aimedPos = lastTargetPos;
+            launchMissiles = StartCoroutine(LaunchMissiles());
+            return;
+        }
 
         var hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
-            target.transform.position - gameObject.transform.position);
+            target.transform.position - gameObject.transform.position, layerMask);
 
-        if (hitInfoArray.Length == 0) return;
+        if (hitInfoArray.Length == 0)
+        {
+            OnInterrupt(gameObject, EventArgs.Empty);
+            return;
+        }
 
         targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
             .FirstOrDefault();
@@ -109,8 +128,12 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
                 < stopRange + 2)
         {
             SpecialAutoAttack();
-
+            aimedPos = targetHitInfo.point;
             launchMissiles = StartCoroutine(LaunchMissiles());
+        }
+        else
+        {
+            OnInterrupt(gameObject, EventArgs.Empty);
         }
     }
 
@@ -144,6 +167,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
 
     private void OnInterrupt(object sender, EventArgs e)
     {
+        isCharging = false;
         if (summonMissiles != null)
         {
             StopCoroutine(summonMissiles);
@@ -191,22 +215,23 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
             m.outOfRange += OnOutOfRange;
             m.enabled = false;
             missiles.Add(m);
-            attackTimer = attackRate;
-            yield return new WaitForSeconds(readyTime/missileCount);
+            
+            yield return new WaitForSeconds(readyTime/count);
         }
     }
 
     private IEnumerator LaunchMissiles()
     {
         var myMissiles = new List<Missile>(missiles);
+        var count = myMissiles.Count;
         foreach (Missile m in myMissiles)
         {
-            var direction = targetHitInfo.point - m.transform.position
+            var direction = aimedPos - m.transform.position
                 + new Vector3(0, 2, 0);
             m.enabled = true;
             m.Launch(direction, missileSpeed);
             missiles.Remove(m);
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(1f / count);
         }
     }
 }

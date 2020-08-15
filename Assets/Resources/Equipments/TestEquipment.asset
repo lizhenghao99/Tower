@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33613eba3d91a9a44b1e082dd934d5ca, type: 3}
+  m_Name: TestEquipment
+  m_EditorClassIdentifier: 
+  equipmentName: "\u6D4B\u8BD5\u88C5\u5907"
+  cost: 0
+  equipmentPrefab: {fileID: 404187421759377276, guid: f5796fbd6d49026438b290f7d6fd0909,
+    type: 3}
+  usability: 0

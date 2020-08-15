@@ -45,12 +45,20 @@ public class DaoshiDiscardButton : DiscardButton
 
     protected override bool DiscardBehavior(Card card)
     {
-        player.setIsCasting(true);
-        player.GetComponent<DaoshiResource>()
-                    .ChangeResource(card.primaryChange / 2, -1);
-        StartCoroutine(Utils.Timeout(() =>
-            player.setIsCasting(false), 1.5f));
+        if (player.GetComponent<DaoshiResource>()
+            .IsResourceEnough(card.primaryChange / 2, -1))
+        {
+            player.setIsCasting(true);
+            player.GetComponent<DaoshiResource>()
+                        .ChangeResource(card.primaryChange / 2, -1);
+            StartCoroutine(Utils.Timeout(() =>
+                player.setIsCasting(false), 3f));
 
-        return true;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

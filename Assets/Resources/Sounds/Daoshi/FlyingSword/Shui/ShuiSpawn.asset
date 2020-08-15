@@ -18,6 +18,6 @@ MonoBehaviour:
   soundTag: SpecialSpawn
   loop: 0
   priority: 128
-  volume: 0.5
+  volume: 0.45
   pitch: 1
   spatialBlend: 0.3

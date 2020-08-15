@@ -36,7 +36,8 @@ public class Missile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.CompareTag("Enemy") || 
+            other.gameObject.CompareTag("Prop"))
         {
             var fx = Instantiate(hitVfx);
             fx.transform.position = other.ClosestPointOnBounds(transform.position);
