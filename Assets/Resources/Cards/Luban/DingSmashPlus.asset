@@ -23,6 +23,7 @@ MonoBehaviour:
   vfx: {fileID: 1716312745680982, guid: dd5339601d2c590459922e792c609de0, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
+  specialPrefab: {fileID: 0}
   damage: 720
   force: 0
   range: 20
@@ -30,7 +31,7 @@ MonoBehaviour:
   delay: 0
   fxDelay: 0
   hasProjectile: 1
-  projectilePrefab: {fileID: 4530675629762051837, guid: d0ab93e910ef1194ba26c0ae443c7cd7,
+  projectilePrefab: {fileID: 6950388241442876125, guid: d0ab93e910ef1194ba26c0ae443c7cd7,
     type: 3}
   impactSfx: {fileID: 11400000, guid: 03c8d70d26ef84f4fa7dc4078a7fc624, type: 2}
   projectileHeight: 5

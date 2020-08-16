@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d870edd7bbac0534481165df6695642a, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  cardName: "\u706B\u7403\u672F"
+  upgraded: 0
+  description: 
+  primaryChange: -30
+  secondaryChange: 4
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 0}
+  vfx: {fileID: 1754530298286186280, guid: 2f1c99c99f3ef9647bdfea00460f5be1, type: 3}
+  vfxOffset: {x: 0, y: 3, z: 0}
+  castTime: 4
+  specialPrefab: {fileID: 0}
+  damage: 500
+  force: 50
+  range: 25
+  radius: 5
+  delay: 0.5
+  fxDelay: 0
+  angleProjectile: {fileID: 1759750558858637066, guid: 8c9400a8003e47345b4c304a4703aa2e,
+    type: 3}
+  projectileSpeed: 20
+  projectileHeight: 2
+  projectileCount: 5
+  projectileInterval: 0.6
+  effect: 1
+  effectDuration: 5
+  effectAmount: 100

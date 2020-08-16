@@ -46,11 +46,11 @@ Projector:
   m_FieldOfView: 30
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 2.5
-  m_Material: {fileID: 2100000, guid: 6d5aad33ada686340be325d9bf32e08b, type: 2}
+  m_OrthographicSize: 0.5
+  m_Material: {fileID: 2100000, guid: 7cebd20f32b299640b4258913f3bf973, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 3639
 --- !u!114 &11428968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,11 +109,11 @@ Projector:
   m_FieldOfView: 30
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 2.5
-  m_Material: {fileID: 2100000, guid: b95da3772a0fee34b8f6ec67a6cb3fa4, type: 2}
+  m_OrthographicSize: 0.5
+  m_Material: {fileID: 2100000, guid: f6cb8bd6840a4a44fa781d5fcf6a4728, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 3639
 --- !u!1 &165604
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,11 +159,11 @@ Projector:
   m_FieldOfView: 30
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 2.5
-  m_Material: {fileID: 2100000, guid: fcfaa285bc446514fa5db3da6b325389, type: 2}
+  m_OrthographicSize: 0.5
+  m_Material: {fileID: 2100000, guid: b868bb52a7d472f4493ceb0d04888eb0, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 3639
 --- !u!1 &167794
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167794}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 9.43, y: 0, z: 18.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  scale: 5
+  scale: 1
   width: 0
-  RangeIndicator: {fileID: 11404020, guid: 951756961d7062c40bef1a292f08dee0, type: 3}
+  RangeIndicator: {fileID: 0}
   range: 10
   restrictCursorToRange: 1
 --- !u!1 &167826
@@ -262,8 +262,8 @@ Projector:
   m_FieldOfView: 30
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 2.5
-  m_Material: {fileID: 2100000, guid: 13f014d34a8cee24596d006d90fbfba8, type: 2}
+  m_OrthographicSize: 0.5
+  m_Material: {fileID: 2100000, guid: abfff4e88daca6d4eb9138429a0532ed, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 3639

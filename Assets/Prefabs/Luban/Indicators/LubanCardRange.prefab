@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &491318
 Transform:
   m_ObjectHideFlags: 0
@@ -48,11 +48,11 @@ Projector:
   m_FieldOfView: 30
   m_AspectRatio: 1
   m_Orthographic: 1
-  m_OrthographicSize: 21
+  m_OrthographicSize: 10
   m_Material: {fileID: 2100000, guid: 5f1262d0ce03bf548850d35be0ab854b, type: 2}
   m_IgnoreLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 3639
 --- !u!114 &11433916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +92,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  scale: 42
+  scale: 1
   width: 0
   DefaultScale: 1

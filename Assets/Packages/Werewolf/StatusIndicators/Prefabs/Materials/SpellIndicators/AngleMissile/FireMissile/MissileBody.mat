@@ -56,7 +56,7 @@ Material:
     - _FillAmount: -0.0016666667
     - _Offset: 0.24422462
     - _OffsetX: 0
-    - _OffsetY: 0.73731446
+    - _OffsetY: 0.13773286
     - _Proportion: 0.448
     m_Colors:
     - _ChargeColor: {r: 0.11724138, g: 1, b: 0, a: 1}

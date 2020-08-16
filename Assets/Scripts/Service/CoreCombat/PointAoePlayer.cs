@@ -129,16 +129,16 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
         projectile.GetComponent<Rigidbody>().angularVelocity =
             axis * angularVelocity;
 
-        projectile.GetComponent<Projectile>().hitFloor 
+        projectile.GetComponent<PointProjectile>().hitFloor 
             += OnHitFloor;
 
-        projectile.GetComponent<Projectile>().card = cardPlaying;
+        projectile.GetComponent<PointProjectile>().card = cardPlaying;
     }
 
     public void OnHitFloor(object sender, Vector3 point)
     {
         GameObject projectile = (GameObject)sender;
         
-        Impact((PointAoe)projectile.GetComponent<Projectile>().card, point);
+        Impact((PointAoe)projectile.GetComponent<PointProjectile>().card, point);
     }
 }

@@ -92,8 +92,8 @@ GameObject:
   - component: {fileID: 8995046673696861168}
   - component: {fileID: 2158717143322604943}
   - component: {fileID: 7009936111256304053}
-  - component: {fileID: 4530675629762051837}
   - component: {fileID: 4146681845352269656}
+  - component: {fileID: 6950388241442876125}
   m_Layer: 0
   m_Name: DingSmashProjectile
   m_TagString: Untagged
@@ -146,19 +146,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4530675629762051837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7184899373735692907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec5c18d9c68f19489cc1fb14eee4a92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  card: {fileID: 0}
 --- !u!82 &4146681845352269656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -255,6 +242,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6950388241442876125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7184899373735692907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3fcd1cb1c2cc9947a073a02838c2838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &8828865909135070564
 GameObject:
   m_ObjectHideFlags: 0
