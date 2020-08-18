@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: "\u706B\u7403\u672F"
   upgraded: 0
   description: 
-  primaryChange: -30
+  primaryChange: -80
   secondaryChange: 4
   owner: 1
   art: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
   damage: 500
   force: 50
   range: 25
-  radius: 5
+  radius: 3
   delay: 0.5
   fxDelay: 0
   angleProjectile: {fileID: 1759750558858637066, guid: 8c9400a8003e47345b4c304a4703aa2e,

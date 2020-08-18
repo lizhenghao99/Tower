@@ -20,12 +20,14 @@ MonoBehaviour:
   owner: 0
   art: {fileID: 3057076759932505478, guid: 503bc41783c993a42ac4bf0dce709129, type: 3}
   sfx: {fileID: 11400000, guid: 9425f1f2bef43c941bfc00381758ab68, type: 2}
-  vfx: {fileID: 1447435588197194, guid: 47c52812ffacd164e839d6cc78ad41bb, type: 3}
+  vfx: {fileID: 1447435588197194, guid: ec5d9ef8a1ef01f4baeb44be428f872c, type: 3}
   vfxOffset: {x: 0, y: 2, z: 2}
   castTime: 2
+  animationTrigger: Cast
+  specialPrefab: {fileID: 0}
   damage: 150
   force: 300
-  range: 10
+  range: 15
   angle: 90
   delay: 0.4
   fxDelay: 0.2

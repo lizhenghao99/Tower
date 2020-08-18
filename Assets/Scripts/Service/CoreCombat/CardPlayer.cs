@@ -112,6 +112,7 @@ public class CardPlayer : Singleton<CardPlayer>
             special.transform.position = splat.GetSpellCursorPosition();
         }
         cardPlaying.Play();
+        player.animator.SetTrigger(cardPlaying.animationTrigger);
         GlobalAudioManager.Instance.Play("Place", Vector3.zero);
         GlobalAudioManager.Instance.Play(
             cardPlaying.sfx, player.transform.position);

@@ -405,6 +405,7 @@ MonoBehaviour:
   animator: {fileID: 8729792688550215930}
   highlight: {fileID: 8829092949100398208}
   isSelected: 0
+  myWaypoint: {fileID: 0}
 --- !u!114 &5474041434531830812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff0f7ccc859e824884a026a018d560b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 50
+  attackDamage: 150
   attackRange: 4.5
   attackRate: 2.7
   stopRange: 2.5

@@ -195,10 +195,19 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
     protected IEnumerator SummonMissiles(int count, Quaternion rotation, int type)
     {
         int sign = 1;
+        Quaternion massRotate;
+        if (rotation == Quaternion.LookRotation(Vector3.right))
+        {
+            massRotate = Quaternion.Euler(20f, 35f, 0);
+        }
+        else
+        {
+            massRotate = Quaternion.Euler(20f, -35f, 0);
+        }
         for (int i = 0; i < count; i++)
         {
             var angle = 50f / (count / 2) * (int)((i+1)/2);
-            var position = Quaternion.Euler(20f, 35f, 0)
+            var position = massRotate
                 * Quaternion.Euler(angle * sign, 0, 0)
                 * new Vector3(0,
                     missileHeight * Mathf.Pow(0.75f, (int)((i + 1) / 2)),

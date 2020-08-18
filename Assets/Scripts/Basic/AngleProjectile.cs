@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class AngleProjectile : MonoBehaviour
 {
-    [SerializeField] GameObject impactEffect;
+    [SerializeField] protected GameObject impactEffect;
     protected Angle card;
     protected Vector3 startingPosition;
     protected EffectManager effectManager;
@@ -33,13 +33,11 @@ public abstract class AngleProjectile : MonoBehaviour
         if (other.CompareTag("Enemy") ||
             other.CompareTag("Prop"))
         {
-            effectManager.Register(player.gameObject, other.gameObject,
-                card.effect, card.effectDuration, card.effectAmount);
-            HitBehavior();
+            HitBehavior(other);
         }
     }
 
-    protected virtual void HitBehavior()
+    protected virtual void HitBehavior(Collider other)
     {
         Impact();
         SelfDestroy();

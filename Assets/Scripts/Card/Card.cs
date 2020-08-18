@@ -22,6 +22,7 @@ public abstract class Card : ScriptableObject
     public GameObject vfx;
     public Vector3 vfxOffset;
     public float castTime;
+    public string animationTrigger = "Cast";
     [Header("Special")]
     public CardSpecial specialPrefab;
 

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d870edd7bbac0534481165df6695642a, type: 3}
+  m_Name: LightningBall
+  m_EditorClassIdentifier: 
+  cardName: "\u96F7\u5149\u5492"
+  upgraded: 0
+  description: 
+  primaryChange: -30
+  secondaryChange: 1
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: f6276d2f751dd0843bdc4a95c16d397a, type: 2}
+  vfx: {fileID: 0}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 1
+  animationTrigger: Cast
+  specialPrefab: {fileID: 0}
+  damage: 200
+  force: 50
+  range: 40
+  radius: 3
+  delay: 0
+  fxDelay: 0
+  angleProjectile: {fileID: 7727817907473487639, guid: 9b7539c53a00f304c908f4c804fc1328,
+    type: 3}
+  projectileSpeed: 2
+  projectileHeight: 2
+  projectileCount: 1
+  projectileInterval: 1
+  effect: 6
+  effectDuration: 3
+  effectAmount: 1

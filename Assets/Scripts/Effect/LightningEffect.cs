@@ -5,7 +5,6 @@ using UnityEngine;
 public class LightningEffect : Effect
 {
     private float timer;
-    private float originalDuration;
     private EffectManager effectManager;
 
     private void Awake()
@@ -23,7 +22,6 @@ public class LightningEffect : Effect
             shui.Enhance();
         }
 
-        originalDuration = duration;
         base.OnStart();
     }
 
@@ -54,7 +52,7 @@ public class LightningEffect : Effect
                 if (prevLightning == null)
                 {
                     effectManager.Register(gameObject, c.gameObject,
-                        Type.Lightning, originalDuration, amount - 1);
+                        Type.Lightning, duration, amount - 1);
                     count++;
                 }
             }

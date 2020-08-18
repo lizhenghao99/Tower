@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: 0db2061a0189d7f4e8be121a60cb38f2, type: 3}
-  - {fileID: 8300000, guid: f27c1dc79aad5034b80e421b57003841, type: 3}
   - {fileID: 8300000, guid: 390b3359cfa9fc84ea7001c90248e680, type: 3}
   - {fileID: 8300000, guid: 4269b342933040c4da67cd6a5d6bc876, type: 3}
   soundTag: SpecialSpawn

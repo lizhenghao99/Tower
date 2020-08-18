@@ -29,7 +29,7 @@ public class SwordRain : CardSpecial
             {
                 c.GetComponent<Health>().TakeDamage(damage);
             }
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.25f);
         }
     }
 

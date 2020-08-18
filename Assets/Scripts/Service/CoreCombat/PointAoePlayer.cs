@@ -56,10 +56,12 @@ public class PointAoePlayer : Singleton<PointAoePlayer>
             c.radius);
 
         StartCoroutine(Utils.Timeout(() => {
-            var fx = Instantiate(c.vfx);
-            fx.transform.position = p + c.vfxOffset;
-            }, c.fxDelay
-        ));
+            if (c.vfx != null)
+            {
+                var fx = Instantiate(c.vfx);
+                fx.transform.position = p + c.vfxOffset;
+            }
+        }, c.fxDelay));
 
         foreach (Collider e in enemies)
         {

@@ -19,10 +19,12 @@ MonoBehaviour:
   secondaryChange: 0
   owner: 1
   art: {fileID: 0}
-  sfx: {fileID: 0}
+  sfx: {fileID: 11400000, guid: 45263624637c9484b919b345e817b858, type: 2}
   vfx: {fileID: 145256, guid: 2a1c4a4a63d204849a8190e9dc483cd2, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
-  castTime: 1.5
+  castTime: 1
+  animationTrigger: 
+  specialPrefab: {fileID: 0}
   shieldPercent: 0
   buffTarget: 0
   effect: 7

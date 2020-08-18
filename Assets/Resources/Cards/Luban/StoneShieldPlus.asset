@@ -23,6 +23,8 @@ MonoBehaviour:
   vfx: {fileID: 147642, guid: 0a7ced3f8eb7d4c48952023e4cc85a67, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 1
+  animationTrigger: 
+  specialPrefab: {fileID: 0}
   shieldPercent: 0.3
   buffTarget: 0
   effect: 0

@@ -56,6 +56,7 @@ public class AnglePlayer : Singleton<AnglePlayer>
             var p = Instantiate(c.angleProjectile);
             p.transform.position = 
                 start + new Vector3(0, cardPlaying.projectileHeight, 0);
+            p.transform.rotation = Quaternion.LookRotation(direction);
             p.GetComponent<Rigidbody>()
                 .AddForce(direction * cardPlaying.projectileSpeed,
                     ForceMode.VelocityChange);

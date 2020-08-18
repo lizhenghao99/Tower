@@ -225,7 +225,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.8
-  m_Speed: 1.2
+  m_Speed: 0.7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -258,6 +258,7 @@ MonoBehaviour:
   animator: {fileID: 773315911237860370}
   highlight: {fileID: 8140269811882637932}
   isSelected: 0
+  myWaypoint: {fileID: 0}
 --- !u!114 &4154371453602832016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eff10b0a15eca974091666358ff24f21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 10
+  attackDamage: 100
   attackRange: 20
   attackRate: 3
   stopRange: 18

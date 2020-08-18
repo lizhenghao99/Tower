@@ -14430,16 +14430,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58a6e7ffa1ac07d4b8dd729c4aab0dbe, type: 2}
   - {fileID: 11400000, guid: 12213a38f5d98b74cad7889e03c1da5b, type: 2}
   deck2:
+  - {fileID: 11400000, guid: 58f010d1c81717548a84a24318338bf9, type: 2}
+  - {fileID: 11400000, guid: 58f010d1c81717548a84a24318338bf9, type: 2}
+  - {fileID: 11400000, guid: fe41809837227fa4b98d24061fd11add, type: 2}
+  - {fileID: 11400000, guid: 2951ec50b5db2d5439afc1f69540ac6f, type: 2}
+  - {fileID: 11400000, guid: 386d27c5acfafaa4aac9dddfff82a260, type: 2}
+  - {fileID: 11400000, guid: c9c8d1d171b86054ebb51d917632725f, type: 2}
+  - {fileID: 11400000, guid: 4b3fb6568e10518499d76e405f25ad62, type: 2}
+  - {fileID: 11400000, guid: 93d166a733e3e6c47af9b1748553ef9e, type: 2}
   - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
-  - {fileID: 11400000, guid: ea85f70ca250fe64aa9d06b2395e0a1a, type: 2}
+  - {fileID: 11400000, guid: 2951ec50b5db2d5439afc1f69540ac6f, type: 2}
   deck3: []
 --- !u!4 &806827230
 Transform:
@@ -26690,7 +26690,7 @@ PrefabInstance:
     - target: {fileID: -8540037159236758093, guid: e3d2d40f27058434780865b36c5d2fa3,
         type: 3}
       propertyPath: maxHealth
-      value: 20000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 6647725742678617352, guid: e3d2d40f27058434780865b36c5d2fa3,
         type: 3}
@@ -26840,6 +26840,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minMoneyDrop: 2
   maxMoneyDrop: 6
+--- !u!114 &1421645458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421645456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59474dee63e92eb479be3ea676d4d4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1422486745
 PrefabInstance:
   m_ObjectHideFlags: 0

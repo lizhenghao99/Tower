@@ -15,7 +15,7 @@ MonoBehaviour:
   cardName: "\u7476\u5149\u5251\u5F0F"
   upgraded: 0
   description: 
-  primaryChange: -20
+  primaryChange: -60
   secondaryChange: 0
   owner: 1
   art: {fileID: 0}
@@ -23,9 +23,10 @@ MonoBehaviour:
   vfx: {fileID: 1529907042512856, guid: d77d260784e81094c8b0becadb75fb73, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
+  animationTrigger: Cast
   specialPrefab: {fileID: 6552344617987050109, guid: c3d773a15d8d98846861c8b8d2176ab3,
     type: 3}
-  damage: 1000
+  damage: 400
   force: 0
   range: 30
   radius: 15

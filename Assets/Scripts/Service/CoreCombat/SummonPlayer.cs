@@ -35,9 +35,6 @@ public class SummonPlayer : Singleton<SummonPlayer>
         fx.transform.position =
             splat.GetSpellCursorPosition() + cardPlaying.vfxOffset;
 
-        CardPlayer.Instance.player.GetComponentInChildren<Animator>()
-            .SetTrigger("Summon");
-
         MinionCenter center = null;
 
         if (cardPlaying.centerPrefab)

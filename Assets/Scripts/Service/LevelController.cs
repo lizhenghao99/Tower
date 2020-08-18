@@ -180,7 +180,7 @@ public class LevelController : MonoBehaviour
             for (int i = 0; i < players.Length; i++)
             {
                 players[i].transform.position =
-                    currStage.charPostions[i] - new Vector3(5f, 0, 0);
+                    currStage.charPostions[i] - new Vector3(3f, 0, 0);
                 players[i].GetComponent<NavMeshAgent>()
                     .SetDestination(currStage.charPostions[i]);
                 players[i].OnDestinationReached(gameObject, EventArgs.Empty);

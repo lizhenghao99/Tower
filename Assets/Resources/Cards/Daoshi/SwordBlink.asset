@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
+  m_Name: SwordBlink
+  m_EditorClassIdentifier: 
+  cardName: "\u5FA1\u5251\u884C"
+  upgraded: 0
+  description: 
+  primaryChange: -40
+  secondaryChange: 0
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: ab323956e04594e459eb88b9e0268e1d, type: 2}
+  vfx: {fileID: 0}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 3
+  specialPrefab: {fileID: 5874931132334720623, guid: b41559de449ff7a4ebf9b0b05c178533,
+    type: 3}
+  damage: 0
+  force: 0
+  range: 25
+  radius: 3
+  delay: 0
+  fxDelay: 0
+  hasProjectile: 0
+  projectilePrefab: {fileID: 0}
+  impactSfx: {fileID: 0}
+  projectileHeight: 0
+  projectileAngle: 0
+  effect: 0
+  effectDuration: 0
+  effectAmount: 0

@@ -10,16 +10,13 @@ public class Projectile : MonoBehaviour {
 
     Rigidbody rb;
     void Start () {
-        //rb = gameObject.GetComponent<Rigidbody>();
-        //rb.velocity = Velocity;
+        rb = gameObject.GetComponent<Rigidbody>();
+        rb.velocity = Velocity;
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") ||
-            other.CompareTag("Prop"))
-        {
             var exp = Instantiate(ExplosionPrefab, transform.position, ExplosionPrefab.transform.rotation);
             Destroy(exp, DestroyExplosion);
             Transform child;
@@ -27,6 +24,5 @@ public class Projectile : MonoBehaviour {
             transform.DetachChildren();
             Destroy(child.gameObject, DestroyChildren);
             Destroy(gameObject);
-        }
     }
 }

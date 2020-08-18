@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     private int layerMask;
 
     private PlayerHealth health;
-    private Waypoint myWaypoint;
+    public Waypoint myWaypoint;
 
     private float autoStopWalkTimer = 3;
 
