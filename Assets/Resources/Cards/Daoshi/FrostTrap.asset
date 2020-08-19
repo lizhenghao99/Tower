@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
+  m_Name: FrostTrap
+  m_EditorClassIdentifier: 
+  cardName: "\u843D\u971C\u9635"
+  upgraded: 0
+  description: 
+  primaryChange: -20
+  secondaryChange: 3
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: a7bfa3aebf041e845b37928d1463f99f, type: 2}
+  vfx: {fileID: 0}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 2
+  animationTrigger: Cast
+  specialPrefab: {fileID: 8623449043065717268, guid: 684d7e21b4ec536409337dc7b44d46a5,
+    type: 3}
+  damage: 50
+  force: 0
+  range: 22
+  radius: 7
+  delay: 0
+  fxDelay: 0
+  hasProjectile: 0
+  projectilePrefab: {fileID: 0}
+  impactSfx: {fileID: 0}
+  projectileHeight: 0
+  projectileAngle: 0
+  effect: 2
+  effectDuration: 1
+  effectAmount: 0.5

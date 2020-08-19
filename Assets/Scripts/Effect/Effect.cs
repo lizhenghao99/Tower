@@ -19,6 +19,9 @@ public abstract class Effect : MonoBehaviour
 
     protected GameObject currentVfx;
 
+    protected Vector3 originalPos;
+    protected Vector3 originalScale;
+
     public void Init(GameObject c, float d, float a, GameObject vfx)
     {
         caster = c;
@@ -58,6 +61,8 @@ public abstract class Effect : MonoBehaviour
     protected virtual void OnStart()
     {
         currentVfx = Instantiate(effectVfx, gameObject.transform);
+        originalPos = currentVfx.transform.localPosition;
+        originalScale = currentVfx.transform.localScale;
         var scale = GetComponentInChildren<SpriteRenderer>().bounds.size;
         currentVfx.transform.localScale = 
             Vector3.one * (scale.magnitude * 0.3f);

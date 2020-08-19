@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
+  m_Name: LeafWind
+  m_EditorClassIdentifier: 
+  cardName: "\u6728\u53F6\u6E05\u98CE"
+  upgraded: 0
+  description: 
+  primaryChange: -60
+  secondaryChange: 2
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: 1db972339c92f9e4582974e1fd40896e, type: 2}
+  vfx: {fileID: 7731317770373597872, guid: fa40ba73c457b2d4dba74071081bd034, type: 3}
+  vfxOffset: {x: 0, y: 4, z: 0}
+  castTime: 2
+  animationTrigger: Cast
+  specialPrefab: {fileID: -7323225802975056746, guid: fe1e0ae1be214e54794f66e164d25411,
+    type: 3}
+  damage: 0
+  force: 300
+  range: 0
+  radius: 12
+  delay: 0.5
+  fxDelay: 0
+  hasProjectile: 0
+  projectilePrefab: {fileID: 0}
+  impactSfx: {fileID: 0}
+  projectileHeight: 0
+  projectileAngle: 0
+  effect: 5
+  effectDuration: 10
+  effectAmount: 100

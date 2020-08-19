@@ -263,6 +263,7 @@ public class TutorialController : MonoBehaviour
         if (bossHealth.currHealth <= bossHealth.maxHealth * 0.2) return;
         playerHealth.Revive(0.7f);
         Instantiate(healVfx, playerHealth.transform);
+        GlobalAudioManager.Instance.Play("Revive", playerHealth.transform.position);
         currentTutorial = playerDeathHint;
         StartCurrentTutorial();
         Time.timeScale = 0f;
@@ -273,6 +274,7 @@ public class TutorialController : MonoBehaviour
         if (bossHealth.currHealth <= bossHealth.maxHealth * 0.2) return;
         tower.Revive(0.5f);
         Instantiate(healVfx, tower.transform);
+        GlobalAudioManager.Instance.Play("Revive", tower.transform.position);
         currentTutorial = towerDeathHint;
         StartCurrentTutorial();
         Time.timeScale = 0f;

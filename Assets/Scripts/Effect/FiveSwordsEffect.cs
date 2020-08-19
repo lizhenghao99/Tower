@@ -15,8 +15,8 @@ public class FiveSwordsEffect : Effect
         GetComponent<DaoshiAutoAttack>().missileCount = 5;
 
         base.OnStart();
-        currentVfx.transform.localPosition = new Vector3(0f, 0.5f, 0f);
-        currentVfx.transform.localScale = Vector3.one * 1f;
+        currentVfx.transform.localPosition = originalPos;
+        currentVfx.transform.localScale = originalScale;
     }
 
     protected override void OnFinish()

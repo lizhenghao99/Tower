@@ -420,7 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 150
   attackRange: 4.5
-  attackRate: 2.7
+  attackRate: 2.4
   stopRange: 2.5
   agent: {fileID: 8729792689411822763}
   animator: {fileID: 8729792688550215930}
@@ -444,7 +444,7 @@ MonoBehaviour:
   startingSecondaryResource: 0
   maxPrimaryResource: 100
   maxSecondaryResource: 3
-  autoAttackPrimaryGen: 12
+  autoAttackPrimaryGen: 8
 --- !u!114 &641722208400027996
 MonoBehaviour:
   m_ObjectHideFlags: 0

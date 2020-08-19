@@ -16,7 +16,7 @@ public class WoodEffect : Effect
         originalAttackDamage = attack.attackDamage;
         type = Type.Wood;
         timer = 0;
-        healPlayerPercent = 0.01f;
+        healPlayerPercent = 0.02f;
     }
 
     protected override void OnStart()

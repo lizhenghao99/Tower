@@ -4,8 +4,8 @@ using UnityEngine;
 
 public abstract class CardSpecial : MonoBehaviour
 {
+    [SerializeField] protected float lifetime;
     protected Card card;
-    protected float lifetime;
     protected bool started = false;
 
     public void SetCard(Card c)

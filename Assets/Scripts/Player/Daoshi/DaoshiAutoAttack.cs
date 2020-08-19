@@ -7,7 +7,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
     private EffectManager effectManager;
     private DaoshiResource resource;
     [Header("Healing")]
-    [SerializeField] float healPower;
+    [SerializeField] public int healPower;
 
     protected override void Start()
     {

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: DeathBlood
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 403ea42020669d841b1ab52aab87ad78, type: 3}
+  - {fileID: 8300000, guid: cb50c721364031d4e8f0f5bd38422dc7, type: 3}
+  - {fileID: 8300000, guid: 0594a7376f739e34bba70b1547bcd1f8, type: 3}
+  - {fileID: 8300000, guid: c13104f23f1fe7d4fb0613e959a95501, type: 3}
+  - {fileID: 8300000, guid: 8ec188ead76a84a44aee265ebb928581, type: 3}
+  - {fileID: 8300000, guid: 9df3997364cbeb949b0d72f23093aef9, type: 3}
+  - {fileID: 8300000, guid: b55623c8b880d4e43845bb97ad06bd31, type: 3}
+  - {fileID: 8300000, guid: 397ce8d384d49804a8f326290e4fd0d2, type: 3}
+  - {fileID: 8300000, guid: 7fca91a7458fb1441aeb89760b66e517, type: 3}
+  - {fileID: 8300000, guid: f40ece0405546dd47937ae323db15e8a, type: 3}
+  soundTag: Spawn
+  loop: 0
+  priority: 128
+  volume: 0.9
+  pitch: 1
+  spatialBlend: 0.3

@@ -107,9 +107,12 @@ public class CardPlayer : Singleton<CardPlayer>
 
         if (cardPlaying.specialPrefab != null)
         {
-            var special = Instantiate(cardPlaying.specialPrefab);
+            var special = Instantiate(
+                cardPlaying.specialPrefab,
+                cardPlaying.specialPrefab.transform.position, 
+                cardPlaying.specialPrefab.transform.rotation);
             special.SetCard(cardPlaying);
-            special.transform.position = splat.GetSpellCursorPosition();
+            special.transform.position += splat.GetSpellCursorPosition();
         }
         cardPlaying.Play();
         player.animator.SetTrigger(cardPlaying.animationTrigger);
