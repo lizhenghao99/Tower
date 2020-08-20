@@ -23,8 +23,9 @@ MonoBehaviour:
   vfx: {fileID: 110446, guid: 70c5a725ebc50764c89769634993925a, type: 3}
   vfxOffset: {x: 0, y: 2.5, z: 0}
   castTime: 3
+  animationTrigger: Cast
   specialPrefab: {fileID: 0}
-  damage: 100
+  damage: 250
   force: 0
   range: 50
   radius: 2

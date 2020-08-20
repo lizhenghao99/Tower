@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
+  m_Name: DirtTrap
+  m_EditorClassIdentifier: 
+  cardName: "\u98DE\u7802\u9635"
+  upgraded: 0
+  description: 
+  primaryChange: -35
+  secondaryChange: 5
+  owner: 1
+  art: {fileID: 0}
+  sfx: {fileID: 11400000, guid: 324deac0259cc7047ac373099bf02d58, type: 2}
+  vfx: {fileID: 0}
+  vfxOffset: {x: 0, y: 0, z: 0}
+  castTime: 2
+  animationTrigger: Cast
+  specialPrefab: {fileID: 3737738272892896132, guid: 0fa13544b6f96cd4f897d1f5d9ed6995,
+    type: 3}
+  damage: 400
+  force: 0
+  range: 20
+  radius: 6
+  delay: 0
+  fxDelay: 0
+  hasProjectile: 0
+  projectilePrefab: {fileID: 0}
+  impactSfx: {fileID: 0}
+  projectileHeight: 0
+  projectileAngle: 0
+  effect: 3
+  effectDuration: 1
+  effectAmount: 0

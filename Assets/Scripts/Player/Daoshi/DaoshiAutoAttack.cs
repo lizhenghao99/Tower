@@ -61,7 +61,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                     foreach (Collider c in hits)
                     {
                         effectManager.Register(gameObject, c.gameObject,
-                            Effect.Type.Stun, 1f, 0);
+                            Effect.Type.Stun, 2f, 0);
                     }
                 }
                 break;
