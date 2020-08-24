@@ -1,0 +1,1013 @@
+fileFormatVersion: 2
+guid: 2ebf7538cda24124893d6cb0753ae52b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6504498059420464270
+    second: Daoshi_idle_sheet_0
+  - first:
+      213: 7381536503465807953
+    second: Daoshi_idle_sheet_1
+  - first:
+      213: -564877287163329527
+    second: Daoshi_idle_sheet_2
+  - first:
+      213: -8255375599016931554
+    second: Daoshi_idle_sheet_3
+  - first:
+      213: -5630765304010516918
+    second: Daoshi_idle_sheet_4
+  - first:
+      213: 8675569309903834483
+    second: Daoshi_idle_sheet_5
+  - first:
+      213: -2537854632744580167
+    second: Daoshi_idle_sheet_6
+  - first:
+      213: -7396648517541529518
+    second: Daoshi_idle_sheet_7
+  - first:
+      213: -6338558146402028579
+    second: Daoshi_idle_sheet_8
+  - first:
+      213: 8582626572920305463
+    second: Daoshi_idle_sheet_9
+  - first:
+      213: 4510541402953259234
+    second: Daoshi_idle_sheet_10
+  - first:
+      213: -2640502256767226451
+    second: Daoshi_idle_sheet_11
+  - first:
+      213: -8319806295902536170
+    second: Daoshi_idle_sheet_12
+  - first:
+      213: -283624619382685896
+    second: Daoshi_idle_sheet_13
+  - first:
+      213: -4065030060873028414
+    second: Daoshi_idle_sheet_14
+  - first:
+      213: 456090196610999653
+    second: Daoshi_idle_sheet_15
+  - first:
+      213: 7254907173929416208
+    second: Daoshi_idle_sheet_16
+  - first:
+      213: -6073202911970696956
+    second: Daoshi_idle_sheet_17
+  - first:
+      213: 5262318393633966899
+    second: Daoshi_idle_sheet_18
+  - first:
+      213: 3782604726738404596
+    second: Daoshi_idle_sheet_19
+  - first:
+      213: -317124924156398774
+    second: Daoshi_idle_sheet_20
+  - first:
+      213: 537277958702311812
+    second: Daoshi_idle_sheet_21
+  - first:
+      213: -6934695715880357177
+    second: Daoshi_idle_sheet_22
+  - first:
+      213: 7338001440385094766
+    second: Daoshi_idle_sheet_23
+  - first:
+      213: -6101747661650514933
+    second: Daoshi_idle_sheet_24
+  - first:
+      213: -5243229084050055080
+    second: Daoshi_idle_sheet_25
+  - first:
+      213: -2116921189941177786
+    second: Daoshi_idle_sheet_26
+  - first:
+      213: -5112944440289487797
+    second: Daoshi_idle_sheet_27
+  - first:
+      213: 3896178304883405957
+    second: Daoshi_idle_sheet_28
+  - first:
+      213: -766145562321018124
+    second: Daoshi_idle_sheet_29
+  - first:
+      213: -1703159026930928525
+    second: Daoshi_idle_sheet_30
+  - first:
+      213: 7505228929421192721
+    second: Daoshi_idle_sheet_31
+  - first:
+      213: 5373760705441014339
+    second: Daoshi_idle_sheet_32
+  - first:
+      213: 7808398040039802161
+    second: Daoshi_idle_sheet_33
+  - first:
+      213: -385369877847488206
+    second: Daoshi_idle_sheet_34
+  - first:
+      213: 2917204568403004120
+    second: Daoshi_idle_sheet_35
+  - first:
+      213: -6231040809803991017
+    second: Daoshi_idle_sheet_36
+  - first:
+      213: -2781911580013237340
+    second: Daoshi_idle_sheet_37
+  - first:
+      213: 8544154455467997190
+    second: Daoshi_idle_sheet_38
+  - first:
+      213: 5702108366671313669
+    second: Daoshi_idle_sheet_39
+  - first:
+      213: 3583626030154823637
+    second: Daoshi_idle_sheet_40
+  - first:
+      213: -572044174449152948
+    second: Daoshi_idle_sheet_41
+  - first:
+      213: 7194775262645439156
+    second: Daoshi_idle_sheet_42
+  - first:
+      213: 2585970244332788427
+    second: Daoshi_idle_sheet_43
+  - first:
+      213: 7225251742470539737
+    second: Daoshi_idle_sheet_44
+  - first:
+      213: 7210283366451158541
+    second: Daoshi_idle_sheet_45
+  - first:
+      213: 5218329130304063056
+    second: Daoshi_idle_sheet_46
+  - first:
+      213: 5523363706832611284
+    second: Daoshi_idle_sheet_47
+  - first:
+      213: 2564552101137644996
+    second: Daoshi_idle_sheet_48
+  - first:
+      213: 2849509680817580694
+    second: Daoshi_idle_sheet_49
+  - first:
+      213: 5704194039703131977
+    second: Daoshi_idle_sheet_50
+  - first:
+      213: 8505662305562401225
+    second: Daoshi_idle_sheet_51
+  - first:
+      213: -8371760107938799547
+    second: Daoshi_idle_sheet_52
+  - first:
+      213: -4020781538897850083
+    second: Daoshi_idle_sheet_53
+  - first:
+      213: -340345378692654480
+    second: Daoshi_idle_sheet_54
+  - first:
+      213: 8809871092405344278
+    second: Daoshi_idle_sheet_0
+  - first:
+      213: -6588357465956662837
+    second: Daoshi_idle_sheet_1
+  - first:
+      213: 8267039689239558693
+    second: Daoshi_idle_sheet_2
+  - first:
+      213: -4023997885819698968
+    second: Daoshi_idle_sheet_3
+  - first:
+      213: 3713488657258206361
+    second: Daoshi_idle_sheet_4
+  - first:
+      213: -2004851323877519261
+    second: Daoshi_idle_sheet_5
+  - first:
+      213: 2009045144179470328
+    second: Daoshi_idle_sheet_6
+  - first:
+      213: -3116112614509181121
+    second: Daoshi_idle_sheet_7
+  - first:
+      213: -2013317185771795384
+    second: Daoshi_idle_sheet_8
+  - first:
+      213: -266118912925246476
+    second: Daoshi_idle_sheet_9
+  - first:
+      213: -2181708583764892472
+    second: Daoshi_idle_sheet_10
+  - first:
+      213: -6940569069808205342
+    second: Daoshi_idle_sheet_11
+  - first:
+      213: -913599153757053197
+    second: Daoshi_idle_sheet_12
+  - first:
+      213: -5536778120738024888
+    second: Daoshi_idle_sheet_13
+  - first:
+      213: 251540380060097005
+    second: Daoshi_idle_sheet_14
+  - first:
+      213: -6718057697190798335
+    second: Daoshi_idle_sheet_15
+  - first:
+      213: 1308690563466668563
+    second: Daoshi_idle_sheet_16
+  - first:
+      213: -5915846296028743651
+    second: Daoshi_idle_sheet_17
+  - first:
+      213: -7067261983598171363
+    second: Daoshi_idle_sheet_18
+  - first:
+      213: 3171969490631432117
+    second: Daoshi_idle_sheet_19
+  - first:
+      213: 8161831852442516095
+    second: Daoshi_idle_sheet_20
+  - first:
+      213: -3916321327014995917
+    second: Daoshi_idle_sheet_21
+  - first:
+      213: 2189471219958290961
+    second: Daoshi_idle_sheet_22
+  - first:
+      213: -8145177832138604998
+    second: Daoshi_idle_sheet_23
+  - first:
+      213: -167443413740518269
+    second: Daoshi_idle_sheet_24
+  - first:
+      213: -3717915600198791708
+    second: Daoshi_idle_sheet_25
+  - first:
+      213: 2902450551309102366
+    second: Daoshi_idle_sheet_26
+  - first:
+      213: -9120588823574567159
+    second: Daoshi_idle_sheet_27
+  - first:
+      213: -6503009506605994414
+    second: Daoshi_idle_sheet_28
+  - first:
+      213: 3231993962097445004
+    second: Daoshi_idle_sheet_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6189dc3f413f24a70800000000000000
+      internalID: 8809871092405344278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc14c549ac37194a0800000000000000
+      internalID: -6588357465956662837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52afd25fbcc6ab270800000000000000
+      internalID: 8267039689239558693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e04bce2e33e728c0800000000000000
+      internalID: -4023997885819698968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99451554246f88330800000000000000
+      internalID: 3713488657258206361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3601fc4d7565d24e0800000000000000
+      internalID: -2004851323877519261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff6a8c0aef81eb10800000000000000
+      internalID: 2009045144179470328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3927
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f370114461851c4d0800000000000000
+      internalID: -3116112614509181121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c02e1cfa24f04e0800000000000000
+      internalID: -2013317185771795384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5049
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbd317324e8e4cf0800000000000000
+      internalID: -266118912925246476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4e54d2a9309b1e0800000000000000
+      internalID: -2181708583764892472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6171
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1c40724352eaf90800000000000000
+      internalID: -6940569069808205342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6732
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe963df86e3253f0800000000000000
+      internalID: -913599153757053197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 7293
+        y: 3177
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842514162a96923b0800000000000000
+      internalID: -5536778120738024888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9162894a6ad7300800000000000000
+      internalID: 251540380060097005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c1d524e1aa4c2a0800000000000000
+      internalID: -6718057697190798335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a265c3227692210800000000000000
+      internalID: 1308690563466668563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1875632321b6eda0800000000000000
+      internalID: -5915846296028743651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b220d7baa0ced90800000000000000
+      internalID: -7067261983598171363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b796772279150c20800000000000000
+      internalID: 3171969490631432117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3366
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7afd4993d6a44170800000000000000
+      internalID: 8161831852442516095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 3927
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3381cfca08e66a9c0800000000000000
+      internalID: -3916321327014995917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a1e876970926e10800000000000000
+      internalID: 2189471219958290961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 5049
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3efdfaaae386fe80800000000000000
+      internalID: -8145177832138604998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38484043a1f1dadf0800000000000000
+      internalID: -167443413740518269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 6171
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed8441c57f476cc0800000000000000
+      internalID: -3717915600198791708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 6732
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d6ae80663974820800000000000000
+      internalID: 2902450551309102366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 7293
+        y: 2258
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907a074b9c82d6180800000000000000
+      internalID: -9120588823574567159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1339
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ee2c3ee4ba0c5a0800000000000000
+      internalID: -6503009506605994414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_idle_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1339
+        width: 561
+        height: 919
+      alignment: 9
+      pivot: {x: 0.55, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88860b72695adc20800000000000000
+      internalID: 3231993962097445004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 465b27ce8d436894883407c41e91a8f0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4948579314193027212, guid: e6c6dd2655289cd499f60109f2ea63c2,
+  m_Sprite: {fileID: 6504498059420464270, guid: 2ebf7538cda24124893d6cb0753ae52b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   missileSpeed: 30
   missileRange: 30
   readyTime: 3
-  healPower: 40
+  healPower: 30
 --- !u!114 &8897688417035505076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,8 +451,8 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0, g: 0.39118576, b: 1, a: 1}
-  m_Intensity: 7
+  m_Color: {r: 0.51397294, g: 0.9529411, b: 0.99056596, a: 1}
+  m_Intensity: 4
   m_Range: 3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

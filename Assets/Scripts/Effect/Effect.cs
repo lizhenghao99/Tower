@@ -41,7 +41,7 @@ public abstract class Effect : MonoBehaviour
 
     public virtual void Enhance()
     {
-        duration *= 2f;
+        duration = Mathf.Clamp(duration*1.5f, 0, 30f);
     }
 
     public virtual void Kill()

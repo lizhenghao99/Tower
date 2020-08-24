@@ -22,7 +22,7 @@ MonoBehaviour:
   sfx: {fileID: 11400000, guid: f6276d2f751dd0843bdc4a95c16d397a, type: 2}
   vfx: {fileID: 0}
   vfxOffset: {x: 0, y: 0, z: 0}
-  castTime: 1
+  castTime: 1.5
   animationTrigger: Cast
   specialPrefab: {fileID: 0}
   damage: 200

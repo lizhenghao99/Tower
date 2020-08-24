@@ -1,0 +1,1190 @@
+fileFormatVersion: 2
+guid: 90678b9afbf295d40b87702b0b855f49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1731605311498871092
+    second: Daoshi_walk_sheet_0
+  - first:
+      213: 4695971225041712415
+    second: Daoshi_walk_sheet_1
+  - first:
+      213: -5850829311194028571
+    second: Daoshi_walk_sheet_2
+  - first:
+      213: -5232707642473480029
+    second: Daoshi_walk_sheet_3
+  - first:
+      213: 326589017279918649
+    second: Daoshi_walk_sheet_4
+  - first:
+      213: -7061719355595661722
+    second: Daoshi_walk_sheet_5
+  - first:
+      213: -636261153138687571
+    second: Daoshi_walk_sheet_6
+  - first:
+      213: 3794559899591478036
+    second: Daoshi_walk_sheet_7
+  - first:
+      213: 4739696915072207871
+    second: Daoshi_walk_sheet_8
+  - first:
+      213: 1624089691652243524
+    second: Daoshi_walk_sheet_9
+  - first:
+      213: -7362319803479834406
+    second: Daoshi_walk_sheet_10
+  - first:
+      213: -2038011838600178263
+    second: Daoshi_walk_sheet_11
+  - first:
+      213: -5613800415564280382
+    second: Daoshi_walk_sheet_12
+  - first:
+      213: 2628796760391353559
+    second: Daoshi_walk_sheet_13
+  - first:
+      213: -6661507724995030222
+    second: Daoshi_walk_sheet_14
+  - first:
+      213: -3856936855275627673
+    second: Daoshi_walk_sheet_15
+  - first:
+      213: 1809808784370508967
+    second: Daoshi_walk_sheet_16
+  - first:
+      213: -8876905215938660805
+    second: Daoshi_walk_sheet_17
+  - first:
+      213: 979522371799667370
+    second: Daoshi_walk_sheet_18
+  - first:
+      213: 2796116323245685848
+    second: Daoshi_walk_sheet_19
+  - first:
+      213: 7546019794392607735
+    second: Daoshi_walk_sheet_20
+  - first:
+      213: 1698978475851991097
+    second: Daoshi_walk_sheet_21
+  - first:
+      213: -24819345388355379
+    second: Daoshi_walk_sheet_22
+  - first:
+      213: 8886095563881445495
+    second: Daoshi_walk_sheet_23
+  - first:
+      213: -3374490718122690539
+    second: Daoshi_walk_sheet_24
+  - first:
+      213: 7819881352189647285
+    second: Daoshi_walk_sheet_25
+  - first:
+      213: 8199097570197625600
+    second: Daoshi_walk_sheet_26
+  - first:
+      213: 271007958516830982
+    second: Daoshi_walk_sheet_27
+  - first:
+      213: 6111708669292928220
+    second: Daoshi_walk_sheet_28
+  - first:
+      213: 5145233469951718153
+    second: Daoshi_walk_sheet_29
+  - first:
+      213: 6603171739364416885
+    second: Daoshi_walk_sheet_30
+  - first:
+      213: 7449522938463921335
+    second: Daoshi_walk_sheet_31
+  - first:
+      213: -1346840862128634638
+    second: Daoshi_walk_sheet_32
+  - first:
+      213: -916891001335694531
+    second: Daoshi_walk_sheet_33
+  - first:
+      213: -996546772391998930
+    second: Daoshi_walk_sheet_34
+  - first:
+      213: 8709376882182544795
+    second: Daoshi_walk_sheet_35
+  - first:
+      213: -8254098225584803474
+    second: Daoshi_walk_sheet_36
+  - first:
+      213: 6042201921964947194
+    second: Daoshi_walk_sheet_37
+  - first:
+      213: -5041417777414615381
+    second: Daoshi_walk_sheet_38
+  - first:
+      213: 2870572462967536903
+    second: Daoshi_walk_sheet_39
+  - first:
+      213: -8621390516630928738
+    second: Daoshi_walk_sheet_40
+  - first:
+      213: 2743964533670705995
+    second: Daoshi_walk_sheet_41
+  - first:
+      213: -552615403203197300
+    second: Daoshi_walk_sheet_42
+  - first:
+      213: -7310934786216510572
+    second: Daoshi_walk_sheet_43
+  - first:
+      213: -1559286519766035077
+    second: Daoshi_walk_sheet_44
+  - first:
+      213: 906116371718574498
+    second: Daoshi_walk_sheet_45
+  - first:
+      213: 3409793179196711130
+    second: Daoshi_walk_sheet_46
+  - first:
+      213: 2041196798620505257
+    second: Daoshi_walk_sheet_47
+  - first:
+      213: 8175038398970420749
+    second: Daoshi_walk_sheet_48
+  - first:
+      213: 7603371563802029104
+    second: Daoshi_walk_sheet_49
+  - first:
+      213: -8190084465315696708
+    second: Daoshi_walk_sheet_50
+  - first:
+      213: 3637399365637875246
+    second: Daoshi_walk_sheet_0
+  - first:
+      213: -5314833456264900148
+    second: Daoshi_walk_sheet_1
+  - first:
+      213: 6152041259337724903
+    second: Daoshi_walk_sheet_2
+  - first:
+      213: -2816218643941371537
+    second: Daoshi_walk_sheet_3
+  - first:
+      213: -8642531050768552448
+    second: Daoshi_walk_sheet_4
+  - first:
+      213: 176676879901698299
+    second: Daoshi_walk_sheet_5
+  - first:
+      213: -6081930387562591351
+    second: Daoshi_walk_sheet_6
+  - first:
+      213: 8557552310742069767
+    second: Daoshi_walk_sheet_7
+  - first:
+      213: 2145379805869335328
+    second: Daoshi_walk_sheet_8
+  - first:
+      213: 9082820133128420502
+    second: Daoshi_walk_sheet_9
+  - first:
+      213: 7100692602116155057
+    second: Daoshi_walk_sheet_10
+  - first:
+      213: -2388202273102001859
+    second: Daoshi_walk_sheet_11
+  - first:
+      213: -7798643889273557502
+    second: Daoshi_walk_sheet_12
+  - first:
+      213: 5526803540295819032
+    second: Daoshi_walk_sheet_13
+  - first:
+      213: 2690384547865107599
+    second: Daoshi_walk_sheet_14
+  - first:
+      213: 4568595066207318150
+    second: Daoshi_walk_sheet_15
+  - first:
+      213: 5193497336294453410
+    second: Daoshi_walk_sheet_16
+  - first:
+      213: 4014409159833520084
+    second: Daoshi_walk_sheet_17
+  - first:
+      213: -3839354852709225806
+    second: Daoshi_walk_sheet_18
+  - first:
+      213: -4942686329061456987
+    second: Daoshi_walk_sheet_19
+  - first:
+      213: -6019361457572389903
+    second: Daoshi_walk_sheet_20
+  - first:
+      213: -6421522571781819553
+    second: Daoshi_walk_sheet_21
+  - first:
+      213: 5950340206027583297
+    second: Daoshi_walk_sheet_22
+  - first:
+      213: -3659695200534454790
+    second: Daoshi_walk_sheet_23
+  - first:
+      213: -6149868116029926966
+    second: Daoshi_walk_sheet_24
+  - first:
+      213: 9151295341495437909
+    second: Daoshi_walk_sheet_25
+  - first:
+      213: -7984556656544910234
+    second: Daoshi_walk_sheet_26
+  - first:
+      213: 7462324760522212128
+    second: Daoshi_walk_sheet_27
+  - first:
+      213: 7767874707147422780
+    second: Daoshi_walk_sheet_28
+  - first:
+      213: 3032201690338944617
+    second: Daoshi_walk_sheet_29
+  - first:
+      213: -2016146164262868249
+    second: Daoshi_walk_sheet_30
+  - first:
+      213: 3789030987372425867
+    second: Daoshi_walk_sheet_31
+  - first:
+      213: -346114886046446256
+    second: Daoshi_walk_sheet_32
+  - first:
+      213: -6910767999472026641
+    second: Daoshi_walk_sheet_33
+  - first:
+      213: -5338100889079543185
+    second: Daoshi_walk_sheet_34
+  - first:
+      213: 5102101438136950647
+    second: Daoshi_walk_sheet_35
+  - first:
+      213: 9139791289151740779
+    second: Daoshi_walk_sheet_36
+  - first:
+      213: -6134744803987337550
+    second: Daoshi_walk_sheet_37
+  - first:
+      213: 3983231190714224407
+    second: Daoshi_walk_sheet_38
+  - first:
+      213: -8530446340762431361
+    second: Daoshi_walk_sheet_39
+  - first:
+      213: 6056797891656590520
+    second: Daoshi_walk_sheet_40
+  - first:
+      213: -4157089066667933216
+    second: Daoshi_walk_sheet_41
+  - first:
+      213: 7040858460603479475
+    second: Daoshi_walk_sheet_42
+  - first:
+      213: -750840747274788091
+    second: Daoshi_walk_sheet_43
+  - first:
+      213: 3620446081135895567
+    second: Daoshi_walk_sheet_44
+  - first:
+      213: -8212571270124079383
+    second: Daoshi_walk_sheet_45
+  - first:
+      213: -8065876990755719138
+    second: Daoshi_walk_sheet_46
+  - first:
+      213: -2037382636377625755
+    second: Daoshi_walk_sheet_47
+  - first:
+      213: -7273754141612878611
+    second: Daoshi_walk_sheet_48
+  - first:
+      213: -753049729653850148
+    second: Daoshi_walk_sheet_49
+  - first:
+      213: 5526613641946582076
+    second: Daoshi_walk_sheet_50
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26a3178373aa7230800000000000000
+      internalID: 3637399365637875246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc118f6712bed36b0800000000000000
+      internalID: -5314833456264900148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e33f523ee0706550800000000000000
+      internalID: 6152041259337724903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61da067018cae8d0800000000000000
+      internalID: -2816218643941371537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e28a6accf8f0880800000000000000
+      internalID: -8642531050768552448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8a09aafaea37200800000000000000
+      internalID: 176676879901698299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b8da43984a89ba0800000000000000
+      internalID: -6081930387562591351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4228
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702ba9c9c7882c670800000000000000
+      internalID: 8557552310742069767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4832
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0236325119be5cd10800000000000000
+      internalID: 2145379805869335328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cb2e9c9c8ac0e70800000000000000
+      internalID: 9082820133128420502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6040
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6a060fc4aba8260800000000000000
+      internalID: 7100692602116155057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6644
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3989f39fa66bded0800000000000000
+      internalID: -2388202273102001859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7248
+        y: 3172
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e2412a3b6a5c390800000000000000
+      internalID: -7798643889273557502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f14b2a98623bc40800000000000000
+      internalID: 5526803540295819032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c13b4fd7a265520800000000000000
+      internalID: 2690384547865107599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680b3ebd109e66f30800000000000000
+      internalID: 4568595066207318150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0b4cf9f42031840800000000000000
+      internalID: 5193497336294453410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d783f29cdb06b730800000000000000
+      internalID: 4014409159833520084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba289d6a1fd7bac0800000000000000
+      internalID: -3839354852709225806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3cc10a8fc086bb0800000000000000
+      internalID: -4942686329061456987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4228
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb58b275aee67ca0800000000000000
+      internalID: -6019361457572389903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4832
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53bacf5e3b22e6a0800000000000000
+      internalID: -6421522571781819553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14faff024ead39250800000000000000
+      internalID: 5950340206027583297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6040
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd11f1ea96263dc0800000000000000
+      internalID: -3659695200534454790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6644
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac11988288747aaa0800000000000000
+      internalID: -6149868116029926966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 7248
+        y: 2248
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ac580a0aeeffe70800000000000000
+      internalID: 9151295341495437909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664f8ad5608213190800000000000000
+      internalID: -7984556656544910234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023478525d08f8760800000000000000
+      internalID: 7462324760522212128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c7343e3e80dcb60800000000000000
+      internalID: 7767874707147422780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966edff3f5b841a20800000000000000
+      internalID: 3032201690338944617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea68dfdeb53504e0800000000000000
+      internalID: -2016146164262868249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82f74d9b97559430800000000000000
+      internalID: 3789030987372425867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3624
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d0abd485a523bf0800000000000000
+      internalID: -346114886046446256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4228
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb355a8e150810a0800000000000000
+      internalID: -6910767999472026641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 4832
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a873b16814be5b0800000000000000
+      internalID: -5338100889079543185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_walk_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 1324
+        width: 604
+        height: 924
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f9924d93e4ec640800000000000000
+      internalID: 5102101438136950647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 75db0dcd92359da428921181805fc059
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

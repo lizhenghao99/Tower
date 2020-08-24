@@ -385,7 +385,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 0, g: 0.594635, b: 1, a: 0.54901963}
-      maxColor: {r: 0, g: 0.39359474, b: 1, a: 1}
+      maxColor: {r: 0.29966182, g: 0.8237807, b: 0.8584906, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5139,7 +5139,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.5200348, b: 1, a: 1}
+      maxColor: {r: 0.3607843, g: 0.9529411, b: 0.99056596, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10079,7 +10079,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.5750279, b: 0.9339623, a: 1}
+      maxColor: {r: 0.33819866, g: 0.8529684, b: 0.8962264, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -14995,7 +14995,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.67088604, b: 1, a: 1}
+      maxColor: {r: 0.51397294, g: 0.9529411, b: 0.99056596, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -19542,7 +19542,7 @@ GameObject:
   - component: {fileID: 9190571743417060105}
   - component: {fileID: 3886470754617654071}
   m_Layer: 0
-  m_Name: BailuchengWaypoint
+  m_Name: DaoshiWaypoint
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -24552,8 +24552,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.4669811, g: 0.80440885, b: 1, a: 0.5019608}
-      maxColor: {r: 0.4669811, g: 0.80440885, b: 1, a: 1}
+      minColor: {r: 0.51397294, g: 0.9529411, b: 0.99056596, a: 0.5019608}
+      maxColor: {r: 0.51397294, g: 0.9529411, b: 0.99056596, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -25196,7 +25196,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
