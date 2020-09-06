@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         // anmiation
         animator.SetFloat("Velocity", agent.velocity.magnitude);
-        if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting)
+        if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting &&!health.isDead)
         {
             spriteRenderer.flipX = agent.velocity.x < -0.2;
         }

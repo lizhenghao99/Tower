@@ -46,12 +46,14 @@ public class PlayerHealth : Health
 
     public override void TakeDamage(int damage)
     {
+        if (isImmune || isDead) return;
         ChangeHealth(-damage);
         OnDamaged();
     }
 
     public override void TakeDamagePercent(float percent)
     {
+        if (isImmune || isDead) return;
         var damage = (int)percent * maxHealth;
         ChangeHealth(-damage);
         OnDamaged();

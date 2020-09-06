@@ -13,7 +13,7 @@ namespace VolumetricFogAndMist {
     /// </summary>
     public partial class VolumetricFog : MonoBehaviour {
         
-public const int MAX_POINT_LIGHTS = 6;
+public const int MAX_POINT_LIGHTS = 24;
 
 public const bool LIGHT_SCATTERING_BLUR_ENABLED = false;
 

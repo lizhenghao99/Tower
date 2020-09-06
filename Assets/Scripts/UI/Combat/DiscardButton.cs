@@ -86,6 +86,19 @@ public abstract class DiscardButton : Selectable
         }
     }
 
+    public void SetInteractable(bool flag)
+    {
+        if (flag && !interactable)
+        {
+            interactable = flag;
+            DoStateTransition(SelectionState.Normal, false);
+        }
+        else if (!flag && interactable)
+        {
+            interactable = flag;
+        }
+    }
+
     protected abstract void PointerDownBehavior();
 
     protected abstract void PointerEnterBehavior();

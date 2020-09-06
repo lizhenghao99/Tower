@@ -37,6 +37,8 @@ public class LevelController : MonoBehaviour
     private ProCamera2DNumericBoundaries numericBoundaries;
     private ProCamera2DCinematics cinematics;
 
+    private List<float> playerOffsets;
+
     public Stage currStage { get; private set; } = null;
 
     private void Awake()
@@ -69,6 +71,13 @@ public class LevelController : MonoBehaviour
         foreach (CanvasGroup g in groupsToHide)
         {
             g.alpha = 0f;
+        }
+
+        playerOffsets = new List<float>();
+        foreach (PlayerController p in players)
+        {
+            var distance = p.GetComponent<NavMeshAgent>().speed * 5f;
+            playerOffsets.Add(distance);
         }
 
         baseTower.death += OnTowerDeath;
@@ -179,8 +188,9 @@ public class LevelController : MonoBehaviour
             baseTower.transform.position = currStage.basePosition;
             for (int i = 0; i < players.Length; i++)
             {
-                players[i].transform.position =
-                    currStage.charPostions[i] - new Vector3(3f, 0, 0);
+                players[i].transform.position = currStage.charPostions[i] - 
+                    new Vector3(playerOffsets[i], 0, 0);
+                players[i].GetComponent<NavMeshAgent>().stoppingDistance = 0;
                 players[i].GetComponent<NavMeshAgent>()
                     .SetDestination(currStage.charPostions[i]);
                 players[i].OnDestinationReached(gameObject, EventArgs.Empty);

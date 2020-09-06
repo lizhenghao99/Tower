@@ -260,7 +260,7 @@ public class TutorialController : MonoBehaviour
 
     private void OnPlayerDeath(object sender, EventArgs e)
     {
-        if (bossHealth.currHealth <= bossHealth.maxHealth * 0.2) return;
+        if (bossHealth.currHealth <= bossHealth.maxHealth * 0.05) return;
         playerHealth.Revive(0.7f);
         Instantiate(healVfx, playerHealth.transform);
         GlobalAudioManager.Instance.Play("Revive", playerHealth.transform.position);

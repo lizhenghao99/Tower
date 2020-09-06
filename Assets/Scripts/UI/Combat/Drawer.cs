@@ -55,9 +55,8 @@ public class Drawer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        discardButton.interactable = 
-            !(CardPlayer.Instance.isPlayingCard 
-            || player.isCasting );
+        discardButton.SetInteractable(!(CardPlayer.Instance.isPlayingCard
+            || player.isCasting));
 
         headButton.interactable =
             !(CardPlayer.Instance.isPlayingCard);

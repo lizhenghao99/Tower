@@ -69,6 +69,7 @@ MonoBehaviour:
   guardPosition: {x: 0, y: 0, z: 0}
   guardRadius: 0
   initialPosition: {x: 0, y: 0, z: 0}
+  owner: 0
   isSelected: 0
 --- !u!195 &-5727728923947968418
 NavMeshAgent:
@@ -182,6 +183,7 @@ GameObject:
   - component: {fileID: 5560478774682897949}
   - component: {fileID: 5717243233733271726}
   - component: {fileID: 4187595502886642179}
+  - component: {fileID: 3261075259298784596}
   m_Layer: 11
   m_Name: MechGuardSprite
   m_TagString: Untagged
@@ -308,6 +310,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca612de14e8eff54fa8a7a1b47817677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3261075259298784596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7080708407393992435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4efe0c1d08f0c1429915dd1670654d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &241986169398723142

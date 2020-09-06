@@ -294,9 +294,6 @@ MonoBehaviour:
     - 6.6672983
     - 7.1915474
     - 11.289525
-    type: 1
-    subdivisionsXSegment: 10
-    subdivisions: 70
     wps:
     - {x: 4.45, y: -1.83, z: 0}
     - {x: 3.8321667, y: 6.9544535, z: 0}
@@ -305,6 +302,9 @@ MonoBehaviour:
     - {x: -12.069786, y: -0.2641964, z: 0}
     - {x: -6.368099, y: -4.187376, z: 0}
     - {x: 4.45, y: -1.83, z: 0}
+    type: 1
+    subdivisionsXSegment: 10
+    subdivisions: 70
     controlPoints:
     - a: {x: -6.368099, y: -4.187376, z: 0}
       b: {x: 0, y: 0, z: 0}
@@ -868,9 +868,6 @@ MonoBehaviour:
     - 11.593836
     - 8.754475
     - 7.309784
-    type: 1
-    subdivisionsXSegment: 10
-    subdivisions: 100
     wps:
     - {x: 10.45, y: -1.83, z: 0}
     - {x: 13.417454, y: 2.978077, z: 0}
@@ -882,6 +879,9 @@ MonoBehaviour:
     - {x: -4.1231623, y: -1.0233588, z: 0}
     - {x: 3.7979867, y: -4.5040193, z: 0}
     - {x: 10.45, y: -1.83, z: 0}
+    type: 1
+    subdivisionsXSegment: 10
+    subdivisions: 100
     controlPoints:
     - a: {x: 3.7979867, y: -4.5040193, z: 0}
       b: {x: 0, y: 0, z: 0}

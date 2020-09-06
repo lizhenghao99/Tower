@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14002f973b37eb94ca139629fbd77703, type: 3}
+  m_Name: DaoshiGrassStep
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: bf3a073e8b84b724690286215ebf4d42, type: 3}
+  - {fileID: 8300000, guid: 193762f8dfa995343b83b65ef449d8ca, type: 3}
+  - {fileID: 8300000, guid: be3ed15ecb2958042982894425b552a4, type: 3}
+  - {fileID: 8300000, guid: 99f7d91691c8d1f4cadc5d51d277cd52, type: 3}
+  - {fileID: 8300000, guid: 7005e38f00a8f594a9dbd9d4e6507c28, type: 3}
+  - {fileID: 8300000, guid: 76b83319f5bd4aa4bad2415fefba2c72, type: 3}
+  - {fileID: 8300000, guid: 367ffe39a2f6eb0428c99f395f45e46a, type: 3}
+  - {fileID: 8300000, guid: e934471888afada4686571a224ee8e1b, type: 3}
+  - {fileID: 8300000, guid: 8305f3337fbe46041a558b229bc4db44, type: 3}
+  - {fileID: 8300000, guid: ff4fd9cc65296b94aa424ce57508f8df, type: 3}
+  soundTag: Step
+  loop: 0
+  priority: 128
+  volume: 1
+  pitch: 1
+  spatialBlend: 0.3

@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 4ca8c07cbdbe9e841af9f3e6e68ec59f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7563201721269899123
+    second: Daoshi_readycharge_sheet_0
+  - first:
+      213: 7252073799490295323
+    second: Daoshi_readycharge_sheet_1
+  - first:
+      213: -8273953717282351527
+    second: Daoshi_readycharge_sheet_2
+  - first:
+      213: -7596383273281373207
+    second: Daoshi_readycharge_sheet_3
+  - first:
+      213: -3380069015977543236
+    second: Daoshi_readycharge_sheet_4
+  - first:
+      213: 619607939770917979
+    second: Daoshi_readycharge_sheet_5
+  - first:
+      213: 885872849184430364
+    second: Daoshi_readycharge_sheet_6
+  - first:
+      213: 4522725396343594120
+    second: Daoshi_readycharge_sheet_7
+  - first:
+      213: -3974535591416663791
+    second: Daoshi_readycharge_sheet_8
+  - first:
+      213: -9103266189959918628
+    second: Daoshi_readycharge_sheet_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daoshi_readycharge_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1048
+        width: 750
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.54, y: -0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80b5172b1c1a0790800000000000000
+      internalID: -7563201721269899123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_readycharge_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1048
+        width: 750
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.54, y: -0.07}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16598f82ba84a460800000000000000
+      internalID: 7252073799490295323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_readycharge_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1048
+        width: 750
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.54, y: -0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956dc517ee20d2d80800000000000000
+      internalID: -8273953717282351527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_readycharge_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1048
+        width: 750
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.54, y: -0.09}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb385a09a9349690800000000000000
+      internalID: -7596383273281373207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_readycharge_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1048
+        width: 750
+        height: 1000
+      alignment: 9
+      pivot: {x: 0.54, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9ba5a63259711d0800000000000000
+      internalID: -3380069015977543236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: da93ff237e40f8444b7341ff182b6b3d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

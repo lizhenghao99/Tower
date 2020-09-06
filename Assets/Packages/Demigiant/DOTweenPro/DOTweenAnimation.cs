@@ -653,7 +653,7 @@ namespace DG.Tweening
 //#endif
 #if true // UI_MARKER
 //            if (str == "RectTransform") str = "Transform";
-            if (str == "RawImage") str = "Image"; // RawImages are managed like Images for DOTweenAnimation (color and fade use Graphic target anyway)
+            if (str == "RawImage" || str == "Graphic") str = "Image"; // RawImages/Graphics are managed like Images for DOTweenAnimation (color and fade use Graphic target anyway)
 #endif
             return (TargetType)Enum.Parse(typeof(TargetType), str);
         }

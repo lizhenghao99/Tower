@@ -25,6 +25,6 @@
 // Comment out to disable Sun light diffusion over fog (improves performance)
 #define FOG_DIFFUSION
 
-#define FOG_MAX_POINT_LIGHTS 6
+#define FOG_MAX_POINT_LIGHTS 24
 
 //#define FOG_OF_WAR_HEAVY_LOOP

@@ -240,7 +240,7 @@ public class RangedPlayerAutoAttack : PlayerAutoAttack
             m.enabled = true;
             m.Launch(direction, missileSpeed);
             missiles.Remove(m);
-            yield return new WaitForSeconds(1f / count);
+            yield return new WaitForSeconds(0.8f / count);
         }
     }
 }

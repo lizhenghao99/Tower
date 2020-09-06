@@ -1,0 +1,512 @@
+fileFormatVersion: 2
+guid: d70957898022fff48b1ab84aeb0b4cb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8847893113962102144
+    second: Daoshi_launch_sheet_0
+  - first:
+      213: 662004590557061281
+    second: Daoshi_launch_sheet_1
+  - first:
+      213: -7971498652625181347
+    second: Daoshi_launch_sheet_2
+  - first:
+      213: -425914688241818080
+    second: Daoshi_launch_sheet_3
+  - first:
+      213: 3963679606010343095
+    second: Daoshi_launch_sheet_4
+  - first:
+      213: 4082913251182600880
+    second: Daoshi_launch_sheet_5
+  - first:
+      213: 3129108818091131200
+    second: Daoshi_launch_sheet_6
+  - first:
+      213: -5518049168023355688
+    second: Daoshi_launch_sheet_7
+  - first:
+      213: 1045762911240468922
+    second: Daoshi_launch_sheet_8
+  - first:
+      213: 5938986439872450408
+    second: Daoshi_launch_sheet_9
+  - first:
+      213: -8489358735465514256
+    second: Daoshi_launch_sheet_10
+  - first:
+      213: -8840363352522243966
+    second: Daoshi_launch_sheet_11
+  - first:
+      213: -1928931518720512446
+    second: Daoshi_launch_sheet_12
+  - first:
+      213: -2994892298437515757
+    second: Daoshi_launch_sheet_13
+  - first:
+      213: -4645037490338931070
+    second: Daoshi_launch_sheet_14
+  - first:
+      213: 5078925183478605679
+    second: Daoshi_launch_sheet_15
+  - first:
+      213: 4396358700346113929
+    second: Daoshi_launch_sheet_16
+  - first:
+      213: 7637001199785164389
+    second: Daoshi_launch_sheet_17
+  - first:
+      213: -3621580892860700168
+    second: Daoshi_launch_sheet_18
+  - first:
+      213: 7142266402559518377
+    second: Daoshi_launch_sheet_19
+  - first:
+      213: 734814392823513320
+    second: Daoshi_launch_sheet_20
+  - first:
+      213: 8485361063809059560
+    second: Daoshi_launch_sheet_21
+  - first:
+      213: -6533799518384394761
+    second: Daoshi_launch_sheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0820aab4718f53580800000000000000
+      internalID: -8847893113962102144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0e4dbeaa9ef2900800000000000000
+      internalID: 662004590557061281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5565c2d53c8f5190800000000000000
+      internalID: -7971498652625181347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026a9bef8d8d61af0800000000000000
+      internalID: -425914688241818080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bee4b7e991d10730800000000000000
+      internalID: 3963679606010343095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2697148fb69a830800000000000000
+      internalID: 4082913251182600880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0414ddd24e3dc6b20800000000000000
+      internalID: 3129108818091131200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8def3de7483fb63b0800000000000000
+      internalID: -5518049168023355688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab934cbb3db438e00800000000000000
+      internalID: 1045762911240468922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f857273b48b6250800000000000000
+      internalID: 5938986439872450408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faf7b9653dbf2a80800000000000000
+      internalID: -8489358735465514256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280c78f7e58b05580800000000000000
+      internalID: -8840363352522243966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eeb9ee00f0b35e0800000000000000
+      internalID: -1928931518720512446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316241b72510076d0800000000000000
+      internalID: -2994892298437515757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_launch_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed9f35303898fb0800000000000000
+      internalID: -4645037490338931070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0569c9b581bf3c34f9a86fe81c477c61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

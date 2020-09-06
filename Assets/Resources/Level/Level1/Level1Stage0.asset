@@ -15,8 +15,8 @@ MonoBehaviour:
   index: 0
   basePosition: {x: -101.8, y: 0, z: -2}
   charPostions:
-  - {x: -93, y: 0, z: 0}
-  - {x: -93, y: 0, z: -3.56}
+  - {x: -92, y: 0, z: 0}
+  - {x: -94, y: 0, z: -3.56}
   top: -118
   bottom: -143
   left: -110

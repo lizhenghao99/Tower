@@ -211,6 +211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3500
   isDead: 0
+  isImmune: 0
+  immuneStun: 0
 --- !u!114 &7330390830280316237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,6 +265,7 @@ GameObject:
   - component: {fileID: 178347554801842987}
   - component: {fileID: 8648758606775361633}
   - component: {fileID: 355214238387926611}
+  - component: {fileID: 8181020463411058283}
   m_Layer: 10
   m_Name: Wolf Sprite
   m_TagString: Enemy
@@ -293,7 +296,7 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6647725743354277934}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -389,6 +392,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32dc7338ce341724bb230e9c1f4e152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8181020463411058283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6647725743354277934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4efe0c1d08f0c1429915dd1670654d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4845202928713119418

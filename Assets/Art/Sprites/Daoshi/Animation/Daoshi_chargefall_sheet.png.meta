@@ -1,0 +1,752 @@
+fileFormatVersion: 2
+guid: 23bbdc475e1b97e408384580ca1c7541
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9010956345107814386
+    second: Daoshi_charge_sheet_0
+  - first:
+      213: 7406011564836707412
+    second: Daoshi_charge_sheet_1
+  - first:
+      213: 4450861215399213316
+    second: Daoshi_charge_sheet_2
+  - first:
+      213: -7145757074567076421
+    second: Daoshi_charge_sheet_3
+  - first:
+      213: 4103636025867447759
+    second: Daoshi_charge_sheet_4
+  - first:
+      213: -4110299859582482303
+    second: Daoshi_charge_sheet_5
+  - first:
+      213: -8232636173440035715
+    second: Daoshi_charge_sheet_6
+  - first:
+      213: 7640144704101713502
+    second: Daoshi_charge_sheet_7
+  - first:
+      213: 31231132604350410
+    second: Daoshi_charge_sheet_8
+  - first:
+      213: 6063250034453611970
+    second: Daoshi_charge_sheet_9
+  - first:
+      213: -2963424472170177500
+    second: Daoshi_charge_sheet_10
+  - first:
+      213: -1350935199983742049
+    second: Daoshi_charge_sheet_11
+  - first:
+      213: 7271760780217575751
+    second: Daoshi_charge_sheet_12
+  - first:
+      213: -4455649260158386770
+    second: Daoshi_charge_sheet_13
+  - first:
+      213: 2736514087253197509
+    second: Daoshi_charge_sheet_14
+  - first:
+      213: -7474530318548514107
+    second: Daoshi_charge_sheet_15
+  - first:
+      213: -8472569088119133663
+    second: Daoshi_charge_sheet_16
+  - first:
+      213: -7359634624149157833
+    second: Daoshi_charge_sheet_17
+  - first:
+      213: -4490317125132944779
+    second: Daoshi_charge_sheet_18
+  - first:
+      213: -4405966868315819284
+    second: Daoshi_charge_sheet_19
+  - first:
+      213: -3043829795298487248
+    second: Daoshi_charge_sheet_20
+  - first:
+      213: -4786487578063679512
+    second: Daoshi_charge_sheet_21
+  - first:
+      213: 6297207755802320653
+    second: Daoshi_charge_sheet_22
+  - first:
+      213: -6423389540760137802
+    second: Daoshi_charge_sheet_23
+  - first:
+      213: -3339493643514982046
+    second: Daoshi_charge_sheet_0
+  - first:
+      213: -8040358355799835294
+    second: Daoshi_charge_sheet_1
+  - first:
+      213: 2974081914606011042
+    second: Daoshi_charge_sheet_2
+  - first:
+      213: -6839350204588697220
+    second: Daoshi_charge_sheet_3
+  - first:
+      213: -3864897625598162493
+    second: Daoshi_charge_sheet_4
+  - first:
+      213: 3271798222590526201
+    second: Daoshi_charge_sheet_5
+  - first:
+      213: 1877296079588759196
+    second: Daoshi_charge_sheet_6
+  - first:
+      213: 1053923342412833950
+    second: Daoshi_charge_sheet_7
+  - first:
+      213: 4084768879172038369
+    second: Daoshi_charge_sheet_8
+  - first:
+      213: -4364647051788559972
+    second: Daoshi_charge_sheet_9
+  - first:
+      213: -634228664509108427
+    second: Daoshi_charge_sheet_10
+  - first:
+      213: -2594857003783152664
+    second: Daoshi_charge_sheet_11
+  - first:
+      213: -5571365443485029490
+    second: Daoshi_charge_sheet_12
+  - first:
+      213: -1323723878344085823
+    second: Daoshi_charge_sheet_13
+  - first:
+      213: 1708543193977178202
+    second: Daoshi_charge_sheet_14
+  - first:
+      213: 8544318069725004140
+    second: Daoshi_charge_sheet_15
+  - first:
+      213: 3729302418963884295
+    second: Daoshi_charge_sheet_16
+  - first:
+      213: -3351928860515124575
+    second: Daoshi_charge_sheet_17
+  - first:
+      213: -3761454579217736151
+    second: Daoshi_charge_sheet_18
+  - first:
+      213: -1989840018217318936
+    second: Daoshi_charge_sheet_19
+  - first:
+      213: 8911231827053380630
+    second: Daoshi_charge_sheet_20
+  - first:
+      213: -5564548419060866588
+    second: Daoshi_charge_sheet_21
+  - first:
+      213: -3844200600294252087
+    second: Daoshi_charge_sheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2615d90893cb7a1d0800000000000000
+      internalID: -3339493643514982046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26df4bfcca8ea6090800000000000000
+      internalID: -8040358355799835294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a241057ebf064920800000000000000
+      internalID: 2974081914606011042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79def0b93fb511a0800000000000000
+      internalID: -6839350204588697220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c988fc26102d5ac0800000000000000
+      internalID: -3864897625598162493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f243421623c76d20800000000000000
+      internalID: 3271798222590526201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c961f1a86de7d0a10800000000000000
+      internalID: 1877296079588759196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 2996
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94620d22b940ae00800000000000000
+      internalID: 1053923342412833950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eeae9057a300b830800000000000000
+      internalID: 4084768879172038369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99df2c91a8ad63c0800000000000000
+      internalID: -4364647051788559972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f6091d364c237f0800000000000000
+      internalID: -634228664509108427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb129e9d473dfbd0800000000000000
+      internalID: -2594857003783152664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b2033c5a88ea2b0800000000000000
+      internalID: -5571365443485029490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce2992652031ade0800000000000000
+      internalID: -1323723878344085823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58cb609bf6f5b710800000000000000
+      internalID: 1708543193977178202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 1896
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6109e1c304839670800000000000000
+      internalID: 8544318069725004140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709e8569ac421c330800000000000000
+      internalID: 3729302418963884295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aabd9ce57e8b71d0800000000000000
+      internalID: -3351928860515124575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ed5fe3df0accbc0800000000000000
+      internalID: -3761454579217736151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5cc4acb0ba264e0800000000000000
+      internalID: -1989840018217318936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6140caa022e0bab70800000000000000
+      internalID: 8911231827053380630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.05}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e16a62f1b0c6c2b0800000000000000
+      internalID: -5564548419060866588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Daoshi_charge_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 796
+        width: 1000
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.46, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c12e16ebe7a6aac0800000000000000
+      internalID: -3844200600294252087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 659d1d6c5e1af4744a00717c791aa798
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,31 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 402b5b37641054d2aa7fd46be6c9bc67, type: 3}
   m_Name: CoreCombatVolumetricFogProfile
   m_EditorClassIdentifier: 
-  lightingModel: 1
+  lightingModel: 2
   sunCopyColor: 1
-  density: 0.29
-  noiseStrength: 0.744
-  height: 9
-  heightFallOff: 0.6
+  density: 0.81
+  noiseStrength: 0.659
+  height: 5
+  heightFallOff: 0.779
   baselineHeight: 0
-  distance: 145
-  distanceFallOff: 0.74
+  distance: 0
+  distanceFallOff: 0
   maxFogLength: 300
-  maxFogLengthFallOff: 0.5
+  maxFogLengthFallOff: 0
   baselineRelativeToCamera: 0
   baselineRelativeToCameraDelay: 0
-  noiseScale: 1.2
-  noiseSparse: 0.437
+  noiseScale: 2
+  noiseSparse: 0.875
   noiseFinalMultiplier: 1
-  alpha: 1
-  color: {r: 1, g: 1, b: 1, a: 1}
+  alpha: 1.05
+  color: {r: 1, g: 0.45477408, b: 0.103773594, a: 1}
   deepObscurance: 1
   specularColor: {r: 1, g: 1, b: 0.8, a: 1}
   specularThreshold: 0.6
   specularIntensity: 0.1
-  lightDirection: {x: 0, y: -0.5000001, z: 0.8660253}
-  lightIntensity: 0.534
-  lightColor: {r: 1, g: 0.92166317, b: 0.8207547, a: 1}
+  lightDirection: {x: -0.23949681, y: -0.5735764, z: 0.78335905}
+  lightIntensity: 0.741
+  lightColor: {r: 0.99607843, g: 0.8627451, b: 0.14901961, a: 1}
   speed: 0.005
   useRealTime: 0
   windDirection: {x: -1, y: 0, z: 0}
@@ -49,10 +49,10 @@ MonoBehaviour:
   skyNoiseScale: 1.15
   skyAlpha: 0.85
   skyDepth: 0.999
-  stepping: 10
+  stepping: 12
   steppingNear: 0
-  dithering: 0
-  ditherStrength: 0.75
+  dithering: 1
+  ditherStrength: 5
   downsamplingOverride: 0
   downsampling: 1
   forceComposition: 0

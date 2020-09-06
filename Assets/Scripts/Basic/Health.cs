@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
-        if (isImmune) return;
+        if (isImmune || isDead) return;
         currHealth = Mathf.Clamp(currHealth - damage, 0, maxHealth);
         OnHealthChanged();
         if (currHealth <= 0 && !isDead)
@@ -45,7 +45,7 @@ public class Health : MonoBehaviour
 
     public virtual void TakeDamagePercent(float percent)
     {
-        if (isImmune) return;
+        if (isImmune || isDead) return;
         currHealth = Mathf.Clamp(
             currHealth - (int)(maxHealth * percent), 0, maxHealth);
         OnHealthChanged();
@@ -57,12 +57,14 @@ public class Health : MonoBehaviour
 
     public virtual void HealAmount(int amount)
     {
+        if (isDead) return;
         currHealth = Mathf.Clamp(currHealth + amount, 0, maxHealth);
         OnHealthChanged();
     }
 
     public virtual void HealPercent(float percent)
     {
+        if (isDead) return;
         currHealth = Mathf.Clamp(
             currHealth + (int)(maxHealth * percent), 0, maxHealth);
         OnHealthChanged();

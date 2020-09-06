@@ -56,7 +56,7 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                 break;
             case 5:
                 var chance = UnityEngine.Random.Range(0f, 1f);
-                if (chance < 0.4f)
+                if (chance < 0.25f)
                 {
                     foreach (Collider c in hits)
                     {
