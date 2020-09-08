@@ -598,7 +598,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 32055
+    m_Bits: 28983
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -635,8 +635,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4095365528959758179}
-  m_LocalRotation: {x: 0.060463775, y: -0.6788752, z: 0.05626055, w: 0.72959393}
-  m_LocalPosition: {x: 1.9676056, y: 3.8292315, z: -0.14189029}
+  m_LocalRotation: {x: 0.059221845, y: -0.69628036, z: 0.05783466, w: 0.71298087}
+  m_LocalPosition: {x: 2.4650497, y: 3.9124663, z: -0.05843258}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 773315910367340669}
@@ -654,7 +654,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 2.5
   m_Range: 6
   m_SpotAngle: 140
   m_InnerSpotAngle: 1
@@ -691,7 +691,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 29238
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heightOffset: 3.5
-  spotlightDistance: 2
+  spotlightDistance: 2.5
 --- !u!1 &8330861665012627057
 GameObject:
   m_ObjectHideFlags: 0

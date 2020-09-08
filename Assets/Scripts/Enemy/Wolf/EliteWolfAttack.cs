@@ -38,11 +38,13 @@ public class EliteWolfAttack : EnemyAttack
     protected override void Update()
     {
         base.Update();
-        if (phase == 0 && health.currHealth <= health.maxHealth * 0.2)
+        if (phase == 0 && health.currHealth <= 
+            (int)(health.maxHealth * 0.25))
         {
             EnterRage();
         }
-        else if (phase == 1 && health.currHealth <= health.maxHealth * 0.05)
+        else if (phase == 1 && health.currHealth <= 
+            (int)(health.maxHealth * 0.1))
         {
             EnterWipe();
             health.isImmune = true;
@@ -153,7 +155,7 @@ public class EliteWolfAttack : EnemyAttack
     protected override void SpecialAutoAttack()
     {
         var temp = layerMask;
-        layerMask = LayerMask.GetMask("Player", "Minion", "Base");
+        layerMask = LayerMask.GetMask("Player", "Minion", "BaseTower");
         GetEnemies(target.transform.position, 10f);
         foreach (Collider enemy in enemiesInRange)
         {
@@ -173,7 +175,7 @@ public class EliteWolfAttack : EnemyAttack
         shake.Shake("EliteWolfStompShake");
 
 
-        var swipeMask = LayerMask.GetMask("Player", "Minion", "Base");
+        var swipeMask = LayerMask.GetMask("Player", "Minion", "BaseTower");
         Collider[] colliders = Physics.OverlapSphere(
             gameObject.transform.position, stompRange, swipeMask);
         foreach (Collider c in colliders)

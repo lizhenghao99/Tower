@@ -18,7 +18,7 @@ public class Level0Ending : LevelEnding
     public override void Lose()
     {
         if (levelController.currStage.index == 2 &&
-            (float)bossHealth.currHealth <= bossHealth.maxHealth * 0.2)
+            (float)bossHealth.currHealth <= (int)(bossHealth.maxHealth * 0.1))
         {
             base.Win();
         }

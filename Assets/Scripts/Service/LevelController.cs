@@ -64,7 +64,7 @@ public class LevelController : MonoBehaviour
         Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Minion"),
                                      LayerMask.NameToLayer("Player"),
                                      true);
-        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Base"),
+        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("BaseTower"),
                                      LayerMask.NameToLayer("Player"),
                                      true);
 

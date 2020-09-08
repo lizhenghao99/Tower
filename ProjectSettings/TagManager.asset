@@ -24,7 +24,7 @@ TagManager:
   - Enemy
   - Minion
   - PostProcessing
-  - Base
+  - BaseTower
   - CameraBoundary
   - 
   - 
