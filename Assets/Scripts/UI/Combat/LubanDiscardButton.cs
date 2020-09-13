@@ -12,14 +12,14 @@ public class LubanDiscardButton : DiscardButton
 {
     protected override void PointerEnterBehavior()
     {
-        gameObject.transform.DORotate(
+        gameObject.transform.DOLocalRotate(
             new Vector3(0, 0, 20), 0.3f)
             .SetEase(Ease.OutQuint);
     }
 
     protected override void PointerExitBehavior()
     {
-        gameObject.transform.DORotate(
+        gameObject.transform.DOLocalRotate(
                new Vector3(0, 0, 0), 0.3f)
                .SetEase(Ease.OutQuint);
     }
@@ -35,7 +35,7 @@ public class LubanDiscardButton : DiscardButton
 
     protected override void DeselecteBehavior()
     {
-        gameObject.transform.DORotate(
+        gameObject.transform.DOLocalRotate(
                 new Vector3(0, 0, 0), 0.3f)
                 .SetEase(Ease.OutQuint);
     }

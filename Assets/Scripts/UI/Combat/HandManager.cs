@@ -121,9 +121,14 @@ public class HandManager : MonoBehaviour
     private void OnStartCasting(object sender, EventArgs e)
     {
         hand = GetComponentsInChildren<CardClick>().ToList();
+        lastSelectedCard.interactable = false;
+        lastSelectedCard.GetComponent<CardDisplay>().Play();
         foreach (CardClick c in hand)
         {
-            c.SetInteractable(false);
+            if (c != lastSelectedCard)
+            {
+                c.SetInteractable(false);
+            }
         }
         Invoke("StartCardAnimation", 0.3f);
     }

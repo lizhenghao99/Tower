@@ -86,7 +86,7 @@
                 fixed4 col = tex2D(_MainTex, i.uv1-fixed2(_ScaleSpeedMainTex.z,_ScaleSpeedMainTex.a)*_Time)*tex2D(_MainNoiseTex, i.uv2-fixed2(_ScaleSpeedMainNoiseTex.z,_ScaleSpeedMainNoiseTex.a)*_Time)*i.color*_TintColor;
 				fixed4 alphamask = tex2D(_AlphaMask,i.uv3);
 				col.a = col.a * fade * alphamask.a;
-                UNITY_APPLY_FOG(i.fogCoord, col);
+                //UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;
             }
             ENDCG

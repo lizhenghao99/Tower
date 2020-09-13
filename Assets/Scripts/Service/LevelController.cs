@@ -27,6 +27,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] Light sunLight;
     [Header("Ending")]
     [SerializeField] LevelEnding levelEnding;
+    [SerializeField] GameObject earlyEnding;
     [Header("UI")]
     [SerializeField] CanvasGroup[] groupsToHide;
 
@@ -39,6 +40,8 @@ public class LevelController : MonoBehaviour
 
     private List<float> playerOffsets;
 
+    private int alivePlayerCount;
+
     public Stage currStage { get; private set; } = null;
 
     private void Awake()
@@ -47,7 +50,8 @@ public class LevelController : MonoBehaviour
 
         foreach (Material m in cardMaterials)
         {
-            m.SetFloat("_HsvSaturation", 1f);
+            m.SetFloat("_Saturation", 1f);
+            m.SetFloat("_OutlineStrength", 0f);
         }
 
         numericBoundaries = Camera.main.GetComponent<ProCamera2DNumericBoundaries>();
@@ -81,6 +85,12 @@ public class LevelController : MonoBehaviour
         }
 
         baseTower.death += OnTowerDeath;
+        foreach (PlayerController p in players)
+        {
+            p.GetComponent<PlayerHealth>().death += OnPlayerDeath;
+            p.GetComponent<PlayerHealth>().revive += OnPlayerRevive;
+        }
+        alivePlayerCount = players.Length;
         StartNextStage();
     }
 
@@ -216,5 +226,36 @@ public class LevelController : MonoBehaviour
     public void Lose()
     {
         levelEnding.Lose();
+    }
+
+    public void OnPlayerDeath(object sender, EventArgs e)
+    {
+        alivePlayerCount -= 1;
+        if (alivePlayerCount <= 0)
+        {
+            Invoke("EarlyLose", 5f);
+        }
+    }
+
+    public void OnPlayerRevive(object sender, EventArgs e)
+    {
+        alivePlayerCount += 1;
+    }
+
+    public void EarlyLose()
+    {
+        if (alivePlayerCount <= 0)
+        {
+            earlyEnding.SetActive(true);
+            earlyEnding.GetComponent<CanvasGroup>().DOFade(1f, 0.3f)
+                .SetEase(Ease.OutQuint);
+        }
+    }
+
+    public void CancelEarlyLose()
+    {
+        earlyEnding.GetComponent<CanvasGroup>().DOFade(0f, 0.3f)
+                .SetEase(Ease.OutQuint)
+                .OnComplete(() => earlyEnding.SetActive(false));
     }
 }

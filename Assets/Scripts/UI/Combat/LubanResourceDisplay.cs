@@ -19,7 +19,7 @@ public class LubanResourceDisplay : ResourceDisplay
 
         float glowStart = 90f - 360 * primaryStartPercent;
         float glowRotatoin = glowStart - 360 * (amount - primaryStartPercent);
-        primaryGlow.transform.DORotate(
+        primaryGlow.transform.DOLocalRotate(
             new Vector3(0, 0, glowRotatoin), 0.2f)
             .SetEase(Ease.OutQuint);
 

@@ -33,9 +33,12 @@ public class CardClick : Selectable
 
     private InspectMenu inspectMenu;
 
+    private CardDisplay display;
+
     protected override void Awake()
     {
         group = GetComponent<CanvasGroup>();
+        display = GetComponent<CardDisplay>();
     }
 
     protected override void Start()
@@ -137,6 +140,7 @@ public class CardClick : Selectable
     public override void OnSelect(BaseEventData eventData)
     {
         base.OnSelect(eventData);
+        display.ShowOutline();
         if (IsInteractable())
         {
             rectTransform.DOSizeDelta(
@@ -148,6 +152,7 @@ public class CardClick : Selectable
     public override void OnDeselect(BaseEventData eventData)
     {
         base.OnDeselect(eventData);
+        display.HideOutline(cardMaterial);
         if (IsHighlighted())
         {
             rectTransform.DOSizeDelta(
@@ -182,8 +187,8 @@ public class CardClick : Selectable
 
     private void FadeIn()
     {
-        DOTween.To(() => cardMaterial.GetFloat("_HsvSaturation"),
-                    (x) => cardMaterial.SetFloat("_HsvSaturation", x),
+        DOTween.To(() => cardMaterial.GetFloat("_Saturation"),
+                    (x) => cardMaterial.SetFloat("_Saturation", x),
                     1f, fadeTime).SetEase(Ease.OutQuint);
         group.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
     }
@@ -192,9 +197,9 @@ public class CardClick : Selectable
     {
         if (this != handManager.lastSelectedCard)
         {
-            DOTween.To(() => cardMaterial.GetFloat("_HsvSaturation"),
-                    (x) => cardMaterial.SetFloat("_HsvSaturation", x),
-                    0.8f, fadeTime).SetEase(Ease.OutQuint);
+            DOTween.To(() => cardMaterial.GetFloat("_Saturation"),
+                    (x) => cardMaterial.SetFloat("_Saturation", x),
+                    0.2f, fadeTime).SetEase(Ease.OutQuint);
             group.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
         }
     }

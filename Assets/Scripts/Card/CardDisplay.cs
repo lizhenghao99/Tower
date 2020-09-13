@@ -12,6 +12,7 @@ public class CardDisplay : MonoBehaviour
     public Card card { get; private set; }
 
     protected Image art;
+    public Image cardImage;
     protected TextMeshProUGUI cardName;
     protected TextMeshProUGUI primaryResource;
     protected TextMeshProUGUI secondaryResrouce;
@@ -45,7 +46,41 @@ public class CardDisplay : MonoBehaviour
                     .FirstOrDefault();
         art.sprite = card.art;
 
+        cardImage = GetComponentsInChildren<Image>()
+                    .Where(a => a.gameObject.name == "Image")
+                    .FirstOrDefault();
+
         DisplayResource();
+    }
+
+    public void ShowOutline()
+    {
+        Material mat = Instantiate(cardImage.material);
+        cardImage.material = mat;
+        DOTween.To(() => mat.GetFloat("_OutlineStrength"),
+                    (x) => mat.SetFloat("_OutlineStrength", x),
+                    3f, 0.3f).SetEase(Ease.OutQuint);
+    }
+
+    public void HideOutline(Material cardMaterial)
+    {
+        Material mat = Instantiate(cardImage.material);
+        cardImage.material = mat;
+        DOTween.To(() => mat.GetFloat("_OutlineStrength"),
+                    (x) => mat.SetFloat("_OutlineStrength", x),
+                    0f, 0.3f).SetEase(Ease.OutQuint);
+        cardImage.material = cardMaterial;
+    }
+
+    public virtual void Play()
+    {
+        Material mat = Instantiate(cardImage.material);
+        cardImage.material = mat;
+        Material artMat = Instantiate(art.material);
+        art.material = artMat;
+        DOTween.To(() => mat.GetFloat("_OutlineStrength"),
+                    (x) => mat.SetFloat("_OutlineStrength", x),
+                    0f, 0.3f).SetEase(Ease.OutQuint);
     }
 
     protected virtual void DisplayResource()

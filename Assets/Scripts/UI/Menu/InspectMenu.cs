@@ -45,11 +45,13 @@ public class InspectMenu : MonoBehaviour
     {
         isInspecting = true;
         isPaused = true;
-        Time.timeScale = 0f;
+        
         inspectMenu.SetActive(true);
         group.DOFade(1f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true);
 
         card = Instantiate(c, inspectMenu.transform, false);
+        Material mat = Instantiate(card.cardImage.material);
+        card.cardImage.material = mat;
         card.SetCard(cardInfo);
 
         if (card.GetComponent<Selectable>())
@@ -64,7 +66,8 @@ public class InspectMenu : MonoBehaviour
 
         foreach (Image image in card.GetComponentsInChildren<Image>())
         {
-            image.material.SetFloat("_HsvSaturation", 1f);
+            image.material.SetFloat("_Saturation", 1f);
+            image.material.SetFloat("_OutlineStrength", 0f);
         }
 
         var rectTransform = card.GetComponent<RectTransform>();
@@ -80,6 +83,7 @@ public class InspectMenu : MonoBehaviour
             card.card.description;
 
         GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
+        Time.timeScale = 0f;
     }
 
     public void Exit()

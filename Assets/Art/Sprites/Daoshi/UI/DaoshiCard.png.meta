@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: f668e96b05fa0be4b9928b7e8cab9f50
+guid: f6414c62dec9c37478b6e7805cda88b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4064797421988065194
-    second: LubanCard_0
+      213: -8405906292479559171
+    second: DaoshiCard_0
   - first:
-      213: 46790596459239709
-    second: LubanCard_1
+      213: 843331407019934639
+    second: DaoshiCard_1
+  - first:
+      213: 6043318641704225315
+    second: DaoshiCard_2
+  - first:
+      213: 3284108242342125585
+    second: DaoshiCard_3
+  - first:
+      213: -9137001392026195627
+    second: DaoshiCard_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +76,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -79,7 +88,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -91,7 +100,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -103,7 +112,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -117,22 +126,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LubanCard_0
+      name: DaoshiCard_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 337
-        width: 1500
-        height: 1800
+        x: 130
+        y: 81
+        width: 731
+        height: 854
       alignment: 9
-      pivot: {x: 0.515, y: 0.5}
+      pivot: {x: 0.52, y: 0.49999997}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6505a7ae740f697c0800000000000000
-      internalID: -4064797421988065194
+      spriteID: df9f88d63c8385b80800000000000000
+      internalID: -8405906292479559171
       vertices: []
       indices: 
       edges: []
@@ -140,7 +149,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 097e35d4cb270f441aad1a109401cdb5
+    spriteID: 861ee6a6268cbba4796a507a1b672cbf
     internalID: 0
     vertices: []
     indices: 

@@ -53,4 +53,24 @@ public class DaoshiCardDisplay : CardDisplay
             elements[card.secondaryChange - 1].enabled = true;
         }
     }
+
+    public override void Play()
+    {
+        Material mat = Instantiate(jin.material);
+        jin.material = mat;
+
+        mat = Instantiate(mu.material);
+        mu.material = mat;
+
+        mat = Instantiate(shui.material);
+        shui.material = mat;
+
+        mat = Instantiate(huo.material);
+        huo.material = mat;
+
+        mat = Instantiate(tu.material);
+        tu.material = mat;
+
+        base.Play();
+    }
 }

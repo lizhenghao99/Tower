@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LubanCard
-  m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
+  m_Shader: {fileID: 4800000, guid: ef0de76aa72637f4b9758e6bd96efc8d, type: 3}
   m_ShaderKeywords: HSV_ON
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -59,12 +59,25 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Alpha: 1
     - _AlphaCutoffValue: 0.25
     - _BillboardY: 0
     - _BlurHD: 0
     - _BlurIntensity: 10
+    - _BlurSize: 1
     - _ChromAberrAlpha: 0.4
     - _ChromAberrAmount: 1
     - _ClipUvDown: 0
@@ -73,11 +86,13 @@ Material:
     - _ClipUvUp: 0
     - _ColorChangeLuminosity: 0
     - _ColorChangeTolerance: 0.25
+    - _ColorMask: 15
     - _ColorRampLuminosity: 0
     - _ColorRampOutline: 0
     - _ColorSwapBlueLuminosity: 0.5
     - _ColorSwapGreenLuminosity: 0.5
     - _ColorSwapRedLuminosity: 0.5
+    - _Cutoff: 0.5
     - _DistortAmount: 0.5
     - _DistortTexXSpeed: 5
     - _DistortTexYSpeed: 5
@@ -139,10 +154,13 @@ Material:
     - _OutlineGlow: 1.5
     - _OutlineIsPixel: 0
     - _OutlinePixelWidth: 1
+    - _OutlineRange: 40
+    - _OutlineStrength: 0
     - _OutlineTexGrey: 0
     - _OutlineTexToggle: 0
     - _OutlineTexXSpeed: 10
     - _OutlineTexYSpeed: 0
+    - _OutlineThreshold: 0.9
     - _OutlineWidth: 0.004
     - _PinchUvAmount: 0.35
     - _PixelateSize: 32
@@ -154,6 +172,7 @@ Material:
     - _RotateUvAmount: 0
     - _RoundWaveSpeed: 2
     - _RoundWaveStrength: 0.7
+    - _Saturation: 1
     - _ShadowAlpha: 0.5
     - _ShadowX: 0.1
     - _ShadowY: -0.05
@@ -163,12 +182,19 @@ Material:
     - _ShineGlow: 1
     - _ShineLocation: 0.5
     - _ShineWidth: 0.1
+    - _StandardDeviation: 0.02
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _TextureScrollXSpeed: 1
     - _TextureScrollYSpeed: 0
     - _TwistUvAmount: 1
     - _TwistUvPosX: 0.5
     - _TwistUvPosY: 0.5
     - _TwistUvRadius: 0.75
+    - _UseUIAlphaClip: 0
     - _WaveAmount: 7
     - _WaveSpeed: 10
     - _WaveStrength: 7.5
@@ -176,6 +202,7 @@ Material:
     - _WaveY: 0.5
     - _ZWrite: 0
     - _ZoomUvAmount: 0.5
+    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorChangeNewCol: {r: 1, g: 1, b: 0, a: 1}
@@ -192,6 +219,6 @@ Material:
     - _GreyscaleTintColor: {r: 1, g: 1, b: 1, a: 1}
     - _HitEffectColor: {r: 1, g: 1, b: 1, a: 1}
     - _InnerOutlineColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 1.3960785, g: 0.09411765, b: 0.09411765, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
