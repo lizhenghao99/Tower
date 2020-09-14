@@ -55,14 +55,11 @@ public class DaoshiAutoAttack : RangedPlayerAutoAttack
                 }
                 break;
             case 5:
-                var chance = UnityEngine.Random.Range(0f, 1f);
-                if (chance < 0.25f)
+                foreach (Collider c in hits)
                 {
-                    foreach (Collider c in hits)
-                    {
-                        effectManager.Register(gameObject, c.gameObject,
-                            Effect.Type.Stun, 2f, 0);
-                    }
+                    var chance = UnityEngine.Random.Range(0f, 0.7f);
+                    effectManager.Register(gameObject, c.gameObject,
+                        Effect.Type.Stun, chance, 0);
                 }
                 break;
             default:

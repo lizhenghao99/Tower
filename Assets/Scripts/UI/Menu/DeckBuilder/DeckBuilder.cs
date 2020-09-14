@@ -26,9 +26,10 @@ public class DeckBuilder : MonoBehaviour
 
     [HideInInspector] public Card[] ownCards;
     private GridLayoutGroup grid;
-    private DeckCardManager deckCardManager;
     private int currPage = 0;
     private Vector2 gridPosition;
+
+    private DeckCardManager deckCardManager;
 
     private float shiftDistance = -3000;
 
@@ -42,15 +43,13 @@ public class DeckBuilder : MonoBehaviour
         Refresh();
     }
 
-    private void OnEnable()
+    public void SetOwner(Card.Owner o, GameObject c)
     {
+        owner = o;
+        collectionCardPrefab = c;
         Refresh();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
         ShowPage(currPage);
+        deckCardManager.SetOwner(o, c);
     }
 
     // Update is called once per frame
@@ -138,6 +137,7 @@ public class DeckBuilder : MonoBehaviour
     {
         SaveSystem.SaveDeck(
             owner, deckCardManager.deckCards.Select(c => c.card).ToArray());
+        CleanUp();
         GetComponent<CanvasGroup>()
             .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
             .OnComplete(() => gameObject.SetActive(false));
@@ -150,6 +150,7 @@ public class DeckBuilder : MonoBehaviour
 
     private void Refresh()
     {
+        currPage = 0;
         var data = SaveSystem.Load();
         ownCards = cards.Where(c => c.owner == owner
                                 && c.upgraded == data.cardsUpgrade[c.cardName])
@@ -158,5 +159,15 @@ public class DeckBuilder : MonoBehaviour
             .ThenBy(c => c.cardName)
             .ToArray();
         collectionCardCount = ownCards.Length;
+    }
+
+    public void CleanUp()
+    {
+        var previousCards = grid.GetComponentsInChildren<CollectionCardClick>();
+        foreach (CollectionCardClick c in previousCards)
+        {
+            Destroy(c.gameObject, 0.5f);
+        }
+        deckCardManager.CleanUp();
     }
 }

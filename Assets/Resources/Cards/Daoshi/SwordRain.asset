@@ -18,7 +18,7 @@ MonoBehaviour:
   primaryChange: -60
   secondaryChange: 0
   owner: 1
-  art: {fileID: 0}
+  art: {fileID: 7029864551446497933, guid: 66e7710072d1d9d4c89ea0423aac98c5, type: 3}
   sfx: {fileID: 11400000, guid: ab323956e04594e459eb88b9e0268e1d, type: 2}
   vfx: {fileID: 1529907042512856, guid: d77d260784e81094c8b0becadb75fb73, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}

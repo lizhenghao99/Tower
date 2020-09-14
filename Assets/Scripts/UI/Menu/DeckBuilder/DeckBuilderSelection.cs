@@ -25,9 +25,8 @@ public class DeckBuilderSelection : MonoBehaviour
 
     public void SelectCharacter(int index)
     {
-        deckBuilder.owner = owners[index];
-        deckBuilder.collectionCardPrefab = collectionCardPrefabs[index];
         deckBuilder.gameObject.SetActive(true);
+        deckBuilder.SetOwner(owners[index], collectionCardPrefabs[index]);
         deckBuilder.GetComponent<CanvasGroup>()
             .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
     }

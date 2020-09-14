@@ -17,8 +17,8 @@ MonoBehaviour:
   charPostions:
   - {x: -92, y: 0, z: 0}
   - {x: -94, y: 0, z: -3.56}
-  top: -118
-  bottom: -143
+  top: 0
+  bottom: -500
   left: -110
-  right: -45
-  sunLightIntensity: 1.2
+  right: 500
+  sunLightIntensity: 1

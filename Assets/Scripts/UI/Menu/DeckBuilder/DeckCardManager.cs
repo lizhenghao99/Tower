@@ -23,23 +23,24 @@ public class DeckCardManager : MonoBehaviour
 
     public List<DeckCardClick> deckCards;
 
-
-    private void Start()
+    public void SetOwner(Card.Owner o, GameObject c)
     {
+        owner = o;
+        cardPrefab = c;
         Card[] ownCard = GetComponentInParent<DeckBuilder>().ownCards;
         deckCards = new List<DeckCardClick>();
         var data = SaveSystem.Load();
 
-        if (data.playerDecks.ContainsKey((int)owner))
+        if (data.playerDecks.ContainsKey((int)owner) 
+            && data.playerDecks[(int)owner].Length > 0)
         {
             foreach (string name in data.playerDecks[(int)owner])
             {
-                AddCard(ownCard.Where(c => c.cardName == name
-                                        && c.upgraded == data.cardsUpgrade[name]
+                AddCard(ownCard.Where(cc => cc.cardName == name
+                                        && cc.upgraded == data.cardsUpgrade[name]
                                         ).FirstOrDefault());
             }
         }
-
 
         ShowInitialCards();
     }
@@ -171,5 +172,13 @@ public class DeckCardManager : MonoBehaviour
         c.cardWidth = cardWidth;
         c.cardHeight = cardHeight;
         c.zoomFactor = zoomFactor;
+    }
+
+    public void CleanUp()
+    {
+        foreach (DeckCardClick c in deckCards)
+        {
+            Destroy(c.gameObject, 0.5f);
+        }
     }
 }

@@ -18,11 +18,12 @@ MonoBehaviour:
   primaryChange: -80
   secondaryChange: 4
   owner: 1
-  art: {fileID: 0}
+  art: {fileID: 4403933487624526528, guid: 4501cc65a340f474393461821ec6688d, type: 3}
   sfx: {fileID: 0}
   vfx: {fileID: 1754530298286186280, guid: 2f1c99c99f3ef9647bdfea00460f5be1, type: 3}
   vfxOffset: {x: 0, y: 3, z: 0}
   castTime: 4
+  animationTrigger: Cast
   specialPrefab: {fileID: 0}
   damage: 500
   force: 50
