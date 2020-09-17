@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealWhenLow : MonoBehaviour
 {
+    [SerializeField] float healPercent = 0.1f;
     private Health health;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class HealWhenLow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health.currHealth < health.maxHealth * 0.3)
+        if (health.currHealth < health.maxHealth * healPercent)
         {
             health.HealPercent(1f);
         }

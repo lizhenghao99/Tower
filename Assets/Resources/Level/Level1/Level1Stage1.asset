@@ -21,4 +21,4 @@ MonoBehaviour:
   bottom: -143
   left: -20
   right: 40
-  sunLightIntensity: 1
+  sunLightIntensity: 1.5

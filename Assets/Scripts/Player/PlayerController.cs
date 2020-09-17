@@ -18,9 +18,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject highlight;
 
 
-    public EventHandler startCasting;
-    public EventHandler finishCasting;
-    public EventHandler startWalking;
+    public event EventHandler startCasting;
+    public event EventHandler finishCasting;
+    public event EventHandler startWalking;
 
     public bool isSelected = false;
     public bool isWalking { get; private set; } = false;

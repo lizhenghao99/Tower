@@ -5,7 +5,7 @@ using System;
 
 public class StepEvent : MonoBehaviour
 {
-    public EventHandler step;
+    public event EventHandler step;
 
     public void OnStep()
     {

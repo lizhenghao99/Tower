@@ -8,8 +8,8 @@ public abstract class Effect : MonoBehaviour
     public enum Type { None, Burn, Freeze, Stun, Rage, Wood, Lightning, 
         FiveSwords, SevenSwords };
 
-    public EventHandler start;
-    public EventHandler finish;
+    public event EventHandler start;
+    public event EventHandler finish;
 
     public Type type { get; protected set; }
     public GameObject caster;
@@ -71,10 +71,20 @@ public abstract class Effect : MonoBehaviour
         start?.Invoke(this, EventArgs.Empty);
     }
 
+    protected void InvokeStart(object sender)
+    {
+        start?.Invoke(sender, EventArgs.Empty);
+    }
+
     protected virtual void OnFinish()
     {
         Destroy(currentVfx);
         Destroy(this);
         finish?.Invoke(this, EventArgs.Empty);
+    }
+
+    protected void InvokeFinish(object sender)
+    {
+        finish?.Invoke(sender, EventArgs.Empty);
     }
 }

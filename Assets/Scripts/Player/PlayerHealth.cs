@@ -12,8 +12,8 @@ public class PlayerHealth : Health
     public int maxShield { get; private set; }
     public int currShield { get; private set; }
 
-    public EventHandler shieldChanged;
-    public EventHandler damaged;
+    public event EventHandler shieldChanged;
+    public event EventHandler damaged;
 
 
     // Start is called before the first frame update

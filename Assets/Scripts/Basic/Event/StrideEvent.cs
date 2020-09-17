@@ -5,7 +5,7 @@ using System;
 
 public class StrideEvent : MonoBehaviour
 {
-    public EventHandler stride;
+    public event EventHandler stride;
 
     public void OnStride()
     {

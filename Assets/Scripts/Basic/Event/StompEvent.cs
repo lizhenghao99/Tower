@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StompEvent : MonoBehaviour
 {
-    public EventHandler stomp;
+    public event EventHandler stomp;
 
     public void OnStomp()
     {

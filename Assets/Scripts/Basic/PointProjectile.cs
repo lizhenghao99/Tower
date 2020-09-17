@@ -6,7 +6,7 @@ using UnityEngine;
 public class PointProjectile : MonoBehaviour
 {
     public Card card;
-    public EventHandler<Vector3> hitFloor;
+    public event EventHandler<Vector3> hitFloor;
 
     private void OnTriggerEnter(Collider other)
     {

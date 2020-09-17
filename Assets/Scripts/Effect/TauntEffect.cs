@@ -41,13 +41,13 @@ public class TauntEffect : Effect
     {
         isActive = true;
         attack.taunter = caster;
-        start?.Invoke(this, EventArgs.Empty);
+        InvokeStart(this);
     }
 
     protected override void OnFinish()
     {
         isActive = false;
         attack.taunter = null;
-        finish?.Invoke(this, EventArgs.Empty);
+        InvokeFinish(this);
     }
 }

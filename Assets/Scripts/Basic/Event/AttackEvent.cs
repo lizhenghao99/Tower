@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AttackEvent : MonoBehaviour
 {
-    public EventHandler attack;
+    public event EventHandler attack;
 
     public void OnAttack()
     {

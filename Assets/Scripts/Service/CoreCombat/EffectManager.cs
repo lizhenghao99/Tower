@@ -14,7 +14,7 @@ public class EffectManager : MonoBehaviour
     [SerializeField] GameObject fiveSwordsVfx;
     [SerializeField] GameObject sevenSwordsVfx;
 
-    public EventHandler<Effect> registerEvent;
+    public event EventHandler<Effect> registerEvent;
 
     // Start is called before the first frame update
     void Start()

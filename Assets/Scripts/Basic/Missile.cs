@@ -11,8 +11,8 @@ public class Missile : MonoBehaviour
     [SerializeField] public float rotationSpeed = 0.3f;
     [SerializeField] GameObject hitVfx;
     [HideInInspector] public float range;
-    public EventHandler<Vector3> hitEnemy;
-    public EventHandler outOfRange;
+    public event EventHandler<Vector3> hitEnemy;
+    public event EventHandler outOfRange;
     public int type = 0;
     private Vector3 startingPosition;
     private bool launched = false;

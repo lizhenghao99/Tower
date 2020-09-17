@@ -13,13 +13,18 @@ public abstract class PlayerResource : MonoBehaviour
     public int primaryResource { get; protected set; }
     public int secondaryResource { get; protected set; }
 
-    public EventHandler resourceChanged;
+    public event EventHandler resourceChanged;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
         primaryResource = startingPrimaryResource;
         secondaryResource = startingSecondaryResource;
+    }
+
+    protected void InvokeResourceChanged(object sender)
+    {
+        resourceChanged?.Invoke(sender, EventArgs.Empty);
     }
 
     public abstract bool IsResourceEnough(int primaryAmount, int secondaryAmount);

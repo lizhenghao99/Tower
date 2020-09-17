@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: d2acc3def7625ac449464662c81e6d42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1661166768749863643
+    second: Level1Tree3_0
+  - first:
+      213: 8079086007995182053
+    second: Level1Tree3_1
+  - first:
+      213: 1852446350002694549
+    second: Level1Tree3_2
+  - first:
+      213: 7267154851116625482
+    second: Level1Tree3_3
+  - first:
+      213: -6459361807015665800
+    second: Level1Tree3_4
+  - first:
+      213: -8957193828588661414
+    second: Level1Tree3_5
+  - first:
+      213: 8841087693220975654
+    second: Level1Tree3_6
+  - first:
+      213: -3596260175988994052
+    second: Level1Tree3_7
+  - first:
+      213: -6926738272954339797
+    second: Level1Tree3_8
+  - first:
+      213: -6702112048817729015
+    second: Level1Tree3_9
+  - first:
+      213: -6664932241432809283
+    second: Level1Tree3_10
+  - first:
+      213: 5675627288411233380
+    second: Level1Tree3_11
+  - first:
+      213: 4066306712559143477
+    second: Level1Tree3_12
+  - first:
+      213: 3579462018186958532
+    second: Level1Tree3_13
+  - first:
+      213: -8717597911634591255
+    second: Level1Tree3_14
+  - first:
+      213: -8481349199592323817
+    second: Level1Tree3_15
+  - first:
+      213: 1305714570217170768
+    second: Level1Tree3_16
+  - first:
+      213: -4290135762672724658
+    second: Level1Tree3_17
+  - first:
+      213: 6638554332476735964
+    second: Level1Tree3_18
+  - first:
+      213: 1294481595812357760
+    second: Level1Tree3_19
+  - first:
+      213: -6179576826934384351
+    second: Level1Tree3_20
+  - first:
+      213: -1167342601035957572
+    second: Level1Tree3_21
+  - first:
+      213: -5136462337554679704
+    second: Level1Tree3_22
+  - first:
+      213: 4565188451976192827
+    second: Level1Tree3_23
+  - first:
+      213: 8152888660482952040
+    second: Level1Tree3_24
+  - first:
+      213: -944480891932237538
+    second: Level1Tree3_25
+  - first:
+      213: -7017823699045861601
+    second: Level1Tree3_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level1Tree3_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3197
+        width: 1017
+        height: 892
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2e40cff56ad0710800000000000000
+      internalID: 1661166768749863643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2124
+        width: 957
+        height: 833
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eba1606bedae1070800000000000000
+      internalID: 8079086007995182053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 996
+        width: 1087
+        height: 973
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5992161042635b910800000000000000
+      internalID: 1852446350002694549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 892
+        height: 903
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e209485de1ad460800000000000000
+      internalID: 7267154851116625482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_4
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 0
+        width: 1669
+        height: 1793
+      alignment: 9
+      pivot: {x: 0.50988704, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f1b11e8acbb56a0800000000000000
+      internalID: -6459361807015665800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_5
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1796
+        width: 1831
+        height: 1468
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55d6ae8ba7a1b380800000000000000
+      internalID: -8957193828588661414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_6
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 3266
+        width: 725
+        height: 830
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62493863a6ad1ba70800000000000000
+      internalID: 8841087693220975654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_7
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 3231
+        width: 1029
+        height: 865
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffca4a7c64871ec0800000000000000
+      internalID: -3596260175988994052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_8
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 2291
+        width: 995
+        height: 853
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e247c7d384fdf90800000000000000
+      internalID: -6926738272954339797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_9
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 1141
+        width: 1042
+        height: 928
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9029a55d9905df2a0800000000000000
+      internalID: -6702112048817729015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level1Tree3_10
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 0
+        width: 1034
+        height: 899
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0795150776183a0800000000000000
+      internalID: -6664932241432809283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: da57d51d7c2ed7543a413c0a1bf65936
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2759e337d2ee0c64aa0ea2d45753578b, type: 3}
+      name: _NormalMap
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

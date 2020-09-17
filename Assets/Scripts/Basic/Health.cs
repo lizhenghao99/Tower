@@ -10,9 +10,9 @@ public class Health : MonoBehaviour
     [SerializeField] public int maxHealth = 100;
     public int currHealth { get; protected set; }
 
-    public EventHandler healthChanged;
-    public EventHandler death;
-    public EventHandler revive;
+    public event EventHandler healthChanged;
+    public event EventHandler death;
+    public event EventHandler revive;
 
     public bool isDead = false;
 

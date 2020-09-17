@@ -67,7 +67,7 @@ public class DaoshiResource : PlayerResource
 
     private void OnResourceChanged()
     {
-        resourceChanged?.Invoke(gameObject, EventArgs.Empty);
+        InvokeResourceChanged(gameObject);
     }
 
     private void OnStartAutogen(object sender, EventArgs e)

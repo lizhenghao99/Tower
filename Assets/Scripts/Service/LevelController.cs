@@ -31,9 +31,9 @@ public class LevelController : MonoBehaviour
     [Header("UI")]
     [SerializeField] CanvasGroup[] groupsToHide;
 
-    public EventHandler StartCombat;
-    public EventHandler EndCombat;
-    public EventHandler StageClear;
+    public event EventHandler StartCombat;
+    public event EventHandler EndCombat;
+    public event EventHandler StageClear;
 
     private ProCamera2DNumericBoundaries numericBoundaries;
     private ProCamera2DCinematics cinematics;

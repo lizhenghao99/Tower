@@ -40,6 +40,6 @@ public class LubanResource : PlayerResource
 
     private void OnResourceChanged()
     {
-        resourceChanged?.Invoke(gameObject, EventArgs.Empty);
+        InvokeResourceChanged(gameObject);
     }
 }
