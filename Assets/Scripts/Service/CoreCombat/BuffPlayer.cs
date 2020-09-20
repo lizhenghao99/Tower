@@ -5,7 +5,7 @@ using UnityEngine;
 using Werewolf.StatusIndicators.Components;
 using System.Linq;
 
-public class BuffPlayer : Singleton<BuffPlayer>
+public class BuffPlayer : Singleton<BuffPlayer>, ICardTypePlayer
 {
     private Buff cardPlaying;
     private SplatManager splat;

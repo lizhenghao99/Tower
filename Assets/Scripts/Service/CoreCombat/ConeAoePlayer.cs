@@ -6,7 +6,7 @@ using Werewolf.StatusIndicators.Components;
 using TowerUtils;
 using System;
 
-public class ConeAoePlayer : Singleton<ConeAoePlayer>
+public class ConeAoePlayer : Singleton<ConeAoePlayer>, ICardTypePlayer
 {
     private ConeAoe cardPlaying;
     private SplatManager splat;

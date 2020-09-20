@@ -6,7 +6,7 @@ using Werewolf.StatusIndicators.Components;
 using TowerUtils;
 using System;
 
-public class AnglePlayer : Singleton<AnglePlayer>
+public class AnglePlayer : Singleton<AnglePlayer>, ICardTypePlayer
 {
     private Angle cardPlaying;
     private SplatManager splat;

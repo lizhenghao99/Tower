@@ -6,7 +6,7 @@ using Werewolf.StatusIndicators.Components;
 using TowerUtils;
 using System;
 
-public class PointAoePlayer : Singleton<PointAoePlayer>
+public class PointAoePlayer : Singleton<PointAoePlayer>, ICardTypePlayer
 {
     private PointAoe cardPlaying;
     private SplatManager splat;

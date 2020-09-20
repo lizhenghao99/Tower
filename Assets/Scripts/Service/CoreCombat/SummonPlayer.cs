@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using Werewolf.StatusIndicators.Components;
 
-public class SummonPlayer : Singleton<SummonPlayer>
+public class SummonPlayer : Singleton<SummonPlayer>, ICardTypePlayer
 {
     private Summon cardPlaying;
     private SplatManager splat;
