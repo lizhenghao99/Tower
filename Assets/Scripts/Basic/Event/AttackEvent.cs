@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackEvent : MonoBehaviour
+namespace ProjectTower
 {
-    public event EventHandler attack;
-
-    public void OnAttack()
+    public class AttackEvent : MonoBehaviour
     {
-        attack?.Invoke(gameObject, EventArgs.Empty);
+        public event EventHandler attack;
+
+        public void OnAttack()
+        {
+            attack?.Invoke(gameObject, EventArgs.Empty);
+        }
     }
 }

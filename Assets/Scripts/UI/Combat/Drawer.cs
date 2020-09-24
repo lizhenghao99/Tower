@@ -6,75 +6,78 @@ using UnityEngine;
 using DG.Tweening;
 using System;
 
-public class Drawer : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] public Card.Owner owner;
-
-    private PlayerController player;
-    private HandManager hand;
-    private Healthbar healthbar;
-    private ResourceDisplay resource;
-    private DiscardButton discardButton;
-    private HeadButton headButton;
-    private PlayerHealth health;
-
-    private CanvasGroup group;
-
-    private LevelController levelController;
-
-    private void Awake()
+    public class Drawer : MonoBehaviour
     {
-        player = FindObjectsOfType<PlayerController>()
-                        .Where(p => p.gameObject.name == owner.ToString())
-                        .FirstOrDefault();
-        hand = GetComponentInChildren<HandManager>();
-        healthbar = GetComponentInChildren<Healthbar>();
-        resource = GetComponentInChildren<ResourceDisplay>();
-        discardButton = GetComponentInChildren<DiscardButton>();
-        headButton = GetComponentInChildren<HeadButton>();
-        health = player.GetComponent<PlayerHealth>();
+        [SerializeField] public Card.Owner owner;
 
-        group = gameObject.GetComponent<CanvasGroup>();
+        private PlayerController player;
+        private HandManager hand;
+        private Healthbar healthbar;
+        private ResourceDisplay resource;
+        private DiscardButton discardButton;
+        private HeadButton headButton;
+        private PlayerHealth health;
 
-        hand.player = player;
-        healthbar.player = player;
-        resource.player = player;
-        discardButton.owner = owner;
-        headButton.owner = owner;
-    }
+        private CanvasGroup group;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        group.interactable = false;
-        levelController = FindObjectOfType<LevelController>();
-        levelController.StartCombat += OnStartCombat;
-        levelController.EndCombat += OnEndCombat;
-    }
+        private LevelController levelController;
 
-    // Update is called once per frame
-    void Update()
-    {
-        discardButton.SetInteractable(!(CardPlayer.Instance.isPlayingCard
-            || player.isCasting));
+        private void Awake()
+        {
+            player = FindObjectsOfType<PlayerController>()
+                            .Where(p => p.gameObject.name == owner.ToString())
+                            .FirstOrDefault();
+            hand = GetComponentInChildren<HandManager>();
+            healthbar = GetComponentInChildren<Healthbar>();
+            resource = GetComponentInChildren<ResourceDisplay>();
+            discardButton = GetComponentInChildren<DiscardButton>();
+            headButton = GetComponentInChildren<HeadButton>();
+            health = player.GetComponent<PlayerHealth>();
 
-        headButton.interactable =
-            !(CardPlayer.Instance.isPlayingCard);
+            group = gameObject.GetComponent<CanvasGroup>();
 
-        if (health.isDead)
+            hand.player = player;
+            healthbar.player = player;
+            resource.player = player;
+            discardButton.owner = owner;
+            headButton.owner = owner;
+        }
+
+        // Start is called before the first frame update
+        void Start()
         {
             group.interactable = false;
-            group.DOFade(0.5f, 0.3f).SetEase(Ease.OutQuint);
+            levelController = FindObjectOfType<LevelController>();
+            levelController.StartCombat += OnStartCombat;
+            levelController.EndCombat += OnEndCombat;
         }
-    }
 
-    private void OnStartCombat(object sender, EventArgs e)
-    {
-        group.interactable = true;
-    }
+        // Update is called once per frame
+        void Update()
+        {
+            discardButton.SetInteractable(!(CardPlayer.Instance.isPlayingCard
+                || player.isCasting));
 
-    private void OnEndCombat(object sender, EventArgs e)
-    {
-        group.interactable = false;
+            headButton.interactable =
+                !(CardPlayer.Instance.isPlayingCard);
+
+            if (health.isDead)
+            {
+                group.interactable = false;
+                group.DOFade(0.5f, 0.3f).SetEase(Ease.OutQuint);
+            }
+        }
+
+        private void OnStartCombat(object sender, EventArgs e)
+        {
+            group.interactable = true;
+        }
+
+        private void OnEndCombat(object sender, EventArgs e)
+        {
+            group.interactable = false;
+        }
     }
 }

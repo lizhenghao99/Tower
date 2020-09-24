@@ -4,18 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class SimpleHealthbar : MonoBehaviour
+namespace ProjectTower
 {
-    private Image image;
-
-    private void Start()
+    public class SimpleHealthbar : MonoBehaviour
     {
-        image = GetComponent<Image>();
-    }
+        private Image image;
 
-    public void SetValue(int value, int maxValue)
-    {
-        float progress = (float)value / (float)maxValue;
-        image.DOFillAmount(progress, 0.3f).SetEase(Ease.OutQuint);
+        private void Start()
+        {
+            image = GetComponent<Image>();
+        }
+
+        public void SetValue(int value, int maxValue)
+        {
+            float progress = (float)value / (float)maxValue;
+            image.DOFillAmount(progress, 0.3f).SetEase(Ease.OutQuint);
+        }
     }
 }

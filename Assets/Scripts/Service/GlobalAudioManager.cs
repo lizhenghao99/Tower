@@ -3,60 +3,63 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class GlobalAudioManager : Singleton<GlobalAudioManager>
+namespace ProjectTower
 {
-    public Sound[] sounds;
-    private AudioMixerManager audioMixerManager;
-
-    private void Start()
+    public class GlobalAudioManager : Singleton<GlobalAudioManager>
     {
-        sounds = Resources.LoadAll<Sound>("Sounds");
-        audioMixerManager = AudioMixerManager.Instance;
-    }
+        public Sound[] sounds;
+        private AudioMixerManager audioMixerManager;
 
-    public void Play(Sound sound, Vector3 position)
-    {
-        if (sound != null)
+        private void Start()
         {
-            PlayAtLocation(sound, position);
+            sounds = Resources.LoadAll<Sound>("Sounds");
+            audioMixerManager = AudioMixerManager.Instance;
         }
-    }
 
-    public void Play(string tag, Vector3 position)
-    {
-        Sound[] desiredSounds = sounds.Where(s => s.soundTag == tag).ToArray();
-
-        if (desiredSounds != null && desiredSounds.Length != 0)
+        public void Play(Sound sound, Vector3 position)
         {
-            if (desiredSounds.Length == 1)
+            if (sound != null)
             {
-
-                PlayAtLocation(desiredSounds[0], position);
-            }
-            else
-            {
-                int index = Random.Range(0, desiredSounds.Length);
-                PlayAtLocation(desiredSounds[index], position);
+                PlayAtLocation(sound, position);
             }
         }
-    }
 
-    private void PlayAtLocation(Sound sound, Vector3 position)
-    {
-        var tempGO = new GameObject("TempAudio");
-        tempGO.transform.position = position;
-        var audioSource = tempGO.AddComponent<AudioSource>();
+        public void Play(string tag, Vector3 position)
+        {
+            Sound[] desiredSounds = sounds.Where(s => s.soundTag == tag).ToArray();
 
-        audioSource.outputAudioMixerGroup = audioMixerManager.sfxGroup;
+            if (desiredSounds != null && desiredSounds.Length != 0)
+            {
+                if (desiredSounds.Length == 1)
+                {
 
-        audioSource.clip = sound.clip;
-        audioSource.loop = sound.loop;
-        audioSource.priority = sound.priority;
-        audioSource.volume = sound.volume;
-        audioSource.pitch = sound.pitch;
-        audioSource.spatialBlend = sound.spatialBlend;
+                    PlayAtLocation(desiredSounds[0], position);
+                }
+                else
+                {
+                    int index = Random.Range(0, desiredSounds.Length);
+                    PlayAtLocation(desiredSounds[index], position);
+                }
+            }
+        }
 
-        audioSource.Play();
-        Destroy(tempGO, sound.clip.length);
+        private void PlayAtLocation(Sound sound, Vector3 position)
+        {
+            var tempGO = new GameObject("TempAudio");
+            tempGO.transform.position = position;
+            var audioSource = tempGO.AddComponent<AudioSource>();
+
+            audioSource.outputAudioMixerGroup = audioMixerManager.sfxGroup;
+
+            audioSource.clip = sound.clip;
+            audioSource.loop = sound.loop;
+            audioSource.priority = sound.priority;
+            audioSource.volume = sound.volume;
+            audioSource.pitch = sound.pitch;
+            audioSource.spatialBlend = sound.spatialBlend;
+
+            audioSource.Play();
+            Destroy(tempGO, sound.clip.length);
+        }
     }
 }

@@ -6,98 +6,101 @@ using System;
 using TMPro;
 using UnityEngine.UI;
 
-public class InspectMenu : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] GameObject inspectMenu;
-    [SerializeField] Vector2 cardPos = new Vector2(-1000, 250);
-    [SerializeField] Vector2 cardSize = new Vector2(230, 300) * 3.6f;
-
-    public static bool isInspecting = false;
-    public static bool isPaused = false;
-
-    private CanvasGroup group;
-    private CardDisplay card;
-
-
-    // Start is called before the first frame update
-    void Start()
+    public class InspectMenu : MonoBehaviour
     {
-        group = inspectMenu.GetComponent<CanvasGroup>();
-    }
+        [SerializeField] GameObject inspectMenu;
+        [SerializeField] Vector2 cardPos = new Vector2(-1000, 250);
+        [SerializeField] Vector2 cardSize = new Vector2(230, 300) * 3.6f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (isInspecting)
+        public static bool isInspecting = false;
+        public static bool isPaused = false;
+
+        private CanvasGroup group;
+        private CardDisplay card;
+
+
+        // Start is called before the first frame update
+        void Start()
         {
-            if (isPaused)
+            group = inspectMenu.GetComponent<CanvasGroup>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (isInspecting)
             {
-                Time.timeScale = 0f;
+                if (isPaused)
+                {
+                    Time.timeScale = 0f;
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                }
             }
-            else
+        }
+
+        public void Enter(CardDisplay c, Card cardInfo)
+        {
+            isInspecting = true;
+            isPaused = true;
+
+            inspectMenu.SetActive(true);
+            group.DOFade(1f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true);
+
+            card = Instantiate(c, inspectMenu.transform, false);
+            Material mat = Instantiate(card.cardImage.material);
+            card.cardImage.material = mat;
+            card.SetCard(cardInfo);
+
+            if (card.GetComponent<Selectable>())
             {
-                Time.timeScale = 1f;
+                card.GetComponent<Selectable>().enabled = false;
             }
-        } 
-    }
 
-    public void Enter(CardDisplay c, Card cardInfo)
-    {
-        isInspecting = true;
-        isPaused = true;
-        
-        inspectMenu.SetActive(true);
-        group.DOFade(1f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true);
+            foreach (TextMeshProUGUI text in card.GetComponentsInChildren<TextMeshProUGUI>())
+            {
+                text.fontSizeMax = 200;
+            }
 
-        card = Instantiate(c, inspectMenu.transform, false);
-        Material mat = Instantiate(card.cardImage.material);
-        card.cardImage.material = mat;
-        card.SetCard(cardInfo);
+            foreach (Image image in card.GetComponentsInChildren<Image>())
+            {
+                image.material.SetFloat("_Saturation", 1f);
+                image.material.SetFloat("_OutlineStrength", 0f);
+            }
 
-        if (card.GetComponent<Selectable>())
-        {
-            card.GetComponent<Selectable>().enabled = false;
+            var rectTransform = card.GetComponent<RectTransform>();
+            rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+            rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+
+            rectTransform.anchoredPosition = cardPos;
+
+            rectTransform.sizeDelta = cardSize;
+
+
+            inspectMenu.GetComponentInChildren<TextMeshProUGUI>().text =
+                card.card.description;
+
+            GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
+            Time.timeScale = 0f;
         }
 
-        foreach (TextMeshProUGUI text in card.GetComponentsInChildren<TextMeshProUGUI>())
+        public void Exit()
         {
-            text.fontSizeMax = 200;
+            if (card != null)
+            {
+                Destroy(card.gameObject);
+            }
+
+            isInspecting = false;
+            isPaused = false;
+            Time.timeScale = 1f;
+
+            group.DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
+                .OnComplete(() => inspectMenu.SetActive(false));
         }
-
-        foreach (Image image in card.GetComponentsInChildren<Image>())
-        {
-            image.material.SetFloat("_Saturation", 1f);
-            image.material.SetFloat("_OutlineStrength", 0f);
-        }
-
-        var rectTransform = card.GetComponent<RectTransform>();
-        rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
-        rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-
-        rectTransform.anchoredPosition = cardPos;
-
-        rectTransform.sizeDelta = cardSize;
-       
-
-        inspectMenu.GetComponentInChildren<TextMeshProUGUI>().text =
-            card.card.description;
-
-        GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
-        Time.timeScale = 0f;
-    }
-
-    public void Exit()
-    {
-        if (card != null)
-        {
-            Destroy(card.gameObject);
-        }
-
-        isInspecting = false; 
-        isPaused = false;
-        Time.timeScale = 1f;
-
-        group.DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
-            .OnComplete(() => inspectMenu.SetActive(false));
     }
 }

@@ -7,250 +7,253 @@ using DG.Tweening;
 using TMPro;
 using System;
 using System.Linq;
-using TowerUtils;
+using ProjectTower;
 
-public class CardClick : Selectable
+namespace ProjectTower
 {
-    public Card card { get; private set; }
-
-    public float xOffset;
-    public float xSpacing;
-    public float cardYPos;
-    public float cardWidth;
-    public float cardHeight;
-    public float zoomFactor;
-
-    public Material cardMaterial;
-    public CanvasGroup group;
-
-    private RectTransform rectTransform;
-    private HandManager handManager;
-    private DiscardButton discardButton;
-
-    private float fadeTime = 0.3f;
-
-    private List<CardClick> hand;
-
-    private InspectMenu inspectMenu;
-
-    private CardDisplay display;
-
-    protected override void Awake()
+    public class CardClick : Selectable
     {
-        group = GetComponent<CanvasGroup>();
-        display = GetComponent<CardDisplay>();
-    }
+        public Card card { get; private set; }
 
-    protected override void Start()
-    {
-        base.Start();
-        rectTransform = GetComponent<RectTransform>();
-        handManager = GetComponentInParent<HandManager>();
-        discardButton = gameObject.transform.parent.parent.GetComponentInChildren<DiscardButton>();
-        inspectMenu = FindObjectOfType<InspectMenu>();
-    }
+        public float xOffset;
+        public float xSpacing;
+        public float cardYPos;
+        public float cardWidth;
+        public float cardHeight;
+        public float zoomFactor;
 
-    public void SetCard(Card c)
-    {
-        card = c;
-    }
+        public Material cardMaterial;
+        public CanvasGroup group;
 
-    public override void OnPointerEnter(PointerEventData eventData)
-    {
-        base.OnPointerEnter(eventData);
-        if (IsInteractable()
-            && EventSystem.current.currentSelectedGameObject != gameObject)
+        private RectTransform rectTransform;
+        private HandManager handManager;
+        private DiscardButton discardButton;
+
+        private float fadeTime = 0.3f;
+
+        private List<CardClick> hand;
+
+        private InspectMenu inspectMenu;
+
+        private CardDisplay display;
+
+        protected override void Awake()
         {
-            ZoomIn();
+            group = GetComponent<CanvasGroup>();
+            display = GetComponent<CardDisplay>();
         }
-    }
 
-    public override void OnPointerExit(PointerEventData eventData)
-    {
-        base.OnPointerExit(eventData);
-
-        if (IsInteractable() 
-            && EventSystem.current.currentSelectedGameObject != gameObject)
+        protected override void Start()
         {
-            rectTransform.DOSizeDelta(
-                new Vector2(cardWidth, cardHeight), 0.3f)
-                .SetEase(Ease.OutQuint);
-            ZoomOut();
+            base.Start();
+            rectTransform = GetComponent<RectTransform>();
+            handManager = GetComponentInParent<HandManager>();
+            discardButton = gameObject.transform.parent.parent.GetComponentInChildren<DiscardButton>();
+            inspectMenu = FindObjectOfType<InspectMenu>();
         }
-    }
 
-    public override void OnPointerDown(PointerEventData eventData)
-    {
-        if (IsInteractable())
+        public void SetCard(Card c)
         {
-            base.OnPointerDown(eventData);
-            EventSystem.current.SetSelectedGameObject(gameObject);
+            card = c;
+        }
 
-            
-
-            bool success = false;
-            if (discardButton.isDiscarding)
+        public override void OnPointerEnter(PointerEventData eventData)
+        {
+            base.OnPointerEnter(eventData);
+            if (IsInteractable()
+                && EventSystem.current.currentSelectedGameObject != gameObject)
             {
-                if (eventData.button == PointerEventData.InputButton.Left)
+                ZoomIn();
+            }
+        }
+
+        public override void OnPointerExit(PointerEventData eventData)
+        {
+            base.OnPointerExit(eventData);
+
+            if (IsInteractable()
+                && EventSystem.current.currentSelectedGameObject != gameObject)
+            {
+                rectTransform.DOSizeDelta(
+                    new Vector2(cardWidth, cardHeight), 0.3f)
+                    .SetEase(Ease.OutQuint);
+                ZoomOut();
+            }
+        }
+
+        public override void OnPointerDown(PointerEventData eventData)
+        {
+            if (IsInteractable())
+            {
+                base.OnPointerDown(eventData);
+                EventSystem.current.SetSelectedGameObject(gameObject);
+
+
+
+                bool success = false;
+                if (discardButton.isDiscarding)
                 {
-                    handManager.lastSelectedCard = this;
-                    success = discardButton.Discard(card);
-                    if (success)
+                    if (eventData.button == PointerEventData.InputButton.Left)
                     {
-                        GlobalAudioManager.Instance.Play(
-                        card.owner.ToString() + "Discard", Vector3.zero);
+                        handManager.lastSelectedCard = this;
+                        success = discardButton.Discard(card);
+                        if (success)
+                        {
+                            GlobalAudioManager.Instance.Play(
+                            card.owner.ToString() + "Discard", Vector3.zero);
+                        }
+                    }
+                    else
+                    {
+                        success = true;
                     }
                 }
                 else
                 {
-                    success = true;
+                    if (eventData.button == PointerEventData.InputButton.Left)
+                    {
+                        GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
+
+                        success = CardPlayer.Instance.Play(card);
+                    }
+                    else if (eventData.button == PointerEventData.InputButton.Right)
+                    {
+                        success = true;
+                        inspectMenu.Enter(GetComponent<CardDisplay>(), card);
+                    }
+                    else
+                    {
+                        success = true;
+                    }
                 }
+
+
+                if (!success)
+                {
+                    rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
+                        .SetEase(Ease.OutQuint);
+                    EventSystem.current.SetSelectedGameObject(null);
+
+                    GlobalAudioManager.Instance.Play("Error", Vector3.zero);
+                }
+            }
+        }
+
+        public override void OnSelect(BaseEventData eventData)
+        {
+            base.OnSelect(eventData);
+            display.ShowOutline();
+            if (IsInteractable())
+            {
+                rectTransform.DOSizeDelta(
+                    new Vector2(cardWidth * 1.3f, cardHeight * 1.3f), 0.3f)
+                    .SetEase(Ease.OutQuint);
+            }
+        }
+
+        public override void OnDeselect(BaseEventData eventData)
+        {
+            base.OnDeselect(eventData);
+            display.HideOutline(cardMaterial);
+            if (IsHighlighted())
+            {
+                rectTransform.DOSizeDelta(
+                new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
+                .SetEase(Ease.OutQuint);
             }
             else
             {
-                if (eventData.button == PointerEventData.InputButton.Left)
-                {
-                    GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
-
-                    success = CardPlayer.Instance.Play(card);
-                }
-                else if (eventData.button == PointerEventData.InputButton.Right)
-                {
-                    success = true;
-                    inspectMenu.Enter(GetComponent<CardDisplay>(), card);
-                }
-                else
-                {
-                    success = true;
-                }
-            }
-             
-
-            if (!success)
-            {
-                rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
-                    .SetEase(Ease.OutQuint);
-                EventSystem.current.SetSelectedGameObject(null);
-
-                GlobalAudioManager.Instance.Play("Error", Vector3.zero);
-            }
-        }  
-    }
-
-    public override void OnSelect(BaseEventData eventData)
-    {
-        base.OnSelect(eventData);
-        display.ShowOutline();
-        if (IsInteractable())
-        {
-            rectTransform.DOSizeDelta(
-                new Vector2(cardWidth * 1.3f, cardHeight * 1.3f), 0.3f)
+                rectTransform.DOSizeDelta(
+                new Vector2(cardWidth, cardHeight), 0.3f)
                 .SetEase(Ease.OutQuint);
-        }  
-    }
-
-    public override void OnDeselect(BaseEventData eventData)
-    {
-        base.OnDeselect(eventData);
-        display.HideOutline(cardMaterial);
-        if (IsHighlighted())
-        {
-            rectTransform.DOSizeDelta(
-            new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
-            .SetEase(Ease.OutQuint);
-        }
-        else
-        {
-            rectTransform.DOSizeDelta(
-            new Vector2(cardWidth, cardHeight), 0.3f)
-            .SetEase(Ease.OutQuint);
-            ZoomOut();
-        }
-    }
-
-    public void SetInteractable(bool flag)
-    {
-        interactable = flag;
-        if (flag)
-        {
-            if (IsHighlighted())
-            {
-                ZoomIn();
+                ZoomOut();
             }
-            FadeIn();
         }
-        else
+
+        public void SetInteractable(bool flag)
         {
-            FadeOut();
-        }   
-    }
+            interactable = flag;
+            if (flag)
+            {
+                if (IsHighlighted())
+                {
+                    ZoomIn();
+                }
+                FadeIn();
+            }
+            else
+            {
+                FadeOut();
+            }
+        }
 
-    private void FadeIn()
-    {
-        DOTween.To(() => cardMaterial.GetFloat("_Saturation"),
-                    (x) => cardMaterial.SetFloat("_Saturation", x),
-                    1f, fadeTime).SetEase(Ease.OutQuint);
-        group.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
-    }
-
-    private void FadeOut()
-    {
-        if (this != handManager.lastSelectedCard)
+        private void FadeIn()
         {
             DOTween.To(() => cardMaterial.GetFloat("_Saturation"),
-                    (x) => cardMaterial.SetFloat("_Saturation", x),
-                    0.2f, fadeTime).SetEase(Ease.OutQuint);
-            group.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
+                        (x) => cardMaterial.SetFloat("_Saturation", x),
+                        1f, fadeTime).SetEase(Ease.OutQuint);
+            group.DOFade(1f, fadeTime).SetEase(Ease.OutQuint);
         }
-    }
 
-    private void ZoomIn()
-    {
-        rectTransform.DOSizeDelta(
-                    new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
-                    .SetEase(Ease.OutQuint);
-
-        hand = handManager.GetComponentsInChildren<CardClick>().ToList();
-        var index = hand.IndexOf(this);
-
-        for (int i = 0; i < hand.Count; i++)
+        private void FadeOut()
         {
-            var indexDiff = i - index;
-            if (indexDiff != 0)
+            if (this != handManager.lastSelectedCard)
             {
-                var distance = Utils.BellCurve(indexDiff, 0, 1) * zoomFactor;
-                if (indexDiff < 0)
+                DOTween.To(() => cardMaterial.GetFloat("_Saturation"),
+                        (x) => cardMaterial.SetFloat("_Saturation", x),
+                        0.2f, fadeTime).SetEase(Ease.OutQuint);
+                group.DOFade(0.8f, fadeTime).SetEase(Ease.OutQuint);
+            }
+        }
+
+        private void ZoomIn()
+        {
+            rectTransform.DOSizeDelta(
+                        new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
+                        .SetEase(Ease.OutQuint);
+
+            hand = handManager.GetComponentsInChildren<CardClick>().ToList();
+            var index = hand.IndexOf(this);
+
+            for (int i = 0; i < hand.Count; i++)
+            {
+                var indexDiff = i - index;
+                if (indexDiff != 0)
                 {
-                    distance *= -1;
-                }
+                    var distance = Utils.BellCurve(indexDiff, 0, 1) * zoomFactor;
+                    if (indexDiff < 0)
+                    {
+                        distance *= -1;
+                    }
 
-                var position = new Vector2(
-                    (hand.Count - 1 - i) * xSpacing + xOffset + distance,
-                    cardYPos);
+                    var position = new Vector2(
+                        (hand.Count - 1 - i) * xSpacing + xOffset + distance,
+                        cardYPos);
 
-                hand[i].GetComponent<RectTransform>()
-                    .DOAnchorPos(position,0.3f).SetEase(Ease.OutQuint);
-            } 
-        }
-    }
-
-    private void ZoomOut()
-    {
-        hand = handManager.GetComponentsInChildren<CardClick>().ToList();
-        var index = hand.IndexOf(this);
-
-        for (int i = 0; i < hand.Count; i++)
-        {
-            var indexDiff = i - index;
-            if (indexDiff != 0)
-            {
-
-                var position = new Vector2(
-                    (hand.Count - 1 - i) * xSpacing + xOffset,
-                    cardYPos);
-
-                hand[i].GetComponent<RectTransform>()
+                    hand[i].GetComponent<RectTransform>()
                         .DOAnchorPos(position, 0.3f).SetEase(Ease.OutQuint);
+                }
+            }
+        }
+
+        private void ZoomOut()
+        {
+            hand = handManager.GetComponentsInChildren<CardClick>().ToList();
+            var index = hand.IndexOf(this);
+
+            for (int i = 0; i < hand.Count; i++)
+            {
+                var indexDiff = i - index;
+                if (indexDiff != 0)
+                {
+
+                    var position = new Vector2(
+                        (hand.Count - 1 - i) * xSpacing + xOffset,
+                        cardYPos);
+
+                    hand[i].GetComponent<RectTransform>()
+                            .DOAnchorPos(position, 0.3f).SetEase(Ease.OutQuint);
+                }
             }
         }
     }

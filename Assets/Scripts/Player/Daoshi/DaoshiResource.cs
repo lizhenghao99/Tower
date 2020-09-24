@@ -4,79 +4,82 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class DaoshiResource : PlayerResource
+namespace ProjectTower
 {
-    [SerializeField] int autoPrimaryRegen = 2;
-
-    private LevelController levelController;
-    private PlayerHealth health;
-    private Coroutine autogen;
-
-    protected override void Start()
+    public class DaoshiResource : PlayerResource
     {
-        base.Start();
-        levelController = FindObjectOfType<LevelController>();
-        levelController.StartCombat += OnStartAutogen;
-        levelController.EndCombat += OnEndAutogen;
-        health = GetComponent<PlayerHealth>();
-        health.death += OnEndAutogen;
-        health.revive += OnStartAutogen;
-    }
+        [SerializeField] int autoPrimaryRegen = 2;
 
-    public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)
-    {
-        var primary = primaryResource + primaryAmount;
+        private LevelController levelController;
+        private PlayerHealth health;
+        private Coroutine autogen;
 
-        return primary >= 0;
-    }
-
-    public override bool ChangeResource(int primaryAmount, int secondaryAmount)
-    {
-        if (IsResourceEnough(primaryAmount, secondaryAmount))
+        protected override void Start()
         {
-            primaryResource = Mathf.Clamp(
-                primaryResource + primaryAmount, 0, 100);
-            if (secondaryAmount != -1)
-            {
-                secondaryResource = secondaryAmount;
-            }
-            OnResourceChanged();
-            return true;
+            base.Start();
+            levelController = FindObjectOfType<LevelController>();
+            levelController.StartCombat += OnStartAutogen;
+            levelController.EndCombat += OnEndAutogen;
+            health = GetComponent<PlayerHealth>();
+            health.death += OnEndAutogen;
+            health.revive += OnStartAutogen;
         }
-        else
-        {
-            return false;
-        }
-    }
 
-    public IEnumerator ResourceAutoGen()
-    {
-        while (true)
+        public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)
         {
-            yield return new WaitForSeconds(1f);
-            if (secondaryResource == 0)
+            var primary = primaryResource + primaryAmount;
+
+            return primary >= 0;
+        }
+
+        public override bool ChangeResource(int primaryAmount, int secondaryAmount)
+        {
+            if (IsResourceEnough(primaryAmount, secondaryAmount))
             {
-                ChangeResource(autoPrimaryRegen * 2, -1);
+                primaryResource = Mathf.Clamp(
+                    primaryResource + primaryAmount, 0, 100);
+                if (secondaryAmount != -1)
+                {
+                    secondaryResource = secondaryAmount;
+                }
+                OnResourceChanged();
+                return true;
             }
             else
             {
-                ChangeResource(autoPrimaryRegen, -1);
+                return false;
             }
         }
-    }
 
-    private void OnResourceChanged()
-    {
-        InvokeResourceChanged(gameObject);
-    }
+        public IEnumerator ResourceAutoGen()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(1f);
+                if (secondaryResource == 0)
+                {
+                    ChangeResource(autoPrimaryRegen * 2, -1);
+                }
+                else
+                {
+                    ChangeResource(autoPrimaryRegen, -1);
+                }
+            }
+        }
 
-    private void OnStartAutogen(object sender, EventArgs e)
-    {
-        autogen = StartCoroutine(ResourceAutoGen());
-    }
+        private void OnResourceChanged()
+        {
+            InvokeResourceChanged(gameObject);
+        }
 
-    private void OnEndAutogen(object sender, EventArgs e)
-    {
-        StopCoroutine(autogen);
+        private void OnStartAutogen(object sender, EventArgs e)
+        {
+            autogen = StartCoroutine(ResourceAutoGen());
+        }
+
+        private void OnEndAutogen(object sender, EventArgs e)
+        {
+            StopCoroutine(autogen);
+        }
     }
 }

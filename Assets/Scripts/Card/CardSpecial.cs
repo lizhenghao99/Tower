@@ -2,40 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CardSpecial : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] protected float lifetime;
-    protected Card card;
-    protected bool started = false;
-
-    public void SetCard(Card c)
+    public abstract class CardSpecial : MonoBehaviour
     {
-        card = c;
-        OnStart();
-    }
+        [SerializeField] protected float lifetime;
+        protected Card card;
+        protected bool started = false;
 
-    protected virtual void Update()
-    {
-        if (started)
+        public void SetCard(Card c)
         {
-            lifetime -= Time.deltaTime;
-            if (lifetime < 0)
+            card = c;
+            OnStart();
+        }
+
+        protected virtual void Update()
+        {
+            if (started)
             {
-                SelfDestroy();
+                lifetime -= Time.deltaTime;
+                if (lifetime < 0)
+                {
+                    SelfDestroy();
+                }
             }
-        }  
-    }
+        }
 
-    protected virtual void OnStart()
-    {
-        SetLifetime();
-        started = true;
-    }
+        protected virtual void OnStart()
+        {
+            SetLifetime();
+            started = true;
+        }
 
-    protected abstract void SetLifetime();
+        protected abstract void SetLifetime();
 
-    protected virtual void SelfDestroy()
-    {
-        Destroy(gameObject);
+        protected virtual void SelfDestroy()
+        {
+            Destroy(gameObject);
+        }
     }
 }

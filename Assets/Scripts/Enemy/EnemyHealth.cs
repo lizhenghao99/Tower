@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : Health
+namespace ProjectTower
 {
-    public override void Die()
+    public class EnemyHealth : Health
     {
-        base.Die();
-        FindObjectOfType<EnemySpawner>().CheckAllEnemiesDead();
+        public override void Die()
+        {
+            base.Die();
+            FindObjectOfType<EnemySpawner>().CheckAllEnemiesDead();
+        }
     }
 }

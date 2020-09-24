@@ -2,79 +2,82 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DaoshiAutoAttack : RangedPlayerAutoAttack
+namespace ProjectTower
 {
-    private EffectManager effectManager;
-    private DaoshiResource resource;
-    [Header("Healing")]
-    [SerializeField] public int healPower;
-
-    protected override void Start()
+    public class DaoshiAutoAttack : RangedPlayerAutoAttack
     {
-        base.Start();
-        effectManager = FindObjectOfType<EffectManager>();
-        resource = GetComponent<DaoshiResource>();
-    }
+        private EffectManager effectManager;
+        private DaoshiResource resource;
+        [Header("Healing")]
+        [SerializeField] public int healPower;
 
-    protected override void ToSummonMissiles(int count, Quaternion rotation)
-    {
-        summonMissiles = StartCoroutine(SummonMissiles(count, rotation,
-            resource.secondaryResource));
-    }
-
-    protected override void SpecialRangedAttack(Collider[] hits, int type)
-    {
-        switch (type)
+        protected override void Start()
         {
-            case 1:
-                if (hits.Length > 0)
-                {
-                    effectManager.Register(gameObject, hits[0].gameObject,
-                        Effect.Type.Lightning, 1f, 3f);
-                }
-                break;
-            case 2:
-                foreach (Collider c in hits)
-                {
-                    effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Wood, 1f, healPower);
-                }
-                break;
-            case 3:
-                foreach (Collider c in hits)
-                {
-                    effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Freeze, 1f, 0.2f);
-                }
-                break;
-            case 4:
-                foreach (Collider c in hits)
-                {
-                    effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Burn, 1f, attackDamage / 3f);
-                }
-                break;
-            case 5:
-                foreach (Collider c in hits)
-                {
-                    var chance = UnityEngine.Random.Range(0f, 0.7f);
-                    effectManager.Register(gameObject, c.gameObject,
-                        Effect.Type.Stun, chance, 0);
-                }
-                break;
-            default:
-                return;
+            base.Start();
+            effectManager = FindObjectOfType<EffectManager>();
+            resource = GetComponent<DaoshiResource>();
         }
 
-        
-    }
-
-    protected override void ApplyTaunt()
-    {
-        if (enemiesInRange == null) return;
-        foreach(Collider c in enemiesInRange)
+        protected override void ToSummonMissiles(int count, Quaternion rotation)
         {
-            effectManager.Taunt(gameObject, c.gameObject, 2);
+            summonMissiles = StartCoroutine(SummonMissiles(count, rotation,
+                resource.secondaryResource));
+        }
+
+        protected override void SpecialRangedAttack(Collider[] hits, int type)
+        {
+            switch (type)
+            {
+                case 1:
+                    if (hits.Length > 0)
+                    {
+                        effectManager.Register(gameObject, hits[0].gameObject,
+                            Effect.Type.Lightning, 1f, 3f);
+                    }
+                    break;
+                case 2:
+                    foreach (Collider c in hits)
+                    {
+                        effectManager.Register(gameObject, c.gameObject,
+                            Effect.Type.Wood, 1f, healPower);
+                    }
+                    break;
+                case 3:
+                    foreach (Collider c in hits)
+                    {
+                        effectManager.Register(gameObject, c.gameObject,
+                            Effect.Type.Freeze, 1f, 0.2f);
+                    }
+                    break;
+                case 4:
+                    foreach (Collider c in hits)
+                    {
+                        effectManager.Register(gameObject, c.gameObject,
+                            Effect.Type.Burn, 1f, attackDamage / 3f);
+                    }
+                    break;
+                case 5:
+                    foreach (Collider c in hits)
+                    {
+                        var chance = UnityEngine.Random.Range(0f, 0.7f);
+                        effectManager.Register(gameObject, c.gameObject,
+                            Effect.Type.Stun, chance, 0);
+                    }
+                    break;
+                default:
+                    return;
+            }
+
+
+        }
+
+        protected override void ApplyTaunt()
+        {
+            if (enemiesInRange == null) return;
+            foreach (Collider c in enemiesInRange)
+            {
+                effectManager.Taunt(gameObject, c.gameObject, 2);
+            }
         }
     }
 }

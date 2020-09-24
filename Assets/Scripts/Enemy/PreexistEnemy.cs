@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PreexistEnemy : Enemy
+namespace ProjectTower
 {
-    private AttackBase attack;
-    private Collider collider;
-
-    protected override void Awake()
+    public class PreexistEnemy : Enemy
     {
-        // do nothing
-    }
+        private AttackBase attack;
+        private Collider collider;
 
-    protected override void Start()
-    {
-        attack = GetComponent<AttackBase>();
-        collider = GetComponent<Collider>();
-        attack.enabled = false;
-        collider.enabled = false;
-    }
+        protected override void Awake()
+        {
+            // do nothing
+        }
 
-    public override void Spawn()
-    {
-        attack.enabled = true;
-        collider.enabled = true;
+        protected override void Start()
+        {
+            attack = GetComponent<AttackBase>();
+            collider = GetComponent<Collider>();
+            attack.enabled = false;
+            collider.enabled = false;
+        }
+
+        public override void Spawn()
+        {
+            attack.enabled = true;
+            collider.enabled = true;
+        }
     }
 }

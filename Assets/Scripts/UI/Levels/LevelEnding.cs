@@ -1,34 +1,37 @@
 ﻿using DG.Tweening;
 using UnityEngine;
 
-public class LevelEnding : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] CanvasGroup winScreen;
-    [SerializeField] CanvasGroup loseScreen;
-
-    protected LevelController levelController;
-
-    protected virtual void Start()
+    public class LevelEnding : MonoBehaviour
     {
-        levelController = FindObjectOfType<LevelController>();
-    }
+        [SerializeField] CanvasGroup winScreen;
+        [SerializeField] CanvasGroup loseScreen;
 
-    protected virtual void Update()
-    {
+        protected LevelController levelController;
 
-    }
+        protected virtual void Start()
+        {
+            levelController = FindObjectOfType<LevelController>();
+        }
 
-    public virtual void Win()
-    {
-        Time.timeScale = 0f;
-        winScreen.gameObject.SetActive(true);
-        winScreen.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
-    }
+        protected virtual void Update()
+        {
 
-    public virtual void Lose()
-    {
-        Time.timeScale = 0f;
-        loseScreen.gameObject.SetActive(true);
-        loseScreen.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        }
+
+        public virtual void Win()
+        {
+            Time.timeScale = 0f;
+            winScreen.gameObject.SetActive(true);
+            winScreen.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        }
+
+        public virtual void Lose()
+        {
+            Time.timeScale = 0f;
+            loseScreen.gameObject.SetActive(true);
+            loseScreen.DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        }
     }
 }

@@ -6,33 +6,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public abstract class ResourceDisplay : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] protected float primaryStartPercent = 0.16f;
-    [SerializeField] protected float PrimaryEndPercent = 0.76f;
-
-    [HideInInspector] public PlayerController player;
-
-    protected Drawer drawer;
-    protected PlayerResource playerResource;
-    protected Image primaryResource;
-    protected Image primaryGlow;
-
-    // Start is called before the first frame update
-    protected virtual void Start()
+    public abstract class ResourceDisplay : MonoBehaviour
     {
-        drawer = GetComponentInParent<Drawer>();
-        playerResource = player.GetComponent<PlayerResource>();
+        [SerializeField] protected float primaryStartPercent = 0.16f;
+        [SerializeField] protected float PrimaryEndPercent = 0.76f;
 
-        primaryResource = GetComponentsInChildren<Image>()
-                            .Where(i => i.gameObject.name == "PrimaryDisplayFill")
-                            .FirstOrDefault();
-        primaryGlow = GetComponentsInChildren<Image>()
-                            .Where(i => i.gameObject.name == "PrimaryDisplayGlow")
-                            .FirstOrDefault();
+        [HideInInspector] public PlayerController player;
 
-        playerResource.resourceChanged += OnResourceChanged;
+        protected Drawer drawer;
+        protected PlayerResource playerResource;
+        protected Image primaryResource;
+        protected Image primaryGlow;
+
+        // Start is called before the first frame update
+        protected virtual void Start()
+        {
+            drawer = GetComponentInParent<Drawer>();
+            playerResource = player.GetComponent<PlayerResource>();
+
+            primaryResource = GetComponentsInChildren<Image>()
+                                .Where(i => i.gameObject.name == "PrimaryDisplayFill")
+                                .FirstOrDefault();
+            primaryGlow = GetComponentsInChildren<Image>()
+                                .Where(i => i.gameObject.name == "PrimaryDisplayGlow")
+                                .FirstOrDefault();
+
+            playerResource.resourceChanged += OnResourceChanged;
+        }
+
+        protected abstract void OnResourceChanged(object sender, EventArgs e);
     }
-
-    protected abstract void OnResourceChanged(object sender, EventArgs e);
 }

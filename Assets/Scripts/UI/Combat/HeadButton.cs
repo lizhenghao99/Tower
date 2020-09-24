@@ -5,25 +5,28 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Linq;
 
-public class HeadButton : Selectable
+namespace ProjectTower
 {
-    public Card.Owner owner;
-
-    private PlayerController player;
-    public bool isDiscarding = false;
-    // Start is called before the first frame update
-    protected override void Start()
+    public class HeadButton : Selectable
     {
-        base.Start();
-        player = FindObjectsOfType<PlayerController>()
-           .Where(p => p.gameObject.name == owner.ToString())
-           .FirstOrDefault();
-    }
+        public Card.Owner owner;
 
-    public override void OnPointerDown(PointerEventData eventData)
-    {
-        base.OnPointerDown(eventData);
-        player.isSelected = true;
-        GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
+        private PlayerController player;
+        public bool isDiscarding = false;
+        // Start is called before the first frame update
+        protected override void Start()
+        {
+            base.Start();
+            player = FindObjectsOfType<PlayerController>()
+               .Where(p => p.gameObject.name == owner.ToString())
+               .FirstOrDefault();
+        }
+
+        public override void OnPointerDown(PointerEventData eventData)
+        {
+            base.OnPointerDown(eventData);
+            player.isSelected = true;
+            GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
+        }
     }
 }

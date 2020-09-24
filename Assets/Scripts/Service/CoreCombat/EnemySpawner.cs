@@ -3,96 +3,99 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] WaveStage[] waveStages;
-    private WaveStage currStage = null;
-    private LevelController levelController;
-
-    // Start is called before the first frame update
-    void Start()
+    public class EnemySpawner : MonoBehaviour
     {
-        levelController = FindObjectOfType<LevelController>();
-        levelController.StartCombat += OnStartCombat;
-    }
+        [SerializeField] WaveStage[] waveStages;
+        private WaveStage currStage = null;
+        private LevelController levelController;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (currStage != null)
+        // Start is called before the first frame update
+        void Start()
         {
-            if (currStage.stageClear)
-            {
-                currStage = null;
-                levelController.ClearStage();
-            }
-            else
-            {
-                currStage.update();
-            }
+            levelController = FindObjectOfType<LevelController>();
+            levelController.StartCombat += OnStartCombat;
         }
-    }
 
-    public void OnStartCombat(object sender, EventArgs e)
-    {
-        currStage = waveStages[levelController.currStage.index];
-    }
-
-    public void CheckAllEnemiesDead()
-    {
-        foreach (Wave w in currStage.waves)
+        // Update is called once per frame
+        void Update()
         {
-            foreach (Enemy e in w.enemies)
+            if (currStage != null)
             {
-                if (!e.GetComponent<Health>().isDead)
+                if (currStage.stageClear)
                 {
-                    return;
+                    currStage = null;
+                    levelController.ClearStage();
+                }
+                else
+                {
+                    currStage.update();
                 }
             }
         }
 
-        currStage.stageClear = true;
-    }
-}
-
-[System.Serializable]
-public class Wave
-{
-    [SerializeField] public Enemy[] enemies;
-    [SerializeField] float timer;
-
-    public void update()
-    {
-        if (timer > 0)
+        public void OnStartCombat(object sender, EventArgs e)
         {
-            timer -= Time.deltaTime;
-            if (timer < 0)
+            currStage = waveStages[levelController.currStage.index];
+        }
+
+        public void CheckAllEnemiesDead()
+        {
+            foreach (Wave w in currStage.waves)
             {
-                SpawnEnemies();
+                foreach (Enemy e in w.enemies)
+                {
+                    if (!e.GetComponent<Health>().isDead)
+                    {
+                        return;
+                    }
+                }
+            }
+
+            currStage.stageClear = true;
+        }
+    }
+
+    [System.Serializable]
+    public class Wave
+    {
+        [SerializeField] public Enemy[] enemies;
+        [SerializeField] float timer;
+
+        public void update()
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    SpawnEnemies();
+                }
+            }
+        }
+
+        private void SpawnEnemies()
+        {
+            foreach (Enemy enemy in enemies)
+            {
+                enemy.Spawn();
             }
         }
     }
 
-    private void SpawnEnemies()
+    [System.Serializable]
+    public class WaveStage
     {
-        foreach(Enemy enemy in enemies)
-        {
-            enemy.Spawn();
-        }
-    }
-}
+        [SerializeField] public Wave[] waves;
+        public bool stageClear = false;
 
-[System.Serializable]
-public class WaveStage
-{
-    [SerializeField] public Wave[] waves;
-    public bool stageClear = false;
-
-    public void update()
-    {
-        foreach (Wave wave in waves)
+        public void update()
         {
-            wave.update();
+            foreach (Wave wave in waves)
+            {
+                wave.update();
+            }
         }
     }
 }

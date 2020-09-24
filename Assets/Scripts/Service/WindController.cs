@@ -3,36 +3,38 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-
-[ExecuteInEditMode]
-public class WindController : MonoBehaviour
+namespace ProjectTower
 {
-    public Material[] shortGrass;
-    public Material[] highGrass;
-    public Material[] leaves;
-
-    [Range(0f, 2f)]
-    public float shortGrassWindStrength;
-    [Range(0f, 2f)]
-    public float highGrassWindStrength;
-    [Range(0f, 0.2f)]
-    public float leavesWindStrength;
-
-    private void Update()
+    [ExecuteInEditMode]
+    public class WindController : MonoBehaviour
     {
-        foreach (Material m in shortGrass)
-        {
-            m.SetFloat("_WindStrength", shortGrassWindStrength);
-        }
+        public Material[] shortGrass;
+        public Material[] highGrass;
+        public Material[] leaves;
 
-        foreach (Material m in highGrass)
-        {
-            m.SetFloat("_WindStrength", highGrassWindStrength);
-        }
+        [Range(0f, 2f)]
+        public float shortGrassWindStrength;
+        [Range(0f, 2f)]
+        public float highGrassWindStrength;
+        [Range(0f, 0.2f)]
+        public float leavesWindStrength;
 
-        foreach (Material m in leaves)
+        private void Update()
         {
-            m.SetFloat("_WindStrength", leavesWindStrength);
+            foreach (Material m in shortGrass)
+            {
+                m.SetFloat("_WindStrength", shortGrassWindStrength);
+            }
+
+            foreach (Material m in highGrass)
+            {
+                m.SetFloat("_WindStrength", highGrassWindStrength);
+            }
+
+            foreach (Material m in leaves)
+            {
+                m.SetFloat("_WindStrength", leavesWindStrength);
+            }
         }
     }
 }

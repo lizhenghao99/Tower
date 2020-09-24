@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireballProjectile : AngleProjectile
+namespace ProjectTower
 {
+    public class FireballProjectile : AngleProjectile
+    {
 
+    }
 }

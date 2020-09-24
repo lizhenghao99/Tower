@@ -4,42 +4,45 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class LubanResource : PlayerResource
+namespace ProjectTower
 {
-    [SerializeField] int autoAttackPrimaryGen = 4;
-
-    public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)
+    public class LubanResource : PlayerResource
     {
-        var primary = primaryResource + primaryAmount;
-        var secondary = secondaryResource + secondaryAmount;
+        [SerializeField] int autoAttackPrimaryGen = 4;
 
-        return primary >= 0 && secondary >= 0;
-    }
-
-    public override bool ChangeResource(int primaryAmount, int secondaryAmount)
-    {
-        if (IsResourceEnough(primaryAmount, secondaryAmount))
+        public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)
         {
-            primaryResource = Mathf.Clamp(
-                primaryResource + primaryAmount, 0, 100);
-            secondaryResource = Mathf.Clamp(
-                secondaryResource + secondaryAmount, 0, 3);
-            OnResourceChanged();
-            return true;
+            var primary = primaryResource + primaryAmount;
+            var secondary = secondaryResource + secondaryAmount;
+
+            return primary >= 0 && secondary >= 0;
         }
-        else
+
+        public override bool ChangeResource(int primaryAmount, int secondaryAmount)
         {
-            return false;
+            if (IsResourceEnough(primaryAmount, secondaryAmount))
+            {
+                primaryResource = Mathf.Clamp(
+                    primaryResource + primaryAmount, 0, 100);
+                secondaryResource = Mathf.Clamp(
+                    secondaryResource + secondaryAmount, 0, 3);
+                OnResourceChanged();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-    }
 
-    public void ResourceAutoGen()
-    {
-        ChangeResource(autoAttackPrimaryGen, 0);
-    }
+        public void ResourceAutoGen()
+        {
+            ChangeResource(autoAttackPrimaryGen, 0);
+        }
 
-    private void OnResourceChanged()
-    {
-        InvokeResourceChanged(gameObject);
+        private void OnResourceChanged()
+        {
+            InvokeResourceChanged(gameObject);
+        }
     }
 }

@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class StepEvent : MonoBehaviour
+namespace ProjectTower
 {
-    public event EventHandler step;
-
-    public void OnStep()
+    public class StepEvent : MonoBehaviour
     {
-        step?.Invoke(gameObject, EventArgs.Empty);
+        public event EventHandler step;
+
+        public void OnStep()
+        {
+            step?.Invoke(gameObject, EventArgs.Empty);
+        }
     }
 }

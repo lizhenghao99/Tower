@@ -3,17 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PointProjectile : MonoBehaviour
+namespace ProjectTower
 {
-    public Card card;
-    public event EventHandler<Vector3> hitFloor;
-
-    private void OnTriggerEnter(Collider other)
+    public class PointProjectile : MonoBehaviour
     {
-        if (other.gameObject.tag == "Floor")
+        public Card card;
+        public event EventHandler<Vector3> hitFloor;
+
+        private void OnTriggerEnter(Collider other)
         {
-            hitFloor?.Invoke(gameObject, gameObject.transform.position);
-            Destroy(gameObject);
+            if (other.gameObject.tag == "Floor")
+            {
+                hitFloor?.Invoke(gameObject, gameObject.transform.position);
+                Destroy(gameObject);
+            }
         }
     }
 }

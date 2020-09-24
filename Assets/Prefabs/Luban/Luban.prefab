@@ -118,7 +118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504811002}
   m_LocalRotation: {x: 0.028554544, y: 0.6784686, z: -0.026408652, w: 0.73359907}
-  m_LocalPosition: {x: -1.9878795, y: 2.1554601, z: -0.15545987}
+  m_LocalPosition: {x: -1.9878795, y: 3.1554601, z: -0.15545987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8729792689411822741}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49505ff72ee821045b522939446674d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heightOffset: 2
+  heightOffset: 3
   spotlightDistance: 2
 --- !u!1 &8729658002155953774
 GameObject:
@@ -632,16 +632,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff0f7ccc859e824884a026a018d560b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 150
-  attackRange: 4.5
-  attackRate: 2.4
-  stopRange: 2.5
+  attackDamage: 100
+  attackRange: 5.5
+  attackRate: 2.5
+  stopRange: 3
   agent: {fileID: 8729792689411822763}
   animator: {fileID: 8729792688550215930}
   spriteRenderer: {fileID: 8923698843579247746}
   taunter: {fileID: 0}
   meleeVfx: {fileID: 1044528419629608, guid: 76dc8e7762ae23a49917e43293e4b976, type: 3}
-  vfxDelay: 0.05
+  vfxDelay: 0.1
 --- !u!114 &1961301085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7611d234878e69447a7b09968f28d0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1100
+  maxHealth: 1000
   isDead: 0
   isImmune: 0
   immuneStun: 0
@@ -703,10 +703,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundGroups:
   - {fileID: 11400000, guid: 0f0dff7e7e383f949bbaaa00016a0d81, type: 2}
-  - {fileID: 11400000, guid: d8182728a58854144bc6a0ca55d96390, type: 2}
   - {fileID: 11400000, guid: 93458aba94dd2a84b95b82fc7d67630a, type: 2}
-  - {fileID: 11400000, guid: 011d7f1550985db4ea0d738f19969232, type: 2}
   - {fileID: 11400000, guid: 45c51350891d19c4aa4ea3b3215dd050, type: 2}
+  - {fileID: 11400000, guid: 011d7f1550985db4ea0d738f19969232, type: 2}
+  - {fileID: 11400000, guid: d8182728a58854144bc6a0ca55d96390, type: 2}
 --- !u!1001 &1208106513811838449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -898,6 +898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599370030651255251, guid: f1ff5fc68ff1389478fd2e835e1351fd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3068947688772540985, guid: f1ff5fc68ff1389478fd2e835e1351fd,
         type: 3}

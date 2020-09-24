@@ -3,34 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Waypoint : MonoBehaviour
+namespace ProjectTower
 {
-    public event EventHandler destinationReached;
-
-    // Start is called before the first frame update
-    void Start()
+    public class Waypoint : MonoBehaviour
     {
-        
-    }
+        public event EventHandler destinationReached;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == 
-                gameObject.name.Substring(0, gameObject.name.Length - 15))
+        // Start is called before the first frame update
+        void Start()
         {
-            OnDestinationReached();
-            Destroy(gameObject);
-        }
-    }
 
-    private void OnDestinationReached()
-    {
-        destinationReached?.Invoke(gameObject, EventArgs.Empty);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.name ==
+                    gameObject.name.Substring(0, gameObject.name.Length - 15))
+            {
+                OnDestinationReached();
+                Destroy(gameObject);
+            }
+        }
+
+        private void OnDestinationReached()
+        {
+            destinationReached?.Invoke(gameObject, EventArgs.Empty);
+        }
     }
 }

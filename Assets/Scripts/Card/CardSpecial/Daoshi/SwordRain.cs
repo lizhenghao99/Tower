@@ -2,39 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordRain : CardSpecial
+namespace ProjectTower
 {
-    private int damage;
-    private float radius;
-
-    protected override void SetLifetime()
+    public class SwordRain : CardSpecial
     {
-        lifetime = 2f;
-    }
+        private int damage;
+        private float radius;
 
-    protected override void OnStart()
-    {
-        base.OnStart();
-        damage = ((PointAoe)card).damage;
-        radius = ((PointAoe)card).radius;
-        StartCoroutine(AoeDot());
-    }
-
-    protected IEnumerator AoeDot()
-    {
-        while (true)
+        protected override void SetLifetime()
         {
-            foreach (Collider c in Physics.OverlapSphere(transform.position, radius,
-            LayerMask.GetMask("Enemy")))
-            {
-                c.GetComponent<Health>().TakeDamage(damage);
-            }
-            yield return new WaitForSeconds(0.25f);
+            lifetime = 2f;
         }
-    }
 
-    protected override void SelfDestroy()
-    {
-        base.SelfDestroy();
+        protected override void OnStart()
+        {
+            base.OnStart();
+            damage = ((PointAoe)card).damage;
+            radius = ((PointAoe)card).radius;
+            StartCoroutine(AoeDot());
+        }
+
+        protected IEnumerator AoeDot()
+        {
+            while (true)
+            {
+                foreach (Collider c in Physics.OverlapSphere(transform.position, radius,
+                LayerMask.GetMask("Enemy")))
+                {
+                    c.GetComponent<Health>().TakeDamage(damage);
+                }
+                yield return new WaitForSeconds(0.25f);
+            }
+        }
+
+        protected override void SelfDestroy()
+        {
+            base.SelfDestroy();
+        }
     }
 }

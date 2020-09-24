@@ -2,36 +2,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TowerUtils;
+using ProjectTower;
 
-public class EnemyDrop : MonoBehaviour
+namespace ProjectTower
 {
-    [Header("Money")]
-    [SerializeField] int minMoneyDrop;
-    [SerializeField] int maxMoneyDrop;
-
-    private InventoryManager inventoryManager;
-
-    // Start is called before the first frame update
-    void Start()
+    public class EnemyDrop : MonoBehaviour
     {
-        GetComponent<Health>().death += OnEnemyDeath;
-        inventoryManager = FindObjectOfType<InventoryManager>();
-    }
+        [Header("Money")]
+        [SerializeField] int minMoneyDrop;
+        [SerializeField] int maxMoneyDrop;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        private InventoryManager inventoryManager;
 
-    private void OnEnemyDeath(object sender, EventArgs e)
-    {
-        StartCoroutine(Utils.Timeout(() =>
+        // Start is called before the first frame update
+        void Start()
         {
-            var gain = UnityEngine.Random.Range(minMoneyDrop, maxMoneyDrop);
-            inventoryManager.ChangeMoney(gain);
-            GlobalAudioManager.Instance.Play("MoneyDrop", Vector3.zero);
-        }, 1f));    
+            GetComponent<Health>().death += OnEnemyDeath;
+            inventoryManager = FindObjectOfType<InventoryManager>();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        private void OnEnemyDeath(object sender, EventArgs e)
+        {
+            StartCoroutine(Utils.Timeout(() =>
+            {
+                var gain = UnityEngine.Random.Range(minMoneyDrop, maxMoneyDrop);
+                inventoryManager.ChangeMoney(gain);
+                GlobalAudioManager.Instance.Play("MoneyDrop", Vector3.zero);
+            }, 1f));
+        }
     }
 }

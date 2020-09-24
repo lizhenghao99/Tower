@@ -3,51 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class TauntEffect : Effect
+namespace ProjectTower
 {
-    private AttackBase attack;
-    private bool isActive;
-
-    private void Awake()
+    public class TauntEffect : Effect
     {
-        attack = GetComponent<AttackBase>();
-    }
+        private AttackBase attack;
+        private bool isActive;
 
-    public override void Update()
-    {
-        if (isActive)
+        private void Awake()
         {
-            base.Update();
-            if (!caster.activeInHierarchy 
-                || caster.GetComponent<Health>().isDead)
+            attack = GetComponent<AttackBase>();
+        }
+
+        public override void Update()
+        {
+            if (isActive)
             {
-                OnFinish();
+                base.Update();
+                if (!caster.activeInHierarchy
+                    || caster.GetComponent<Health>().isDead)
+                {
+                    OnFinish();
+                }
             }
         }
-    }
 
-    public override void Extend(GameObject c, float d, float a)
-    {
-        if (a < amount || !isActive || caster == c)
+        public override void Extend(GameObject c, float d, float a)
         {
-            caster = c;
-            duration = d;
-            amount = a;
-            OnStart();
+            if (a < amount || !isActive || caster == c)
+            {
+                caster = c;
+                duration = d;
+                amount = a;
+                OnStart();
+            }
         }
-    }
 
-    protected override void OnStart()
-    {
-        isActive = true;
-        attack.taunter = caster;
-        InvokeStart(this);
-    }
+        protected override void OnStart()
+        {
+            isActive = true;
+            attack.taunter = caster;
+            InvokeStart(this);
+        }
 
-    protected override void OnFinish()
-    {
-        isActive = false;
-        attack.taunter = null;
-        InvokeFinish(this);
+        protected override void OnFinish()
+        {
+            isActive = false;
+            attack.taunter = null;
+            InvokeFinish(this);
+        }
     }
 }

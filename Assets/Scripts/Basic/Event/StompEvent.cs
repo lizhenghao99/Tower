@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StompEvent : MonoBehaviour
+namespace ProjectTower
 {
-    public event EventHandler stomp;
-
-    public void OnStomp()
+    public class StompEvent : MonoBehaviour
     {
-        stomp?.Invoke(gameObject, EventArgs.Empty);
+        public event EventHandler stomp;
+
+        public void OnStomp()
+        {
+            stomp?.Invoke(gameObject, EventArgs.Empty);
+        }
     }
 }

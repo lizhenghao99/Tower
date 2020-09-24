@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class StrideEvent : MonoBehaviour
+namespace ProjectTower
 {
-    public event EventHandler stride;
-
-    public void OnStride()
+    public class StrideEvent : MonoBehaviour
     {
-        stride?.Invoke(gameObject, EventArgs.Empty);
+        public event EventHandler stride;
+
+        public void OnStride()
+        {
+            stride?.Invoke(gameObject, EventArgs.Empty);
+        }
     }
 }

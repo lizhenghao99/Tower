@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class WorldClickableObject : MonoBehaviour
+namespace ProjectTower
 {
-    [System.Serializable]
-    public class ClickEvent : UnityEvent { };
-    [SerializeField] ClickEvent onClick;
-
-    // Update is called once per frame
-    void Update()
+    public class WorldClickableObject : MonoBehaviour
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+        [System.Serializable]
+        public class ClickEvent : UnityEvent { };
+        [SerializeField] ClickEvent onClick;
 
-            if (Physics.Raycast(ray, out hit, 1000))
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                if (hit.collider.gameObject == gameObject)
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, 1000))
                 {
-                    onClick.Invoke();
+                    if (hit.collider.gameObject == gameObject)
+                    {
+                        onClick.Invoke();
+                    }
                 }
             }
         }

@@ -5,7 +5,7 @@ using System;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace TowerUtils
+namespace ProjectTower
 {
     public static class Utils
     {

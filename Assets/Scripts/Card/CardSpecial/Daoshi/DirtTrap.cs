@@ -2,39 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DirtTrap : CardSpecial
+namespace ProjectTower
 {
-    private EffectManager effectManager;
-    private DaoshiAutoAttack daoshi;
-
-    protected override void SetLifetime()
+    public class DirtTrap : CardSpecial
     {
-        // do nothing
-    }
+        private EffectManager effectManager;
+        private DaoshiAutoAttack daoshi;
 
-    private void Start()
-    {
-        StartCoroutine(Dot());
-        effectManager = FindObjectOfType<EffectManager>();
-        daoshi = FindObjectOfType<DaoshiAutoAttack>();
-    }
-
-    private IEnumerator Dot()
-    {
-        yield return new WaitForSeconds(1f);
-        while (true)
+        protected override void SetLifetime()
         {
-            foreach (Collider c in Physics.OverlapSphere(
-                transform.position, ((PointAoe)card).radius,
-                LayerMask.GetMask("Enemy")))
+            // do nothing
+        }
+
+        private void Start()
+        {
+            StartCoroutine(Dot());
+            effectManager = FindObjectOfType<EffectManager>();
+            daoshi = FindObjectOfType<DaoshiAutoAttack>();
+        }
+
+        private IEnumerator Dot()
+        {
+            yield return new WaitForSeconds(1f);
+            while (true)
             {
-                c.GetComponent<Health>().TakeDamage(((PointAoe)card).damage);
-                effectManager.Register(daoshi.gameObject, c.gameObject,
-                    Effect.Type.Stun, 
-                    UnityEngine.Random.Range(1f, 2f), 
-                    ((PointAoe)card).effectAmount);
+                foreach (Collider c in Physics.OverlapSphere(
+                    transform.position, ((PointAoe)card).radius,
+                    LayerMask.GetMask("Enemy")))
+                {
+                    c.GetComponent<Health>().TakeDamage(((PointAoe)card).damage);
+                    effectManager.Register(daoshi.gameObject, c.gameObject,
+                        Effect.Type.Stun,
+                        UnityEngine.Random.Range(1f, 2f),
+                        ((PointAoe)card).effectAmount);
+                }
+                yield return new WaitForSeconds(2f);
             }
-            yield return new WaitForSeconds(2f);
         }
     }
 }

@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraCrop : MonoBehaviour
+namespace ProjectTower
 {
-    private Camera cam;
-    private void Awake()
+    public class CameraCrop : MonoBehaviour
     {
-        cam = GetComponent<Camera>();
-        if ((float)Screen.width / Screen.height > 1.8f)
+        private Camera cam;
+        private void Awake()
         {
-            cam.rect = new Rect(0.128f, 0f, 0.744f, 1f);
-        }
+            cam = GetComponent<Camera>();
+            if ((float)Screen.width / Screen.height > 1.8f)
+            {
+                cam.rect = new Rect(0.128f, 0f, 0.744f, 1f);
+            }
 
-        if ((float)Screen.width / Screen.height < 1.6f)
-        {
-            cam.rect = new Rect(0f, 0.078f, 1f, 0.844f);
+            if ((float)Screen.width / Screen.height < 1.6f)
+            {
+                cam.rect = new Rect(0f, 0.078f, 1f, 0.844f);
+            }
         }
     }
 }

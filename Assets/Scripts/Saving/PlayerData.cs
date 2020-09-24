@@ -3,26 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
-public class PlayerData
+namespace ProjectTower
 {
-    public Dictionary<int, string[]> playerDecks;
-    public Dictionary<string, bool> cardsUpgrade;
-
-    public int money;
-    public Dictionary<int, string[]> playerEquipments;
-
-    public PlayerData()
+    [Serializable]
+    public class PlayerData
     {
-        var cards = Resources.LoadAll<Card>("Cards");
-        playerDecks = new Dictionary<int, string[]>();
-        cardsUpgrade = new Dictionary<string, bool>();
-        foreach (Card c in cards)
-        {
-            cardsUpgrade[c.cardName] = false;
-        }
+        public Dictionary<int, string[]> playerDecks;
+        public Dictionary<string, bool> cardsUpgrade;
 
-        money = 0;
-        playerEquipments = new Dictionary<int, string[]>();
+        public int money;
+        public Dictionary<int, string[]> playerEquipments;
+
+        public PlayerData()
+        {
+            var cards = Resources.LoadAll<Card>("Cards");
+            playerDecks = new Dictionary<int, string[]>();
+            cardsUpgrade = new Dictionary<string, bool>();
+            foreach (Card c in cards)
+            {
+                cardsUpgrade[c.cardName] = false;
+            }
+
+            money = 0;
+            playerEquipments = new Dictionary<int, string[]>();
+        }
     }
 }

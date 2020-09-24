@@ -5,107 +5,110 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using TowerUtils;
+using ProjectTower;
 using DG.Tweening;
 
-public abstract class DiscardButton : Selectable
+namespace ProjectTower
 {
-    public Card.Owner owner;
-
-    protected PlayerController player;
-    public bool isDiscarding = false;
-
-    // Start is called before the first frame update
-    protected override void Start()
+    public abstract class DiscardButton : Selectable
     {
-        base.Start();
-        player = FindObjectsOfType<PlayerController>()
-           .Where(p => p.gameObject.name == owner.ToString())
-           .FirstOrDefault();
-    }
+        public Card.Owner owner;
 
-    private void Update()
-    {
-        if (isDiscarding)
+        protected PlayerController player;
+        public bool isDiscarding = false;
+
+        // Start is called before the first frame update
+        protected override void Start()
         {
-            if (Input.GetMouseButtonDown(1))
+            base.Start();
+            player = FindObjectsOfType<PlayerController>()
+               .Where(p => p.gameObject.name == owner.ToString())
+               .FirstOrDefault();
+        }
+
+        private void Update()
+        {
+            if (isDiscarding)
             {
-                isDiscarding = false;
-                EventSystem.current.SetSelectedGameObject(null);
+                if (Input.GetMouseButtonDown(1))
+                {
+                    isDiscarding = false;
+                    EventSystem.current.SetSelectedGameObject(null);
+                }
             }
         }
-    }
 
-    public override void OnPointerEnter(PointerEventData eventData)
-    {
-        if (IsInteractable())
+        public override void OnPointerEnter(PointerEventData eventData)
         {
-            base.OnPointerEnter(eventData);
-            PointerEnterBehavior();
+            if (IsInteractable())
+            {
+                base.OnPointerEnter(eventData);
+                PointerEnterBehavior();
+            }
         }
-    }
 
-    public override void OnPointerExit(PointerEventData eventData)
-    {
-        if (!(EventSystem.current.currentSelectedGameObject == gameObject)
-            && IsInteractable())
+        public override void OnPointerExit(PointerEventData eventData)
         {
-            base.OnPointerExit(eventData);
-            PointerExitBehavior();
+            if (!(EventSystem.current.currentSelectedGameObject == gameObject)
+                && IsInteractable())
+            {
+                base.OnPointerExit(eventData);
+                PointerExitBehavior();
+            }
         }
-    }
 
-    public override void OnPointerDown(PointerEventData eventData)
-    {
-        if (IsInteractable())
+        public override void OnPointerDown(PointerEventData eventData)
         {
-            base.OnPointerDown(eventData);
-            EventSystem.current.SetSelectedGameObject(gameObject);
-            isDiscarding = true;
-            PointerDownBehavior();
-        }  
-    }
-
-    public override void OnDeselect(BaseEventData eventData)
-    {
-        base.OnDeselect(eventData);
-        DeselecteBehavior();
-    }
-
-    public bool Discard(Card card)
-    {
-        isDiscarding = false;
-        if (DiscardBehavior(card))
-        {
-            FindObjectOfType<DeckManager>().DiscardCard(card);
-            return true;
+            if (IsInteractable())
+            {
+                base.OnPointerDown(eventData);
+                EventSystem.current.SetSelectedGameObject(gameObject);
+                isDiscarding = true;
+                PointerDownBehavior();
+            }
         }
-        else
+
+        public override void OnDeselect(BaseEventData eventData)
         {
-            return false;
+            base.OnDeselect(eventData);
+            DeselecteBehavior();
         }
+
+        public bool Discard(Card card)
+        {
+            isDiscarding = false;
+            if (DiscardBehavior(card))
+            {
+                FindObjectOfType<DeckManager>().DiscardCard(card);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void SetInteractable(bool flag)
+        {
+            if (flag && !interactable)
+            {
+                interactable = flag;
+                DoStateTransition(SelectionState.Normal, false);
+            }
+            else if (!flag && interactable)
+            {
+                interactable = flag;
+            }
+        }
+
+        protected abstract void PointerDownBehavior();
+
+        protected abstract void PointerEnterBehavior();
+
+        protected abstract void PointerExitBehavior();
+
+        protected abstract void DeselecteBehavior();
+
+        protected abstract bool DiscardBehavior(Card card);
     }
-
-    public void SetInteractable(bool flag)
-    {
-        if (flag && !interactable)
-        {
-            interactable = flag;
-            DoStateTransition(SelectionState.Normal, false);
-        }
-        else if (!flag && interactable)
-        {
-            interactable = flag;
-        }
-    }
-
-    protected abstract void PointerDownBehavior();
-
-    protected abstract void PointerEnterBehavior();
-
-    protected abstract void PointerExitBehavior();
-
-    protected abstract void DeselecteBehavior();
-
-    protected abstract bool DiscardBehavior(Card card);
 }

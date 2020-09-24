@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseOverFx : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] GameObject fx;
-    // Start is called before the first frame update
-    
-
-    private void OnMouseOver()
+    public class MouseOverFx : MonoBehaviour
     {
-        fx.SetActive(true);
-    }
+        [SerializeField] GameObject fx;
+        // Start is called before the first frame update
 
-    private void OnMouseExit()
-    {
-        fx.SetActive(false);
+
+        private void OnMouseOver()
+        {
+            fx.SetActive(true);
+        }
+
+        private void OnMouseExit()
+        {
+            fx.SetActive(false);
+        }
     }
 }

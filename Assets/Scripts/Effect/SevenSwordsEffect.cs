@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SevenSwordsEffect : Effect
+namespace ProjectTower
 {
-    protected override void OnStart()
+    public class SevenSwordsEffect : Effect
     {
-        var five = GetComponent<FiveSwordsEffect>();
-        if (five != null)
+        protected override void OnStart()
         {
-            five.Kill();
+            var five = GetComponent<FiveSwordsEffect>();
+            if (five != null)
+            {
+                five.Kill();
+            }
+
+            GetComponent<DaoshiAutoAttack>().missileCount = 7;
+
+            base.OnStart();
+            currentVfx.transform.localPosition = originalPos;
+            currentVfx.transform.localScale = originalScale;
         }
 
-        GetComponent<DaoshiAutoAttack>().missileCount = 7;
-
-        base.OnStart();
-        currentVfx.transform.localPosition = originalPos;
-        currentVfx.transform.localScale = originalScale;
-    }
-
-    protected override void OnFinish()
-    {
-        GetComponent<DaoshiAutoAttack>().missileCount = 3;
-        base.OnFinish();
+        protected override void OnFinish()
+        {
+            GetComponent<DaoshiAutoAttack>().missileCount = 3;
+            base.OnFinish();
+        }
     }
 }

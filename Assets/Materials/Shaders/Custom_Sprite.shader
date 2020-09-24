@@ -50,7 +50,7 @@ Shader "Custom/Sprite"
 }
 /*ASEBEGIN
 Version=18200
-756.6667;184.6667;1269;689;805.1819;518.5607;1.507357;True;False
+431.3333;221.3333;1269;676;805.1819;508.7629;1.507357;True;False
 Node;AmplifyShaderEditor.SamplerNode;42;-100.5015,-188.8884;Inherit;True;Property;_MainTex;MainTex;1;0;Create;True;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;46;-42.45911,-379.8837;Inherit;False;Property;_Tint;Tint;3;0;Create;True;0;0;False;0;False;1,1,1,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;44;-11.55885,30.11697;Inherit;True;Property;_NormalMap;NormalMap;2;0;Create;True;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;True;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -62,4 +62,4 @@ WireConnection;15;0;47;0
 WireConnection;15;1;44;0
 WireConnection;15;10;42;4
 ASEEND*/
-//CHKSM=64083B39381CC2DC36850546C596604FD058D0FD
+//CHKSM=24C7CE88928869613B698184AFFF1A6F3DCF7E3D

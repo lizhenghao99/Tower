@@ -5,47 +5,50 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using TowerUtils;
+using ProjectTower;
 using DG.Tweening;
 
-public class LubanDiscardButton : DiscardButton
+namespace ProjectTower
 {
-    protected override void PointerEnterBehavior()
+    public class LubanDiscardButton : DiscardButton
     {
-        gameObject.transform.DOLocalRotate(
-            new Vector3(0, 0, 20), 0.3f)
-            .SetEase(Ease.OutQuint);
-    }
-
-    protected override void PointerExitBehavior()
-    {
-        gameObject.transform.DOLocalRotate(
-               new Vector3(0, 0, 0), 0.3f)
-               .SetEase(Ease.OutQuint);
-    }
-
-    protected override void PointerDownBehavior()
-    {
-        gameObject.transform.DOPunchRotation(
-                new Vector3(0, 0, 45), 0.5f)
+        protected override void PointerEnterBehavior()
+        {
+            gameObject.transform.DOLocalRotate(
+                new Vector3(0, 0, 20), 0.3f)
                 .SetEase(Ease.OutQuint);
+        }
 
-        GlobalAudioManager.Instance.Play("Hammer", Vector3.zero);
-    }
+        protected override void PointerExitBehavior()
+        {
+            gameObject.transform.DOLocalRotate(
+                   new Vector3(0, 0, 0), 0.3f)
+                   .SetEase(Ease.OutQuint);
+        }
 
-    protected override void DeselecteBehavior()
-    {
-        gameObject.transform.DOLocalRotate(
-                new Vector3(0, 0, 0), 0.3f)
-                .SetEase(Ease.OutQuint);
-    }
+        protected override void PointerDownBehavior()
+        {
+            gameObject.transform.DOPunchRotation(
+                    new Vector3(0, 0, 45), 0.5f)
+                    .SetEase(Ease.OutQuint);
 
-    protected override bool DiscardBehavior(Card card)
-    {
-        player.setIsCasting(true);
-        StartCoroutine(Utils.Timeout(() =>
-            player.setIsCasting(false), 10f));
+            GlobalAudioManager.Instance.Play("Hammer", Vector3.zero);
+        }
 
-        return true;
+        protected override void DeselecteBehavior()
+        {
+            gameObject.transform.DOLocalRotate(
+                    new Vector3(0, 0, 0), 0.3f)
+                    .SetEase(Ease.OutQuint);
+        }
+
+        protected override bool DiscardBehavior(Card card)
+        {
+            player.setIsCasting(true);
+            StartCoroutine(Utils.Timeout(() =>
+                player.setIsCasting(false), 10f));
+
+            return true;
+        }
     }
 }

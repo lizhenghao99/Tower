@@ -2,25 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GodMode : MonoBehaviour
+namespace ProjectTower
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GodMode : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Return))
+        // Start is called before the first frame update
+        void Start()
         {
-            foreach (Enemy e in FindObjectsOfType<Enemy>())
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                if (!(e is PreexistEnemy))
+                foreach (Enemy e in FindObjectsOfType<Enemy>())
                 {
-                    e.GetComponent<Health>().TakeDamagePercent(1f);
-                } 
+                    if (!(e is PreexistEnemy))
+                    {
+                        e.GetComponent<Health>().TakeDamagePercent(1f);
+                    }
+                }
             }
         }
     }

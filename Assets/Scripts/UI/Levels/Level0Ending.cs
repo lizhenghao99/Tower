@@ -3,30 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class Level0Ending : LevelEnding
+namespace ProjectTower
 {
-    private EliteWolfAttack boss;
-    private Health bossHealth;
-
-    protected override void Start()
+    public class Level0Ending : LevelEnding
     {
-        base.Start();
-        boss = FindObjectOfType<EliteWolfAttack>();
-        bossHealth = boss.GetComponent<Health>();
-    }
+        private EliteWolfAttack boss;
+        private Health bossHealth;
 
-    public override void Lose()
-    {
-        if (levelController.currStage.index == 2 &&
-            (float)bossHealth.currHealth <= (int)(bossHealth.maxHealth * 0.1))
+        protected override void Start()
         {
-            base.Win();
+            base.Start();
+            boss = FindObjectOfType<EliteWolfAttack>();
+            bossHealth = boss.GetComponent<Health>();
         }
-        else
+
+        public override void Lose()
         {
-            if (FindObjectOfType<TutorialController>() == null)
+            if (levelController.currStage.index == 2 &&
+                (float)bossHealth.currHealth <= (int)(bossHealth.maxHealth * 0.1))
             {
-                base.Lose();
+                base.Win();
+            }
+            else
+            {
+                if (FindObjectOfType<TutorialController>() == null)
+                {
+                    base.Lose();
+                }
             }
         }
     }

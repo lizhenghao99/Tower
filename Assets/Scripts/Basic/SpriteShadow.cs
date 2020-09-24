@@ -2,22 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteAlways]
-public class SpriteShadow : MonoBehaviour
+namespace ProjectTower
 {
-    // Start is called before the first frame update
-    void Start()
+    [ExecuteAlways]
+    public class SpriteShadow : MonoBehaviour
     {
-        foreach (Renderer r in GetComponentsInChildren<SpriteRenderer>())
+        // Start is called before the first frame update
+        void Start()
         {
-            r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+            foreach (Renderer r in GetComponentsInChildren<SpriteRenderer>())
+            {
+                r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+            }
+
+            var renderer = GetComponent<SpriteRenderer>();
+            if (renderer != null)
+            {
+                renderer.shadowCastingMode =
+                    UnityEngine.Rendering.ShadowCastingMode.On;
+            }
         }
 
-        var renderer = GetComponent<SpriteRenderer>();
-        if (renderer != null)
+        private void OnDisable()
         {
-            renderer.shadowCastingMode = 
-                UnityEngine.Rendering.ShadowCastingMode.On;
+            foreach (Renderer r in GetComponentsInChildren<SpriteRenderer>())
+            {
+                r.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            }
+
+            var renderer = GetComponent<SpriteRenderer>();
+            if (renderer != null)
+            {
+                renderer.shadowCastingMode =
+                    UnityEngine.Rendering.ShadowCastingMode.Off;
+            }
         }
     }
 }

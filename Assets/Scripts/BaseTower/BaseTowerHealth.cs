@@ -2,57 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseTowerHealth : Health
+namespace ProjectTower
 {
-    private InstanceAudioManager audioManager;
-    private float hurtAudioTime;
-    [Header("Vfx")] 
-    [SerializeField] GameObject deathVfx;
-    protected override void Start()
+    public class BaseTowerHealth : Health
     {
-        base.Start();
-        audioManager = GetComponent<InstanceAudioManager>();
-        hurtAudioTime = Time.time;
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        GetComponentInChildren<Animator>().SetTrigger("Hurt");
-        if (Time.time - hurtAudioTime > 1f)
+        private InstanceAudioManager audioManager;
+        private float hurtAudioTime;
+        [Header("Vfx")]
+        [SerializeField] GameObject deathVfx;
+        protected override void Start()
         {
-            if (audioManager != null)
-            {
-                audioManager.Play("Hurt");
-            }
+            base.Start();
+            audioManager = GetComponent<InstanceAudioManager>();
             hurtAudioTime = Time.time;
         }
-        base.TakeDamage(damage);
-    }
 
-    public override void TakeDamagePercent(float percent)
-    {
-        GetComponentInChildren<Animator>().SetTrigger("Hurt");
-        if (Time.time - hurtAudioTime > 1f)
+        public override void TakeDamage(int damage)
         {
+            GetComponentInChildren<Animator>().SetTrigger("Hurt");
+            if (Time.time - hurtAudioTime > 1f)
+            {
+                if (audioManager != null)
+                {
+                    audioManager.Play("Hurt");
+                }
+                hurtAudioTime = Time.time;
+            }
+            base.TakeDamage(damage);
+        }
+
+        public override void TakeDamagePercent(float percent)
+        {
+            GetComponentInChildren<Animator>().SetTrigger("Hurt");
+            if (Time.time - hurtAudioTime > 1f)
+            {
+                if (audioManager != null)
+                {
+                    audioManager.Play("Hurt");
+                }
+                hurtAudioTime = Time.time;
+            }
+            base.TakeDamagePercent(percent);
+        }
+        public override void Die()
+        {
+            Instantiate(deathVfx, gameObject.transform);
+            GetComponentInChildren<Animator>().SetBool("Death", true);
+            isDead = true;
             if (audioManager != null)
             {
-                audioManager.Play("Hurt");
+                audioManager.Play("Death");
+                audioManager.Play("Fall");
             }
-            hurtAudioTime = Time.time;
+            currHealth = 0;
+            OnDeath();
         }
-        base.TakeDamagePercent(percent);
-    }
-    public override void Die()
-    {
-        Instantiate(deathVfx, gameObject.transform);
-        GetComponentInChildren<Animator>().SetBool("Death", true);
-        isDead = true;
-        if (audioManager != null)
-        {
-            audioManager.Play("Death");
-            audioManager.Play("Fall");
-        }
-        currHealth = 0;
-        OnDeath();
     }
 }

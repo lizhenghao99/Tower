@@ -3,36 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class RageEffect : Effect
+namespace ProjectTower
 {
-    private AttackBase attack;
-    private int originalAttackDamage;
-    private float originalAttackRate;
-
-    private void Awake()
+    public class RageEffect : Effect
     {
-        attack = GetComponent<AttackBase>();
-    }
+        private AttackBase attack;
+        private int originalAttackDamage;
+        private float originalAttackRate;
 
-    protected override void OnStart()
-    {
-        originalAttackDamage = attack.attackDamage;
-        originalAttackRate = attack.attackRate;
-
-        attack.attackDamage = (int)(attack.attackDamage * (1 + amount));
-        if (attack.attackRate != 0)
+        private void Awake()
         {
-            var attackFrequency = 1 / attack.attackRate;
-            attackFrequency *= 1 + amount;
-            attack.attackRate = 1 / attackFrequency;
+            attack = GetComponent<AttackBase>();
         }
-        base.OnStart();
-    }
 
-    protected override void OnFinish()
-    {
-        attack.attackDamage = originalAttackDamage;
-        attack.attackRate = originalAttackRate;
-        base.OnFinish();
+        protected override void OnStart()
+        {
+            originalAttackDamage = attack.attackDamage;
+            originalAttackRate = attack.attackRate;
+
+            attack.attackDamage = (int)(attack.attackDamage * (1 + amount));
+            if (attack.attackRate != 0)
+            {
+                var attackFrequency = 1 / attack.attackRate;
+                attackFrequency *= 1 + amount;
+                attack.attackRate = 1 / attackFrequency;
+            }
+            base.OnStart();
+        }
+
+        protected override void OnFinish()
+        {
+            attack.attackDamage = originalAttackDamage;
+            attack.attackRate = originalAttackRate;
+            base.OnFinish();
+        }
     }
 }

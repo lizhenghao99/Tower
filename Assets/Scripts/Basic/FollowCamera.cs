@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteAlways]
-public class FollowCamera : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] Camera target;
-    [SerializeField] Camera cam;
-
-    void Update()
+    [ExecuteAlways]
+    public class FollowCamera : MonoBehaviour
     {
-        cam.nearClipPlane = target.nearClipPlane;
-        cam.farClipPlane = target.farClipPlane;
-        cam.fieldOfView = target.fieldOfView;
+        [SerializeField] Camera target;
+        [SerializeField] Camera cam;
+
+        void Update()
+        {
+            cam.nearClipPlane = target.nearClipPlane;
+            cam.farClipPlane = target.farClipPlane;
+            cam.fieldOfView = target.fieldOfView;
+        }
     }
 }

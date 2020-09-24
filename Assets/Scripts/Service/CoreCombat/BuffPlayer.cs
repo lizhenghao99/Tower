@@ -5,122 +5,125 @@ using UnityEngine;
 using Werewolf.StatusIndicators.Components;
 using System.Linq;
 
-public class BuffPlayer : Singleton<BuffPlayer>, ICardTypePlayer
+namespace ProjectTower
 {
-    private Buff cardPlaying;
-    private SplatManager splat;
-    private LayerMask layerMask;
-
-    private PlayerController[] players;
-    private PlayerController self;
-
-    private List<GameObject> targets;
-
-    private EffectManager effectManager;
-
-    public void Awake()
+    public class BuffPlayer : Singleton<BuffPlayer>, ICardTypePlayer
     {
-        layerMask = LayerMask.GetMask("Enemy");
-    }
+        private Buff cardPlaying;
+        private SplatManager splat;
+        private LayerMask layerMask;
 
-    private void Start()
-    {
-        effectManager = FindObjectOfType<EffectManager>();
-    }
+        private PlayerController[] players;
+        private PlayerController self;
 
-    public void Ready()
-    {
-        Refresh();
-        splat.CancelRangeIndicator();
-        players = FindObjectsOfType<PlayerController>();
-        self = players
-            .Where(p => p.name == cardPlaying.owner.ToString())
-            .FirstOrDefault();
+        private List<GameObject> targets;
 
-        targets = new List<GameObject>();
+        private EffectManager effectManager;
 
-        switch (cardPlaying.buffTarget)
+        public void Awake()
         {
-            case Buff.BuffTarget.Self:
-                targets.Add(self.gameObject);
-                break;
-            case Buff.BuffTarget.OwnMinions:
-                GameObject[] ownMinions = FindObjectsOfType<Minion>()
-                    .Where(m => m.owner == cardPlaying.owner)
-                    .Select(m => m.gameObject)
-                    .ToArray();
-                targets.AddRange(ownMinions);
-                break;
-            case Buff.BuffTarget.AllMinions:
-                break;
-            case Buff.BuffTarget.AllChars:
-                break;
-            case Buff.BuffTarget.AllFriendlies:
-                break;
-            case Buff.BuffTarget.AllEnemies:
-                break;
-            default:
-                break;
+            layerMask = LayerMask.GetMask("Enemy");
         }
 
-        SelectTargets();
-    }
-
-    public void Play()
-    {
-        Refresh();
-
-        ApplyBuff();
-    }
-
-    private void Refresh()
-    {
-        cardPlaying = (Buff)CardPlayer.Instance.cardPlaying;
-        splat = CardPlayer.Instance.splat;
-    }
-
-    private void SelectTargets()
-    {
-        foreach (GameObject t in targets)
+        private void Start()
         {
-            if (t.GetComponent<PlayerController>())
+            effectManager = FindObjectOfType<EffectManager>();
+        }
+
+        public void Ready()
+        {
+            Refresh();
+            splat.CancelRangeIndicator();
+            players = FindObjectsOfType<PlayerController>();
+            self = players
+                .Where(p => p.name == cardPlaying.owner.ToString())
+                .FirstOrDefault();
+
+            targets = new List<GameObject>();
+
+            switch (cardPlaying.buffTarget)
             {
-                t.GetComponent<PlayerController>().isSelected = true;
+                case Buff.BuffTarget.Self:
+                    targets.Add(self.gameObject);
+                    break;
+                case Buff.BuffTarget.OwnMinions:
+                    GameObject[] ownMinions = FindObjectsOfType<Minion>()
+                        .Where(m => m.owner == cardPlaying.owner)
+                        .Select(m => m.gameObject)
+                        .ToArray();
+                    targets.AddRange(ownMinions);
+                    break;
+                case Buff.BuffTarget.AllMinions:
+                    break;
+                case Buff.BuffTarget.AllChars:
+                    break;
+                case Buff.BuffTarget.AllFriendlies:
+                    break;
+                case Buff.BuffTarget.AllEnemies:
+                    break;
+                default:
+                    break;
             }
-            else if (t.GetComponent<Minion>())
+
+            SelectTargets();
+        }
+
+        public void Play()
+        {
+            Refresh();
+
+            ApplyBuff();
+        }
+
+        private void Refresh()
+        {
+            cardPlaying = (Buff)CardPlayer.Instance.cardPlaying;
+            splat = CardPlayer.Instance.splat;
+        }
+
+        private void SelectTargets()
+        {
+            foreach (GameObject t in targets)
             {
-                t.GetComponent<Minion>().isSelected = true;
+                if (t.GetComponent<PlayerController>())
+                {
+                    t.GetComponent<PlayerController>().isSelected = true;
+                }
+                else if (t.GetComponent<Minion>())
+                {
+                    t.GetComponent<Minion>().isSelected = true;
+                }
             }
         }
-    }
 
-    private void ApplyBuff()
-    {
-        foreach (GameObject t in targets)
+        private void ApplyBuff()
         {
-            if (t.GetComponent<PlayerController>())
+            foreach (GameObject t in targets)
             {
-                t.GetComponent<PlayerController>().isSelected = false;
-                t.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
-            }
-            else if (t.GetComponent<Minion>())
-            {
-                t.GetComponent<Minion>().isSelected = false;
-            }
+                if (t.GetComponent<PlayerController>())
+                {
+                    t.GetComponent<PlayerController>().isSelected = false;
+                    t.GetComponent<PlayerHealth>().AddShieldPercent(cardPlaying.shieldPercent);
+                }
+                else if (t.GetComponent<Minion>())
+                {
+                    t.GetComponent<Minion>().isSelected = false;
+                }
 
-            effectManager.Register(
-                self.gameObject,
-                t,
-                cardPlaying.effect,
-                cardPlaying.effectDuration,
-                cardPlaying.effectAmount);
+                effectManager.Register(
+                    self.gameObject,
+                    t,
+                    cardPlaying.effect,
+                    cardPlaying.effectDuration,
+                    cardPlaying.effectAmount);
 
-            if (cardPlaying.vfx)
-            {
-                var fx = Instantiate(cardPlaying.vfx, t.transform);
-                fx.transform.position =
-                    t.transform.position + cardPlaying.vfxOffset;
+                if (cardPlaying.vfx)
+                {
+                    var fx = Instantiate(cardPlaying.vfx, t.transform);
+                    fx.transform.position =
+                        t.transform.position + cardPlaying.vfxOffset;
+                }
             }
-        } 
+        }
     }
 }

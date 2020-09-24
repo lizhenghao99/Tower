@@ -3,31 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class DeckBuilderSelection : MonoBehaviour
+namespace ProjectTower
 {
-    [SerializeField] DeckBuilder deckBuilder;
-    [SerializeField] Card.Owner[] owners;
-    [SerializeField] GameObject[] collectionCardPrefabs;
-
-    public void Enter()
+    public class DeckBuilderSelection : MonoBehaviour
     {
-        gameObject.SetActive(true);
-        GetComponent<CanvasGroup>()
-            .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
-    }
+        [SerializeField] DeckBuilder deckBuilder;
+        [SerializeField] Card.Owner[] owners;
+        [SerializeField] GameObject[] collectionCardPrefabs;
 
-    public void Exit()
-    {
-        GetComponent<CanvasGroup>()
-            .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
-            .OnComplete(() => gameObject.SetActive(false));
-    }
+        public void Enter()
+        {
+            gameObject.SetActive(true);
+            GetComponent<CanvasGroup>()
+                .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        }
 
-    public void SelectCharacter(int index)
-    {
-        deckBuilder.gameObject.SetActive(true);
-        deckBuilder.SetOwner(owners[index], collectionCardPrefabs[index]);
-        deckBuilder.GetComponent<CanvasGroup>()
-            .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        public void Exit()
+        {
+            GetComponent<CanvasGroup>()
+                .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
+                .OnComplete(() => gameObject.SetActive(false));
+        }
+
+        public void SelectCharacter(int index)
+        {
+            deckBuilder.gameObject.SetActive(true);
+            deckBuilder.SetOwner(owners[index], collectionCardPrefabs[index]);
+            deckBuilder.GetComponent<CanvasGroup>()
+                .DOFade(1f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true);
+        }
     }
 }

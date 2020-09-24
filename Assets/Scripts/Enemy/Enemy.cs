@@ -5,22 +5,25 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+namespace ProjectTower
 {
-
-    protected virtual void Awake()
+    public class Enemy : MonoBehaviour
     {
-        gameObject.SetActive(false);
+
+        protected virtual void Awake()
+        {
+            gameObject.SetActive(false);
+        }
+
+        protected virtual void Start()
+        {
+            // do nothing
+        }
+
+        public virtual void Spawn()
+        {
+            gameObject.SetActive(true);
+        }
+
     }
-
-    protected virtual void Start()
-    {
-        // do nothing
-    }
-
-    public virtual void Spawn()
-    {
-        gameObject.SetActive(true);
-    }  
-
 }

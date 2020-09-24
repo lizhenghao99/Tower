@@ -5,115 +5,118 @@ using UnityEngine.EventSystems;
 using System;
 using DG.Tweening;
 
-public class PlayerHealth : Health
+namespace ProjectTower
 {
-    [Header("Vfx")]
-    [SerializeField] GameObject deathVfx;
-    public int maxShield { get; private set; }
-    public int currShield { get; private set; }
-
-    public event EventHandler shieldChanged;
-    public event EventHandler damaged;
-
-
-    // Start is called before the first frame update
-    protected override void Start()
+    public class PlayerHealth : Health
     {
-        base.Start();
-        currShield = 0;
-        maxShield = maxHealth;     
-    }
+        [Header("Vfx")]
+        [SerializeField] GameObject deathVfx;
+        public int maxShield { get; private set; }
+        public int currShield { get; private set; }
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        base.Update();
-        GetComponentInChildren<Animator>().SetBool("Shield", currShield > 0);
-    }
+        public event EventHandler shieldChanged;
+        public event EventHandler damaged;
 
-    public void AddShield(int amount)
-    {
-        currShield = Mathf.Clamp(currShield + amount, 0, maxShield);
-        OnShieldChanged();
-    }
 
-    public void AddShieldPercent(float percent)
-    {
-        currShield = Mathf.Clamp(
-            currShield + (int)(percent * maxShield), 0, maxShield);
-        OnShieldChanged();
-    }
-
-    public override void TakeDamage(int damage)
-    {
-        if (isImmune || isDead) return;
-        ChangeHealth(-damage);
-        OnDamaged();
-    }
-
-    public override void TakeDamagePercent(float percent)
-    {
-        if (isImmune || isDead) return;
-        var damage = (int)percent * maxHealth;
-        ChangeHealth(-damage);
-        OnDamaged();
-    }
-
-    private void ChangeHealth(int amount)
-    {
-        if (amount < 0)
+        // Start is called before the first frame update
+        protected override void Start()
         {
-            if (currShield > 0)
+            base.Start();
+            currShield = 0;
+            maxShield = maxHealth;
+        }
+
+        // Update is called once per frame
+        protected override void Update()
+        {
+            base.Update();
+            GetComponentInChildren<Animator>().SetBool("Shield", currShield > 0);
+        }
+
+        public void AddShield(int amount)
+        {
+            currShield = Mathf.Clamp(currShield + amount, 0, maxShield);
+            OnShieldChanged();
+        }
+
+        public void AddShieldPercent(float percent)
+        {
+            currShield = Mathf.Clamp(
+                currShield + (int)(percent * maxShield), 0, maxShield);
+            OnShieldChanged();
+        }
+
+        public override void TakeDamage(int damage)
+        {
+            if (isImmune || isDead) return;
+            ChangeHealth(-damage);
+            OnDamaged();
+        }
+
+        public override void TakeDamagePercent(float percent)
+        {
+            if (isImmune || isDead) return;
+            var damage = (int)percent * maxHealth;
+            ChangeHealth(-damage);
+            OnDamaged();
+        }
+
+        private void ChangeHealth(int amount)
+        {
+            if (amount < 0)
             {
-                currShield += (int) (amount * 0.7);
+                if (currShield > 0)
+                {
+                    currShield += (int)(amount * 0.7);
+                }
+                else
+                {
+                    currShield += amount;
+                }
+
+                if (currShield < 0)
+                {
+                    currHealth = Mathf.Clamp(currHealth + currShield, 0, maxHealth);
+                    currShield = 0;
+                }
             }
             else
             {
-                currShield += amount;
+                currHealth = Mathf.Clamp(currHealth + amount, 0, maxHealth);
             }
 
-            if (currShield < 0)
+            OnShieldChanged();
+            OnHealthChanged();
+
+            if (currHealth <= 0 && !isDead)
             {
-                currHealth = Mathf.Clamp(currHealth + currShield, 0, maxHealth);
-                currShield = 0;
+                Die();
             }
         }
-        else
+
+        public override void Die()
         {
-            currHealth = Mathf.Clamp(currHealth + amount, 0, maxHealth);
+            var fx = Instantiate(deathVfx, gameObject.transform);
+            GetComponentInChildren<Animator>().SetBool("Death", true);
+            isDead = true;
+            InstanceAudioManager audioManager = GetComponent<InstanceAudioManager>();
+            if (audioManager != null)
+            {
+                audioManager.Play("Death");
+                audioManager.Play("Fall");
+            }
+            currHealth = 0;
+            OnDeath();
         }
 
-        OnShieldChanged();
-        OnHealthChanged();
-
-        if (currHealth <= 0 && !isDead)
+        private void OnShieldChanged()
         {
-            Die();
+            shieldChanged?.Invoke(gameObject, EventArgs.Empty);
         }
-    }
 
-    public override void Die()
-    {
-        var fx = Instantiate(deathVfx, gameObject.transform);
-        GetComponentInChildren<Animator>().SetBool("Death", true);
-        isDead = true;
-        InstanceAudioManager audioManager = GetComponent<InstanceAudioManager>();
-        if (audioManager != null)
+        private void OnDamaged()
         {
-            audioManager.Play("Death");
-            audioManager.Play("Fall");
+            damaged?.Invoke(gameObject, EventArgs.Empty);
         }
-        currHealth = 0;
-        OnDeath();
-    }
-
-    private void OnShieldChanged()
-    {
-        shieldChanged?.Invoke(gameObject, EventArgs.Empty);
-    }
-
-    private void OnDamaged()
-    {
-        damaged?.Invoke(gameObject, EventArgs.Empty);
     }
 }

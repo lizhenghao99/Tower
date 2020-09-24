@@ -7,106 +7,109 @@ using DG.Tweening;
 using TMPro;
 using System;
 using System.Linq;
-using TowerUtils;
+using ProjectTower;
 
-public class CollectionCardClick : Selectable
+namespace ProjectTower
 {
-    public Card card { get; private set; }
-
-    public float cardWidth;
-    public float cardHeight;
-
-    public CanvasGroup group;
-
-    private RectTransform rectTransform;
-
-    private float fadeTime = 0.3f;
-
-    private InspectMenu inspectMenu;
-    private DeckCardManager deckCardManager;
-
-    protected override void Awake()
+    public class CollectionCardClick : Selectable
     {
-        group = GetComponent<CanvasGroup>();
-    }
+        public Card card { get; private set; }
 
-    protected override void Start()
-    {
-        base.Start();
-        rectTransform = GetComponent<RectTransform>();
-        inspectMenu = FindObjectOfType<InspectMenu>();
-        deckCardManager = FindObjectOfType<DeckCardManager>();
-    }
+        public float cardWidth;
+        public float cardHeight;
 
-    public void SetCard(Card c)
-    {
-        card = c;
-    }
+        public CanvasGroup group;
 
-    public override void OnPointerEnter(PointerEventData eventData)
-    {
-        base.OnPointerEnter(eventData);
-        ZoomIn();
-    }
+        private RectTransform rectTransform;
 
-    public override void OnPointerExit(PointerEventData eventData)
-    {
-        base.OnPointerExit(eventData);
-        ZoomOut();
-    }
+        private float fadeTime = 0.3f;
 
-    public override void OnPointerDown(PointerEventData eventData)
-    {
-        if (IsInteractable())
+        private InspectMenu inspectMenu;
+        private DeckCardManager deckCardManager;
+
+        protected override void Awake()
         {
-            base.OnPointerDown(eventData);
+            group = GetComponent<CanvasGroup>();
+        }
 
-            if (eventData.button == PointerEventData.InputButton.Left)
+        protected override void Start()
+        {
+            base.Start();
+            rectTransform = GetComponent<RectTransform>();
+            inspectMenu = FindObjectOfType<InspectMenu>();
+            deckCardManager = FindObjectOfType<DeckCardManager>();
+        }
+
+        public void SetCard(Card c)
+        {
+            card = c;
+        }
+
+        public override void OnPointerEnter(PointerEventData eventData)
+        {
+            base.OnPointerEnter(eventData);
+            ZoomIn();
+        }
+
+        public override void OnPointerExit(PointerEventData eventData)
+        {
+            base.OnPointerExit(eventData);
+            ZoomOut();
+        }
+
+        public override void OnPointerDown(PointerEventData eventData)
+        {
+            if (IsInteractable())
             {
-                GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
-                bool success = deckCardManager.AddCard(card);
+                base.OnPointerDown(eventData);
 
-                if (!success)
+                if (eventData.button == PointerEventData.InputButton.Left)
                 {
-                    rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
-                        .SetEase(Ease.OutQuint);
-                    EventSystem.current.SetSelectedGameObject(null);
+                    GlobalAudioManager.Instance.Play("Tap", Vector3.zero);
+                    bool success = deckCardManager.AddCard(card);
 
-                    GlobalAudioManager.Instance.Play("Error", Vector3.zero);
+                    if (!success)
+                    {
+                        rectTransform.DOShakeAnchorPos(0.3f, 20, 20)
+                            .SetEase(Ease.OutQuint);
+                        EventSystem.current.SetSelectedGameObject(null);
+
+                        GlobalAudioManager.Instance.Play("Error", Vector3.zero);
+                    }
+                    else
+                    {
+                        ClickZoom();
+                    }
                 }
-                else
+                else if (eventData.button == PointerEventData.InputButton.Right)
                 {
-                    ClickZoom();
+                    inspectMenu.Enter(GetComponent<CardDisplay>(), card);
                 }
             }
-            else if (eventData.button == PointerEventData.InputButton.Right)
-            {
-                inspectMenu.Enter(GetComponent<CardDisplay>(), card);
-            }    
         }
-    }
 
-    private void ZoomIn()
-    {
-        rectTransform.DOSizeDelta(
-                    new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
+        private void ZoomIn()
+        {
+            rectTransform.DOSizeDelta(
+                        new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.3f)
+                        .SetEase(Ease.OutQuint);
+        }
+
+        private void ZoomOut()
+        {
+            rectTransform.DOSizeDelta(
+                    new Vector2(cardWidth, cardHeight), 0.3f)
                     .SetEase(Ease.OutQuint);
-    }
+        }
 
-    private void ZoomOut()
-    {
-        rectTransform.DOSizeDelta(
-                new Vector2(cardWidth, cardHeight), 0.3f)
-                .SetEase(Ease.OutQuint);
-    }
-
-    private void ClickZoom()
-    {
-        rectTransform.DOSizeDelta(
-                    new Vector2(cardWidth * 1.25f, cardHeight * 1.25f), 0.1f)
-                    .SetEase(Ease.OutQuint)
-                    .OnComplete(() => rectTransform.DOSizeDelta(
-                        new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.1f)
-                        .SetEase(Ease.OutQuint));
+        private void ClickZoom()
+        {
+            rectTransform.DOSizeDelta(
+                        new Vector2(cardWidth * 1.25f, cardHeight * 1.25f), 0.1f)
+                        .SetEase(Ease.OutQuint)
+                        .OnComplete(() => rectTransform.DOSizeDelta(
+                            new Vector2(cardWidth * 1.2f, cardHeight * 1.2f), 0.1f)
+                            .SetEase(Ease.OutQuint));
+        }
     }
 }

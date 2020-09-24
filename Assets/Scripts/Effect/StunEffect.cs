@@ -3,49 +3,52 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class StunEffect : Effect
+namespace ProjectTower
 {
-    private NavMeshAgent agent;
-    private AttackBase attack;
-    private Animator animator;
-
-    private void Awake()
+    public class StunEffect : Effect
     {
-        agent = GetComponent<NavMeshAgent>();
-        attack = GetComponent<AttackBase>();
-        animator = GetComponentInChildren<Animator>();
-    }
+        private NavMeshAgent agent;
+        private AttackBase attack;
+        private Animator animator;
 
-    protected override void OnStart()
-    {
-        var jin = GetComponent<LightningEffect>();
-        if (jin != null)
+        private void Awake()
         {
-            jin.Enhance();
+            agent = GetComponent<NavMeshAgent>();
+            attack = GetComponent<AttackBase>();
+            animator = GetComponentInChildren<Animator>();
         }
 
-
-        if (!GetComponent<Health>().immuneStun)
+        protected override void OnStart()
         {
-            agent.SetDestination(gameObject.transform.position);
-            agent.isStopped = true;
-            attack.enabled = false;
-            if (animator != null)
+            var jin = GetComponent<LightningEffect>();
+            if (jin != null)
             {
-                animator.SetFloat("Velocity", 0f);
+                jin.Enhance();
             }
-            base.OnStart();
-        }
-        else
-        {
-            OnFinish();
-        }
-    }
 
-    protected override void OnFinish()
-    {
-        agent.isStopped = false;
-        attack.enabled = true;
-        base.OnFinish();
+
+            if (!GetComponent<Health>().immuneStun)
+            {
+                agent.SetDestination(gameObject.transform.position);
+                agent.isStopped = true;
+                attack.enabled = false;
+                if (animator != null)
+                {
+                    animator.SetFloat("Velocity", 0f);
+                }
+                base.OnStart();
+            }
+            else
+            {
+                OnFinish();
+            }
+        }
+
+        protected override void OnFinish()
+        {
+            agent.isStopped = false;
+            attack.enabled = true;
+            base.OnFinish();
+        }
     }
 }

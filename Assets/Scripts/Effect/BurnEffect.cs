@@ -2,43 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BurnEffect : Effect
+namespace ProjectTower
 {
-    private float timer;
-
-    private void Awake()
+    public class BurnEffect : Effect
     {
-        type = Type.Burn;
-        timer = 1;
-    }
+        private float timer;
 
-    protected override void OnStart()
-    {
-        var tu = GetComponent<StunEffect>();
-        if (tu != null)
+        private void Awake()
         {
-            tu.Enhance();
-        }
-
-        var shui = GetComponent<FreezeEffect>();
-        if (shui != null)
-        {
-            shui.Kill();
-            OnFinish();
-            return;
-        }
-
-        base.OnStart();
-    }
-
-    public override void Update()
-    {
-        timer -= Time.deltaTime;
-        if (timer < 0)
-        {
+            type = Type.Burn;
             timer = 1;
-            GetComponent<Health>()?.TakeDamage((int)amount);
         }
-        base.Update();
+
+        protected override void OnStart()
+        {
+            var tu = GetComponent<StunEffect>();
+            if (tu != null)
+            {
+                tu.Enhance();
+            }
+
+            var shui = GetComponent<FreezeEffect>();
+            if (shui != null)
+            {
+                shui.Kill();
+                OnFinish();
+                return;
+            }
+
+            base.OnStart();
+        }
+
+        public override void Update()
+        {
+            timer -= Time.deltaTime;
+            if (timer < 0)
+            {
+                timer = 1;
+                GetComponent<Health>()?.TakeDamage((int)amount);
+            }
+            base.Update();
+        }
     }
 }

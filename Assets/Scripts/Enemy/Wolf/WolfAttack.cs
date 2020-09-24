@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WolfAttack : EnemyAttack
+namespace ProjectTower
 {
-    protected override void SpeicalAttackUpdate()
+    public class WolfAttack : EnemyAttack
     {
-        // do nothing
+        protected override void SpeicalAttackUpdate()
+        {
+            // do nothing
+        }
     }
 }

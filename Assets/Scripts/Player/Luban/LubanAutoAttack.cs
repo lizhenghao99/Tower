@@ -1,40 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TowerUtils;
+using ProjectTower;
 
-public class LubanAutoAttack : PlayerAutoAttack
+namespace ProjectTower
 {
-    [Header("Vfx")]
-    [SerializeField] GameObject meleeVfx;
-    [SerializeField] float vfxDelay;
-    private EffectManager effectManager;
-
-    protected override void Start()
+    public class LubanAutoAttack : PlayerAutoAttack
     {
-        base.Start();
-        effectManager = FindObjectOfType<EffectManager>();
-    }
+        [Header("Vfx")]
+        [SerializeField] GameObject meleeVfx;
+        [SerializeField] float vfxDelay;
+        private EffectManager effectManager;
 
-    protected override void SpecialAutoAttack()
-    {
-        GetComponent<LubanResource>().ResourceAutoGen();
-        StartCoroutine(Utils.Timeout(() =>
+        protected override void Start()
         {
-            var fx = Instantiate(meleeVfx, gameObject.transform);
-            if (targetHitInfo.point.x < gameObject.transform.position.x)
+            base.Start();
+            effectManager = FindObjectOfType<EffectManager>();
+        }
+
+        protected override void SpecialAutoAttack()
+        {
+            GetComponent<LubanResource>().ResourceAutoGen();
+            StartCoroutine(Utils.Timeout(() =>
             {
-                fx.transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
-        }, vfxDelay));
-    }
+                var fx = Instantiate(meleeVfx, gameObject.transform);
+                if (targetHitInfo.point.x < gameObject.transform.position.x)
+                {
+                    fx.transform.rotation = Quaternion.Euler(0, 180, 0);
+                }
+            }, vfxDelay));
+        }
 
-    protected override void ApplyTaunt()
-    {
-        if (enemiesInRange == null) return;
-        foreach(Collider c in enemiesInRange)
+        protected override void ApplyTaunt()
         {
-            effectManager.Taunt(gameObject, c.gameObject, 1);
+            if (enemiesInRange == null) return;
+            foreach (Collider c in enemiesInRange)
+            {
+                effectManager.Taunt(gameObject, c.gameObject, 1);
+            }
         }
     }
 }

@@ -3,40 +3,43 @@ using System.Collections.Generic;
 
 using UnityEngine.AI;
 
-public class FreezeEffect : Effect
+namespace ProjectTower
 {
-    private NavMeshAgent agent;
-    private float originalSpeed;
-
-    private void Awake()
+    public class FreezeEffect : Effect
     {
-        agent = GetComponent<NavMeshAgent>();
-    }
+        private NavMeshAgent agent;
+        private float originalSpeed;
 
-    protected override void OnStart()
-    {
-        var mu = GetComponent<WoodEffect>();
-        if (mu != null)
+        private void Awake()
         {
-            mu.Enhance();
+            agent = GetComponent<NavMeshAgent>();
         }
 
-        var huo = GetComponent<BurnEffect>();
-        if (huo != null)
+        protected override void OnStart()
         {
-            huo.Kill();
-            OnFinish();
-            return;
+            var mu = GetComponent<WoodEffect>();
+            if (mu != null)
+            {
+                mu.Enhance();
+            }
+
+            var huo = GetComponent<BurnEffect>();
+            if (huo != null)
+            {
+                huo.Kill();
+                OnFinish();
+                return;
+            }
+
+            originalSpeed = agent.speed;
+            agent.speed *= (1 - amount);
+            base.OnStart();
         }
 
-        originalSpeed = agent.speed;
-        agent.speed *= (1 - amount);
-        base.OnStart();
-    }
-
-    protected override void OnFinish()
-    {
-        agent.speed = originalSpeed;
-        base.OnFinish();
+        protected override void OnFinish()
+        {
+            agent.speed = originalSpeed;
+            base.OnFinish();
+        }
     }
 }

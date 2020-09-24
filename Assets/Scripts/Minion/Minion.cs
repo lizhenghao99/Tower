@@ -3,103 +3,106 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Minion : AttackBase
+namespace ProjectTower
 {
-    [SerializeField] GameObject highlight;
-    [HideInInspector] public bool taunt;
-    [HideInInspector] public bool invisible;
-    [HideInInspector] public bool guard;
-    [HideInInspector] public bool charge;
-    [HideInInspector] public bool ambush;
-
-
-    [HideInInspector] public Vector3 guardPosition;
-    [HideInInspector] public float guardRadius;
-    [HideInInspector] public Vector3 initialPosition;
-
-    [HideInInspector] public Card.Owner owner;
-    [HideInInspector] public bool isSelected = false;
-
-    private bool inCombat = true;
-    private EffectManager effectManager;
-    private LevelController levelController;
-
-    // Start is called before the first frame update
-    protected override void Start()
+    public class Minion : AttackBase
     {
-        base.Start();
-        layerMask = LayerMask.GetMask("Enemy");
-        effectManager = FindObjectOfType<EffectManager>();
-        levelController = FindObjectOfType<LevelController>();
-        levelController.StageClear += OnStageClear;
-    }
+        [SerializeField] GameObject highlight;
+        [HideInInspector] public bool taunt;
+        [HideInInspector] public bool invisible;
+        [HideInInspector] public bool guard;
+        [HideInInspector] public bool charge;
+        [HideInInspector] public bool ambush;
 
-    // Update is called once per frame
 
-    protected override void Update()
-    {
-        // anmiation
-        animator.SetFloat("Velocity", agent.velocity.magnitude);
-        if (agent.velocity.magnitude > Mathf.Epsilon)
+        [HideInInspector] public Vector3 guardPosition;
+        [HideInInspector] public float guardRadius;
+        [HideInInspector] public Vector3 initialPosition;
+
+        [HideInInspector] public Card.Owner owner;
+        [HideInInspector] public bool isSelected = false;
+
+        private bool inCombat = true;
+        private EffectManager effectManager;
+        private LevelController levelController;
+
+        // Start is called before the first frame update
+        protected override void Start()
         {
-            spriteRenderer.flipX = agent.velocity.x < -0.3;
+            base.Start();
+            layerMask = LayerMask.GetMask("Enemy");
+            effectManager = FindObjectOfType<EffectManager>();
+            levelController = FindObjectOfType<LevelController>();
+            levelController.StageClear += OnStageClear;
         }
 
-        if (!inCombat || health.isDead)
-        {
-            agent.destination = transform.position;
-            agent.isStopped = true;
-            return;
-        }
+        // Update is called once per frame
 
-
-        if (charge)
+        protected override void Update()
         {
-            attackRange = 100;
-            GetEnemies(gameObject.transform.position, attackRange);
-            SetTarget();
-            Attack();
-        }
-
-        if (guard)
-        {
-            GetEnemies(guardPosition, guardRadius+0.5f);
-            SetTarget();
-            Attack();
-            if (target == null)
+            // anmiation
+            animator.SetFloat("Velocity", agent.velocity.magnitude);
+            if (agent.velocity.magnitude > Mathf.Epsilon)
             {
-                agent.stoppingDistance = 0;
-                agent.SetDestination(initialPosition);
+                spriteRenderer.flipX = agent.velocity.x < -0.3;
+            }
+
+            if (!inCombat || health.isDead)
+            {
+                agent.destination = transform.position;
+                agent.isStopped = true;
+                return;
+            }
+
+
+            if (charge)
+            {
+                attackRange = 100;
+                GetEnemies(gameObject.transform.position, attackRange);
+                SetTarget();
+                Attack();
+            }
+
+            if (guard)
+            {
+                GetEnemies(guardPosition, guardRadius + 0.5f);
+                SetTarget();
+                Attack();
+                if (target == null)
+                {
+                    agent.stoppingDistance = 0;
+                    agent.SetDestination(initialPosition);
+                }
+            }
+
+            if (taunt)
+            {
+                ApplyTaunt();
+            }
+
+            if (isSelected)
+            {
+                highlight.SetActive(true);
+            }
+            else
+            {
+                highlight.SetActive(false);
             }
         }
 
-        if (taunt)
+        protected override void ApplyTaunt()
         {
-            ApplyTaunt();
+            if (enemiesInRange == null) return;
+            foreach (Collider c in enemiesInRange)
+            {
+                effectManager.Taunt(gameObject, c.gameObject, 0);
+            }
         }
 
-        if (isSelected)
-        {
-            highlight.SetActive(true);
-        }
-        else
-        {
-            highlight.SetActive(false);
-        }
-    }
 
-    protected override void ApplyTaunt()
-    {
-        if (enemiesInRange == null) return;
-        foreach(Collider c in enemiesInRange)
+        protected virtual void OnStageClear(object sender, EventArgs e)
         {
-            effectManager.Taunt(gameObject, c.gameObject, 0);
+            inCombat = false;
         }
-    }
-
-
-    protected virtual void OnStageClear(object sender, EventArgs e)
-    {
-        inCombat = false;
     }
 }
