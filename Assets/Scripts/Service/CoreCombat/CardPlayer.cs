@@ -97,7 +97,7 @@ namespace ProjectTower
 
             isPlayingCard = false;
             player.isSelected = false;
-            player.setIsCasting(true);
+            player.SetIsCasting(true);
 
             if (!(cardPlaying is Buff))
             {
@@ -143,7 +143,7 @@ namespace ProjectTower
         {
             StartCoroutine(Utils.Timeout(() =>
             {
-                p.setIsCasting(false);
+                p.SetIsCasting(false);
             }, time));
         }
     }

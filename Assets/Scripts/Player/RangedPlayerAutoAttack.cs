@@ -38,64 +38,51 @@ namespace ProjectTower
             missiles = new List<Missile>();
         }
 
-        protected override void Attack()
+        public override bool TestRange()
         {
-            if (target == null || !target.activeInHierarchy)
-            {
-                NoTargetBehavior();
-                return;
-            }
-
-            RaycastHit[] hitInfoArray;
-
-            hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
-                target.transform.position - gameObject.transform.position, layerMask);
-
-            if (hitInfoArray.Length == 0) return;
-
-            targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
-                .FirstOrDefault();
-
-            agent.stoppingDistance = stopRange;
-            agent.SetDestination(targetHitInfo.point);
-
             if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
                 && Vector3.Distance(
                     Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
                     Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
                     < stopRange + 2)
             {
-                attackTimer -= Time.deltaTime;
-                FlipX(targetHitInfo);
-                if (!isSpecialing && !isCharging)
-                {
-                    if (attackTimer < 0)
-                    {
-                        agent.isStopped = true;
-                        animator.SetBool("Interrupt", false);
-                        animator.SetTrigger("Attack");
-                        audioManager.Play("Attack");
-                        isCharging = true;
-                        // missle
-                        Quaternion rotation;
-                        if (targetHitInfo.point.x > transform.position.x)
-                        {
-                            rotation = Quaternion.LookRotation(Vector3.right);
-                        }
-                        else
-                        {
-                            rotation = Quaternion.LookRotation(Vector3.left);
-                        }
-                        lastTargetPos = target.transform.position;
-                        ToSummonMissiles(missileCount, rotation);
-                    }
-                }
-                SpeicalAttackUpdate();
+                return true;
             }
             else
             {
                 attackTimer = 1;
+                return false;
             }
+        }
+
+        public override void Attack()
+        {
+            attackTimer -= Time.deltaTime;
+            FlipX(targetHitInfo);
+            if (!isSpecialing && !isCharging)
+            {
+                if (attackTimer < 0)
+                {
+                    agent.isStopped = true;
+                    animator.SetBool("Interrupt", false);
+                    animator.SetTrigger("Attack");
+                    audioManager.Play("Attack");
+                    isCharging = true;
+                    // missle
+                    Quaternion rotation;
+                    if (targetHitInfo.point.x > transform.position.x)
+                    {
+                        rotation = Quaternion.LookRotation(Vector3.right);
+                    }
+                    else
+                    {
+                        rotation = Quaternion.LookRotation(Vector3.left);
+                    }
+                    lastTargetPos = target.transform.position;
+                    ToSummonMissiles(missileCount, rotation);
+                }
+            }
+            SpeicalAttackUpdate();
         }
 
         protected override void OnAttack(object sender, EventArgs e)
@@ -170,6 +157,7 @@ namespace ProjectTower
         private void OnInterrupt(object sender, EventArgs e)
         {
             isCharging = false;
+            attackTimer = attackRate;
             if (summonMissiles != null)
             {
                 StopCoroutine(summonMissiles);
@@ -244,6 +232,11 @@ namespace ProjectTower
                 missiles.Remove(m);
                 yield return new WaitForSeconds(0.8f / count);
             }
+        }
+
+        public override void RefreshTimer()
+        {
+            attackTimer = 1f;
         }
     }
 }

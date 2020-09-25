@@ -28,7 +28,7 @@ MonoBehaviour:
     type: 3}
   damage: 50
   force: 0
-  range: 22
+  range: 24
   radius: 7
   delay: 0
   fxDelay: 0

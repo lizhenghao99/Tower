@@ -38,7 +38,7 @@ namespace ProjectTower
 
         // Update is called once per frame
 
-        protected override void Update()
+        protected virtual void Update()
         {
             // anmiation
             animator.SetFloat("Velocity", agent.velocity.magnitude);
@@ -90,7 +90,7 @@ namespace ProjectTower
             }
         }
 
-        protected override void ApplyTaunt()
+        public override void ApplyTaunt()
         {
             if (enemiesInRange == null) return;
             foreach (Collider c in enemiesInRange)

@@ -17,7 +17,7 @@ namespace ProjectTower
         }
 
         // Update is called once per frame
-        protected override void Update()
+        protected virtual void Update()
         {
             // anmiation
             animator.SetFloat("Velocity", agent.velocity.magnitude);
@@ -34,7 +34,11 @@ namespace ProjectTower
 
             GetEnemies(gameObject.transform.position, 100);
             SetTarget();
-            Attack();
+            Chase();
+            if (TestRange())
+            {
+                Attack();
+            }  
         }
 
         protected override void FlipX(RaycastHit hitInfo)

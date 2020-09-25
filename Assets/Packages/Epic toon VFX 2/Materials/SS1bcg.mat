@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: SS1bcg
   m_Shader: {fileID: 4800000, guid: b68b99c2e57cef4419465c63c527201b, type: 3}
   m_ShaderKeywords: 
@@ -77,7 +78,7 @@ Material:
     - _Depthpower: 0.3
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Emission: 2
+    - _Emission: 3
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

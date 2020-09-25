@@ -85,7 +85,6 @@ namespace ProjectTower
             {
                 Destroy(controller.myWaypoint.gameObject);
                 controller.myWaypoint = null;
-                controller.OnDestinationReached(gameObject, EventArgs.Empty);
             }
 
             player.transform.position = gameObject.transform.position;

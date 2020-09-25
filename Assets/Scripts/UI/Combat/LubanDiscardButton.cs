@@ -44,9 +44,9 @@ namespace ProjectTower
 
         protected override bool DiscardBehavior(Card card)
         {
-            player.setIsCasting(true);
+            player.SetIsCasting(true);
             StartCoroutine(Utils.Timeout(() =>
-                player.setIsCasting(false), 10f));
+                player.SetIsCasting(false), 10f));
 
             return true;
         }

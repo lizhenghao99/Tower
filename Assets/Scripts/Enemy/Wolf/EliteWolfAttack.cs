@@ -54,7 +54,7 @@ namespace ProjectTower
         }
 
 
-        protected override void Attack()
+        public override void Attack()
         {
             if (target == null || !target.activeInHierarchy) return;
 

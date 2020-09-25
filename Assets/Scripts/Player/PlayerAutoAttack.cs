@@ -55,32 +55,10 @@ namespace ProjectTower
             splat.CurrentRangeIndicator.Scale = (attackRange + 1) * 2;
         }
 
-        // Update is called once per frame
-        protected override void Update()
+        public virtual void AcquireTarget()
         {
-            if (health.isDead)
-            {
-                agent.destination = gameObject.transform.position;
-                agent.isStopped = true;
-                return;
-            }
             GetEnemies(gameObject.transform.position, attackRange);
             SetTarget();
-            if (!player.isWalking)
-            {
-                ApplyTaunt();
-                if (!player.isCasting)
-                {
-                    Attack();
-                }
-            }
-            else
-            {
-                if (player.isCasting)
-                {
-                    ApplyTaunt();
-                }
-            }
         }
 
         protected override bool TauntedBehavior()

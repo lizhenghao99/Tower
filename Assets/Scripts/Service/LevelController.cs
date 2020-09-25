@@ -202,10 +202,7 @@ namespace ProjectTower
                 {
                     players[i].transform.position = currStage.charPostions[i] -
                         new Vector3(playerOffsets[i], 0, 0);
-                    players[i].GetComponent<NavMeshAgent>().stoppingDistance = 0;
-                    players[i].GetComponent<NavMeshAgent>()
-                        .SetDestination(currStage.charPostions[i]);
-                    players[i].OnDestinationReached(gameObject, EventArgs.Empty);
+                    players[i].SetPlayerDestination(currStage.charPostions[i]);
                 }
             }
         }

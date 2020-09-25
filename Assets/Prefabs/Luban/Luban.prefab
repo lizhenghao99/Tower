@@ -635,13 +635,13 @@ MonoBehaviour:
   attackDamage: 100
   attackRange: 5.5
   attackRate: 2.5
-  stopRange: 3
+  stopRange: 3.5
   agent: {fileID: 8729792689411822763}
   animator: {fileID: 8729792688550215930}
   spriteRenderer: {fileID: 8923698843579247746}
   taunter: {fileID: 0}
   meleeVfx: {fileID: 1044528419629608, guid: 76dc8e7762ae23a49917e43293e4b976, type: 3}
-  vfxDelay: 0.1
+  vfxDelay: 0.07
 --- !u!114 &1961301085
 MonoBehaviour:
   m_ObjectHideFlags: 0

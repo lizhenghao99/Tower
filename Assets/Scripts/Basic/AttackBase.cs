@@ -50,9 +50,6 @@ namespace ProjectTower
             }
         }
 
-        // Update is called once per frame
-        protected abstract void Update();
-
         protected virtual void GetEnemies(Vector3 source, float range)
         {
             enemiesInRange = Physics.OverlapSphere(
@@ -105,19 +102,26 @@ namespace ProjectTower
             }
         }
 
-        protected virtual void ApplyTaunt()
+        public virtual void ApplyTaunt()
         {
             // do nothing
         }
 
-        protected virtual void Attack()
+        public virtual bool TestTarget()
         {
             if (target == null || !target.activeInHierarchy)
             {
                 NoTargetBehavior();
-                return;
+                return false;
             }
+            else
+            {
+                return true;
+            }
+        }
 
+        public virtual void Chase()
+        {
             RaycastHit[] hitInfoArray;
 
             hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
@@ -129,35 +133,61 @@ namespace ProjectTower
                 .FirstOrDefault();
             agent.stoppingDistance = stopRange;
             agent.SetDestination(targetHitInfo.point);
+        }
 
+        public virtual bool EnteredRange()
+        {
             if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
                 && Vector3.Distance(
                     Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
                     Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
-                    < stopRange + 2)
+                    < stopRange + 0.5)
             {
-                attackTimer -= Time.deltaTime;
-                FlipX(targetHitInfo);
-                if (!isSpecialing)
-                {
-                    if (attackTimer < 0)
-                    {
-                        agent.isStopped = true;
-                        animator.SetTrigger("Attack");
-                        StartCoroutine(Utils.Timeout(() =>
-                        {
-                            audioManager.Play("Attack");
-                        }, 0.2f));
-                        // attack behavior moved to animation
-                        attackTimer = attackRate;
-                    }
-                }
-                SpeicalAttackUpdate();
+                return true;
             }
             else
             {
                 attackTimer = attackRate;
+                return false;
             }
+        }
+
+        public virtual bool TestRange()
+        {
+            if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
+                && Vector3.Distance(
+                    Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
+                    Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
+                    < stopRange + 1)
+            {
+                return true;
+            }
+            else
+            {
+                attackTimer = attackRate;
+                return false;
+            }
+        }
+
+        public virtual void Attack()
+        {
+            attackTimer -= Time.deltaTime;
+            FlipX(targetHitInfo);
+            if (!isSpecialing)
+            {
+                if (attackTimer < 0)
+                {
+                    agent.isStopped = true;
+                    animator.SetTrigger("Attack");
+                    StartCoroutine(Utils.Timeout(() =>
+                    {
+                        audioManager.Play("Attack");
+                    }, 0.2f));
+                    // attack behavior moved to animation
+                    attackTimer = attackRate;
+                }
+            }
+            SpeicalAttackUpdate();
         }
 
         protected virtual void FlipX(RaycastHit hitInfo)
@@ -204,6 +234,11 @@ namespace ProjectTower
         protected virtual void NoTargetBehavior()
         {
             agent.SetDestination(gameObject.transform.position);
+        }
+
+        public virtual void RefreshTimer()
+        {
+            attackTimer = attackRate;
         }
     }
 }

@@ -29,12 +29,20 @@ namespace ProjectTower
 
             if (!GetComponent<Health>().immuneStun)
             {
-                agent.SetDestination(gameObject.transform.position);
-                agent.isStopped = true;
-                attack.enabled = false;
-                if (animator != null)
+                PlayerController player = GetComponent<PlayerController>();
+                if (player != null)
                 {
-                    animator.SetFloat("Velocity", 0f);
+                    player.stateMachine.ChangeState(player.stunState);
+                }
+                else
+                {
+                    agent.SetDestination(gameObject.transform.position);
+                    agent.isStopped = true;
+                    attack.enabled = false;
+                    if (animator != null)
+                    {
+                        animator.SetFloat("Velocity", 0f);
+                    }
                 }
                 base.OnStart();
             }
@@ -46,8 +54,16 @@ namespace ProjectTower
 
         protected override void OnFinish()
         {
-            agent.isStopped = false;
-            attack.enabled = true;
+            PlayerController player = GetComponent<PlayerController>();
+            if (player != null)
+            {
+                player.stateMachine.ChangeState(player.idleState);
+            }
+            else
+            {
+                agent.isStopped = false;
+                attack.enabled = true;
+            }
             base.OnFinish();
         }
     }

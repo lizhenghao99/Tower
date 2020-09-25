@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Trail29cg3
   m_Shader: {fileID: 4800000, guid: bd6af5d577c618947b73aa60db554e51, type: 3}
   m_ShaderKeywords: _USEDEPTH_ON
@@ -71,6 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Blend2: 1
     - _BlendMode: 1
     - _BumpScale: 1
     - _CullMode: 0
@@ -80,7 +82,7 @@ Material:
     - _Distortionpower: 1
     - _DstBlend: 1
     - _DstMode: 10
-    - _Emission: 5
+    - _Emission: 2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

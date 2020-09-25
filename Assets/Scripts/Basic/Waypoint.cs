@@ -8,6 +8,7 @@ namespace ProjectTower
     public class Waypoint : MonoBehaviour
     {
         public event EventHandler destinationReached;
+        [SerializeField] private GameObject waypointDisplay;
 
         // Start is called before the first frame update
         void Start()
@@ -19,6 +20,11 @@ namespace ProjectTower
         void Update()
         {
 
+        }
+
+        public void Display()
+        {
+            waypointDisplay.SetActive(true);
         }
 
         private void OnTriggerEnter(Collider other)

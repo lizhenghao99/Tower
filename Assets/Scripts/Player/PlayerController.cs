@@ -11,13 +11,13 @@ namespace ProjectTower
 {
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] NavMeshAgent agent;
+        [SerializeField] public NavMeshAgent agent;
         [SerializeField] public SpriteRenderer spriteRenderer;
         [SerializeField] Waypoint waypoint;
         [SerializeField] float waypointXRotation;
         [SerializeField] float waypointHeight;
         [SerializeField] public Animator animator;
-        [SerializeField] GameObject highlight;
+        [SerializeField] public GameObject highlight;
 
 
         public event EventHandler startCasting;
@@ -25,14 +25,24 @@ namespace ProjectTower
         public event EventHandler startWalking;
 
         public bool isSelected = false;
-        public bool isWalking { get; private set; } = false;
-        public bool isCasting { get; private set; } = false;
+        public bool isWalking { get; protected set; } = false;
+        public bool isCasting { get; protected set; } = false;
         private int layerMask;
 
         private PlayerHealth health;
-        public Waypoint myWaypoint;
+        public Waypoint myWaypoint = null;
 
         private float autoStopWalkTimer = 3;
+
+        public StateMachine stateMachine { get; private set; }
+        public PlayerIdleState idleState { get; private set; }
+        public PlayerWalkState walkState { get; private set; }
+        public PlayerCastState castState { get; private set; }
+        public PlayerDeathState deathState { get; private set; }
+
+        public PlayerChaseState chaseState { get; private set; }
+        public PlayerAttackState attackState { get; private set; }
+        public PlayerStunState stunState { get; private set; }
 
         private void Start()
         {
@@ -41,196 +51,187 @@ namespace ProjectTower
             layerMask = LayerMask.GetMask("Environment", "Player", "Enemy");
             health = GetComponent<PlayerHealth>();
             health.death += OnPlayerDeath;
+            health.revive += OnPlayerRevive;
+
+            stateMachine = new StateMachine();
+            idleState = new PlayerIdleState(gameObject, stateMachine);
+            walkState = new PlayerWalkState(gameObject, stateMachine);
+            castState = new PlayerCastState(gameObject, stateMachine);
+            deathState = new PlayerDeathState(gameObject, stateMachine);
+            chaseState = new PlayerChaseState(gameObject, stateMachine);
+            attackState = new PlayerAttackState(gameObject, stateMachine);
+            stunState = new PlayerStunState(gameObject, stateMachine);
+            stateMachine.Init(idleState);
         }
 
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            // anmiation
-            animator.SetFloat("Velocity", agent.velocity.magnitude);
-            if (agent.velocity.magnitude > Mathf.Epsilon && !isCasting && !health.isDead)
-            {
-                spriteRenderer.flipX = agent.velocity.x < -0.2;
-            }
-            if (health.isDead)
-            {
-                isSelected = false;
-                agent.destination = gameObject.transform.position;
-                agent.isStopped = true;
-                return;
-            }
-            // mouse left
-            if (Input.GetMouseButtonDown(0)
-                && !EventSystem.current.IsPointerOverGameObject())
-            {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
+            stateMachine.CurrentState.LogicUpdate();
+        }
 
-                if (Physics.Raycast(ray, out hit, 1000, layerMask))
+        public void SetIsWalking(bool flag)
+        {
+            isWalking = flag;
+            if (flag)
+            {
+                stateMachine.ChangeState(walkState);
+            }
+            else
+            {
+                stateMachine.ChangeState(idleState);
+            }
+        }
+
+        public void SetIsCasting(bool flag)
+        {
+            isCasting = flag;
+            if (flag)
+            {
+                stateMachine.ChangeState(castState);
+            }
+            else
+            {
+                stateMachine.ChangeState(idleState);
+            }
+        }
+
+        public void UpdateWalkAnimation()
+        {
+            animator.SetFloat("Velocity", agent.velocity.magnitude); 
+        }
+
+        public void UpdateFlip()
+        {
+            if (agent.velocity.magnitude > 0.1f)
+            {
+                spriteRenderer.flipX = agent.velocity.x < -0.1;
+            }
+        }
+
+        public void FreezeWalkAnimation()
+        {
+            animator.SetFloat("Velocity", 0);
+        }
+
+        public void HandleLeftClick()
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 1000, layerMask))
+            {
+                if (isSelected && hit.transform.tag == "Floor"
+                    && !CardPlayer.Instance.isPlayingCard)
                 {
-                    if (isSelected && hit.transform.tag == "Floor"
-                        && !CardPlayer.Instance.isPlayingCard)
+                    SetPlayerDestination(hit.point);
+                    myWaypoint.Display();
+                    GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
+                }
+                else if (isSelected && hit.transform.tag == "Enemy"
+                    && !CardPlayer.Instance.isPlayingCard)
+                {
+                    RaycastHit hitInfo;
+                    var mask = LayerMask.GetMask("Enemy");
+                    if (Physics.Linecast(gameObject.transform.position,
+                                            hit.collider.transform.position,
+                                            out hitInfo, mask))
                     {
-                        Waypoint wp = FindObjectsOfType<Waypoint>()
-                                        .Where(p => p.name == waypoint.name + "(Clone)")
-                                        .FirstOrDefault();
-                        if (wp != null)
+                        var direction = Vector3.ProjectOnPlane(
+                            gameObject.transform.position - hitInfo.point,
+                            new Vector3(0, 1, 0)).normalized;
+                        Vector3 destination;
+                        if (Vector3.Distance(gameObject.transform.position,
+                            hitInfo.point) < GetComponent<AttackBase>().stopRange)
                         {
-                            wp.transform.position = hit.point
-                                + new Vector3(0, waypointHeight, 0);
+                            destination = gameObject.transform.position;
                         }
                         else
                         {
-                            wp = Instantiate(
-                                waypoint,
-                                hit.point + new Vector3(0, waypointHeight, 0),
-                                Quaternion.Euler(waypointXRotation, 0, 0));
-                            myWaypoint = wp;
-                            wp.destinationReached += OnDestinationReached;
+                            destination = hitInfo.point
+                            + direction * GetComponent<AttackBase>().stopRange;
                         }
-                        agent.stoppingDistance = 0;
-                        agent.SetDestination(hit.point);
-                        isWalking = true;
-                        isSelected = false;
+                        SetPlayerDestination(destination);
+                        myWaypoint.Display();
                         GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
-                        OnStartWalking();
-                    }
-                    else if (isSelected && hit.transform.tag == "Enemy"
-                        && !CardPlayer.Instance.isPlayingCard)
-                    {
-                        Waypoint wp = FindObjectsOfType<Waypoint>()
-                                        .Where(p => p.name == waypoint.name + "(Clone)")
-                                        .FirstOrDefault();
-                        RaycastHit hitInfo;
-                        var mask = LayerMask.GetMask("Enemy");
-                        if (Physics.Linecast(gameObject.transform.position,
-                                                hit.collider.transform.position,
-                                                out hitInfo, mask))
-                        {
-                            var direction = Vector3.ProjectOnPlane(
-                                gameObject.transform.position - hitInfo.point,
-                                new Vector3(0, 1, 0)).normalized;
-                            Vector3 destination;
-                            if (Vector3.Distance(gameObject.transform.position,
-                                hitInfo.point) < GetComponent<AttackBase>().stopRange)
-                            {
-                                destination = gameObject.transform.position;
-                            }
-                            else
-                            {
-                                destination = hitInfo.point
-                                + direction * GetComponent<AttackBase>().stopRange;
-                            }
-                            if (wp != null)
-                            {
-                                wp.transform.position = destination
-                                    + new Vector3(0, waypointHeight, 0);
-                            }
-                            else
-                            {
-                                wp = Instantiate(
-                                    waypoint,
-                                    destination + new Vector3(0, waypointHeight, 0),
-                                    Quaternion.Euler(waypointXRotation, 0, 0));
-                                myWaypoint = wp;
-                                wp.destinationReached += OnDestinationReached;
-                            }
-                            agent.stoppingDistance = 0;
-                            agent.SetDestination(destination);
-                            isWalking = true;
-                            isSelected = false;
-                            GlobalAudioManager.Instance.Play("MovePlayer", Vector3.zero);
-                            OnStartWalking();
-                        }
-                        else
-                        {
-                            print("line cast not hit");
-                        }
-
                     }
                     else
                     {
-                        if (hit.transform.name == gameObject.name)
-                        {
-                            isSelected = true;
-                            GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
-                        }
+                        print("line cast not hit");
+                    }
+
+                }
+                else
+                {
+                    if (hit.transform.name == gameObject.name)
+                    {
+                        isSelected = true;
+                        GlobalAudioManager.Instance.Play("SelectPlayer", Vector3.zero);
                     }
                 }
             }
+        }
 
-            if (Input.GetMouseButtonDown(1) && isSelected)
+        public void HandleRightClick()
+        {
+            if (isSelected)
             {
                 isSelected = false;
             }
+        }
 
-            // select effect
-            if (isSelected)
+        public void SetPlayerDestination(Vector3 dest)
+        {
+            if (myWaypoint != null)
             {
-                highlight.SetActive(true);
-
-            }
-            else
-            {
-                highlight.SetActive(false);
+                Destroy(myWaypoint.gameObject);
             }
 
-            if (isCasting)
-            {
-                agent.isStopped = true;
-            }
-            else
-            {
-                agent.isStopped = false;
-            }
+            myWaypoint = Instantiate(
+                waypoint,
+                dest + new Vector3(0, waypointHeight, 0),
+                Quaternion.Euler(waypointXRotation, 0, 0));
+            myWaypoint.destinationReached += OnDestinationReached;
+            SetIsWalking(true);
+        }
 
-            if (isWalking && autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.1f)
+        public void WalkAutoStop()
+        {
+            if (autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.1f)
             {
                 agent.SetDestination(gameObject.transform.position);
                 var wp = (FindObjectsOfType<Waypoint>()
                                         .Where(p => p.name == waypoint.name + "(Clone)")
                                         .FirstOrDefault());
                 Destroy(wp.gameObject);
-                isWalking = false;
+                SetIsWalking(false);
                 autoStopWalkTimer = 3;
-            }
-        }
-
-        public void setIsCasting(bool flag)
-        {
-            isCasting = flag;
-            if (flag)
-            {
-                OnStartCasting();
-            }
-            else
-            {
-                OnFinishCasting();
             }
         }
 
         public void OnDestinationReached(object sender, EventArgs e)
         {
-            isWalking = false;
+            SetIsWalking(false);
+            myWaypoint = null;
         }
 
-        private void OnStartCasting()
+        public void OnStartCasting()
         {
             startCasting?.Invoke(gameObject, EventArgs.Empty);
         }
 
-        private void OnFinishCasting()
+        public void OnFinishCasting()
         {
             finishCasting?.Invoke(gameObject, EventArgs.Empty);
         }
 
-        private void OnStartWalking()
+        public void OnStartWalking()
         {
             startWalking?.Invoke(gameObject, EventArgs.Empty);
         }
 
-        private void OnCollisionStay(Collision collision)
+        public void OnCollisionStay(Collision collision)
         {
             if (collision.gameObject.CompareTag("Enemy"))
             {
@@ -238,7 +239,7 @@ namespace ProjectTower
             }
         }
 
-        private void OnCollisionExit(Collision collision)
+        public void OnCollisionExit(Collision collision)
         {
             if (collision.gameObject.CompareTag("Enemy"))
             {
@@ -246,13 +247,20 @@ namespace ProjectTower
             }
         }
 
-        private void OnPlayerDeath(object sender, EventArgs e)
+        public void OnPlayerDeath(object sender, EventArgs e)
         {
-            isSelected = false;
             if (myWaypoint != null)
             {
                 Destroy(myWaypoint.gameObject);
+                myWaypoint = null;
             }
+            
+            stateMachine.ChangeState(deathState);
+        }
+
+        public void OnPlayerRevive(object sender, EventArgs e)
+        {
+            stateMachine.ChangeState(idleState);
         }
     }
 }
