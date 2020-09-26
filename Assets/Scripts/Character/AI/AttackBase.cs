@@ -14,7 +14,7 @@ namespace ProjectTower
         [SerializeField] public float attackRange;
         [SerializeField] public float attackRate;
         [SerializeField] public float stopRange;
-        [SerializeField] protected NavMeshAgent agent;
+        [SerializeField] public NavMeshAgent agent;
         [SerializeField] protected Animator animator;
         [SerializeField] protected SpriteRenderer spriteRenderer;
 
@@ -87,6 +87,12 @@ namespace ProjectTower
             }
         }
 
+        public virtual void AcquireTarget()
+        {
+            GetEnemies(gameObject.transform.position, attackRange);
+            SetTarget();
+        }
+
         protected virtual bool TauntedBehavior()
         {
             if (taunter && taunter.activeInHierarchy
@@ -116,21 +122,21 @@ namespace ProjectTower
             }
             else
             {
+                RaycastHit[] hitInfoArray;
+
+                hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
+                    target.transform.position - gameObject.transform.position);
+
+                if (hitInfoArray.Length == 0) return false;
+
+                targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
+                    .FirstOrDefault();
                 return true;
             }
         }
 
         public virtual void Chase()
         {
-            RaycastHit[] hitInfoArray;
-
-            hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
-                target.transform.position - gameObject.transform.position);
-
-            if (hitInfoArray.Length == 0) return;
-
-            targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
-                .FirstOrDefault();
             agent.stoppingDistance = stopRange;
             agent.SetDestination(targetHitInfo.point);
         }
@@ -177,6 +183,7 @@ namespace ProjectTower
             {
                 if (attackTimer < 0)
                 {
+                    ResumeFromAttack();
                     agent.isStopped = true;
                     animator.SetTrigger("Attack");
                     StartCoroutine(Utils.Timeout(() =>
@@ -208,8 +215,6 @@ namespace ProjectTower
 
         protected virtual void OnAttack(object sender, EventArgs e)
         {
-            ResumeFromAttack();
-
             if (target == null) return;
 
             if (Vector3.Distance(

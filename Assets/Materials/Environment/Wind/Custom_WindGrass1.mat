@@ -93,7 +93,7 @@ Material:
     - _WindFrequency: 0.5
     - _WindScale: 1
     - _WindStrengh: 0.359
-    - _WindStrength: 1.639
+    - _WindStrength: 0.759
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

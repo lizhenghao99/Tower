@@ -7,7 +7,7 @@ namespace ProjectTower
 {
     public class Minion : AttackBase
     {
-        [SerializeField] GameObject highlight;
+        [SerializeField] public GameObject highlight;
         [HideInInspector] public bool taunt;
         [HideInInspector] public bool invisible;
         [HideInInspector] public bool guard;
@@ -26,6 +26,12 @@ namespace ProjectTower
         private EffectManager effectManager;
         private LevelController levelController;
 
+        public StateMachine stateMachine { get; private set; }
+        public MinionIdleState idleState { get; private set; }
+        public MinionChaseState chaseState { get; private set; }
+        public MinionAttackState attackState { get; private set; }
+        public MinionDeathState deathState { get; private set; }
+
         // Start is called before the first frame update
         protected override void Start()
         {
@@ -34,59 +40,69 @@ namespace ProjectTower
             effectManager = FindObjectOfType<EffectManager>();
             levelController = FindObjectOfType<LevelController>();
             levelController.StageClear += OnStageClear;
-        }
+            health.death += OnDeath;
+
+            stateMachine = new StateMachine();
+            idleState = new MinionIdleState(gameObject, stateMachine);
+            chaseState = new MinionChaseState(gameObject, stateMachine);
+            attackState = new MinionAttackState(gameObject, stateMachine);
+            deathState = new MinionDeathState(gameObject, stateMachine);
+            stateMachine.Init(idleState);
+    }
 
         // Update is called once per frame
-
-        protected virtual void Update()
+        private void Update()
         {
-            // anmiation
+            stateMachine.CurrentState.LogicUpdate();
+        }
+
+        public virtual void UpdateWalkAnimation()
+        {
             animator.SetFloat("Velocity", agent.velocity.magnitude);
-            if (agent.velocity.magnitude > Mathf.Epsilon)
+        }
+
+        public virtual void UpdateFlip()
+        {
+            if (agent.velocity.magnitude > 0.1f)
             {
-                spriteRenderer.flipX = agent.velocity.x < -0.3;
+                spriteRenderer.flipX = agent.velocity.x < -0.1;
             }
+        }
 
-            if (!inCombat || health.isDead)
+        public void FreezeWalkAnimation()
+        {
+            animator.SetFloat("Velocity", 0);
+        }
+
+        public virtual void ReturnToPos()
+        {
+            if (Vector3.Distance(
+                Vector3.ProjectOnPlane(transform.position, Vector3.up), 
+                initialPosition) > 0.5f)
             {
-                agent.destination = transform.position;
-                agent.isStopped = true;
-                return;
-            }
-
-
-            if (charge)
-            {
-                attackRange = 100;
-                GetEnemies(gameObject.transform.position, attackRange);
-                SetTarget();
-                Attack();
-            }
-
-            if (guard)
-            {
-                GetEnemies(guardPosition, guardRadius + 0.5f);
-                SetTarget();
-                Attack();
-                if (target == null)
-                {
-                    agent.stoppingDistance = 0;
-                    agent.SetDestination(initialPosition);
-                }
-            }
-
-            if (taunt)
-            {
-                ApplyTaunt();
-            }
-
-            if (isSelected)
-            {
-                highlight.SetActive(true);
+                UpdateFlip();
+                agent.isStopped = false;
+                agent.stoppingDistance = 0;
+                agent.SetDestination(initialPosition);
             }
             else
             {
-                highlight.SetActive(false);
+                spriteRenderer.flipX = false;
+                agent.isStopped = true;
+            }
+        }
+
+        public override void AcquireTarget()
+        {
+            if (charge)
+            {
+                GetEnemies(gameObject.transform.position, 100f);
+                SetTarget();
+            }
+            else if (guard)
+            {
+                GetEnemies(guardPosition, guardRadius + 0.5f);
+                SetTarget();
             }
         }
 
@@ -99,10 +115,20 @@ namespace ProjectTower
             }
         }
 
+        protected override void NoTargetBehavior()
+        {
+            stateMachine.ChangeState(idleState);
+        }
+
 
         protected virtual void OnStageClear(object sender, EventArgs e)
         {
-            inCombat = false;
+            stateMachine.ChangeState(idleState);
+        }
+
+        protected virtual void OnDeath(object sender, EventArgs e)
+        {
+            stateMachine.ChangeState(deathState);
         }
     }
 }

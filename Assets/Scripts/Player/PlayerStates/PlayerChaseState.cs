@@ -12,7 +12,6 @@ namespace ProjectTower
         public override void Enter()
         {
             base.Enter();
-            playerController.agent.isStopped = false;
         }
 
         public override void Exit()

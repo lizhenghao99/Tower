@@ -4,17 +4,17 @@ using UnityEngine;
 
 namespace ProjectTower
 {
-    public class PlayerDeathState : PlayerState
+    public class MinionDeathState : MinionState
     {
-        public PlayerDeathState(GameObject owner, StateMachine stateMachine)
+        public MinionDeathState(GameObject owner, StateMachine stateMachine)
             : base(owner, stateMachine) { }
 
         public override void Enter()
         {
             base.Enter();
-            playerController.agent.isStopped = true;
-            playerController.isSelected = false;
-            playerController.agent.destination = owner.transform.position;
+            attack.agent.isStopped = true;
+            attack.isSelected = false;
+            attack.agent.destination = owner.transform.position;
         }
 
         public override void Exit()
@@ -24,7 +24,7 @@ namespace ProjectTower
 
         public override void LogicUpdate()
         {
-            playerController.FreezeWalkAnimation();
+            attack.FreezeWalkAnimation();
         }
     }
 }

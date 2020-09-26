@@ -18,6 +18,7 @@ namespace ProjectTower
         public override void Exit()
         {
             base.Exit();
+            playerController.agent.isStopped = false;
         }
 
         public override void LogicUpdate()

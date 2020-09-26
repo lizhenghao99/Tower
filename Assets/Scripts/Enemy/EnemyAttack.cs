@@ -34,11 +34,14 @@ namespace ProjectTower
 
             GetEnemies(gameObject.transform.position, 100);
             SetTarget();
-            Chase();
-            if (TestRange())
+            if(TestTarget())
             {
-                Attack();
-            }  
+                Chase();
+                if (TestRange())
+                {
+                    Attack();
+                }
+            }     
         }
 
         protected override void FlipX(RaycastHit hitInfo)

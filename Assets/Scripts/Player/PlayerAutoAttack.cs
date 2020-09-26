@@ -55,12 +55,6 @@ namespace ProjectTower
             splat.CurrentRangeIndicator.Scale = (attackRange + 1) * 2;
         }
 
-        public virtual void AcquireTarget()
-        {
-            GetEnemies(gameObject.transform.position, attackRange);
-            SetTarget();
-        }
-
         protected override bool TauntedBehavior()
         {
             return false;

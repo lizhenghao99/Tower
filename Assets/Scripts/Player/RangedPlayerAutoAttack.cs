@@ -40,11 +40,11 @@ namespace ProjectTower
 
         public override bool TestRange()
         {
-            if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
+            if (agent.velocity.magnitude < Mathf.Epsilon
                 && Vector3.Distance(
                     Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
                     Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
-                    < stopRange + 2)
+                    < stopRange + 1)
             {
                 return true;
             }
