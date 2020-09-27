@@ -196,6 +196,16 @@ namespace ProjectTower
             SetIsWalking(true);
         }
 
+        public void Stun()
+        {
+            stateMachine.ChangeState(stunState);
+        }
+
+        public void UnStun()
+        {
+            stateMachine.ChangeState(idleState);
+        }
+
         public void WalkAutoStop()
         {
             if (autoStopWalkTimer < 0 && agent.velocity.magnitude < 0.1f)

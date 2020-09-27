@@ -9,7 +9,7 @@ namespace ProjectTower
     public class GreyWolfAttack : EnemyAttack
     {
         [SerializeField] GameObject stompFx;
-        private float swipeTimer = 5f;
+        private float stompTimer = 7f;
         private StompEvent stompEvent;
 
         protected override void Start()
@@ -21,8 +21,8 @@ namespace ProjectTower
 
         protected override void SpeicalAttackUpdate()
         {
-            swipeTimer -= Time.deltaTime;
-            if (swipeTimer < 0)
+            stompTimer -= Time.deltaTime;
+            if (stompTimer < 0)
             {
                 isSpecialing = true;
                 StartCoroutine(Utils.Timeout(() =>
@@ -30,7 +30,7 @@ namespace ProjectTower
                     isSpecialing = false;
                 }, 2f));
                 animator.SetTrigger("Stomp");
-                swipeTimer = 5f;
+                stompTimer = 5f;
             }
         }
 

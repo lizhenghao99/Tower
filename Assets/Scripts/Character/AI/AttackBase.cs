@@ -30,6 +30,7 @@ namespace ProjectTower
 
         protected float meleeRange = 5f;
 
+        protected bool isAttacking = false;
         protected bool isSpecialing = false;
         protected AttackEvent attackEvent;
 
@@ -183,7 +184,7 @@ namespace ProjectTower
             {
                 if (attackTimer < 0)
                 {
-                    ResumeFromAttack();
+                    isAttacking = true;
                     agent.isStopped = true;
                     animator.SetTrigger("Attack");
                     StartCoroutine(Utils.Timeout(() =>
@@ -194,7 +195,10 @@ namespace ProjectTower
                     attackTimer = attackRate;
                 }
             }
-            SpeicalAttackUpdate();
+            if (!isAttacking)
+            {
+                SpeicalAttackUpdate();
+            }
         }
 
         protected virtual void FlipX(RaycastHit hitInfo)
@@ -215,6 +219,7 @@ namespace ProjectTower
 
         protected virtual void OnAttack(object sender, EventArgs e)
         {
+            ResumeFromAttack();
             if (target == null) return;
 
             if (Vector3.Distance(
@@ -230,6 +235,7 @@ namespace ProjectTower
 
         protected virtual void ResumeFromAttack()
         {
+            isAttacking = false;
             StartCoroutine(Utils.Timeout(() =>
             {
                 agent.isStopped = false;

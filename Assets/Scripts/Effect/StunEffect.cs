@@ -7,15 +7,15 @@ namespace ProjectTower
 {
     public class StunEffect : Effect
     {
-        private NavMeshAgent agent;
-        private AttackBase attack;
-        private Animator animator;
+        private PlayerController player;
+        private Minion minion;
+        private EnemyAttack enemy;
 
         private void Awake()
         {
-            agent = GetComponent<NavMeshAgent>();
-            attack = GetComponent<AttackBase>();
-            animator = GetComponentInChildren<Animator>();
+            player = GetComponent<PlayerController>();
+            minion = GetComponent<Minion>();
+            enemy = GetComponent<EnemyAttack>();
         }
 
         protected override void OnStart()
@@ -29,20 +29,17 @@ namespace ProjectTower
 
             if (!GetComponent<Health>().immuneStun)
             {
-                PlayerController player = GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    player.stateMachine.ChangeState(player.stunState);
+                    player.Stun();
                 }
-                else
+                else if (minion != null)
                 {
-                    agent.SetDestination(gameObject.transform.position);
-                    agent.isStopped = true;
-                    attack.enabled = false;
-                    if (animator != null)
-                    {
-                        animator.SetFloat("Velocity", 0f);
-                    }
+                    minion.Stun();
+                }
+                else if (enemy != null)
+                {
+                    enemy.Stun();
                 }
                 base.OnStart();
             }
@@ -54,15 +51,17 @@ namespace ProjectTower
 
         protected override void OnFinish()
         {
-            PlayerController player = GetComponent<PlayerController>();
             if (player != null)
             {
-                player.stateMachine.ChangeState(player.idleState);
+                player.UnStun();
             }
-            else
+            else if (minion != null)
             {
-                agent.isStopped = false;
-                attack.enabled = true;
+                minion.UnStun();
+            }
+            else if (enemy != null)
+            {
+                enemy.Unstun();
             }
             base.OnFinish();
         }

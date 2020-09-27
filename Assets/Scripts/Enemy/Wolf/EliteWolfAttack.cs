@@ -37,9 +37,8 @@ namespace ProjectTower
             effectManager = FindObjectOfType<EffectManager>();
         }
 
-        protected override void Update()
+        protected void OldUpdate()
         {
-            base.Update();
             if (phase == 0 && health.currHealth <=
                 (int)(health.maxHealth * 0.25))
             {
@@ -49,7 +48,6 @@ namespace ProjectTower
                 (int)(health.maxHealth * 0.1))
             {
                 EnterWipe();
-                health.isImmune = true;
             }
         }
 
@@ -245,6 +243,7 @@ namespace ProjectTower
         private void EnterWipe()
         {
             phase = 2;
+            health.isImmune = true;
             isSpecialing = true;
             stompDamage = 10000;
             animator.SetTrigger("Stomp");

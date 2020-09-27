@@ -63,6 +63,7 @@ namespace ProjectTower
             {
                 if (attackTimer < 0)
                 {
+                    isAttacking = true;
                     agent.isStopped = true;
                     animator.SetBool("Interrupt", false);
                     animator.SetTrigger("Attack");
@@ -82,7 +83,10 @@ namespace ProjectTower
                     ToSummonMissiles(missileCount, rotation);
                 }
             }
-            SpeicalAttackUpdate();
+            if (!isAttacking)
+            {
+                SpeicalAttackUpdate();
+            }
         }
 
         protected override void OnAttack(object sender, EventArgs e)

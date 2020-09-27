@@ -31,6 +31,7 @@ namespace ProjectTower
         public MinionChaseState chaseState { get; private set; }
         public MinionAttackState attackState { get; private set; }
         public MinionDeathState deathState { get; private set; }
+        public MinionStunState stunState { get; private set; }
 
         // Start is called before the first frame update
         protected override void Start()
@@ -47,6 +48,7 @@ namespace ProjectTower
             chaseState = new MinionChaseState(gameObject, stateMachine);
             attackState = new MinionAttackState(gameObject, stateMachine);
             deathState = new MinionDeathState(gameObject, stateMachine);
+            stunState = new MinionStunState(gameObject, stateMachine);
             stateMachine.Init(idleState);
     }
 
@@ -113,6 +115,16 @@ namespace ProjectTower
             {
                 effectManager.Taunt(gameObject, c.gameObject, 0);
             }
+        }
+
+        public virtual void Stun()
+        {
+            stateMachine.ChangeState(stunState);
+        }
+
+        public virtual void UnStun()
+        {
+            stateMachine.ChangeState(idleState);
         }
 
         protected override void NoTargetBehavior()
