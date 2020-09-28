@@ -12,9 +12,6 @@ namespace ProjectTower
         public override void Enter()
         {
             base.Enter();
-            playerController.isSelected = false;
-            playerController.OnStartWalking();
-
             playerController.agent.isStopped = false;
             playerController.agent.stoppingDistance = 0;
             playerController.agent.SetDestination(

@@ -25,6 +25,8 @@ namespace ProjectTower
         private int stompDamage = 100;
         private EffectManager effectManager;
 
+        public EnemyState enragedState { get; protected set; }
+        public EnemyState wipeState { get; protected set; }
 
         protected override void Start()
         {
@@ -35,6 +37,19 @@ namespace ProjectTower
             shake = Camera.main.GetComponent<ProCamera2DShake>();
             spawnedObjects = new List<GameObject>();
             effectManager = FindObjectOfType<EffectManager>();
+
+            idleState = new EliteWolfIdleState(gameObject, stateMachine);
+            attackState = new EliteWolfAttackState(gameObject, stateMachine);
+            enragedState = new EliteWolfEnragedState(gameObject, stateMachine);
+            wipeState = new EliteWolfWipeState(gameObject, stateMachine);
+
+            stateMachine.Init(idleState);
+        }
+
+        public override void AcquireTarget()
+        {
+            GetEnemies(transform.position, stopRange);
+            SetTarget();
         }
 
         protected void OldUpdate()
@@ -51,52 +66,7 @@ namespace ProjectTower
             }
         }
 
-
-        public override void Attack()
-        {
-            if (target == null || !target.activeInHierarchy) return;
-
-            RaycastHit[] hitInfoArray;
-
-            hitInfoArray = Physics.RaycastAll(gameObject.transform.position,
-                target.transform.position - gameObject.transform.position);
-
-            if (hitInfoArray.Length == 0) return;
-
-            targetHitInfo = hitInfoArray.Where((h) => h.collider.gameObject == target)
-                .FirstOrDefault();
-
-            if ((agent.velocity.magnitude < Mathf.Epsilon || stopRange < meleeRange)
-                && Vector3.Distance(
-                    Vector3.ProjectOnPlane(agent.transform.position, new Vector3(0, 1, 0)),
-                    Vector3.ProjectOnPlane(targetHitInfo.point, new Vector3(0, 1, 0)))
-                    < stopRange + 2)
-            {
-                attackTimer -= Time.deltaTime;
-                if (!isSpecialing)
-                {
-                    if (attackTimer < 0)
-                    {
-                        agent.isStopped = true;
-                        animator.SetTrigger("Attack");
-                        StartCoroutine(ProjectTower.Utils.Timeout(() =>
-                        {
-                            audioManager.Play("Attack");
-                        }, 0.2f));
-                        // attack behavior moved to animation
-                        attackTimer = attackRate;
-                    }
-                }
-                SpeicalAttackUpdate();
-            }
-            else
-            {
-                attackTimer = attackRate;
-                StompUpdate();
-            }
-        }
-
-        private void StompUpdate()
+        public void StompUpdate()
         {
             swipeTimer -= Time.deltaTime;
             if (swipeTimer < 0)
@@ -206,9 +176,8 @@ namespace ProjectTower
 
             ResumeFromAttack();
         }
-        private void EnterRage()
+        public void EnterRage()
         {
-            phase = 1;
             isSpecialing = true;
             StartCoroutine(ProjectTower.Utils.Timeout(() =>
             {
@@ -240,14 +209,17 @@ namespace ProjectTower
                 Effect.Type.Rage, 500f, 0.5f);
         }
 
-        private void EnterWipe()
+        public void EnterWipe()
         {
-            phase = 2;
             health.isImmune = true;
             isSpecialing = true;
             stompDamage = 10000;
             animator.SetTrigger("Stomp");
-            enabled = false;
+        }
+
+        protected override void FlipX(RaycastHit hitInfo)
+        {
+            spriteRenderer.flipX = false;
         }
     }
 }

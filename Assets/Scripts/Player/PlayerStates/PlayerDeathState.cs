@@ -12,19 +12,22 @@ namespace ProjectTower
         public override void Enter()
         {
             base.Enter();
+            playerController.agent.SetDestination(owner.transform.position);
             playerController.agent.isStopped = true;
             playerController.isSelected = false;
-            playerController.agent.destination = owner.transform.position;
+            
         }
 
         public override void Exit()
         {
             base.Exit();
+            playerController.agent.isStopped = false;
         }
 
         public override void LogicUpdate()
         {
             playerController.FreezeWalkAnimation();
+            playerController.agent.isStopped = true;
         }
     }
 }

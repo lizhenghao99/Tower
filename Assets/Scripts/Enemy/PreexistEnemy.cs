@@ -19,13 +19,13 @@ namespace ProjectTower
             attack = GetComponent<AttackBase>();
             collider = GetComponent<Collider>();
             attack.enabled = false;
-            collider.enabled = false;
+            //collider.enabled = false;
         }
 
         public override void Spawn()
         {
             attack.enabled = true;
-            collider.enabled = true;
+           // collider.enabled = true;
         }
     }
 }

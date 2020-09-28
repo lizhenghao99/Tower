@@ -298,12 +298,12 @@ MonoBehaviour:
   attackDamage: 300
   attackRange: 15
   attackRate: 5
-  stopRange: 10
+  stopRange: 12
   agent: {fileID: 6647725742678617352}
   animator: {fileID: 6647725743354277930}
   spriteRenderer: {fileID: 6647725743354277929}
   taunter: {fileID: 0}
-  highlight: {fileID: 0}
+  highlight: {fileID: 2552186769619624297}
   isSelected: 0
   stompFx: {fileID: 195466, guid: 77b9e0532b674db4a8fc067593422d12, type: 3}
   spawnees: []
@@ -837,6 +837,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06a1b60edf8fbf94688a78f3af8afc82, type: 3}
+--- !u!1 &2552186769619624297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7436716477139493619, guid: 06a1b60edf8fbf94688a78f3af8afc82,
+    type: 3}
+  m_PrefabInstance: {fileID: 4926857059062809498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2129158997622333392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472794954971978826, guid: 06a1b60edf8fbf94688a78f3af8afc82,

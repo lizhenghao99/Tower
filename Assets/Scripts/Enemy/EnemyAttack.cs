@@ -12,13 +12,13 @@ namespace ProjectTower
         [SerializeField] public GameObject highlight;
         public bool isSelected = false;
 
-        public StateMachine stateMachine { get; private set; }
+        public StateMachine stateMachine { get; protected set; }
 
-        public EnemyIdleState idleState { get; private set; }
-        public EnemyChaseState chaseState { get; private set; }
-        public EnemyAttackState attackState { get; private set; }
-        public EnemyDeathState deathState { get; private set; }
-        public EnemyStunState stunState { get; private set; }
+        public EnemyState idleState { get; protected set; }
+        public EnemyState chaseState { get; protected set; }
+        public EnemyState attackState { get; protected set; }
+        public EnemyState deathState { get; protected set; }
+        public EnemyState stunState { get; protected set; }
 
         // Start is called before the first frame update
         protected override void Start()

@@ -240,7 +240,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 6647725742678617357}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.5
+  m_Radius: 1.1
   m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -263,7 +263,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.6
+  m_Radius: 1.2
   m_Height: 5.03
   m_Direction: 1
   m_Center: {x: 0, y: 0.76, z: 0}
@@ -306,7 +306,7 @@ MonoBehaviour:
   attackDamage: 70
   attackRange: 3
   attackRate: 2.5
-  stopRange: 3.5
+  stopRange: 4
   agent: {fileID: 6647725742678617352}
   animator: {fileID: 6647725743354277930}
   spriteRenderer: {fileID: 6647725743354277929}

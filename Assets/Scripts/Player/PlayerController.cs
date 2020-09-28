@@ -34,15 +34,15 @@ namespace ProjectTower
 
         private float autoStopWalkTimer = 3;
 
-        public StateMachine stateMachine { get; private set; }
-        public PlayerIdleState idleState { get; private set; }
-        public PlayerWalkState walkState { get; private set; }
-        public PlayerCastState castState { get; private set; }
-        public PlayerDeathState deathState { get; private set; }
+        public StateMachine stateMachine { get; protected set; }
+        public PlayerState idleState { get; protected set; }
+        public PlayerState walkState { get; protected set; }
+        public PlayerState castState { get; protected set; }
+        public PlayerState deathState { get; protected set; }
 
-        public PlayerChaseState chaseState { get; private set; }
-        public PlayerAttackState attackState { get; private set; }
-        public PlayerStunState stunState { get; private set; }
+        public PlayerState chaseState { get; protected set; }
+        public PlayerState attackState { get; protected set; }
+        public PlayerState stunState { get; protected set; }
 
         private void Start()
         {
@@ -74,6 +74,12 @@ namespace ProjectTower
         public void SetIsWalking(bool flag)
         {
             isWalking = flag;
+            isSelected = false;
+            OnStartWalking();
+            if (stateMachine.CurrentState == castState)
+            {
+                return;
+            }
             if (flag)
             {
                 stateMachine.ChangeState(walkState);

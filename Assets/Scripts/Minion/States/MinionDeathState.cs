@@ -12,9 +12,9 @@ namespace ProjectTower
         public override void Enter()
         {
             base.Enter();
+            attack.agent.SetDestination(owner.transform.position);
             attack.agent.isStopped = true;
             attack.isSelected = false;
-            attack.agent.destination = owner.transform.position;
         }
 
         public override void Exit()
@@ -25,6 +25,7 @@ namespace ProjectTower
         public override void LogicUpdate()
         {
             attack.FreezeWalkAnimation();
+            attack.agent.isStopped = true;
         }
     }
 }

@@ -23,8 +23,10 @@ MonoBehaviour:
   vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
   vfxOffset: {x: 0, y: 3, z: -2.5}
   castTime: 1.5
+  animationTrigger: Cast
+  specialPrefab: {fileID: 0}
   range: 9
-  radius: 3.5
+  radius: 4
   minionPrefab: {fileID: -5445547200232668209, guid: 36835c969c3e7bb4f83edb2b4320ae80,
     type: 3}
   centerPrefab: {fileID: -4077257038596269012, guid: 06a3324a4bb35aa4c9f2e2a10a649170,

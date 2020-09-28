@@ -26,12 +26,14 @@ namespace ProjectTower
         private EffectManager effectManager;
         private LevelController levelController;
 
-        public StateMachine stateMachine { get; private set; }
-        public MinionIdleState idleState { get; private set; }
-        public MinionChaseState chaseState { get; private set; }
-        public MinionAttackState attackState { get; private set; }
-        public MinionDeathState deathState { get; private set; }
-        public MinionStunState stunState { get; private set; }
+        public StateMachine stateMachine { get; protected set; }
+        public MinionState idleState { get; protected set; }
+        public MinionState chaseState { get; protected set; }
+        public MinionState attackState { get; protected set; }
+        public MinionState deathState { get; protected set; }
+        public MinionState stunState { get; protected set; }
+
+        public MinionState stageClearState { get; protected set; }
 
         // Start is called before the first frame update
         protected override void Start()
@@ -49,6 +51,7 @@ namespace ProjectTower
             attackState = new MinionAttackState(gameObject, stateMachine);
             deathState = new MinionDeathState(gameObject, stateMachine);
             stunState = new MinionStunState(gameObject, stateMachine);
+            stageClearState = new MinionStageClearState(gameObject, stateMachine);
             stateMachine.Init(idleState);
     }
 
@@ -135,7 +138,7 @@ namespace ProjectTower
 
         protected virtual void OnStageClear(object sender, EventArgs e)
         {
-            stateMachine.ChangeState(idleState);
+            stateMachine.ChangeState(stageClearState);
         }
 
         protected virtual void OnDeath(object sender, EventArgs e)

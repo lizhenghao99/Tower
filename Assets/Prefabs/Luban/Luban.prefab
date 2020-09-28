@@ -243,7 +243,7 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8729658002155953774}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 100
   attackRange: 5.5
-  attackRate: 2.5
+  attackRate: 2.2
   stopRange: 3.5
   agent: {fileID: 8729792689411822763}
   animator: {fileID: 8729792688550215930}

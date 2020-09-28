@@ -4,17 +4,15 @@ using UnityEngine;
 
 namespace ProjectTower
 {
-    public class EnemyDeathState : EnemyState
+    public class EliteWolfWipeState : EliteWolfState
     {
-        public EnemyDeathState(GameObject owner, StateMachine stateMachine)
+        public EliteWolfWipeState(GameObject owner, StateMachine stateMachine)
             : base(owner, stateMachine) { }
 
         public override void Enter()
         {
             base.Enter();
-            attack.agent.SetDestination(owner.transform.position);
-            attack.agent.isStopped = true;
-            attack.isSelected = false;
+            boss.EnterWipe();
         }
 
         public override void Exit()
@@ -24,8 +22,7 @@ namespace ProjectTower
 
         public override void LogicUpdate()
         {
-            attack.FreezeWalkAnimation();
-            attack.agent.isStopped = true;
+            // do nothing
         }
     }
 }

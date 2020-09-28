@@ -26,7 +26,7 @@ namespace ProjectTower
         protected int layerMask;
         protected float attackTimer = 1;
 
-        protected Health health;
+        public Health health { get; protected set; }
 
         protected float meleeRange = 5f;
 
@@ -238,7 +238,10 @@ namespace ProjectTower
             isAttacking = false;
             StartCoroutine(Utils.Timeout(() =>
             {
-                agent.isStopped = false;
+                if (agent != null && agent.isActiveAndEnabled)
+                {
+                    agent.isStopped = false;
+                }
             }, attackRate / 2));
         }
 
