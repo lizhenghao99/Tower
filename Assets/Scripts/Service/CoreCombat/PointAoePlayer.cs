@@ -74,7 +74,7 @@ namespace ProjectTower
 
                 var force = direction * c.force;
                 StartCoroutine(
-                    hitAfterDelay(
+                    HitAfterDelay(
                     e.gameObject,
                     c.damage,
                     force,
@@ -90,7 +90,7 @@ namespace ProjectTower
             return Physics.OverlapSphere(hitPoint, attackRange, layerMask);
         }
 
-        IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force,
+        IEnumerator HitAfterDelay(GameObject e, int damage, Vector3 force,
             Effect.Type effect, float effectDuration, float effectAmount, float delay)
         {
             yield return new WaitForSeconds(delay);
@@ -104,9 +104,9 @@ namespace ProjectTower
         {
             cardPlaying = (PointAoe)CardPlayer.Instance.cardPlaying;
             splat = CardPlayer.Instance.splat;
-            player = FindObjectsOfType<PlayerController>()
-               .Where(player => player.gameObject.name == cardPlaying.owner.ToString())
-               .FirstOrDefault();
+            player = FindObjectsOfType
+                    <PlayerController>()
+                .FirstOrDefault(player => player.gameObject.name == cardPlaying.owner.ToString());
         }
 
         private void LaunchProjectile()
@@ -134,7 +134,7 @@ namespace ProjectTower
             projectile.GetComponent<Rigidbody>().angularVelocity =
                 axis * angularVelocity;
 
-            projectile.GetComponent<PointProjectile>().hitFloor
+            projectile.GetComponent<PointProjectile>().HitFloor
                 += OnHitFloor;
 
             projectile.GetComponent<PointProjectile>().card = cardPlaying;

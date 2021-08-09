@@ -7,7 +7,7 @@ namespace ProjectTower
 {
     public class Waypoint : MonoBehaviour
     {
-        public event EventHandler destinationReached;
+        public event EventHandler DestinationReached;
         [SerializeField] private GameObject waypointDisplay;
 
         // Start is called before the first frame update
@@ -39,7 +39,7 @@ namespace ProjectTower
 
         private void OnDestinationReached()
         {
-            destinationReached?.Invoke(gameObject, EventArgs.Empty);
+            DestinationReached?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

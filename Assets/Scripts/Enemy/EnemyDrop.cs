@@ -17,7 +17,7 @@ namespace ProjectTower
         // Start is called before the first frame update
         void Start()
         {
-            GetComponent<Health>().death += OnEnemyDeath;
+            GetComponent<Health>().Death += OnEnemyDeath;
             inventoryManager = FindObjectOfType<InventoryManager>();
         }
 

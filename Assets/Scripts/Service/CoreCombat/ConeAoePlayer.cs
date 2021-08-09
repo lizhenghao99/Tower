@@ -51,7 +51,7 @@ namespace ProjectTower
 
                 var force = direction * cardPlaying.force;
                 StartCoroutine(
-                    hitAfterDelay(
+                    HitAfterDelay(
                     e.gameObject,
                     cardPlaying.damage,
                     force,
@@ -88,7 +88,7 @@ namespace ProjectTower
                 .ToArray();
         }
 
-        IEnumerator hitAfterDelay(GameObject e, int damage, Vector3 force,
+        IEnumerator HitAfterDelay(GameObject e, int damage, Vector3 force,
             Effect.Type effect, float effectDuration, float effectAmount, float delay)
         {
             yield return new WaitForSeconds(delay);
@@ -103,9 +103,10 @@ namespace ProjectTower
         {
             cardPlaying = (ConeAoe)CardPlayer.Instance.cardPlaying;
             splat = CardPlayer.Instance.splat;
-            playerTransform = FindObjectsOfType<PlayerController>()
-               .Where(player => player.gameObject.name == cardPlaying.owner.ToString())
-               .FirstOrDefault().gameObject.transform;
+            playerTransform = FindObjectsOfType
+                    <PlayerController>()
+                .FirstOrDefault(player => player.gameObject.name == cardPlaying.owner.ToString())
+                .gameObject.transform;
         }
     }
 }

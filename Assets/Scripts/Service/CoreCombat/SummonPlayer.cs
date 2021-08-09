@@ -46,7 +46,7 @@ namespace ProjectTower
                     splat.GetSpellCursorPosition(),
                     Quaternion.Euler(30, 0, 0));
 
-                center.setRadius(cardPlaying.radius);
+                center.SetRadius(cardPlaying.radius);
             }
 
             if (cardPlaying.count == 1)

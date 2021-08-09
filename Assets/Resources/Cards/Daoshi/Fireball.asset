@@ -35,8 +35,8 @@ MonoBehaviour:
     type: 3}
   projectileSpeed: 20
   projectileHeight: 2
-  projectileCount: 5
-  projectileInterval: 0.6
+  projectileCount: 3
+  projectileInterval: 1
   effect: 1
   effectDuration: 5
   effectAmount: 100

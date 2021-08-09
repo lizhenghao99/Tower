@@ -20,9 +20,9 @@ namespace ProjectTower
         [SerializeField] public GameObject highlight;
 
 
-        public event EventHandler startCasting;
-        public event EventHandler finishCasting;
-        public event EventHandler startWalking;
+        public event EventHandler StartCasting;
+        public event EventHandler FinishCasting;
+        public event EventHandler StartWalking;
 
         public bool isSelected = false;
         public bool isWalking { get; protected set; } = false;
@@ -50,8 +50,8 @@ namespace ProjectTower
             agent.updateUpAxis = false;
             layerMask = LayerMask.GetMask("Environment", "Player", "Enemy");
             health = GetComponent<PlayerHealth>();
-            health.death += OnPlayerDeath;
-            health.revive += OnPlayerRevive;
+            health.Death += OnPlayerDeath;
+            health.Revive += OnPlayerRevive;
 
             stateMachine = new StateMachine();
             idleState = new PlayerIdleState(gameObject, stateMachine);
@@ -68,7 +68,7 @@ namespace ProjectTower
         // Update is called once per frame
         private void Update()
         {
-            stateMachine.CurrentState.LogicUpdate();
+            stateMachine.currentState.LogicUpdate();
         }
 
         public void SetIsWalking(bool flag)
@@ -76,7 +76,7 @@ namespace ProjectTower
             isWalking = flag;
             isSelected = false;
             OnStartWalking();
-            if (stateMachine.CurrentState == castState)
+            if (stateMachine.currentState == castState)
             {
                 return;
             }
@@ -198,7 +198,7 @@ namespace ProjectTower
                 waypoint,
                 dest + new Vector3(0, waypointHeight, 0),
                 Quaternion.Euler(waypointXRotation, 0, 0));
-            myWaypoint.destinationReached += OnDestinationReached;
+            myWaypoint.DestinationReached += OnDestinationReached;
             SetIsWalking(true);
         }
 
@@ -234,17 +234,17 @@ namespace ProjectTower
 
         public void OnStartCasting()
         {
-            startCasting?.Invoke(gameObject, EventArgs.Empty);
+            StartCasting?.Invoke(gameObject, EventArgs.Empty);
         }
 
         public void OnFinishCasting()
         {
-            finishCasting?.Invoke(gameObject, EventArgs.Empty);
+            FinishCasting?.Invoke(gameObject, EventArgs.Empty);
         }
 
         public void OnStartWalking()
         {
-            startWalking?.Invoke(gameObject, EventArgs.Empty);
+            StartWalking?.Invoke(gameObject, EventArgs.Empty);
         }
 
         public void OnCollisionStay(Collision collision)

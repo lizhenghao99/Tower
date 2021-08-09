@@ -13,7 +13,7 @@ namespace ProjectTower
         // Start is called before the first frame update
         void Start()
         {
-            GetComponent<AttackEvent>().attack += OnAttack;
+            GetComponent<AttackEvent>().Attack += OnAttack;
         }
 
         private void OnAttack(object sender, EventArgs e)

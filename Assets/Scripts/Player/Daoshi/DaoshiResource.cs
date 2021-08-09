@@ -21,8 +21,8 @@ namespace ProjectTower
             levelController.StartCombat += OnStartAutogen;
             levelController.EndCombat += OnEndAutogen;
             health = GetComponent<PlayerHealth>();
-            health.death += OnEndAutogen;
-            health.revive += OnStartAutogen;
+            health.Death += OnEndAutogen;
+            health.Revive += OnStartAutogen;
         }
 
         public override bool IsResourceEnough(int primaryAmount, int secondaryAmount)

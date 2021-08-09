@@ -38,8 +38,8 @@ namespace ProjectTower
             player = FindObjectsOfType<PlayerController>()
                     .Where(p => p.gameObject.name == owner.ToString())
                     .FirstOrDefault();
-            player.startCasting += OnStartCasting;
-            player.finishCasting += OnFinishCasting;
+            player.StartCasting += OnStartCasting;
+            player.FinishCasting += OnFinishCasting;
         }
 
         private void Start()

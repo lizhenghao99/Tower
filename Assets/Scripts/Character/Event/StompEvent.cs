@@ -7,11 +7,11 @@ namespace ProjectTower
 {
     public class StompEvent : MonoBehaviour
     {
-        public event EventHandler stomp;
+        public event EventHandler Stomp;
 
         public void OnStomp()
         {
-            stomp?.Invoke(gameObject, EventArgs.Empty);
+            Stomp?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

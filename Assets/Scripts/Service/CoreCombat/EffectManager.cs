@@ -16,7 +16,7 @@ namespace ProjectTower
         [SerializeField] GameObject fiveSwordsVfx;
         [SerializeField] GameObject sevenSwordsVfx;
 
-        public event EventHandler<Effect> registerEvent;
+        public event EventHandler<Effect> RegisterEvent;
 
         // Start is called before the first frame update
         void Start()
@@ -94,7 +94,7 @@ namespace ProjectTower
 
         private void OnRegister(GameObject c, Effect e)
         {
-            registerEvent?.Invoke(c, e);
+            RegisterEvent?.Invoke(c, e);
         }
     }
 }

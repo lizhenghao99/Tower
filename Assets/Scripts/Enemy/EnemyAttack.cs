@@ -25,7 +25,7 @@ namespace ProjectTower
         {
             base.Start();
             layerMask = LayerMask.GetMask("BaseTower");
-            health.death += OnDeath;
+            health.Death += OnDeath;
 
             stateMachine = new StateMachine();
             idleState = new EnemyIdleState(gameObject, stateMachine);
@@ -38,7 +38,7 @@ namespace ProjectTower
 
         private void Update()
         {
-            stateMachine.CurrentState.LogicUpdate();
+            stateMachine.currentState.LogicUpdate();
         }
 
         public virtual void UpdateWalkAnimation()

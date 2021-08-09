@@ -25,13 +25,13 @@ namespace ProjectTower
             step = GetComponentInChildren<StepEvent>();
             if (step != null)
             {
-                step.step += OnStep;
+                step.Step += OnStep;
             }
 
             stride = GetComponentInChildren<StrideEvent>();
             if (stride != null)
             {
-                stride.stride += OnStride;
+                stride.Stride += OnStride;
             }
 
             audioSource.outputAudioMixerGroup = AudioMixerManager.Instance.sfxGroup;

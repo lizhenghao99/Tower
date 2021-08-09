@@ -43,7 +43,7 @@ namespace ProjectTower
             agent.updateUpAxis = false;
             health = GetComponent<Health>();
             attackEvent = GetComponentInChildren<AttackEvent>();
-            attackEvent.attack += OnAttack;
+            attackEvent.Attack += OnAttack;
             audioManager = GetComponent<InstanceAudioManager>();
             if (audioManager == null)
             {
@@ -70,16 +70,16 @@ namespace ProjectTower
             }
 
             Collider closestEnemy = null;
-            float min_dist = Mathf.Infinity;
+            float minDist = Mathf.Infinity;
             foreach (Collider e in enemiesInRange)
             {
                 if (e.gameObject.GetComponent<Health>().isDead) continue;
                 float dist = Vector3.Distance(gameObject.transform.position,
                                                 e.transform.position);
-                if (dist < min_dist)
+                if (dist < minDist)
                 {
                     closestEnemy = e;
-                    min_dist = dist;
+                    minDist = dist;
                 }
             }
             if (closestEnemy)

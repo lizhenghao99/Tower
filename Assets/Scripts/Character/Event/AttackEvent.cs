@@ -7,11 +7,11 @@ namespace ProjectTower
 {
     public class AttackEvent : MonoBehaviour
     {
-        public event EventHandler attack;
+        public event EventHandler Attack;
 
         public void OnAttack()
         {
-            attack?.Invoke(gameObject, EventArgs.Empty);
+            Attack?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

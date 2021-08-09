@@ -7,11 +7,11 @@ namespace ProjectTower
 {
     public class StepEvent : MonoBehaviour
     {
-        public event EventHandler step;
+        public event EventHandler Step;
 
         public void OnStep()
         {
-            step?.Invoke(gameObject, EventArgs.Empty);
+            Step?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

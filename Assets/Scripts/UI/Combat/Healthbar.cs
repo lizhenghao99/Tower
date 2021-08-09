@@ -38,8 +38,8 @@ namespace ProjectTower
                            .Where(i => i.gameObject.name == "HealthbarShieldGlow")
                            .FirstOrDefault();
 
-            playerHealth.healthChanged += OnHealthChanged;
-            playerHealth.shieldChanged += OnShieldChanged;
+            playerHealth.HealthChanged += OnHealthChanged;
+            playerHealth.ShieldChanged += OnShieldChanged;
         }
 
         // Update is called once per frame

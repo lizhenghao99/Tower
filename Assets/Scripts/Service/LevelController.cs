@@ -86,11 +86,11 @@ namespace ProjectTower
                 playerOffsets.Add(distance);
             }
 
-            baseTower.death += OnTowerDeath;
+            baseTower.Death += OnTowerDeath;
             foreach (PlayerController p in players)
             {
-                p.GetComponent<PlayerHealth>().death += OnPlayerDeath;
-                p.GetComponent<PlayerHealth>().revive += OnPlayerRevive;
+                p.GetComponent<PlayerHealth>().Death += OnPlayerDeath;
+                p.GetComponent<PlayerHealth>().Revive += OnPlayerRevive;
             }
             alivePlayerCount = players.Length;
             StartNextStage();

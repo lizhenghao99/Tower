@@ -43,7 +43,7 @@ namespace ProjectTower
             effectManager = FindObjectOfType<EffectManager>();
             levelController = FindObjectOfType<LevelController>();
             levelController.StageClear += OnStageClear;
-            health.death += OnDeath;
+            health.Death += OnDeath;
 
             stateMachine = new StateMachine();
             idleState = new MinionIdleState(gameObject, stateMachine);
@@ -58,7 +58,7 @@ namespace ProjectTower
         // Update is called once per frame
         private void Update()
         {
-            stateMachine.CurrentState.LogicUpdate();
+            stateMachine.currentState.LogicUpdate();
         }
 
         public virtual void UpdateWalkAnimation()

@@ -12,9 +12,9 @@ namespace ProjectTower
         [SerializeField] public int maxHealth = 100;
         public int currHealth { get; protected set; }
 
-        public event EventHandler healthChanged;
-        public event EventHandler death;
-        public event EventHandler revive;
+        public event EventHandler HealthChanged;
+        public event EventHandler Death;
+        public event EventHandler Revive;
 
         public bool isDead = false;
 
@@ -72,7 +72,7 @@ namespace ProjectTower
             OnHealthChanged();
         }
 
-        public virtual void Revive(float percent)
+        public virtual void DoRevive(float percent)
         {
             currHealth = (int)(maxHealth * percent);
             isDead = false;
@@ -113,17 +113,17 @@ namespace ProjectTower
 
         protected void OnHealthChanged()
         {
-            healthChanged?.Invoke(gameObject, EventArgs.Empty);
+            HealthChanged?.Invoke(gameObject, EventArgs.Empty);
         }
 
         protected void OnDeath()
         {
-            death?.Invoke(gameObject, EventArgs.Empty);
+            Death?.Invoke(gameObject, EventArgs.Empty);
         }
 
         protected void OnRevive()
         {
-            revive?.Invoke(gameObject, EventArgs.Empty);
+            Revive?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

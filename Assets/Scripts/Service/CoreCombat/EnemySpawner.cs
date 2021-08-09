@@ -30,7 +30,7 @@ namespace ProjectTower
                 }
                 else
                 {
-                    currStage.update();
+                    currStage.LogicUpdate();
                 }
             }
         }
@@ -63,7 +63,7 @@ namespace ProjectTower
         [SerializeField] public Enemy[] enemies;
         [SerializeField] float timer;
 
-        public void update()
+        public void LogicUpdate()
         {
             if (timer > 0)
             {
@@ -90,11 +90,11 @@ namespace ProjectTower
         [SerializeField] public Wave[] waves;
         public bool stageClear = false;
 
-        public void update()
+        public void LogicUpdate()
         {
             foreach (Wave wave in waves)
             {
-                wave.update();
+                wave.LogicUpdate();
             }
         }
     }

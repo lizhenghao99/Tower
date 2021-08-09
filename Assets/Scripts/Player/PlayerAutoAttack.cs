@@ -27,8 +27,8 @@ namespace ProjectTower
 
             levelController.StartCombat += OnStartCombat;
             levelController.EndCombat += OnEndCombat;
-            health.death += OnPlayerDeath;
-            health.revive += OnPlayerRevive;
+            health.Death += OnPlayerDeath;
+            health.Revive += OnPlayerRevive;
         }
 
         public void OnStartCombat(object sender, EventArgs e)

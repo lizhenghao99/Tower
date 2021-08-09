@@ -211,3 +211,4 @@ Material:
     - _OutlineColor: {r: 0.5142593, g: 0.95579505, b: 0.9921568, a: 1}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShineColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []

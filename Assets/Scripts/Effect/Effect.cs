@@ -13,8 +13,8 @@ namespace ProjectTower
             FiveSwords, SevenSwords
         };
 
-        public event EventHandler start;
-        public event EventHandler finish;
+        public event EventHandler Start;
+        public event EventHandler Finish;
 
         public Type type { get; protected set; }
         public GameObject caster;
@@ -73,24 +73,24 @@ namespace ProjectTower
                 Vector3.one * (scale.magnitude * 0.3f);
             currentVfx.transform.position +=
                 new Vector3(0f, 0.2f * scale.y, 0f);
-            start?.Invoke(this, EventArgs.Empty);
+            Start?.Invoke(this, EventArgs.Empty);
         }
 
         protected void InvokeStart(object sender)
         {
-            start?.Invoke(sender, EventArgs.Empty);
+            Start?.Invoke(sender, EventArgs.Empty);
         }
 
         protected virtual void OnFinish()
         {
             Destroy(currentVfx);
             Destroy(this);
-            finish?.Invoke(this, EventArgs.Empty);
+            Finish?.Invoke(this, EventArgs.Empty);
         }
 
         protected void InvokeFinish(object sender)
         {
-            finish?.Invoke(sender, EventArgs.Empty);
+            Finish?.Invoke(sender, EventArgs.Empty);
         }
     }
 }

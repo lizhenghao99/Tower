@@ -33,7 +33,7 @@ namespace ProjectTower
                                 .Where(i => i.gameObject.name == "PrimaryDisplayGlow")
                                 .FirstOrDefault();
 
-            playerResource.resourceChanged += OnResourceChanged;
+            playerResource.ResourceChanged += OnResourceChanged;
         }
 
         protected abstract void OnResourceChanged(object sender, EventArgs e);

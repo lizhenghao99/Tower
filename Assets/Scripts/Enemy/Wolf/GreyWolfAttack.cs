@@ -16,7 +16,7 @@ namespace ProjectTower
         {
             base.Start();
             stompEvent = GetComponentInChildren<StompEvent>();
-            stompEvent.stomp += OnStomp;
+            stompEvent.Stomp += OnStomp;
         }
 
         protected override void SpeicalAttackUpdate()

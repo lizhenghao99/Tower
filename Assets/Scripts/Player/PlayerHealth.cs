@@ -14,8 +14,8 @@ namespace ProjectTower
         public int maxShield { get; private set; }
         public int currShield { get; private set; }
 
-        public event EventHandler shieldChanged;
-        public event EventHandler damaged;
+        public event EventHandler ShieldChanged;
+        public event EventHandler Damaged;
 
 
         // Start is called before the first frame update
@@ -111,12 +111,12 @@ namespace ProjectTower
 
         private void OnShieldChanged()
         {
-            shieldChanged?.Invoke(gameObject, EventArgs.Empty);
+            ShieldChanged?.Invoke(gameObject, EventArgs.Empty);
         }
 
         private void OnDamaged()
         {
-            damaged?.Invoke(gameObject, EventArgs.Empty);
+            Damaged?.Invoke(gameObject, EventArgs.Empty);
         }
     }
 }

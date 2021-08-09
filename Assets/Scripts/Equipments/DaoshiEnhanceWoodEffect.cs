@@ -11,7 +11,7 @@ namespace ProjectTower
         // Start is called before the first frame update
         void Start()
         {
-            FindObjectOfType<EffectManager>().registerEvent += OnRegister;
+            FindObjectOfType<EffectManager>().RegisterEvent += OnRegister;
             player = GetComponentInParent<PlayerController>().gameObject;
         }
 
@@ -19,7 +19,7 @@ namespace ProjectTower
         {
             if (e is WoodEffect && ((GameObject)sender) == player)
             {
-                e.start += OnWoodStart;
+                e.Start += OnWoodStart;
             }
         }
 

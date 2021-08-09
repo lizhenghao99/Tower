@@ -8,13 +8,13 @@ namespace ProjectTower
     public class PointProjectile : MonoBehaviour
     {
         public Card card;
-        public event EventHandler<Vector3> hitFloor;
+        public event EventHandler<Vector3> HitFloor;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Floor")
             {
-                hitFloor?.Invoke(gameObject, gameObject.transform.position);
+                HitFloor?.Invoke(gameObject, gameObject.transform.position);
                 Destroy(gameObject);
             }
         }

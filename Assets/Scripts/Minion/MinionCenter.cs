@@ -27,7 +27,7 @@ namespace ProjectTower
             }
         }
 
-        public void setRadius(float radius)
+        public void SetRadius(float radius)
         {
             mySplat = Instantiate(splat);
             mySplat.transform.SetParent(gameObject.transform);

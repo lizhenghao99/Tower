@@ -66,8 +66,8 @@ namespace ProjectTower
             levelController = FindObjectOfType<LevelController>();
             levelController.StartCombat += OnStartCombat;
             levelController.EndCombat += OnEndCombat;
-            playerHealth.death += OnPlayerDeath;
-            tower.death += OnTowerDeath;
+            playerHealth.Death += OnPlayerDeath;
+            tower.Death += OnTowerDeath;
             bossHealth = tutorialBoss.GetComponent<Health>();
         }
 
@@ -263,7 +263,7 @@ namespace ProjectTower
         private void OnPlayerDeath(object sender, EventArgs e)
         {
             if (bossHealth.currHealth <= (int)(bossHealth.maxHealth * 0.1)) return;
-            playerHealth.Revive(0.7f);
+            playerHealth.DoRevive(0.7f);
             Instantiate(healVfx, playerHealth.transform);
             GlobalAudioManager.Instance.Play("Revive", playerHealth.transform.position);
             currentTutorial = playerDeathHint;
@@ -274,7 +274,7 @@ namespace ProjectTower
         private void OnTowerDeath(object sender, EventArgs e)
         {
             if (bossHealth.currHealth <= (int)(bossHealth.maxHealth * 0.1)) return;
-            tower.Revive(0.5f);
+            tower.DoRevive(0.5f);
             Instantiate(healVfx, tower.transform);
             GlobalAudioManager.Instance.Play("Revive", tower.transform.position);
             currentTutorial = towerDeathHint;
@@ -305,8 +305,8 @@ namespace ProjectTower
 
             levelController.StartCombat -= OnStartCombat;
             levelController.EndCombat -= OnEndCombat;
-            playerHealth.death -= OnPlayerDeath;
-            tower.death -= OnTowerDeath;
+            playerHealth.Death -= OnPlayerDeath;
+            tower.Death -= OnTowerDeath;
 
             Destroy(gameObject);
         }

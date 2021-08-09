@@ -15,7 +15,7 @@ namespace ProjectTower
         {
             health = GetComponent<Health>();
             healthbar = GetComponentInChildren<SimpleHealthbar>();
-            health.healthChanged += OnHealthChanged;
+            health.HealthChanged += OnHealthChanged;
         }
 
         // Update is called once per frame

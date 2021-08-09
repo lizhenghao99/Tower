@@ -32,9 +32,9 @@ namespace ProjectTower
         protected override void Start()
         {
             base.Start();
-            GetComponent<PlayerController>().startWalking += OnInterrupt;
-            GetComponent<PlayerController>().startCasting += OnInterrupt;
-            GetComponent<PlayerHealth>().damaged += OnInterrupt;
+            GetComponent<PlayerController>().StartWalking += OnInterrupt;
+            GetComponent<PlayerController>().StartCasting += OnInterrupt;
+            GetComponent<PlayerHealth>().Damaged += OnInterrupt;
             missiles = new List<Missile>();
         }
 
@@ -214,8 +214,8 @@ namespace ProjectTower
                             rotation);
                 m.range = missileRange;
                 m.type = type;
-                m.hitEnemy += OnHitEnemy;
-                m.outOfRange += OnOutOfRange;
+                m.HitEnemy += OnHitEnemy;
+                m.OutOfRange += OnOutOfRange;
                 m.enabled = false;
                 missiles.Add(m);
 

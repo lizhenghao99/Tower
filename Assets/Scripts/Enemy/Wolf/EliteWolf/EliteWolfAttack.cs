@@ -32,7 +32,7 @@ namespace ProjectTower
         {
             base.Start();
             stompEvent = GetComponentInChildren<StompEvent>();
-            stompEvent.stomp += OnStomp;
+            stompEvent.Stomp += OnStomp;
             GetComponent<Health>().immuneStun = true;
             shake = Camera.main.GetComponent<ProCamera2DShake>();
             spawnedObjects = new List<GameObject>();

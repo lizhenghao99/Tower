@@ -1,24 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace ProjectTower
+﻿namespace ProjectTower
 {
     public class StateMachine
     {
-        public State CurrentState { get; private set; }
+        public State currentState { get; private set; }
 
         public void Init(State startingState)
         {
-            CurrentState = startingState;
-            CurrentState.Enter();
+            currentState = startingState;
+            currentState.Enter();
         }
 
         public void ChangeState(State newState)
         {
-            CurrentState.Exit();
-            CurrentState = newState;
-            CurrentState.Enter();
+            currentState.Exit();
+            currentState = newState;
+            currentState.Enter();
         }
     }
 }

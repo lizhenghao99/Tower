@@ -13,8 +13,8 @@ namespace ProjectTower
         [SerializeField] public float rotationSpeed = 0.3f;
         [SerializeField] GameObject hitVfx;
         [HideInInspector] public float range;
-        public event EventHandler<Vector3> hitEnemy;
-        public event EventHandler outOfRange;
+        public event EventHandler<Vector3> HitEnemy;
+        public event EventHandler OutOfRange;
         public int type = 0;
         private Vector3 startingPosition;
         private bool launched = false;
@@ -31,7 +31,7 @@ namespace ProjectTower
                 Vector3.Distance(gameObject.transform.position, startingPosition);
             if (currDistance > range)
             {
-                outOfRange?.Invoke(gameObject, EventArgs.Empty);
+                OutOfRange?.Invoke(gameObject, EventArgs.Empty);
                 Destroy(gameObject);
             }
         }
@@ -44,7 +44,7 @@ namespace ProjectTower
                 var fx = Instantiate(hitVfx);
                 fx.transform.position = other.ClosestPointOnBounds(transform.position);
                 fx.transform.rotation = Quaternion.LookRotation(launchDirection);
-                hitEnemy?.Invoke(gameObject, gameObject.transform.position);
+                HitEnemy?.Invoke(gameObject, gameObject.transform.position);
                 Destroy(gameObject);
             }
         }
