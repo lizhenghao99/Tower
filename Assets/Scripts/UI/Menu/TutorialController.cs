@@ -232,9 +232,10 @@ namespace ProjectTower
         public void ExitTutorial(GameObject tutorialScreen)
         {
             inTutorialScreen = false;
-            tutorialScreen.GetComponent<CanvasGroup>()
-                .DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
-                .OnComplete(() => tutorialScreen.SetActive(false));
+            // tutorialScreen.GetComponent<CanvasGroup>()
+            //     .DOFade(0f, 0.2f).SetEase(Ease.OutQuint).SetUpdate(true)
+            //     .OnComplete(() => tutorialScreen.SetActive(false));
+            tutorialScreen.SetActive(false);
         }
 
         public void ContinueTutorial()

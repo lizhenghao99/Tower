@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: FiveSwords
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u6C14\u5316\u795E"
+  cardNameEn: Concentrate Qi
   upgraded: 0
-  description: 
-  primaryChange: -20
+  description: "\u8FDB\u5165\u201C\u70BC\u6C14\u5316\u795E\u201D\u72B6\u6001\uFF0C\u671F\u95F4\u6BCF\u6B21\u666E\u901A\u653B\u51FB\u5C06\u989D\u5916\u751F\u6210\u4E24\u628A\u98DE\u5251\uFF0C\u6301\u7EED30\u79D2\u3002"
+  descriptionEn: Enters "Concentrated" state. While in this state, Yun's normal attack
+    will generate 2 extra ethereal swords. Lasts 30 seconds.
+  primaryChange: -30
   secondaryChange: 0
   owner: 1
   art: {fileID: -4544015234151603958, guid: 125a3353900e4bf4daa6c1e03b6ffc98, type: 3}
@@ -28,5 +31,5 @@ MonoBehaviour:
   shieldPercent: 0
   buffTarget: 0
   effect: 7
-  effectDuration: 60
+  effectDuration: 30
   effectAmount: 0

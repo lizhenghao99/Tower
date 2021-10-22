@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: LightningBall
   m_EditorClassIdentifier: 
   cardName: "\u96F7\u5149\u5492"
+  cardNameEn: Ball Lightening
   upgraded: 0
-  description: 
+  description: "\u65BD\u5492\u5524\u51FA\u4E00\u56E2\u5411\u6307\u5B9A\u65B9\u5411\u7F13\u6162\u79FB\u52A8\u7684\u96F7\u5149\uFF0C\u5BF9\u6CBF\u9014\u654C\u4EBA\u9020\u6210\u4F24\u5BB3\u5E76\u65BD\u52A0<u>\u7535\u7F1A</u>\u3002"
+  descriptionEn: Summons a ball of lightening that slowly moves towards targeted
+    direction, dealing damage to enemies in its path and applying <u>Electrified</u>
+    effect.
   primaryChange: -30
   secondaryChange: 1
   owner: 1

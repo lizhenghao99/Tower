@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: LeafWind
   m_EditorClassIdentifier: 
   cardName: "\u6728\u53F6\u6E05\u98CE"
+  cardNameEn: Nature's Breath
   upgraded: 0
-  description: 
+  description: "\u9053\u58EB\u5524\u51FA\u73AF\u7ED5\u81EA\u8EAB\u7684\u6E05\u98CE\uFF0C\u51FB\u9000\u9644\u8FD1\u7684\u654C\u4EBA\u5E76\u65BD\u52A0<u>\u6728\u7F20</u>\uFF0C\u540C\u65F6\u6CBB\u7597\u8303\u56F4\u5185\u7684\u53CB\u65B9\u3002"
+  descriptionEn: Yun summons a gust of wind around himself, pushing enemies around
+    him back and applying <u>Entangled</u> effect, while also healing allies within
+    the area.
   primaryChange: -60
   secondaryChange: 2
   owner: 1

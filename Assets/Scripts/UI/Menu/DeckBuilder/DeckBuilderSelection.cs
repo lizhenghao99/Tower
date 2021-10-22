@@ -10,6 +10,7 @@ namespace ProjectTower
         [SerializeField] DeckBuilder deckBuilder;
         [SerializeField] Card.Owner[] owners;
         [SerializeField] GameObject[] collectionCardPrefabs;
+        [SerializeField] private GameObject loadingScreen;
 
         public void Enter()
         {
@@ -20,6 +21,7 @@ namespace ProjectTower
 
         public void Exit()
         {
+            StartCoroutine(Utils.LoadAsync(1, loadingScreen));
             GetComponent<CanvasGroup>()
                 .DOFade(0f, 0.3f).SetEase(Ease.OutQuint).SetUpdate(true)
                 .OnComplete(() => gameObject.SetActive(false));

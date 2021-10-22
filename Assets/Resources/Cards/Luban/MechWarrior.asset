@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: MechWarrior
   m_EditorClassIdentifier: 
   cardName: "\u6728\u7532\u6218\u58EB"
+  cardNameEn: Mech Warrior
   upgraded: 0
-  description: "\u653E\u51FA3\u4E2A<u>\u51B2\u950B</u>\u7684\u6728\u7532\u6218\u58EB\u3002\r"
+  description: "\u653E\u51FA3\u4E2A<u>\u51B2\u950B</u>\u7684\u6728\u7532\u6218\u58EB\u3002"
+  descriptionEn: Summon 3 Mech Warriors with <u>Charge</u>.
   primaryChange: -20
   secondaryChange: 0
   owner: 0
@@ -23,6 +25,8 @@ MonoBehaviour:
   vfx: {fileID: 115174, guid: f2c980ddcf24f4346ac2f0c91da8dd6a, type: 3}
   vfxOffset: {x: 0, y: 3, z: -2.5}
   castTime: 1.5
+  animationTrigger: Cast
+  specialPrefab: {fileID: 0}
   range: 6.5
   radius: 3
   minionPrefab: {fileID: -5445547200232668209, guid: e03db0757ee3cb6469261eb6339f96d9,

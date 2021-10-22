@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: FireStrike
   m_EditorClassIdentifier: 
   cardName: "\u706B\u88AD"
+  cardNameEn: Flame Strike
   upgraded: 0
   description: "\u673A\u5173\u5251\u5411\u6307\u5B9A\u6247\u5F62\u8303\u56F4\u55B7\u51FA\u706B\u7130\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A05\u79D2<u>\u71C3\u70E7</u>\u6548\u679C\u3002"
+  descriptionEn: Throws bursts of flame from Lu's mech sword, dealing AOE damage
+    to enemies in front of him, applying <u>Burn</u> effect.
   primaryChange: -20
   secondaryChange: 0
   owner: 0

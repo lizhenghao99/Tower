@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: SwordBlink
   m_EditorClassIdentifier: 
   cardName: "\u5FA1\u5251\u884C"
+  cardNameEn: Sword Blink
   upgraded: 0
-  description: 
+  description: "\u5728\u6307\u5B9A\u4F4D\u7F6E\u51DD\u6210\u5E7B\u5251\uFF0C\u5E76\u5728\u77ED\u6682\u65BD\u6CD5\u540E\u77AC\u79FB\u81F3\u5E7B\u5251\u4F4D\u7F6E\u3002"
+  descriptionEn: Summons an ethereal sword at targeted location. After a short delay,
+    Yun will blink to the sword's location.
   primaryChange: -40
   secondaryChange: 0
   owner: 1

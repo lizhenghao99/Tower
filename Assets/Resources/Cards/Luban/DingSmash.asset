@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: DingSmash
   m_EditorClassIdentifier: 
   cardName: "\u5343\u65A4\u9F0E"
+  cardNameEn: Cauldron Smash
   upgraded: 0
   description: "\u5FF5\u8BF5\u5492\u6587\u5411\u6307\u5B9A\u8303\u56F4\u6295\u63B7\u5343\u65A4\u9F0E\uFF0C\u9020\u6210\u4F24\u5BB3\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A010\u79D2<u>\u660F\u8FF7</u>\u3002\n"
+  descriptionEn: Casts an explosive cauldron to targeted location, dealing AOE damage
+    to enemies and applying <u>Stun</u> effect.
   primaryChange: 0
   secondaryChange: -1
   owner: 0
@@ -23,6 +26,7 @@ MonoBehaviour:
   vfx: {fileID: 1716312745680982, guid: dd5339601d2c590459922e792c609de0, type: 3}
   vfxOffset: {x: 0, y: 0, z: 0}
   castTime: 3
+  animationTrigger: Cast
   specialPrefab: {fileID: 0}
   damage: 600
   force: 0

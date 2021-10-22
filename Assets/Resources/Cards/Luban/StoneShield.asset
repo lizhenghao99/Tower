@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: StoneShield
   m_EditorClassIdentifier: 
   cardName: "\u5CA9\u76FE"
+  cardNameEn: Stone Shield
   upgraded: 0
   description: "\u673A\u5173\u5E08\u88C5\u5907\u5CA9\u76FE\uFF0C\u83B7\u5F97\u751F\u547D\u4E0A\u965025%\u7684\u62A4\u76FE\u3002"
+  descriptionEn: Raises Lu's Stone Shield, obtaining a shield with damage absorption
+    equavalent to 25% of maximum HP.
   primaryChange: 0
   secondaryChange: 0
   owner: 0

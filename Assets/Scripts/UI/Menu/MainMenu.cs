@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,11 +11,36 @@ namespace ProjectTower
     public class MainMenu : MonoBehaviour
     {
         [SerializeField] GameObject loadingScreen;
+        [SerializeField] private GameObject titleBackgroundEN;
+        [SerializeField] private GameObject titleBackgroundCN;
 
-        public void StartGame()
+        private void Start()
         {
-            StartCoroutine(Utils.LoadAsync(1, loadingScreen));
+            if (I2.Loc.LocalizationManager.CurrentLanguage == "Chinese")
+            {
+                titleBackgroundCN.SetActive(true);
+            }
+            else
+            {
+                titleBackgroundEN.SetActive(true);
+            }
         }
+
+        public void StartPlayground()
+        {
+            StartCoroutine(Utils.LoadAsync(2, loadingScreen));
+        }
+
+        public void StartTutorial()
+        {
+            StartCoroutine(Utils.LoadAsync(3, loadingScreen));
+        }
+        
+        public void StartDeck()
+        {
+            StartCoroutine(Utils.LoadAsync(4, loadingScreen));
+        }
+        
 
         public void QuitGame()
         {

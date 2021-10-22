@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: MechGuard
   m_EditorClassIdentifier: 
   cardName: "\u94C1\u7532\u62A4\u536B"
+  cardNameEn: Mech Guard
   upgraded: 0
   description: "\u653E\u51FA3\u4E2A<u>\u5632\u8BBD</u>\uFF0C<u>\u56FA\u5B88</u>\u7684\u94C1\u7532\u62A4\u536B\u3002"
+  descriptionEn: Summon 3 Mech Guards with <u>Taunt</u> and <u>Defend</u>.
   primaryChange: -40
   secondaryChange: 0
   owner: 0

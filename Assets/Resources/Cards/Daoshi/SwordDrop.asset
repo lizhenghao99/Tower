@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: SwordDrop
   m_EditorClassIdentifier: 
   cardName: "\u5929\u6743\u5251\u5F0F"
+  cardNameEn: 'Technique: Judgement'
   upgraded: 0
-  description: 
+  description: "\u5411\u6307\u5B9A\u4F4D\u7F6E\u53EC\u5524\u4ECE\u5929\u800C\u964D\u7684\u5DE8\u5927\u5E7B\u5251\uFF0C\u9020\u6210\u5927\u91CF\u4F24\u5BB3\u3002"
+  descriptionEn: 'Summons an enormous sword that falls from the heaven at targeted
+    location, dealing massive damage.
+
+'
   primaryChange: -80
   secondaryChange: 0
   owner: 1

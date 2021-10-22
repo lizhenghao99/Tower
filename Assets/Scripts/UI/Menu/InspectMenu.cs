@@ -20,11 +20,14 @@ namespace ProjectTower
         private CanvasGroup group;
         private CardDisplay card;
 
+        private string currentLanguage;
+
 
         // Start is called before the first frame update
         void Start()
         {
             group = inspectMenu.GetComponent<CanvasGroup>();
+            currentLanguage = I2.Loc.LocalizationManager.CurrentLanguage;
         }
 
         // Update is called once per frame
@@ -81,10 +84,11 @@ namespace ProjectTower
             rectTransform.sizeDelta = cardSize;
 
 
-            inspectMenu.GetComponentInChildren<TextMeshProUGUI>().text =
-                card.card.description;
+            string description = 
+                currentLanguage.Equals("Chinese") ? card.card.description : card.card.descriptionEn;
+            inspectMenu.GetComponentInChildren<TextMeshProUGUI>().text = description;
 
-            GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
+                GlobalAudioManager.Instance.Play("Inspect", Vector3.zero);
             Time.timeScale = 0f;
         }
 

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: DirtTrap
   m_EditorClassIdentifier: 
   cardName: "\u98DE\u7802\u9635"
+  cardNameEn: Circle of Dust
   upgraded: 0
-  description: 
+  description: "\u65BD\u98DE\u7802\u4E4B\u9635\u6CD5\uFF0C\u6301\u7EED\u5BF9\u6307\u5B9A\u8303\u56F4\u5185\u654C\u4EBA\u65BD\u52A0<u>\u660F\u8FF7</u>\u3002"
+  descriptionEn: 'Casts a Circle of Dust at targeted location, continuously applying
+    <u>Stun</u> effect within the area. '
   primaryChange: -35
   secondaryChange: 5
   owner: 1

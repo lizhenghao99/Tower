@@ -1,0 +1,501 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0b0c553be8edd4682e9180fdd13e37, type: 3}
+  m_Name: I2Languages
+  m_EditorClassIdentifier: 
+  mSource:
+    UserAgreesToHaveItOnTheScene: 0
+    UserAgreesToHaveItInsideThePluginsFolder: 0
+    GoogleLiveSyncIsUptoDate: 1
+    mTerms:
+    - Term: StartTutorial
+      TermType: 0
+      Description: 
+      Languages:
+      - Tutorial
+      - "\u6559\u7A0B\u5173\u5361"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ExitGame
+      TermType: 0
+      Description: 
+      Languages:
+      - Exit
+      - "\u9000\u51FA\u6E38\u620F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ProjectTitle
+      TermType: 0
+      Description: 
+      Languages:
+      - Project Tower
+      - "\u5B9D\u5854\u9879\u76EE"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Loading
+      TermType: 0
+      Description: 
+      Languages:
+      - "Loading\t"
+      - "\u52A0\u8F7D\u4E2D"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Playground
+      TermType: 0
+      Description: 
+      Languages:
+      - Playground
+      - "\u6218\u6597\u6F14\u793A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: MainMenuDeckButton
+      TermType: 0
+      Description: 
+      Languages:
+      - Deck
+      - "\u5361\u7EC4\u6784\u7B51"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Luban
+      TermType: 0
+      Description: 
+      Languages:
+      - Lu
+      - "\u9646\u5742"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Daoshi
+      TermType: 0
+      Description: 
+      Languages:
+      - Yun
+      - "\u4E91\u96FE\u655B"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Back
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - "\u8FD4\u56DE"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: DeckBuilder
+      TermType: 0
+      Description: 
+      Languages:
+      - Deck Builder
+      - "\u5361\u7EC4\u6784\u7B51"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: NextPage
+      TermType: 0
+      Description: 
+      Languages:
+      - Next
+      - "\u4E0B\u4E00\u9875"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: LastPage
+      TermType: 0
+      Description: 
+      Languages:
+      - Previous
+      - "\u4E0A\u4E00\u9875"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Reset
+      TermType: 0
+      Description: 
+      Languages:
+      - Clear
+      - "\u6E05\u7A7A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Confirm
+      TermType: 0
+      Description: 
+      Languages:
+      - Confirm
+      - "\u786E\u8BA4"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: DeckBuilderWarning
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Please complete
+
+        deck building'
+      - "\u8BF7\u5B8C\u6210\u5361\u7EC4\u6784\u7B51"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: InspectBackButton
+      TermType: 0
+      Description: 
+      Languages:
+      - Back
+      - "\u8FD4\u56DE\u6218\u6597"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: PauseContinue
+      TermType: 0
+      Description: 
+      Languages:
+      - Continue
+      - "\u7EE7\u7EED\u6E38\u620F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: PauseSettings
+      TermType: 0
+      Description: 
+      Languages:
+      - Settings
+      - "\u6E38\u620F\u8BBE\u7F6E"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: PauseReturnTitle
+      TermType: 0
+      Description: 
+      Languages:
+      - Return
+      - "\u8FD4\u56DE\u6807\u9898"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: PauseExit
+      TermType: 0
+      Description: 
+      Languages:
+      - Exit
+      - "\u9000\u51FA\u6E38\u620F"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Pause
+      TermType: 0
+      Description: 
+      Languages:
+      - Pause
+      - "\u6682\u505C"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: MasterVolumn
+      TermType: 0
+      Description: 
+      Languages:
+      - Master Volumn
+      - "\u4E3B\u97F3\u91CF"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Music
+      TermType: 0
+      Description: 
+      Languages:
+      - Soundtrack
+      - "\u97F3\u4E50"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Ambient
+      TermType: 0
+      Description: 
+      Languages:
+      - Ambient
+      - "\u73AF\u5883"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Sfx
+      TermType: 0
+      Description: 
+      Languages:
+      - Sfx
+      - "\u97F3\u6548"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ToBeContinued
+      TermType: 0
+      Description: 
+      Languages:
+      - To be continued
+      - "\u672A\u5B8C\u5F85\u7EED"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Restart
+      TermType: 0
+      Description: 
+      Languages:
+      - Restart
+      - "\u91CD\u65B0\u5F00\u59CB"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: CombatFail
+      TermType: 0
+      Description: 
+      Languages:
+      - Combat failed
+      - "\u6218\u6597\u5931\u8D25"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: AllWounded
+      TermType: 0
+      Description: 
+      Languages:
+      - All heroes are down
+      - "\u6240\u6709\u82F1\u96C4\u5747\u5DF2\u5904\u4E8E\u91CD\u4F24\u72B6\u6001"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: DefendToLast
+      TermType: 0
+      Description: 
+      Languages:
+      - Persist
+      - "\u6B7B\u5B88\u9635\u5730"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Retreat
+      TermType: 0
+      Description: 
+      Languages:
+      - Retreat
+      - "\u64A4\u79BB\u6218\u573A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: LeftMouse
+      TermType: 0
+      Description: 
+      Languages:
+      - 'LMB:
+
+        Select / Use'
+      - "\u5DE6\u952E\uFF1A\n\u9009\u62E9 / \u4F7F\u7528"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: RightMouse
+      TermType: 0
+      Description: 
+      Languages:
+      - 'RMB:
+
+        Cancel / Inspect'
+      - "\u53F3\u952E\uFF1A\n\u53D6\u6D88 / \u67E5\u770B"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Continue
+      TermType: 0
+      Description: 
+      Languages:
+      - Continue
+      - "\u7EE7\u7EED"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SkipTutorial
+      TermType: 0
+      Description: 
+      Languages:
+      - Skip Tutorial
+      - "\u8DF3\u8FC7\u6559\u7A0B"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Movement0
+      TermType: 0
+      Description: 
+      Languages:
+      - Left click to select Lu.
+      - "\u5DE6\u952E\u70B9\u51FB\u9009\u4E2D\u9646\u5742\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Movement1
+      TermType: 0
+      Description: 
+      Languages:
+      - Once a character is selected, click on the ground to move.
+      - "\u9009\u4E2D\u540E\uFF0C\u70B9\u51FB\u5730\u9762\u79FB\u52A8\u89D2\u8272\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Movement2
+      TermType: 0
+      Description: 
+      Languages:
+      - You can also select a character by clicking on its avatar.
+      - "\u70B9\u51FB\u5934\u50CF\u4E5F\u53EF\u4EE5\u9009\u4E2D\u89D2\u8272\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Movement3
+      TermType: 0
+      Description: 
+      Languages:
+      - Move Lu to the highlighted location and prepare for combat.
+      - "\u79FB\u52A8\u9646\u5742\u81F3\u6307\u5B9A\u4F4D\u7F6E\uFF0C\u8FCE\u51FB\u654C\u4EBA\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat00
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Enemies will attempt to get close to Mu and attack her.
+
+
+        When Mu
+        loses all of her HP, the combat fails.'
+      - "\u654C\u4EBA\u4F1A\u5411\u66AE\u9065\u79FB\u52A8\u5E76\u8BD5\u56FE\u653B\u51FB\u5979\u3002\n\n\u5F53\u66AE\u9065\u5931\u53BB\u6240\u6709\u751F\u547D\u503C\u540E\uFF0C\u6218\u6597\u5931\u8D25\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat01
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Lu will <u>Taunt</u> enemies around him,
+
+        forcing them to attack
+        himself in order to protect Mu.
+
+
+        Enemies will first attack minions
+        with <u>Taunt</u>.'
+      - "\u9646\u5742\u4F1A\u5BF9\u653B\u51FB\u8303\u56F4\u5185\u7684\u654C\u4EBA\u65BD\u52A0<u>\u5632\u8BBD</u>\uFF0C\n\u5438\u5F15\u654C\u4EBA\u7684\u4EC7\u6068\u6765\u4FDD\u62A4\u66AE\u9065\u3002\n\n\u654C\u4EBA\u4F1A\u4F18\u5148\u653B\u51FB\u5E26\u6709<u>\u5632\u8BBD</u>\u6548\u679C\u7684\u968F\u4ECE\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat1
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Lu''s primary resource: <u>Anima Fragment</u>.
+
+
+        Max: 5.
+
+        Obtained
+        via normal attack. Can also be obtained from specific cards.'
+      - "\u9646\u5742\u521D\u7EA7\u8D44\u6E90\uFF1A<u>\u7075\u6750</u>\u3002\n\n\u4E0A\u9650\uFF1A5\u3002\n\u901A\u8FC7\u666E\u901A\u653B\u51FB\u83B7\u5F97\u3002\u4E5F\u53EF\u4EE5\u901A\u8FC7\u7279\u5B9A\u5361\u724C\u83B7\u5F97\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat2
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Lu''s secondary resource: <u>Anima Crystal</u>
+
+
+        Max: 3.
+
+        Obtained
+        from specific cards. Used to cast powerful spells.'
+      - "\u9646\u5742\u9AD8\u7EA7\u8D44\u6E90\uFF1A<u>\u7075\u6838</u>\u3002\n\n\u4E0A\u9650\uFF1A3\u3002\n\u901A\u8FC7\u7279\u5B9A\u5361\u724C\u83B7\u5F97\uFF0C\u7528\u6765\u91CA\u653E\u5F3A\u5927\u7684\u6CD5\u672F\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat3
+      TermType: 0
+      Description: 
+      Languages:
+      - Right click on a card to inspect its details.
+      - "\u53F3\u952E\u70B9\u51FB\u5361\u724C\u67E5\u770B\u8BE6\u60C5\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat4
+      TermType: 0
+      Description: 
+      Languages:
+      - 'Primary resource cost:
+
+
+
+
+
+        Secondary resource cost:'
+      - "\u521D\u7EA7\u8D44\u6E90\u6D88\u8017\uFF1A\n\n\n\n\n\u9AD8\u7EA7\u8D44\u6E90\u6D88\u8017\uFF1A"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat5
+      TermType: 0
+      Description: 
+      Languages:
+      - "Once a card is selected, \nclick on the ground to play it."
+      - "\u9009\u4E2D\u5361\u724C\u540E\uFF0C\u70B9\u51FB\u5730\u9762\u4F7F\u7528\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Combat6
+      TermType: 0
+      Description: 
+      Languages:
+      - 'You can discard cards in your hand.
+
+        Every character has a unique
+        discarding mechanism.
+
+
+        Lu requires 10 seconds to disassemble the
+        card, and he cannot move or cast during this process.
+
+        Click on the
+        hammer icon, then click on a card to discard it.'
+      - "\u4E0D\u9700\u8981\u7684\u5361\u724C\u53EF\u4EE5\u8FDB\u884C\u5F03\u7F6E\u3002\n\u4E0D\u540C\u7684\u89D2\u8272\u5F03\u724C\u65B9\u5F0F\u4E0D\u540C\u3002\n\n\u9646\u5742\u9700\u898110\u79D2\u65F6\u95F4\u62C6\u89E3\u5361\u724C\uFF0C\u671F\u95F4\u4E0D\u53EF\u79FB\u52A8\u6216\u65BD\u6CD5\u3002\n\u70B9\u51FB\u9524\u5B50\u56FE\u6807\uFF0C\u5F03\u7F6E\u4E00\u5F20\u5361\u724C\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: PlayerDeathHint
+      TermType: 0
+      Description: 
+      Languages:
+      - 'When Lu''s loses all of his HP, he can no longer carry on the combat.
+
+
+        Use
+        minions with <u>Taunt</u> to protect Lu.
+
+        Use defensive spells such
+        as "Stone Shield" to proect Lu.'
+      - "\u9646\u5742\u5931\u53BB\u6240\u6709\u751F\u547D\u503C\u540E\uFF0C\u5C06\u65E0\u6CD5\u7EE7\u7EED\u6218\u6597\u3002\n\n\u4F7F\u7528\u5E26\u6709<u>\u5632\u8BBD</u>\u6548\u679C\u7684\u968F\u4ECE\u4FDD\u62A4\u9646\u5742\u3002\n\u4F7F\u7528\u201C\u5CA9\u76FE\u201D\u7B49\u9632\u5FA1\u6CD5\u672F\u4FDD\u62A4\u9646\u5742\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: TowerDeathHint
+      TermType: 0
+      Description: 
+      Languages:
+      - 'When Mu loses all of her HP, the combat fails.
+
+
+        Use Lu and minions
+        with <u>Taunt</u> to protect Mu.'
+      - "\u5F53\u66AE\u9065\u5931\u53BB\u6240\u6709\u751F\u547D\u503C\u540E\uFF0C\u6218\u6597\u5931\u8D25\u3002\n\n\u4F7F\u7528\u9646\u5742\u548C\u968F\u4ECE\u7684<u>\u5632\u8BBD</u>\u6548\u679C\u4FDD\u62A4\u66AE\u9065\u3002"
+      Flags: 0000
+      Languages_Touch: []
+    - Term: TitleBackground
+      TermType: 4
+      Description: 
+      Languages:
+      - TitleBackgroundEN
+      - TitleBackgroundCN
+      Flags: 0000
+      Languages_Touch: []
+    CaseInsensitiveTerms: 0
+    OnMissingTranslation: 3
+    mTerm_AppName: 
+    mLanguages:
+    - Name: English
+      Code: en
+      Flags: 0
+    - Name: Chinese
+      Code: zh
+      Flags: 0
+    IgnoreDeviceLanguage: 0
+    _AllowUnloadingLanguages: 0
+    Google_WebServiceURL: 
+    Google_SpreadsheetKey: 
+    Google_SpreadsheetName: 
+    Google_LastUpdatedVersion: 
+    Google_Password: change_this
+    GoogleUpdateFrequency: 3
+    GoogleInEditorCheckFrequency: 2
+    GoogleUpdateSynchronization: 1
+    GoogleUpdateDelay: 0
+    Assets: []
+    Spreadsheet_LocalFileName: 
+    Spreadsheet_LocalCSVSeparator: ','
+    Spreadsheet_LocalCSVEncoding: utf-8
+    Spreadsheet_SpecializationAsRows: 1

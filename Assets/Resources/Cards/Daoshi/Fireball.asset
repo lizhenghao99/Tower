@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   cardName: "\u706B\u7403\u672F"
+  cardNameEn: Fireball
   upgraded: 0
-  description: 
+  description: "\u5411\u6307\u5B9A\u65B9\u5411\u63B7\u51FA\u4E09\u679A\u706B\u7403\u3002\u706B\u7403\u5C06\u5728\u63A5\u89E6\u969C\u788D\u6216\u8FBE\u5230\u6700\u5927\u5C04\u7A0B\u65F6\u7206\u70B8\uFF0C
+    \u9020\u6210\u8303\u56F4\u4F24\u5BB3\uFF0C\u5E76\u5BF9\u654C\u4EBA\u65BD\u52A0<u>\u71C3\u70E7</u>\u3002"
+  descriptionEn: Launchs 3 balls of flame in targeted direction. Fireballs will explode
+    upon impact or when maximum range is reached, dealing aeo damage and applying
+    <u>Burn</u> effect to affected enemies.
   primaryChange: -80
   secondaryChange: 4
   owner: 1

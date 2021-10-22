@@ -7,13 +7,17 @@ namespace ProjectTower
     //[CreateAssetMenu(fileName = "New Card", menuName = "Card")]
     public abstract class Card : ScriptableObject
     {
-        public enum Owner { Luban, Daoshi, thirdChar };
+        public enum Owner { Luban, Daoshi, ThirdChar };
 
         [Header("Basic")]
         public string cardName;
+
+        public string cardNameEn;
         public bool upgraded;
         [TextArea]
         public string description;
+        [TextArea]
+        public string descriptionEn;
         public int primaryChange;
         public int secondaryChange;
         public Owner owner;

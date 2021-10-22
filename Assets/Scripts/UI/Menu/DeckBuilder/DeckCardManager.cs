@@ -22,6 +22,7 @@ namespace ProjectTower
         [SerializeField] float cardWidth = 299;
         [SerializeField] float cardHeight = 390;
         [SerializeField] float zoomFactor = 350f;
+        [SerializeField] private Card[] defaultCards;
 
         public List<DeckCardClick> deckCards;
 
@@ -41,6 +42,16 @@ namespace ProjectTower
                     AddCard(ownCard.Where(cc => cc.cardName == name
                                             && cc.upgraded == data.cardsUpgrade[name]
                                             ).FirstOrDefault());
+                }
+            }
+            else
+            {
+                foreach (var card in defaultCards)
+                {
+                    if (card.owner == owner)
+                    {
+                        AddCard(card);
+                    }
                 }
             }
 

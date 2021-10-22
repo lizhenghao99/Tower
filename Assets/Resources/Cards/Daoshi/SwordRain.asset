@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: SwordRain
   m_EditorClassIdentifier: 
   cardName: "\u7476\u5149\u5251\u5F0F"
+  cardNameEn: 'Technique: Starfall'
   upgraded: 0
-  description: 
+  description: "\u5728\u6307\u5B9A\u8303\u56F4\u5524\u51FA\u5927\u91CF\u4ECE\u5929\u800C\u964D\u7684\u5E7B\u5251\uFF0C\u5BF9\u8303\u56F4\u5185\u654C\u4EBA\u9020\u6210\u4F24\u5BB3\u3002"
+  descriptionEn: Summons a shower of ethereal swords at targeted location, dealing
+    damage to enemies within.
   primaryChange: -60
   secondaryChange: 0
   owner: 1

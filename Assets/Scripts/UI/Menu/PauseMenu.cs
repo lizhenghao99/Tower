@@ -134,7 +134,7 @@ namespace ProjectTower
 
         public void LoadMainMenu()
         {
-            StartCoroutine(Utils.LoadAsync(0, loadingScreen));
+            StartCoroutine(Utils.LoadAsync(1, loadingScreen));
         }
     }
 }

@@ -37,6 +37,7 @@ namespace ProjectTower
 
         private void Awake()
         {
+            Time.timeScale = 1f;
             cards = Resources.LoadAll<Card>("Cards");
             grid = GetComponentInChildren<GridLayoutGroup>();
             gridPosition = grid.GetComponent<RectTransform>().anchoredPosition;
@@ -118,7 +119,8 @@ namespace ProjectTower
                 new Vector2(-shiftDistance, 0);
             grid.GetComponent<RectTransform>()
                 .DOAnchorPos(gridPosition, animationTime)
-                .SetEase(Ease.OutQuint);
+                .SetEase(Ease.OutQuint)
+                .SetUpdate(true);
         }
 
         public void ShowNextPage()
@@ -154,8 +156,7 @@ namespace ProjectTower
         {
             currPage = 0;
             var data = SaveSystem.Load();
-            ownCards = cards.Where(c => c.owner == owner
-                                    && c.upgraded == data.cardsUpgrade[c.cardName])
+            ownCards = cards.Where(c => c.owner == owner)
                 .OrderByDescending(c => Math.Min(c.secondaryChange, 0))
                 .ThenByDescending(c => Math.Min(c.primaryChange, 0))
                 .ThenBy(c => c.cardName)

@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f469550b496974080f830674ac9784, type: 3}
   m_Name: FrostTrap
   m_EditorClassIdentifier: 
-  cardName: "\u843D\u971C\u9635"
+  cardName: "\u6D41\u971C\u9635"
+  cardNameEn: Circle of Frost
   upgraded: 0
-  description: 
+  description: "\u65BD\u6D41\u971C\u4E4B\u9635\u6CD5\uFF0C\u6301\u7EED\u5BF9\u6307\u5B9A\u8303\u56F4\u5185\u654C\u4EBA\u65BD\u52A0<u>\u971C\u5BD2</u>\u3002"
+  descriptionEn: 'Casts a Circle of Frost at targeted location, continuously applying
+    <u>Frost</u> effect within the area. '
   primaryChange: -20
   secondaryChange: 3
   owner: 1

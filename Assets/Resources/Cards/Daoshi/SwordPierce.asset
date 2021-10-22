@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: SwordPierce
   m_EditorClassIdentifier: 
   cardName: "\u7A7F\u4E91\u8BC0"
+  cardNameEn: Cloud Piercing
   upgraded: 0
-  description: 
+  description: "\u4EE5\u7A7F\u4E91\u4E4B\u52BF\uFF0C\u5411\u6307\u5B9A\u65B9\u5411\u8FDE\u7EED\u5C04\u51FA\u4E03\u67C4\u5E7B\u5251\uFF0C\u5BF9\u6CBF\u9014\u654C\u4EBA\u9020\u6210\u4F24\u5BB3\u3002"
+  descriptionEn: In a cloud piercing manner, Yun rapidly launches 7 ethereal swords
+    in targeted direction, dealing damage to enemies in the path.
   primaryChange: -30
   secondaryChange: 0
   owner: 1

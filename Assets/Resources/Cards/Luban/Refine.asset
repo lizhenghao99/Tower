@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Refine
   m_EditorClassIdentifier: 
   cardName: "\u70BC\u5316"
+  cardNameEn: Refine
   upgraded: 0
   description: "\u6D88\u80173\u4E2A<u>\u7075\u6750</u>\uFF0C\u5C06\u5176\u70BC\u5316\u62101\u9897<u>\u7075\u6838</u>\u3002"
+  descriptionEn: Convert 3 <u>Anima Fragment</u> to 1 <u>Anima Crystal</u>.
   primaryChange: -60
   secondaryChange: 1
   owner: 0

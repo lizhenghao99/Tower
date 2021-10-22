@@ -52,4 +52,5 @@ MonoBehaviour:
     type: 3}
   fiveSwordsVfx: {fileID: 1899250594192068, guid: e666a30d6ddf39f49afcdc8030191af7,
     type: 3}
-  sevenSwordsVfx: {fileID: 108178, guid: 817d2aafc8d1e954a931ec41191c1c69, type: 3}
+  sevenSwordsVfx: {fileID: 1899250594192068, guid: e666a30d6ddf39f49afcdc8030191af7,
+    type: 3}

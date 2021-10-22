@@ -65,8 +65,8 @@ namespace ProjectTower
 
         public static IEnumerator LoadAsync(int sceneIndex, GameObject loadingScreen)
         {
-            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
             loadingScreen.SetActive(true);
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
             Slider loadingSlider = loadingScreen.GetComponentInChildren<Slider>();
 
             while (!operation.isDone)

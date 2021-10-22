@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using I2.Loc;
 
 namespace ProjectTower
 {
@@ -17,11 +19,11 @@ namespace ProjectTower
         protected TextMeshProUGUI cardName;
         protected TextMeshProUGUI primaryResource;
         protected TextMeshProUGUI secondaryResrouce;
-
-        // Start is called before the first frame update
+        private string currentLanguage;
 
         public void SetCard(Card c)
         {
+            currentLanguage = LocalizationManager.CurrentLanguage;
             card = c;
             RefreshDisplay();
         }
@@ -38,7 +40,9 @@ namespace ProjectTower
             }
             else
             {
-                cardName.text = card.cardName;
+                string cardNameText = 
+                    currentLanguage.Equals("Chinese") ? card.cardName : card.cardNameEn;
+                cardName.text = cardNameText;
             }
 
 
